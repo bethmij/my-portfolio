@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            margin : 0px;
+        }
+
+        .sec1 {
+            width: 50%;
+            height: 50vh;
+            position: relative; 
+            background-color: red;
+            float: left;          
+            
+        }
+
+        .sec2 {
+            width: 50%;
+            height: 50vh;
+             position: relative; 
+            background-color: green;
+            float :right;
+            
+        }
+
+        .sec3 {
+            width: 50%;
+            height: 50vh;
+            position: relative; 
+            background-color: yellow;
+            float: left;
+        }
+
+        .sec4 {
+            width: 50%;
+            height: 50vh;
+             position: relative; 
+            background-color: palevioletred;     
+            float :right;      
+        }  
+
+        body>section>div:first-child{
+            width : 30%;
+            height: 30vh;
+            background-color: white;
+            position: absolute;
+            margin: auto;
+            top: 0px;
+            left: 0px;
+            bottom: 0px;
+            right: 0px;
+            border-radius: 100%;
+
+        }
+
+        body>section>div:last-child{
+            width : 10%;
+            height: 10vh;
+            background-color: red;
+            position: absolute;
+            margin: auto;
+            top: 0px;
+            left: 0px;
+            bottom: 0px;
+            right: 0px;
+
+        }
+
+        body>section>section>div:first-child{
+            width : 10%;
+            height: 20vh;
+            background-color: white;
+            position: absolute;
+            margin: auto;
+            border-bottom-right-radius: 100%;
+        }
+
+        body>section>section>div:nth-child(2){
+            width : 10%;
+            height: 20vh;
+            background-color: white;
+            position: absolute;
+            margin: auto;
+            right:0px;
+            border-bottom-left-radius: 100%;
+        }
+
+        body>section>section>div:nth-child(3){
+            width : 10%;
+            height: 20vh;
+            background-color: white;
+            position: absolute;
+            margin: auto;
+            left:0px;
+            bottom: 0px;
+            border-top-right-radius: 100%;
+        }
+
+        body>section>section>div:nth-child(4){
+            width : 10%;
+            height: 20vh;
+            background-color: white;
+            position: absolute;
+            margin: auto;
+            right:0px;
+            bottom: 0px;
+            border-top-left-radius: 100%;
+        }
+
+        body>section>section>div:nth-child(5){
+            width : 15%;
+            height: 25vh;
+            background-color: white;
+            position: absolute;
+            margin: auto;
+            right:0px;
+            bottom: 0px;
+            top: 0px;
+            left: 0px;
+        }
+
+        body>section>section>div:last-child{
+            width : 8%;
+            height: 15vh;
+            background-color: red;
+            position: absolute;
+            margin: auto;
+            right:0px;
+            bottom: 0px;
+            top: 0px;
+            left: 0px;
+            border-radius: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section class="sec1">
+
+        <div></div>
+
+        <div></div>   
+
+    </section>
+        
+
+    <section class="sec2">
+
+        <div></div>
+
+        <div></div>
+
+    </section>
+   
+
+    <section class="sec3">
+
+        <div></div>
+
+        <div></div>
+        
+    </section>
+
+
+    <section class="sec4">
+
+        <div></div>
+
+        <div></div>
+
+    </section>    
+   
+    <section>
+        <section>
+            <div></div>
+
+            <div></div>
+
+            <div></div>
+
+            <div></div>
+
+            <div></div>
+
+            <div></div>
+
+            <div></div>
+
+            <div></div>
+        </section>
+    </section>
+    
+</body>
+</html>
