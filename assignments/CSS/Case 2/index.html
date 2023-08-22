@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Inter:wght@200&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+
+    <style>
+
+        body{
+            margin: 5px;
+        }
+        body>header{
+            height: 8vh;            
+            border: 1px solid black;
+            position: relative;
+        }
+        body>header>img{
+            width: 15vw;
+            height: 6vh;
+            position: absolute;
+            top: 1vh;
+        }
+        body>header>nav{
+            position: absolute;
+            display: inline-block;
+            top: 1vh;
+            right: 0;
+            height: 10vh;
+        }
+
+        body>header ul > li {
+            padding-right: 2vw;
+            display: inline-block;
+        }
+
+        body>header ul > li > a {
+            color: rgba(0, 0, 0, 0.96);
+            font-family: Corbel;
+            font-weight: bold;
+            font-size: 1.3vw;
+            text-decoration: none;
+
+        }
+        body>main{
+            position: relative;
+        }
+        body main nav{
+            position: absolute;
+            background-color: indigo;
+            width: 15%;
+            /*list-style: none;*/
+            height: 95vh;
+            font-size: 1.3vw;
+        }
+        body main nav ul li{
+            color: white;
+            text-decoration: none;
+            /*list-style: none;*/
+            display: block;
+            padding-top: 2vw;
+            margin-left: 1.3%;
+        }
+        body main nav ul li a{
+            text-decoration: none;
+            color: white;
+            margin-left: 0.5vw;
+            font-family: Corbel;
+            font-weight: bold;
+        }
+        main > section {
+            margin-left: 220px;
+            padding-top: 5px;
+            padding-left: 20px;
+            padding-right: 10px;
+            border-top: 2px solid black;
+            border-right: 1px solid black;
+        }
+
+        main > section > section{
+            height: 260px;
+            position: relative;
+        }
+
+        main > section > section > div {
+            position: absolute;
+            display: inline-block;
+            border-top: 1.5px solid red;
+            border-bottom: 1.5px solid green;
+            height: 100%;
+            width: calc(100%/3);
+            background-color: lightgrey;
+        }
+
+        main > section > section > div:first-child{
+            left: 0;
+            border-left: 2px solid red;
+            border-right: 2px solid green;
+        }
+
+        main > section > section > div:nth-child(2){
+            left: calc(100% / 3);
+            border-left: 2px solid green;
+            border-right: 2px solid green;
+        }
+
+        main > section > section > div:last-child{
+            right: 0;
+            border-left: 2px solid green;
+            border-right: 2px solid red;
+        }
+
+        main>section>p{
+            font-size: 1vw;
+        }
+
+        footer {
+            position: relative;
+            height: 5vh;
+            background-color: slategray;
+            width: 100%;
+        }
+        footer>h5{
+            display: inline-block;
+            color: white;
+            margin: 0;
+            padding-left: 48%;
+            padding-top: 5px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images\ijse.png" alt="ijse">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+        <section>
+            <section>
+                <div>
+                    <img  src="images/output-onlinegiftools (1).gif" alt="monkey image" width="70%">
+                </div>
+                <div>
+                    <img  src="images/output-onlinegiftools (1).gif" alt="monkey image" width="70%">
+                </div>
+                <div>
+                    <img  src="images/output-onlinegiftools (1).gif" alt="monkey image" width="70%">
+                </div>
+            </section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laudantium aperiam voluptas iusto odio molestias dolorem quos delectus. Nihil, fuga libero. Saepe maiores incidunt voluptas nulla laboriosam nisi fugit suscipit!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laudantium aperiam voluptas iusto odio molestias dolorem quos delectus. Nihil, fuga libero. Saepe maiores incidunt voluptas nulla laboriosam nisi fugit suscipit!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laudantium aperiam voluptas iusto odio molestias dolorem quos delectus. Nihil, fuga libero. Saepe maiores incidunt voluptas nulla laboriosam nisi fugit suscipit!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laudantium aperiam voluptas iusto odio molestias dolorem quos delectus. Nihil, fuga libero. Saepe maiores incidunt voluptas nulla laboriosam nisi fugit suscipit!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laudantium aperiam voluptas iusto odio molestias dolorem quos delectus. Nihil, fuga libero. Saepe maiores incidunt voluptas nulla laboriosam nisi fugit suscipit!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laudantium aperiam voluptas iusto odio molestias dolorem quos delectus. Nihil, fuga libero. Saepe maiores incidunt voluptas nulla laboriosam nisi fugit suscipit!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laudantium aperiam voluptas iusto odio molestias dolorem quos delectus. Nihil, fuga libero. Saepe maiores incidunt voluptas nulla laboriosam nisi fugit suscipit!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laudantium aperiam voluptas iusto odio molestias dolorem quos delectus. Nihil, fuga libero. Saepe maiores incidunt voluptas nulla laboriosam nisi fugit suscipit!</p>
+           
+        </section>
+       
+    </main>
+
+    <footer>
+        <h5>Developed by IJSE</h5>
+    </footer>
+</body>
+</html>
