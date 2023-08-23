@@ -8,86 +8,95 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Borel&family=Inter:wght@200&display=swap" rel="stylesheet">
     
-    <title>Document</title>
+    <title>Case 2</title>
 
     <style>
 
         body{
-            margin: 5px;
         }
         body>header{
-            height: 8vh;            
-            border: 1px solid black;
+            height: 7vh;
+            border: 2px solid black;
             position: relative;
         }
         body>header>img{
-            width: 15vw;
-            height: 6vh;
             position: absolute;
-            top: 1vh;
+            width: 15%;
+            height: 70%;
+            top: 0;
+            bottom: 0;
+            margin: auto;
         }
         body>header>nav{
             position: absolute;
-            display: inline-block;
-            top: 1vh;
+            width: 30%;
+            height: 100%;
+            top: 0;
+            bottom: 0;
             right: 0;
-            height: 10vh;
+            margin: auto;
         }
 
-        body>header ul > li {
-            padding-right: 2vw;
+        /*body>header>nav>ul{*/
+        /*    !*position: absolute;*!*/
+        /*    width: 100%;*/
+        /*    height: 100%;*/
+        /*}*/
+        body>header>nav>ul > li {
+            padding-right: 5%;
             display: inline-block;
         }
 
-        body>header ul > li > a {
-            color: rgba(0, 0, 0, 0.96);
+        body>header>nav>ul > li > a {
+            color: black;
             font-family: Corbel;
             font-weight: bold;
-            font-size: 1.3vw;
+            font-size: 1.2vw;
             text-decoration: none;
 
         }
         body>main{
+            height: 90vh;
             position: relative;
         }
-        body main nav{
+        body >main >nav{
             position: absolute;
             background-color: indigo;
             width: 15%;
-            /*list-style: none;*/
-            height: 95vh;
+            height: 100%;
             font-size: 1.3vw;
         }
-        body main nav ul li{
-            color: white;
-            text-decoration: none;
-            /*list-style: none;*/
-            display: block;
-            padding-top: 2vw;
-            margin-left: 1.3%;
+
+        body>main>nav>ul{
+            padding-inline-start: 3vw;
         }
-        body main nav ul li a{
+        body >main >nav >ul >li{
+            display: block;
+            padding-top: 15%;
+
+        }
+        body >main >nav >ul >li >a{
             text-decoration: none;
             color: white;
-            margin-left: 0.5vw;
             font-family: Corbel;
             font-weight: bold;
         }
         main > section {
-            margin-left: 220px;
-            padding-top: 5px;
-            padding-left: 20px;
-            padding-right: 10px;
+            height: 100%;
+            margin-left: 14vw;
+            padding-top: 1%;
+            padding-left: 2%;
+            padding-right: 2%;
             border-top: 2px solid black;
             border-right: 1px solid black;
         }
 
-        main > section > section{
-            height: 260px;
+        main > section > section:first-child{
+            height: 40%;
             position: relative;
         }
 
-        main > section > section > div {
+        main > section > section:first-child > div {
             position: absolute;
             display: inline-block;
             border-top: 1.5px solid red;
@@ -97,40 +106,54 @@
             background-color: lightgrey;
         }
 
-        main > section > section > div:first-child{
+        main > section > section:first-child > div:first-child{
             left: 0;
             border-left: 2px solid red;
             border-right: 2px solid green;
         }
 
-        main > section > section > div:nth-child(2){
+        main > section > section:first-child > div:nth-child(2){
             left: calc(100% / 3);
             border-left: 2px solid green;
             border-right: 2px solid green;
         }
 
-        main > section > section > div:last-child{
+        main > section > section:first-child > div:last-child{
             right: 0;
             border-left: 2px solid green;
             border-right: 2px solid red;
         }
 
-        main>section>p{
+        main > section > section:first-child > div>img{
+            width: 70%;
+            height: 95%;
+        }
+
+        main>section>section:last-child{
+            position: relative;
+            height: 55%;
+        }
+
+        main>section>section:last-child>p{
+            height: 10%;
             font-size: 1vw;
+
         }
 
         footer {
             position: relative;
-            height: 5vh;
+            height: 3vh;
             background-color: slategray;
             width: 100%;
         }
         footer>h5{
-            display: inline-block;
+            position: absolute;
+            height: 100%;
+            font-size: 1vw;
             color: white;
             margin: 0;
             padding-left: 48%;
-            padding-top: 5px;
+            padding-top: 0.2%;
 
         }
 
@@ -161,23 +184,26 @@
         <section>
             <section>
                 <div>
-                    <img  src="images/output-onlinegiftools (1).gif" alt="monkey image" width="70%">
+                    <img  src="images/output-onlinegiftools (1).gif" alt="monkey image" >
                 </div>
                 <div>
-                    <img  src="images/output-onlinegiftools (1).gif" alt="monkey image" width="70%">
+                    <img  src="images/output-onlinegiftools (1).gif" alt="monkey image" >
                 </div>
                 <div>
-                    <img  src="images/output-onlinegiftools (1).gif" alt="monkey image" width="70%">
+                    <img  src="images/output-onlinegiftools (1).gif" alt="monkey image" >
                 </div>
             </section>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laudantium aperiam voluptas iusto odio molestias dolorem quos delectus. Nihil, fuga libero. Saepe maiores incidunt voluptas nulla laboriosam nisi fugit suscipit!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laudantium aperiam voluptas iusto odio molestias dolorem quos delectus. Nihil, fuga libero. Saepe maiores incidunt voluptas nulla laboriosam nisi fugit suscipit!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laudantium aperiam voluptas iusto odio molestias dolorem quos delectus. Nihil, fuga libero. Saepe maiores incidunt voluptas nulla laboriosam nisi fugit suscipit!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laudantium aperiam voluptas iusto odio molestias dolorem quos delectus. Nihil, fuga libero. Saepe maiores incidunt voluptas nulla laboriosam nisi fugit suscipit!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laudantium aperiam voluptas iusto odio molestias dolorem quos delectus. Nihil, fuga libero. Saepe maiores incidunt voluptas nulla laboriosam nisi fugit suscipit!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laudantium aperiam voluptas iusto odio molestias dolorem quos delectus. Nihil, fuga libero. Saepe maiores incidunt voluptas nulla laboriosam nisi fugit suscipit!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laudantium aperiam voluptas iusto odio molestias dolorem quos delectus. Nihil, fuga libero. Saepe maiores incidunt voluptas nulla laboriosam nisi fugit suscipit!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laudantium aperiam voluptas iusto odio molestias dolorem quos delectus. Nihil, fuga libero. Saepe maiores incidunt voluptas nulla laboriosam nisi fugit suscipit!</p>
+
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laudantium aperiam voluptas iusto odio molestias dolorem quos delectus. Nihil, fuga libero. Saepe maiores incidunt voluptas nulla laboriosam nisi fugit suscipit!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laudantium aperiam voluptas iusto odio molestias dolorem quos delectus. Nihil, fuga libero. Saepe maiores incidunt voluptas nulla laboriosam nisi fugit suscipit!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laudantium aperiam voluptas iusto odio molestias dolorem quos delectus. Nihil, fuga libero. Saepe maiores incidunt voluptas nulla laboriosam nisi fugit suscipit!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laudantium aperiam voluptas iusto odio molestias dolorem quos delectus. Nihil, fuga libero. Saepe maiores incidunt voluptas nulla laboriosam nisi fugit suscipit!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laudantium aperiam voluptas iusto odio molestias dolorem quos delectus. Nihil, fuga libero. Saepe maiores incidunt voluptas nulla laboriosam nisi fugit suscipit!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laudantium aperiam voluptas iusto odio molestias dolorem quos delectus. Nihil, fuga libero. Saepe maiores incidunt voluptas nulla laboriosam nisi fugit suscipit!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laudantium aperiam voluptas iusto odio molestias dolorem quos delectus. Nihil, fuga libero. Saepe maiores incidunt voluptas nulla laboriosam nisi fugit suscipit!</p>
+
+            </section>
            
         </section>
        
