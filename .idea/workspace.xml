@@ -4,11 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="" />
+    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified case 2">
+      <change afterPath="$PROJECT_DIR$/assignments/CSS/sample/case3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS/sample/case3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS/sample/case4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS/sample/case5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS/sample/case5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS/sample/case6.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS/sample/case6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/CSS/Case 2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/CSS/Case 2/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -22,10 +39,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignments/CSS/Case 3" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -34,7 +52,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS\Case 2" />
+      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS\Case 2\images" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS\sample" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -49,7 +72,12 @@
       <workItem from="1689822652878" duration="595000" />
       <workItem from="1689831573359" duration="5903000" />
       <workItem from="1692725044944" duration="6868000" />
-      <workItem from="1692808585333" duration="9056000" />
+      <workItem from="1692808585333" duration="9687000" />
+      <workItem from="1692876241610" duration="1597000" />
+      <workItem from="1693418389723" duration="3895000" />
+      <workItem from="1693451421762" duration="23247000" />
+      <workItem from="1693542028070" duration="650000" />
+      <workItem from="1693629696812" duration="2089000" />
     </task>
     <servers />
   </component>
@@ -66,5 +94,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="modified case 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified case 2" />
   </component>
 </project>
