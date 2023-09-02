@@ -13,7 +13,7 @@
       <change afterPath="$PROJECT_DIR$/assignments/CSS/sample/case6.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/assignments/CSS/sample/case6.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/CSS/Case 2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/CSS/Case 2/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/CSS/Case 3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/CSS/Case 3/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +52,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS\Case 3" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS\Case 2" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS\Case 2\images" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assets" />
@@ -77,8 +78,16 @@
       <workItem from="1693418389723" duration="3895000" />
       <workItem from="1693451421762" duration="23247000" />
       <workItem from="1693542028070" duration="650000" />
-      <workItem from="1693629696812" duration="2089000" />
+      <workItem from="1693629696812" duration="5600000" />
     </task>
+    <task id="LOCAL-00001" summary="modified case 2">
+      <created>1693631818230</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693631818230</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
