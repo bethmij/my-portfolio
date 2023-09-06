@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="added case 3">
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 4/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 4/normalize.css" afterDir="false" />
+    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="added case 4">
+      <change afterPath="$PROJECT_DIR$/assignments/CSS/sample/case04.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/assignments/CSS/sample/case3.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/assignments/CSS/sample/case3.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/assignments/CSS/sample/case4.html" afterDir="false" />
@@ -15,6 +14,7 @@
       <change afterPath="$PROJECT_DIR$/assignments/CSS/sample/case6.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/assignments/CSS/sample/case6.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/CSS/Case 4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/CSS/Case 4/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +81,7 @@
       <workItem from="1693451421762" duration="23247000" />
       <workItem from="1693542028070" duration="650000" />
       <workItem from="1693629696812" duration="6352000" />
-      <workItem from="1693978764395" duration="3721000" />
+      <workItem from="1693978764395" duration="4571000" />
     </task>
     <task id="LOCAL-00001" summary="modified case 2">
       <created>1693631818230</created>
@@ -97,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693635796157</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added case 4">
+      <created>1693984007100</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1693984007100</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,6 +124,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="modified case 2" />
     <MESSAGE value="added case 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="added case 3" />
+    <MESSAGE value="added case 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="added case 4" />
   </component>
 </project>

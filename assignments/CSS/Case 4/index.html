@@ -8,14 +8,9 @@
     <link rel="stylesheet" href="normalize.css">
     <title>Case 4</title>
     <style>
-        body{
-            /*height: 400vh;*/
-
-        }
         section{
             height: 100vh;
             position: relative;
-            /*display: block;*/
         }
         section:first-child{
             background-color: white;
@@ -33,6 +28,7 @@
             height: 10vh;
             position: sticky;
             top: 0px;
+            z-index: 1;
         }
 
         section:first-child>div{
@@ -47,7 +43,7 @@
         section:nth-child(4)>div {
             background-color: darkred;
         }
-        section>div>p{
+        section>div>h1{
             color: white;
             font-size: 2em;
             text-align: left;
@@ -72,9 +68,9 @@
 
 </head>
 <body>
-    <section><div><p>Card 1</p></div><h1>Hello</h1></section>
-    <section><div><p>Card 2</p></div><h1>How</h1></section>
-    <section><div><p>Card 3</p></div><h1>Are</h1></section>
-    <section><div><p>Card 4</p></div><h1>You..?</h1></section>
+    <section><div><h1>Card 1</h1></div><h1>Hello</h1></section>
+    <section><div><h1>Card 2</h1></div><h1>How</h1></section>
+    <section><div><h1>Card 3</h1></div><h1>Are</h1></section>
+    <section><div><h1>Card 4</h1></div><h1>You..?</h1></section>
 </body>
 </html>
