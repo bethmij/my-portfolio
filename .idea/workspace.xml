@@ -4,28 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified case 6">
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 2/css/all.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 2/css/all.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 2/css/brands.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 2/css/brands.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 2/css/fontawesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 2/css/fontawesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 2/css/regular.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 2/css/regular.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 2/css/solid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 2/css/solid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 2/css/svg-with-js.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 2/css/svg-with-js.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 2/css/v4-font-face.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 2/css/v4-font-face.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 2/css/v4-shims.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 2/css/v4-shims.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 2/css/v5-font-face.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 2/css/v5-font-face.min.css" afterDir="false" />
+    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified case 5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/480px-Woman_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/CSS/Case 6/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/CSS/Case 6/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/CSS/Case 5/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/CSS/Case 5/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +74,7 @@
       <workItem from="1693451421762" duration="23247000" />
       <workItem from="1693542028070" duration="650000" />
       <workItem from="1693629696812" duration="6352000" />
-      <workItem from="1693978764395" duration="11696000" />
+      <workItem from="1693978764395" duration="14697000" />
     </task>
     <task id="LOCAL-00001" summary="modified case 2">
       <created>1693631818230</created>
@@ -137,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693997290266</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="modified case 6">
+      <created>1693998581727</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1693998581727</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +150,7 @@
     <MESSAGE value="added case 5" />
     <MESSAGE value="added case 6" />
     <MESSAGE value="modified case 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified case 6" />
+    <MESSAGE value="modified case 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified case 5" />
   </component>
 </project>

@@ -8,30 +8,35 @@
     <link rel="stylesheet" href="normalize.css">
     <title>Case 5</title>
     <style>
-        body > div {
-            display: flex;
-            float: left;
+        section{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-rows: repeat(3,1fr);
+            grid-template-columns: repeat(4,1fr);
         }
         img {
             width: calc(100vw / 4);
             height: calc(100vh / 3);
-            box-shadow: 2px 2px 2px 1px white;
+            box-shadow: 0px 0px 2px 1px white;
         }
 
     </style>
 </head>
 <body>
-   <div><img src="assests/1.jpg"></div>
-   <div><img src="assests/2 (2).jpg"></div>
-   <div><img src="assests/3.jpg"></div>
-   <div><img src="assests/4.jpg"></div>
-   <div><img src="assests/5.webp"></div>
-   <div><img src="assests/6.jpg"></div>
-   <div><img src="assests/7.jpg"></div>
-   <div><img src="assests/8.jpg"></div>
-   <div><img src="assests/9.jpg"></div>
-   <div><img src="assests/10.jpg"></div>
-   <div><img src="assests/11.jpg"></div>
-   <div><img src="assests/12.jpg"></div>
+<section>
+   <img src="assests/1.jpg">
+   <img src="assests/2 (2).jpg">
+   <img src="assests/3.jpg">
+   <img src="assests/4.jpg">
+   <img src="assests/5.webp">
+   <img src="assests/6.jpg">
+   <img src="assests/7.jpg">
+   <img src="assests/8.jpg">
+   <img src="assests/9.jpg">
+   <img src="assests/10.jpg">
+   <img src="assests/11.jpg">
+   <img src="assests/12.jpg">
+</section>
 </body>
 </html>
