@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Case 6</title>
+    <style>
+        body {
+            /*position: relative;
+            margin: auto;
+            height: 100vh;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;*/
+        }
+        body > div {
+            /*position: relative;*/
+            /*margin: auto;*/
+            height: calc(100vh / 3);
+            display: flex;
+            float: left;
+        }
+
+        img {
+            position: relative;
+            width: calc(100vw / 4);
+            height: calc(100vh / 3);
+            margin: auto;
+        }
+
+        body > div:nth-child(2) > div:first-child > img, body > div:nth-child(4) > img:nth-child(2) {
+            width: calc(100vw / 2);
+        }
+
+        body > img:first-child {
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            height: 100%;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+   <img src="assests/5.webp" alt="orange">
+   <div>
+       <div><img src="assests/2 (2).jpg" alt="red"></div>
+       <div><img src="assests/1.jpg" alt="green"></div>
+   </div>
+   <div>
+       <img src="assests/4.jpg" alt="purple">
+       <img src="assests/3.webp" alt="pink">
+       <img src="assests/6.jpg" alt="blue">
+   </div>
+   <div>
+       <img src="assests/7.jpg" alt="brown">
+       <img src="assests/8.jpg" alt="dark_blue">
+   </div>
+</body>
+</html>

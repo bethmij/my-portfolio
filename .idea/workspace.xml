@@ -4,23 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified case 4">
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 5/assests/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 5/assests/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 5/assests/11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 5/assests/12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 5/assests/2 (2).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 5/assests/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 5/assests/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 5/assests/5.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 5/assests/5fd08d5a21575387c6e1af84d88c5fa7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 5/assests/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 5/assests/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 5/assests/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 5/assests/87215.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 5/assests/9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 5/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 5/normalize.css" afterDir="false" />
+    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="added case 5">
+      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 6/assests/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 6/assests/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 6/assests/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 6/assests/12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 6/assests/2 (2).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 6/assests/3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 6/assests/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 6/assests/5.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 6/assests/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 6/assests/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 6/assests/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 6/assests/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 6/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS/Case 6/normalize.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/assignments/CSS/sample/case04.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/assignments/CSS/sample/case3.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/assignments/CSS/sample/case3.html" afterDir="false" />
@@ -30,6 +28,7 @@
       <change afterPath="$PROJECT_DIR$/assignments/CSS/sample/case6.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/assignments/CSS/sample/case6.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/CSS/Case 5/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/CSS/Case 5/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +58,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignments/CSS/Case 5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignments/CSS/Case 6/assests" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -68,11 +67,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS\Case 6\assests" />
+      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS\Case 5" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS\Case 4" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS\Case 3" />
-      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS\Case 2" />
-      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS\Case 2\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS\Case 5\assests" />
@@ -97,7 +96,7 @@
       <workItem from="1693451421762" duration="23247000" />
       <workItem from="1693542028070" duration="650000" />
       <workItem from="1693629696812" duration="6352000" />
-      <workItem from="1693978764395" duration="7715000" />
+      <workItem from="1693978764395" duration="10405000" />
     </task>
     <task id="LOCAL-00001" summary="modified case 2">
       <created>1693631818230</created>
@@ -127,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693985280374</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added case 5">
+      <created>1693988217926</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1693988217926</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +155,7 @@
     <MESSAGE value="added case 3" />
     <MESSAGE value="added case 4" />
     <MESSAGE value="modified case 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified case 4" />
+    <MESSAGE value="added case 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="added case 5" />
   </component>
 </project>
