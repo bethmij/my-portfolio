@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified case 5">
-      <change afterPath="$PROJECT_DIR$/assets/BeautyPlus_20230625220407876_save-removebg-preview.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/imgonline-com-ua-ReplaceColor-mheUofcLJdgMW9Np.jpg" afterDir="false" />
+    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified portfolio">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +79,7 @@
       <workItem from="1693978764395" duration="19322000" />
       <workItem from="1694056006604" duration="2294000" />
       <workItem from="1694077864092" duration="4374000" />
-      <workItem from="1694577018432" duration="6110000" />
+      <workItem from="1694577018432" duration="8477000" />
     </task>
     <task id="LOCAL-00001" summary="modified case 2">
       <created>1693631818230</created>
@@ -161,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694078550423</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="modified portfolio">
+      <created>1694584322098</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1694584322098</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +191,7 @@
     <MESSAGE value="added case 6" />
     <MESSAGE value="modified case 6" />
     <MESSAGE value="modified case 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified case 5" />
+    <MESSAGE value="modified portfolio" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified portfolio" />
   </component>
 </project>

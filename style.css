@@ -30,7 +30,7 @@ body>header>img{
     bottom: 0;
     left: 0;
     margin: auto;
-    height: 8vh;
+    height: 7vh;
 }
 body>header>nav{
     position: absolute;
@@ -56,7 +56,7 @@ body>header>nav>ul>li:first-child{
 }
 
 main>section:first-child{
-    height: 95vh;
+    height: 100vh;
 }
 
 main>section:first-child>img:first-child{
@@ -78,11 +78,10 @@ main>section:first-child>img:nth-child(2){
 
 main>section:first-child>section{
     width: 67vw;
-    height: 80vh;
+    height: 90vh;
     position: relative;
     top: 10vh;
     left: 5vw;
-    border: 1px solid red;
 }
 
 main>section:first-child>section>hgroup>h2:first-child{
@@ -91,28 +90,28 @@ main>section:first-child>section>hgroup>h2:first-child{
     position: absolute;
     color: #DE9506;
     opacity: 0.4;
-    top:50px;
+    top:7vh;
     margin: 0px;
 }
 
 main>section:first-child>section>hgroup>h4{
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inder', sans-serif;
     font-size: 4vw;
     font-weight: lighter;
     position: absolute;
     color: white;
-    top:65px;
+    top:9vh;
     left: 30px;
     margin: 0px;
 }
 
 main>section:first-child>section>hgroup>h2:nth-child(3){
-    font-family: 'Inter', sans-serif;
+    font-family: 'Bricolage Grotesque', cursive;
     font-size: 3vw;
     font-weight: normal;
     position: absolute;
     color: white;
-    top:200px;
+    top:30vh;
     left: 30px;
     margin: 0px;
 }
@@ -122,12 +121,12 @@ main>section:first-child>section>hgroup>h2:nth-child(3)>span{
 }
 
 main>section:first-child>section>hgroup>h1{
-    font-family: 'Inter', sans-serif;
+    font-family: 'Bricolage Grotesque', cursive;
     font-size: 4vw;
     font-weight: normal;
     position: absolute;
     color: white;
-    top:270px;
+    top:39vh;
     left: 30px;
     margin: 0px;
     z-index: 2;
@@ -139,22 +138,64 @@ main>section:first-child>section>hgroup>h1>span{
 
 main>section:first-child>section>div{
     position: absolute;
-    width: 13vw;
+    width: 12vw;
     height: 40vh;
     border: 5px solid #DE9506;
-    right: 20px;
-    top:190px;
+    right: 0;
+    top:25vh;
 }
 
 main>section:first-child>section>hgroup>p{
-    font-family: 'Inter', sans-serif;
-    font-size: 1vw;
+    font-family: 'Inder', sans-serif;
+    font-size: 1.5vw;
     font-weight: lighter;
     position: absolute;
     color: white;
-    top:400px;
+    top:55vh;
     left: 30px;
     margin: 0px;
+}
+
+main>section:first-child>section>button:nth-child(3){
+    position: absolute;
+    size: 50px;
+    top:73vh;
+    left: 30px;
+    margin: 0px;
+    height: 5vh;
+    width: 7vw;
+    background-color: #625A46;
+    border: 1px solid #DE9506;
+    border-radius: 10px;
+}
+
+main>section:first-child>section>button:nth-child(3)>a{
+    color: white;
+    font-size: 1.1vw;
+    text-decoration: none;
+}
+
+main>section:first-child>section>button:nth-child(4){
+    position: absolute;
+    size: 50px;
+    top:73vh;
+    left: 180px;
+    margin: 0px;
+    height: 5vh;
+    width: 7vw;
+    background-color: #625A46;
+    border: 1px solid #DE9506;
+    border-radius: 10px;
+}
+
+main>section:first-child>section>button:nth-child(4)>a{
+    color: white;
+    font-size: 1vw;
+    text-decoration: none;
+}
+
+hr{
+    opacity: 0.2;
 }
 
 
