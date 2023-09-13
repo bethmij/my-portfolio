@@ -1,5 +1,6 @@
 body{
-    /*background-color: black;*/
+    background-color: black;
+    z-index: 0.1;
 }
 body>img{
     /*height: 100vh;*/
@@ -16,10 +17,11 @@ body>div{
 }
 body>header{
     width: 100vw;
-    height: 10vh;
+    height: 8vh;
     background-color: #181512;
     position: fixed;
     top: 0;
+    z-index: 3;
 }
 
 body>header>img{
@@ -34,8 +36,9 @@ body>header>nav{
     position: absolute;
     top: 0;
     bottom: 0;
-    right: 0;
+    right: 2vw;
     margin: auto;
+    height: 8vh;
     color: #F5D66D;
 
 }
@@ -51,3 +54,107 @@ body>header>nav>ul>li{
 body>header>nav>ul>li:first-child{
     color: white;
 }
+
+main>section:first-child{
+    height: 95vh;
+}
+
+main>section:first-child>img:first-child{
+    width: 80vw;
+    height: 96vh;
+    position: absolute;
+    right: 0;
+    opacity: 0.4;
+    z-index: 0;
+}
+
+main>section:first-child>img:nth-child(2){
+    width: 28vw;
+    height: 85vh;
+    position: absolute;
+    right: 8vw;
+    top: 10vh;
+}
+
+main>section:first-child>section{
+    width: 67vw;
+    height: 80vh;
+    position: relative;
+    top: 10vh;
+    left: 5vw;
+    border: 1px solid red;
+}
+
+main>section:first-child>section>hgroup>h2:first-child{
+    font-family: 'Italianno', cursive;
+    font-size: 7vw;
+    position: absolute;
+    color: #DE9506;
+    opacity: 0.4;
+    top:50px;
+    margin: 0px;
+}
+
+main>section:first-child>section>hgroup>h4{
+    font-family: 'Inter', sans-serif;
+    font-size: 4vw;
+    font-weight: lighter;
+    position: absolute;
+    color: white;
+    top:65px;
+    left: 30px;
+    margin: 0px;
+}
+
+main>section:first-child>section>hgroup>h2:nth-child(3){
+    font-family: 'Inter', sans-serif;
+    font-size: 3vw;
+    font-weight: normal;
+    position: absolute;
+    color: white;
+    top:200px;
+    left: 30px;
+    margin: 0px;
+}
+
+main>section:first-child>section>hgroup>h2:nth-child(3)>span{
+    color: #DE9506;
+}
+
+main>section:first-child>section>hgroup>h1{
+    font-family: 'Inter', sans-serif;
+    font-size: 4vw;
+    font-weight: normal;
+    position: absolute;
+    color: white;
+    top:270px;
+    left: 30px;
+    margin: 0px;
+    z-index: 2;
+}
+
+main>section:first-child>section>hgroup>h1>span{
+    color: #DE9506;
+}
+
+main>section:first-child>section>div{
+    position: absolute;
+    width: 13vw;
+    height: 40vh;
+    border: 5px solid #DE9506;
+    right: 20px;
+    top:190px;
+}
+
+main>section:first-child>section>hgroup>p{
+    font-family: 'Inter', sans-serif;
+    font-size: 1vw;
+    font-weight: lighter;
+    position: absolute;
+    color: white;
+    top:400px;
+    left: 30px;
+    margin: 0px;
+}
+
+
