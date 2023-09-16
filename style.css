@@ -299,6 +299,39 @@ main>section:nth-child(5)>img{
     width: 15vw;
 }
 
+main>section:nth-child(7){
+    color: white;
+}
+
+main>section:nth-child(7)>section{
+    display: flex;
+    height: 90vh;
+
+}
+
+main>section:nth-child(7)>section>div{
+    border: 1px solid red;
+    width: calc(100%/4);
+}
+
+main>section:nth-child(7)>div{
+    position: relative;
+    border: 1px solid red;
+}
+
+main>section:nth-child(7)>section>div>div{
+    width: 12vw;
+    height: 25vh;
+    border-radius: 100%;
+    border: 3px solid #6A4A0C;
+    margin-top: 10vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+
 
 
 
