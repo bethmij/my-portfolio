@@ -4,28 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified portfolio">
-      <change afterPath="$PROJECT_DIR$/assets/icons8-astronomy-64.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons8-graphic-100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons8-knowledge-80.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons8-art-100.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons8-art-100.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons8-astronomy-96.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons8-astronomy-96.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons8-birthday-100 (1).png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons8-birthday-100 (1).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons8-drawing-100.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons8-drawing-100.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons8-email-100.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons8-email-100.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons8-knowledge-64.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons8-knowledge-64.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons8-location-100.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons8-location-100.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons8-national-100.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons8-national-100.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons8-person-female-100.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons8-person-female-100.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons8-phone-100 (1).png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons8-phone-100 (1).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons8-software-96.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons8-software-96.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons8-tech-100.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons8-tech-100.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons8-vegas-100.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons8-vegas-100.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons8-video-editing-100.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons8-video-editing-100.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons8-web-100.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons8-web-100.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="added transaction case 1">
+      <change afterPath="$PROJECT_DIR$/assignments/CSS/Transition/Case 1/assets/icons8-ambulance-100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS/Transition/Case 1/assets/icons8-cart-100 (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS/Transition/Case 1/assets/icons8-customer-100 (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS/Transition/Case 1/assets/icons8-phonebook-96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS/Transition/Case 1/assets/icons8-stack-80.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS/Transition/Case 1/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS/Transition/Case 1/normalize.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -56,7 +42,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Transition/Case-1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignments/Transition/Case 1/assets" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -66,13 +52,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\Transition\Case 1\assets" />
+      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\Transition\Case 1" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assets" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS\Case 6\assests" />
-      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS" />
-      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS\Case 5" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS\Case 5\assests" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS\sample" />
     </key>
@@ -100,7 +87,7 @@
       <workItem from="1694077864092" duration="4374000" />
       <workItem from="1694577018432" duration="11841000" />
       <workItem from="1694681138082" duration="6101000" />
-      <workItem from="1694781957282" duration="2343000" />
+      <workItem from="1694781957282" duration="4216000" />
     </task>
     <task id="LOCAL-00001" summary="modified case 2">
       <created>1693631818230</created>
@@ -193,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694618803494</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="added transaction case 1">
+      <created>1694868391696</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1694868391696</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +214,7 @@
     <MESSAGE value="modified case 6" />
     <MESSAGE value="modified case 5" />
     <MESSAGE value="modified portfolio" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified portfolio" />
+    <MESSAGE value="added transaction case 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="added transaction case 1" />
   </component>
 </project>
