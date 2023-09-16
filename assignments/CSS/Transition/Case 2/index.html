@@ -2,13 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="normalize.css">
-    <title>Case 1</title>
+    <title>Case 2</title>
   <style>
 
+      body {
+          background-color: lightgrey;
+      }
+      section>div{
+          height: 250px;
+          width: 250px;
+          background-color: grey;
+          border-radius: 100%;
+          border: solid 20px white;
+          border-top-color: darkred;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          margin: auto;
+      }
+
+      section>div:hover{
+          transform: rotate(360deg);
+          transition-duration: 2s;
+      }
+      section>h1{
+          width: 6vw;
+          height: 4vh;
+          color: white;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          margin: auto;
+      }
 
 
 
@@ -16,6 +47,12 @@
 </head>
 <body>
 
+    <section>
+
+        <div></div>
+        <h1>RWAD</h1>
+
+    </section>
 
 
 </body>
