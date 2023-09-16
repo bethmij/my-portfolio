@@ -282,11 +282,24 @@ main>section:nth-child(3)>section>div>ul>li>h3{
     margin: auto;
 }
 
-#hr{
-    width: 500px;
-    background-color: red;
-    height: 2px;
+main>section:nth-child(5){
+    position: relative;
 }
+main>section:nth-child(5)>pre{
+    margin-left: 5vw;
+    color: white;
+    font-size: 1.2vw;
+    display: inline-block;
+}
+
+main>section:nth-child(5)>img{
+    position: absolute;
+    right: 5vw;
+    top: 10vh;
+    width: 15vw;
+}
+
+
 
 
 
