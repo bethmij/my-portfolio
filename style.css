@@ -74,6 +74,7 @@ main>section:first-child>img:nth-child(2){
     position: absolute;
     right: 8vw;
     top: 10vh;
+
 }
 
 main>section:first-child>section{
@@ -116,7 +117,7 @@ main>section:first-child>section>hgroup>h2:nth-child(3){
     margin: 0px;
 }
 
-main>section:first-child>section>hgroup>h2:nth-child(3)>span{
+span{
     color: #DE9506;
 }
 
@@ -132,9 +133,7 @@ main>section:first-child>section>hgroup>h1{
     z-index: 2;
 }
 
-main>section:first-child>section>hgroup>h1>span{
-    color: #DE9506;
-}
+
 
 main>section:first-child>section>div{
     position: absolute;
@@ -195,7 +194,100 @@ main>section:first-child>section>button:nth-child(4)>a{
 }
 
 hr{
-    opacity: 0.2;
+    opacity: 0.4;
 }
+
+main>section:first-child>img:nth-child(3){
+    width: 5vw;
+    height: 10vh;
+    position: absolute;
+    left: 15px;
+    top: 19.4vh;
+    opacity: 0.4;
+}
+
+main>section:nth-child(3){
+    display: flex;
+    height: 95vh;
+}
+
+main>section:nth-child(3)>section{
+    width: calc(100%/3);
+    color: white;
+    position: relative;
+}
+
+main>section:nth-child(3)>section>div{
+    position: absolute;
+    top: 10vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 28vw;
+    font-size:1.5vw;
+}
+
+main>section:nth-child(3)>section>div>h2{
+    font-family: 'Bricolage Grotesque', cursive;
+    font-weight: normal;
+    margin-left: 5vw;
+}
+
+main>section:nth-child(3)>section>div>ul{
+
+    list-style-type: none;
+    margin-top: 6vh;
+
+
+}
+
+main>section:nth-child(3)>section>div>ul>li{
+    padding-bottom: 1vh;
+    position: relative;
+}
+
+main>section:nth-child(3)>section>div>ul>li>div{
+    width: 5vw;
+    height: 10vh;
+    border-radius: 100%;
+    background: linear-gradient(180deg,  #DE9506 20%, black 100%) ;
+    display: inline-block;
+    margin-right: 2vw;
+    opacity: 0.7;
+    position: relative;
+}
+
+main>section:nth-child(3)>section>div>ul>li>div>img{
+   position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+main>section:nth-child(3)>section>div>ul>li>h3{
+    font-family: 'Inder', sans-serif;
+    font-size: 1.4vw;
+    font-weight: lighter;
+    display: inline-block;
+    position: absolute;
+    height: 5vh;
+    width: 15vw;
+    top:0;
+    bottom: 0;
+    left: 4vw;
+    right: 0;
+    margin: auto;
+}
+
+#hr{
+    width: 500px;
+    background-color: red;
+    height: 2px;
+}
+
+
 
 
