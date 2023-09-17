@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified portfolio about me">
+      <change afterPath="$PROJECT_DIR$/assignments/CSS/Transition/Case 3/assets/futuristic-sports-car-neon-highway-powerful-acceleration-supercar-night-track-with-col_593294-26332.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS/Transition/Case 3/assets/icons8-delete-160.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS/Transition/Case 3/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS/Transition/Case 3/normalize.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +40,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignments/CSS/Transition" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignments/CSS/Transition/Case 3/assets" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -48,11 +50,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS\Transition\Case 3\assets" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS\Transition" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\Transition\Case 1\assets" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\Transition\Case 1" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assets" />
-      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS" />
@@ -84,6 +86,7 @@
       <workItem from="1694577018432" duration="11841000" />
       <workItem from="1694681138082" duration="6101000" />
       <workItem from="1694781957282" duration="11000000" />
+      <workItem from="1694919357731" duration="1591000" />
     </task>
     <task id="LOCAL-00001" summary="modified case 2">
       <created>1693631818230</created>
