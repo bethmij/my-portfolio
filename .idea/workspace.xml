@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified portfolio about me">
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Transition/Case 3/assets/futuristic-sports-car-neon-highway-powerful-acceleration-supercar-night-track-with-col_593294-26332.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Transition/Case 3/assets/icons8-delete-160.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Transition/Case 3/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Transition/Case 3/normalize.css" afterDir="false" />
+    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="added transition case 3">
+      <change afterPath="$PROJECT_DIR$/assignments/CSS/Transition/Case 4/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS/Transition/Case 4/normalize.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +38,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignments/CSS/Transition/Case 3/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignments/CSS/Transition" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -50,8 +48,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS\Transition\Case 3\assets" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS\Transition" />
+      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS\Transition\Case 3\assets" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\Transition\Case 1\assets" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\Transition\Case 1" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assets" />
@@ -86,7 +84,7 @@
       <workItem from="1694577018432" duration="11841000" />
       <workItem from="1694681138082" duration="6101000" />
       <workItem from="1694781957282" duration="11000000" />
-      <workItem from="1694919357731" duration="1591000" />
+      <workItem from="1694919357731" duration="4351000" />
     </task>
     <task id="LOCAL-00001" summary="modified case 2">
       <created>1693631818230</created>
@@ -214,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694874865668</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="added transition case 3">
+      <created>1694921253434</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1694921253434</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,6 +251,7 @@
     <MESSAGE value="added transaction case 2" />
     <MESSAGE value="modified transaction case 2" />
     <MESSAGE value="modified portfolio about me" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified portfolio about me" />
+    <MESSAGE value="added transition case 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="added transition case 3" />
   </component>
 </project>
