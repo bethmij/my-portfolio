@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="added transition case 3">
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Transition/Case 4/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS/Transition/Case 4/normalize.css" afterDir="false" />
+    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="added transition case 4">
+      <change afterPath="$PROJECT_DIR$/nooo.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -84,7 +85,7 @@
       <workItem from="1694577018432" duration="11841000" />
       <workItem from="1694681138082" duration="6101000" />
       <workItem from="1694781957282" duration="11000000" />
-      <workItem from="1694919357731" duration="4351000" />
+      <workItem from="1694919357731" duration="10159000" />
     </task>
     <task id="LOCAL-00001" summary="modified case 2">
       <created>1693631818230</created>
@@ -219,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694921253434</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="added transition case 4">
+      <created>1694924032369</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1694924032369</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,6 +260,7 @@
     <MESSAGE value="modified transaction case 2" />
     <MESSAGE value="modified portfolio about me" />
     <MESSAGE value="added transition case 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="added transition case 3" />
+    <MESSAGE value="added transition case 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="added transition case 4" />
   </component>
 </project>

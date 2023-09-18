@@ -303,19 +303,12 @@ main>section:nth-child(7){
     color: white;
 }
 
-main>section:nth-child(7)>section{
+main>section:nth-child(7)>section:nth-child(2){
     display: flex;
     height: 90vh;
     margin-top: 10vh;
 
 }
-
-main>section:nth-child(7)>section>div{
-    width: calc(98vw/4);
-    /*position: relative;*/
-}
-
-
 
 main>section:nth-child(7)>h1 {
     font-family: 'Bricolage Grotesque', cursive;
@@ -323,8 +316,18 @@ main>section:nth-child(7)>h1 {
     margin-left: 5vw;
     font-size: 2.5vw;
 }
+main>section:nth-child(7)>section:nth-child(2)>div{
+    width: calc(100%/4);
+    position: relative;
+}
 
-main>section:nth-child(7)>section>div>div{
+main>section:nth-child(7)>div{
+    position: relative;
+    border: 1px solid red;
+
+}
+
+main>section:nth-child(7)>section:nth-child(2)>div>div{
     width: 12vw;
     height: 25vh;
     border-radius: 100%;
@@ -336,7 +339,7 @@ main>section:nth-child(7)>section>div>div{
 
 }
 
-main>section:nth-child(7)>section>div>div>img{
+main>section:nth-child(7)>section:nth-child(2)>div>div>img{
     width: 8vw;
     position: absolute;
     top:0;
@@ -347,7 +350,7 @@ main>section:nth-child(7)>section>div>div>img{
     opacity: 0.6;
 }
 
-main>section:nth-child(7)>section>div>h2,main>section:nth-child(7)>div>h2{
+main>section:nth-child(7)>section:nth-child(2)>div>h2{
     font-family: 'Bricolage Grotesque', cursive;
     font-weight: normal;
     font-size: 2vw;
@@ -356,44 +359,22 @@ main>section:nth-child(7)>section>div>h2,main>section:nth-child(7)>div>h2{
 
 }
 
-main>section:nth-child(7)>section>div>h2>span,main>section:nth-child(7)>div>h2>span{
+main>section:nth-child(7)>section:nth-child(2)>div>h2>span{
     color: #6C634C;
 }
 
-main>section:nth-child(7)>section>div>ul{
-    /*width: 50vw;*/
-    /*position: absolute;*/
-    margin-left: 3vw;
+main>section:nth-child(7)>section:nth-child(2)>div>ul{
+    width: 50vw;
+    position: absolute;
+    left: 3vw;
     font-size: 1.5vw;
     font-family: 'Inder', sans-serif;
     list-style-type: none;
 }
 
-main>section:nth-child(7)>section>div:nth-child(3)>ul,main>section:nth-child(7)>section>div:nth-child(4)>ul{
-    margin-left: 5vw;
-}
-
-main>section:nth-child(7)>section>div>ul>li{
+main>section:nth-child(7)>section:nth-child(2)>div>ul>li{
     padding-bottom: 2.5vh;
     opacity: 0.6;
-}
-
-main>section:nth-child(7)>div{
-    position: relative;
-    border: 1px solid red;
-    display: inline-block;
-    width: calc(98vw/2);
-    height: 60vh;
-}
-
-main>section:nth-child(7)>div>div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-main>section:nth-child(7)>div>div>img:nth-child(1){
-    align-self:flex-end;
 }
 
 
