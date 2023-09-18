@@ -21,7 +21,7 @@ body>header{
     background-color: #181512;
     position: fixed;
     top: 0;
-    z-index: 3;
+    z-index: 10;
 }
 
 body>header>img{
@@ -316,7 +316,7 @@ main>section:nth-child(7)>section>div{
     /*position: relative;*/
 }
 
-main>section:nth-child(7)>h1,main>section:nth-child(9)>hgroup>h2 {
+main>section:nth-child(7)>h1,main>section:nth-child(9)>hgroup>h2,main>section:nth-child(11)>h2 {
     font-family: 'Bricolage Grotesque', cursive;
     font-weight: normal;
     margin-left: 5vw;
@@ -422,6 +422,8 @@ main>section:nth-child(9)>hgroup>p:nth-child(3){
     top:50vh;
     left: 65vw;
     margin: auto;
+    right: 0px;
+    margin-right: 0px;
 }
 
 main>section:nth-child(9)>img:nth-child(2){
@@ -461,6 +463,236 @@ main>section:nth-child(9)>hgroup>h2{
     margin-bottom: 10vh;
 }
 
+main>section:nth-child(11){
+    height: 100vh;
+    color: white;
+    position: relative;
+}
+
+main>section:nth-child(11)>div{
+    width: 30vw;
+    height: 60vh;
+    background-color: #2B2922;
+    position: relative;
+
+    mix-blend-mode: luminosity;
+}
+
+main>section:nth-child(11)>div>figure>img{
+    width: 25vw;
+    height: 45vh;
+    position: absolute;
+    top: 5vh;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+main>section:nth-child(11)>div>figure>figcaption{
+    font-family: 'Bricolage Grotesque', cursive;
+    font-size: 1.2vw;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 2vh;
+}
+
+main>section:nth-child(11)>div:nth-child(2){
+    width: 40vw;
+    height: 70vh;
+    background-color: #2B2922;
+    position: absolute;
+    top: 0vh;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    mix-blend-mode: normal;
+    z-index: 5;
+}
+
+main>section:nth-child(11)>div:nth-child(2)>figure>img{
+    width: 33vw;
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+main>section:nth-child(11)>div:nth-child(2)>figure>figcaption{
+    font-family: 'Bricolage Grotesque', cursive;
+    font-size: 1.5vw;
+    font-weight: lighter;
+    text-align: center;
+}
+
+main>section:nth-child(11)>div:nth-child(3){
+    top: 10vh;
+    right: 0;
+    left: -20vw;
+    margin: auto;
+    z-index: 4;
+}
+
+main>section:nth-child(11)>div:nth-child(4){
+    top: -52vh;
+    right: -20vw;
+    margin: auto;
+    z-index: 4;
+}
+
+main>section:nth-child(11)>div:nth-child(5){
+    height: 50vh;
+    top: -110vh;
+    right: 0;
+    left: -30vw;
+    margin: auto;
+    z-index: 3;
+}
+
+main>section:nth-child(11)>div:nth-child(5)>figure>img{
+    width: 20vw;
+    height: 40vh;
+    left: -5vw;
+}
+
+main>section:nth-child(11)>img:nth-child(6){
+    position: absolute;
+    width: 5vh;
+    top:10vh;
+    bottom: 0;
+    left: 2vw;
+    margin: auto;
+    opacity: 0.6;
+}
+
+main>section:nth-child(11)>img:nth-child(7){
+    position: absolute;
+    width: 5vh;
+    top:10vh;
+    bottom: 0;
+    right: 2vw;
+    margin: auto;
+    opacity: 0.6;
+}
+
+
+main>section:nth-child(13){
+    height: 100vh;
+    color: white;
+    position: relative;
+}
+
+main>section:nth-child(13)>div{
+    width: 30vw;
+    height: 60vh;
+    background-color: #2B2922;
+    position: relative;
+
+    mix-blend-mode: luminosity;
+}
+
+main>section:nth-child(13)>div>figure>img{
+    width: 25vw;
+    height: 45vh;
+    position: absolute;
+    top: 5vh;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+main>section:nth-child(13)>div>figure>figcaption{
+    font-family: 'Bricolage Grotesque', cursive;
+    font-size: 1.2vw;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 2vh;
+}
+
+main>section:nth-child(13)>div:nth-child(2){
+    width: 40vw;
+    height: 70vh;
+    background-color: #2B2922;
+    position: absolute;
+    top: -5vh;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    mix-blend-mode: normal;
+    z-index: 5;
+}
+
+main>section:nth-child(13)>div:nth-child(2)>figure>img{
+    width: 33vw;
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+main>section:nth-child(13)>div:nth-child(2)>figure>figcaption{
+    font-family: 'Bricolage Grotesque', cursive;
+    font-size: 1.5vw;
+    font-weight: lighter;
+    text-align: center;
+}
+
+main>section:nth-child(13)>div:nth-child(3){
+    top: 10vh;
+    right: 0;
+    left: -20vw;
+    margin: auto;
+    z-index: 4;
+}
+
+main>section:nth-child(13)>div:nth-child(4){
+    top: -52vh;
+    right: -20vw;
+    margin: auto;
+    z-index: 4;
+}
+
+main>section:nth-child(13)>div:nth-child(5){
+    height: 50vh;
+    top: -110vh;
+    right: 0;
+    left: -30vw;
+    margin: auto;
+    z-index: 3;
+}
+
+main>section:nth-child(13)>div:nth-child(5)>figure>img{
+    width: 20vw;
+    height: 40vh;
+    left: -5vw;
+}
+
+main>section:nth-child(13)>img:nth-child(6){
+    position: absolute;
+    width: 5vh;
+    top:10vh;
+    bottom: 0;
+    left: 2vw;
+    margin: auto;
+    opacity: 0.6;
+}
+
+main>section:nth-child(13)>img:nth-child(7){
+    position: absolute;
+    width: 5vh;
+    top:10vh;
+    bottom: 0;
+    right: 2vw;
+    margin: auto;
+    opacity: 0.6;
+}
 
 
 
