@@ -300,12 +300,13 @@ main>section:nth-child(5)>img{
 }
 
 main>section:nth-child(7){
+    margin-top: 10vh;
     color: white;
 }
 
 main>section:nth-child(7)>section{
     display: flex;
-    height: 90vh;
+    height: 84vh;
     margin-top: 10vh;
 
 }
@@ -315,9 +316,7 @@ main>section:nth-child(7)>section>div{
     /*position: relative;*/
 }
 
-
-
-main>section:nth-child(7)>h1 {
+main>section:nth-child(7)>h1,main>section:nth-child(9)>hgroup>h2 {
     font-family: 'Bricolage Grotesque', cursive;
     font-weight: normal;
     margin-left: 5vw;
@@ -383,7 +382,7 @@ main>section:nth-child(7)>div{
     border: 1px solid red;
     display: inline-block;
     width: calc(98vw/2);
-    height: 60vh;
+    height: 80vh;
 }
 
 main>section:nth-child(7)>div>div{
@@ -394,7 +393,74 @@ main>section:nth-child(7)>div>div{
 
 main>section:nth-child(7)>div>div>img:nth-child(1){
     align-self:flex-end;
+
 }
+
+main>section:nth-child(9){
+    height: 90vh;
+    color: white;
+    margin-top: 7vh;
+    position: relative;
+}
+
+main>section:nth-child(9)>hgroup>p{
+    font-family: 'Inder', sans-serif;
+    font-size: 1.5vw;
+    font-weight: lighter;
+    width: 40vw;
+    height: 30vh;
+    position: absolute;
+}
+
+main>section:nth-child(9)>hgroup>p:nth-child(2){
+    top:50vh;
+    left: 5vw;
+    margin: auto;
+}
+
+main>section:nth-child(9)>hgroup>p:nth-child(3){
+    top:50vh;
+    left: 65vw;
+    margin: auto;
+}
+
+main>section:nth-child(9)>img:nth-child(2){
+    position: absolute;
+    top:45vh;
+    left: 25vw;
+    margin: auto;
+}
+
+main>section:nth-child(9)>img:nth-child(4){
+    position: absolute;
+    top:17vh;
+    left: 46vw;
+    margin: auto;
+    width: 5vw;
+    height: 70vh;
+    transform: rotate(90deg);
+}
+
+main>section:nth-child(9)>img:nth-child(5){
+    position: absolute;
+    top:50vh;
+    left: 80vw;
+    margin: auto;
+}
+
+main>section:nth-child(9)>img:nth-child(3){
+    height: 35vh;
+    width: 15vw;
+    position: absolute;
+    top:15vh;
+    left: 40vw;
+    margin: auto;
+}
+
+main>section:nth-child(9)>hgroup>h2{
+    margin-bottom: 10vh;
+}
+
 
 
 
