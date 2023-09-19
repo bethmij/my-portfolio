@@ -4,25 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified portfolio education">
-      <change afterPath="$PROJECT_DIR$/css/all.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/all.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/brands.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/brands.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/fontawesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/fontawesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/regular.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/regular.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/solid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/solid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/svg-with-js.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/svg-with-js.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/v4-font-face.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/v4-font-face.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/v4-shims.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/v4-shims.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/v5-font-face.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/v5-font-face.min.css" afterDir="false" />
+    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified portfolio assignments">
+      <change afterPath="$PROJECT_DIR$/assets/BeautyPlus_20220620112312141_save.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/BeautyPlus_20220812133951243_save.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/BeautyPlus_20221018191601630_save.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/BeautyPlus_20220724145047403_save.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/BeautyPlus_20220724145047403_save.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/BeautyPlus_20230323181232846_save.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/BeautyPlus_20230323181232846_save.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
@@ -55,7 +43,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -65,8 +53,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assets" />
+      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS\Transition" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS\Transition\Case 3\assets" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\Transition\Case 1\assets" />
@@ -102,7 +90,7 @@
       <workItem from="1694577018432" duration="11841000" />
       <workItem from="1694681138082" duration="6101000" />
       <workItem from="1694781957282" duration="11000000" />
-      <workItem from="1694919357731" duration="27633000" />
+      <workItem from="1694919357731" duration="34318000" />
     </task>
     <task id="LOCAL-00001" summary="modified case 2">
       <created>1693631818230</created>
@@ -272,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695101274382</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="modified portfolio assignments">
+      <created>1695114238159</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1695114238161</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,6 +303,7 @@
     <MESSAGE value="modified portfolio" />
     <MESSAGE value="modified portfolio projects" />
     <MESSAGE value="modified portfolio education" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified portfolio education" />
+    <MESSAGE value="modified portfolio assignments" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified portfolio assignments" />
   </component>
 </project>

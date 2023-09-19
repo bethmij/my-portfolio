@@ -794,6 +794,173 @@ main>section:nth-child(13)>img:nth-child(8){
     opacity: 0.6;
 }
 
+main>section:nth-child(15){
+    height: 85vh;
+    width: 85vw;
+    margin-top: 7vh;
+    margin-left: 6vw;
+    margin-bottom: 7vh;
+    background: url("assets/BeautyPlus_20230323181232846_save.jpg");
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    color: white;
+    opacity: 0.8;
+
+}
+main>section:nth-child(15)>img:first-child{
+    position: absolute;
+    left: 5vw;
+    width: 15vw;
+    top: 5vh;
+}
+
+main>section:nth-child(15)>hgroup>h4{
+    font-family: 'Italianno', cursive;
+    font-weight: lighter;
+    font-size: 3vw;
+    position: absolute;
+    left: 5vw;
+    top: 25vh;
+}
+
+main>section:nth-child(15)>hgroup>h2{
+    font-family: 'Inder', sans-serif;
+    font-weight: lighter;
+    font-size: 4vw;
+    position: absolute;
+    left: 5vw;
+    top: 35vh;
+}
+
+main>section:nth-child(15)>hgroup>h2>span{
+    color: white;
+    font-family: Impact;
+    text-shadow:
+            -2px -1px 0 #000,
+            2px -1px 0 #000,
+            -2px 1px 0 #000,
+            2px 1px 0 #000;
+}
+
+main>section:nth-child(15)>hgroup>blockquote{
+    font-family: 'Inder', sans-serif;
+    font-size: 1.2vw;
+    font-weight: lighter;
+    word-spacing: 8px;
+    position: absolute;
+    left: 5vw;
+    top: 55vh;
+    opacity: 0.5;
+}
+
+main>section:nth-child(15)>button{
+    height: 6vh;
+    width: 9vw;
+    background-color: transparent;
+    border: 1px solid white;
+    font-family: 'Italianno', cursive;
+    font-size: 1.6vw;
+    position: absolute;
+    left: 5vw;
+    bottom: 8vh;
+}
+
+main>section:nth-child(15)>button>a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+main>section:nth-child(17){
+    height: 85vh;
+    width: 85vw;margin-left: 6vw;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+    background: url("assets/BeautyPlus_20221018191601630_save.jpg");
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    color: white;
+    opacity: 0.9;
+}
+main>section:nth-child(17)>img:first-child{
+    position: absolute;
+    left: 5vw;
+    width: 15vw;
+    top: 5vh;
+}
+
+main>section:nth-child(17)>hgroup>h4{
+    font-family: 'Italianno', cursive;
+    font-weight: lighter;
+    font-size: 3vw;
+    position: absolute;
+    left: 5vw;
+    top: 25vh;
+}
+
+main>section:nth-child(17)>hgroup>h2{
+    font-family: 'Inder', sans-serif;
+    font-weight: lighter;
+    font-size: 4vw;
+    position: absolute;
+    left: 5vw;
+    top: 35vh;
+}
+
+main>section:nth-child(17)>hgroup>h2>span{
+    color: white;
+    font-family: Impact;
+    text-shadow:
+            -2px -1px 0 #000,
+            2px -1px 0 #000,
+            -2px 1px 0 #000,
+            2px 1px 0 #000;
+}
+
+main>section:nth-child(17)>hgroup>blockquote{
+    font-family: 'Inder', sans-serif;
+    font-size: 1.2vw;
+    font-weight: lighter;
+    word-spacing: 8px;
+    position: absolute;
+    left: 5vw;
+    top: 55vh;
+    opacity: 0.5;
+}
+
+main>section:nth-child(17)>button{
+    height: 6vh;
+    width: 9vw;
+    background-color: transparent;
+    border: 1px solid white;
+    font-family: 'Italianno', cursive;
+    font-size: 1.6vw;
+    position: absolute;
+    left: 5vw;
+    bottom: 7vh;
+}
+
+main>section:nth-child(17)>button>a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
