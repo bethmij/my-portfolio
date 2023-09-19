@@ -4,21 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified portfolio gallery">
-      <change afterPath="$PROJECT_DIR$/assets/Media/icons8-email-100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Media/icons8-info-100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Media/icons8-linkedin-100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Media/icons8-location-100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Media/icons8-phone-100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Screenshot__490_-removebg-preview.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/BeautyPlus_20221018191601630_save.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/BeautyPlus_20221018191601630_save.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Media/icons8-email-100 (1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Media/icons8-github-100.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Media/icons8-github-100.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Media/icons8-hackerrank-64 (1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Media/icons8-instagram-100.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Media/icons8-instagram-100.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Media/icons8-linkedin-100 (1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Media/icons8-whatsapp-100.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Media/icons8-whatsapp-100.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons8-paper-plane-64.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons8-paper-plane-64.png" afterDir="false" />
+    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified portfolio contacts">
+      <change afterPath="$PROJECT_DIR$/assets/art/BeautyPlus_20211111180833604_save.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/art/BeautyPlus_20230823132310726_save.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/art-gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/art-gallery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/70983798-transformed-removebg-preview.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/70983798-transformed-removebg-preview.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Untitled (5).png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Untitled (5).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Untitled__13_-removebg-preview.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Untitled__13_-removebg-preview.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/art/BeautyPlus_20220620112312141_save.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/art/BeautyPlus_20220620112312141_save.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/art/BeautyPlus_20220717101521761_save.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/art/BeautyPlus_20220717101521761_save.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/art/BeautyPlus_20220812133951243_save.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/art/BeautyPlus_20220812133951243_save.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/art/BeautyPlus_20221018191601630_save.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/art/BeautyPlus_20221018191601630_save.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/art/BeautyPlus_20221207152850410_save.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/art/BeautyPlus_20221207152850410_save.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/art/BeautyPlus_20230519165332075_save.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/art/BeautyPlus_20230519165332075_save.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/gallery/MMP21461.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/assets/gallery/MMP21461.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/imgonline-com-ua-ReplaceColor-mheUofcLJdgMW9Np.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/imgonline-com-ua-ReplaceColor-mheUofcLJdgMW9Np.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/istockphoto-1311427143-612x612-removebg-preview-removebg-preview.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/istockphoto-1311427143-612x612-removebg-preview-removebg-preview.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/istockphoto-1333511285-640x640-removebg-preview.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/set-of-children-cartoon-illustration-vector-removebg-preview.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/set-of-children-cartoon-illustration-vector-removebg-preview.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/wallpaper2you_157801.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wallpaper2you_157801.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/gallery.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
@@ -51,7 +57,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/gallery" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -61,18 +67,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assets\gallery" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assets" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS\Transition" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS\Transition\Case 3\assets" />
-      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\Transition\Case 1\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assets\art" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assets\gallery" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assets" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS\Case 5\assests" />
-      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS\sample" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -99,7 +105,7 @@
       <workItem from="1694577018432" duration="11841000" />
       <workItem from="1694681138082" duration="6101000" />
       <workItem from="1694781957282" duration="11000000" />
-      <workItem from="1694919357731" duration="42156000" />
+      <workItem from="1694919357731" duration="48416000" />
     </task>
     <task id="LOCAL-00001" summary="modified case 2">
       <created>1693631818230</created>
@@ -283,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695135613382</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="modified portfolio contacts">
+      <created>1695143421175</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1695143421175</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,6 +334,7 @@
     <MESSAGE value="modified portfolio education" />
     <MESSAGE value="modified portfolio assignments" />
     <MESSAGE value="modified portfolio gallery" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified portfolio gallery" />
+    <MESSAGE value="modified portfolio contacts" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified portfolio contacts" />
   </component>
 </project>
