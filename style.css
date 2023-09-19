@@ -316,7 +316,7 @@ main>section:nth-child(7)>section>div{
     /*position: relative;*/
 }
 
-main>section:nth-child(7)>h1,main>section:nth-child(9)>hgroup>h2,main>section:nth-child(11)>h2 {
+main>section:nth-child(7)>h1,main>section:nth-child(9)>h2,main>section:nth-child(11)>h2 {
     font-family: 'Bricolage Grotesque', cursive;
     font-weight: normal;
     margin-left: 5vw;
@@ -397,70 +397,132 @@ main>section:nth-child(7)>div>div>img:nth-child(1){
 }
 
 main>section:nth-child(9){
-    height: 90vh;
+    height: 120vh;
     color: white;
     margin-top: 7vh;
     position: relative;
+    position: relative;
 }
-
-main>section:nth-child(9)>hgroup>p{
-    font-family: 'Inder', sans-serif;
-    font-size: 1.5vw;
-    font-weight: lighter;
-    width: 40vw;
-    height: 30vh;
+main>section:nth-child(9)>section>div:first-child{
+    width: 30vw;
+    height: 1vh;
+    background: linear-gradient(90deg, #655029, black);
+    box-shadow: 4px 3px 4px 0px #2B2922;
+    margin: 10px;
+    border-radius: 10px;
+    opacity: 1;
+}
+main>section:nth-child(9)>section:nth-child(2)>div:first-child{
     position: absolute;
-}
-
-main>section:nth-child(9)>hgroup>p:nth-child(2){
-    top:50vh;
+    bottom: 5vh;
     left: 5vw;
-    margin: auto;
 }
 
-main>section:nth-child(9)>hgroup>p:nth-child(3){
-    top:50vh;
+main>section:nth-child(9)>section:nth-child(3)>div:first-child{
+    position: absolute;
+    bottom: 25vh;
+    left: 20vw;
+}
+
+main>section:nth-child(9)>section:nth-child(4)>div:first-child{
+    position: absolute;
+    bottom: 45vh;
+    left: 35vw;
+}
+
+main>section:nth-child(9)>section:nth-child(5)>div:first-child{
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+}
+
+main>section:nth-child(9)>section:nth-child(6)>div:first-child{
+    position: absolute;
+    top: 29vh;
     left: 65vw;
-    margin: auto;
-    right: 0px;
-    margin-right: 0px;
 }
 
-main>section:nth-child(9)>img:nth-child(2){
+main>section:nth-child(9)>section>div:nth-child(2){
+    width: 20vw;
+    height: 14vh;
+    background: linear-gradient(180deg, #2B2922, black);
+    box-shadow: 4px 3px 4px 0px #2B2922;
+    margin: 10px;
+    border-radius: 10px;
+    opacity: 0.6;
+}
+main>section:nth-child(9)>section:nth-child(2)>div:nth-child(2){
     position: absolute;
-    top:45vh;
-    left: 25vw;
-    margin: auto;
+    bottom: 6vh;
+    left: 15vw;
+
 }
 
-main>section:nth-child(9)>img:nth-child(4){
+main>section:nth-child(9)>section:nth-child(3)>div:nth-child(2){
     position: absolute;
-    top:17vh;
-    left: 46vw;
-    margin: auto;
-    width: 5vw;
-    height: 70vh;
-    transform: rotate(90deg);
+    bottom: 26vh;
+    left: 30vw;
 }
 
-main>section:nth-child(9)>img:nth-child(5){
+main>section:nth-child(9)>section:nth-child(4)>div:nth-child(2){
     position: absolute;
-    top:50vh;
-    left: 80vw;
-    margin: auto;
+    bottom: 46vh;
+    left: 45vw;
 }
 
-main>section:nth-child(9)>img:nth-child(3){
-    height: 35vh;
-    width: 15vw;
+main>section:nth-child(9)>section:nth-child(5)>div:nth-child(2){
     position: absolute;
-    top:15vh;
-    left: 40vw;
-    margin: auto;
+    top: 36vh;
+    left: 60vw;
 }
 
-main>section:nth-child(9)>hgroup>h2{
-    margin-bottom: 10vh;
+main>section:nth-child(9)>section:nth-child(6)>div:nth-child(2){
+    position: absolute;
+    top: 15vh;
+    left: 75vw;
+}
+
+main>section:nth-child(9)>section>div:nth-child(2)>p{
+    text-align: center;
+    opacity: 1;
+    font-size: 1.1vw;
+}
+
+main>section:nth-child(9)>section:nth-child(2)>img{
+    position: absolute;
+    width: 13vw;
+    bottom: 4vh;
+    left: 5vw;
+    opacity: 0.4;
+
+}
+
+main>section:nth-child(9)>section:nth-child(3)>img{
+    position: absolute;
+    bottom: 28vh;
+    left: 23vw;
+    opacity: 0.4;
+}
+
+main>section:nth-child(9)>section:nth-child(4)>img{
+    position: absolute;
+    bottom: 39vh;
+    left: 38vw;
+    opacity: 0.4;
+}
+
+main>section:nth-child(9)>section:nth-child(5)>img{
+    width: 12vw;
+    position: absolute;
+    top: 9vh;
+    left: 48vw;
+}
+
+main>section:nth-child(9)>section:nth-child(6)>img{
+    position: absolute;
+    top: -10vh;
+    left: 65vw;
+    opacity: 0.4;
 }
 
 main>section:nth-child(11){
@@ -614,8 +676,8 @@ main>section:nth-child(13)>div>figure>figcaption{
 }
 
 main>section:nth-child(13)>div:nth-child(2){
-    width: 40vw;
-    height: 70vh;
+    width: 30vw;
+    height: 50vh;
     background-color: #2B2922;
     position: absolute;
     top: -5vh;
