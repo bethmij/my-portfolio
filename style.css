@@ -316,7 +316,7 @@ main>section:nth-child(7)>section>div{
     /*position: relative;*/
 }
 
-main>section:nth-child(7)>h1,main>section:nth-child(9)>h2,main>section:nth-child(11)>h2 {
+main>section:nth-child(7)>h1,main>section:nth-child(9)>h2,main>section:nth-child(11)>h2,main>section:nth-child(13)>h2 {
     font-family: 'Bricolage Grotesque', cursive;
     font-weight: normal;
     margin-left: 5vw;
@@ -574,7 +574,7 @@ main>section:nth-child(11)>div:nth-child(2){
 }
 
 main>section:nth-child(11)>div:nth-child(2)>figure>img{
-    width: 33vw;
+    width: 36vw;
     position: absolute;
     top: 10vh;
     right: 0;
@@ -620,7 +620,7 @@ main>section:nth-child(11)>div:nth-child(5)>figure>img{
     left: -5vw;
 }
 
-main>section:nth-child(11)>img:nth-child(6){
+main>section:nth-child(11)>img:nth-child(7){
     position: absolute;
     width: 5vh;
     top:10vh;
@@ -630,7 +630,7 @@ main>section:nth-child(11)>img:nth-child(6){
     opacity: 0.6;
 }
 
-main>section:nth-child(11)>img:nth-child(7){
+main>section:nth-child(11)>img:nth-child(8){
     position: absolute;
     width: 5vh;
     top:10vh;
@@ -640,27 +640,53 @@ main>section:nth-child(11)>img:nth-child(7){
     opacity: 0.6;
 }
 
+main>section:nth-child(11)>div:nth-child(6){
+    position: absolute;
+    height: 7vh;
+    width: 100%;
+    background: linear-gradient(180deg, #2B2922, black);
+    bottom: 0vh;
+    mix-blend-mode: normal;
+    text-align: center;
+}
+
+main>section:nth-child(11)>div:nth-child(6)>p{
+    font-family: 'Bricolage Grotesque', cursive;
+    margin-top: 1.3vh;
+    margin-right: 2vw;
+    font-size: 1.4vw;
+    display: inline-block;
+}
+
+main>section:nth-child(11)>div:nth-child(6)>button{
+    size: 50px;
+    height: 5vh;
+    width: 7vw;
+    background-color: #2B2922;
+    border: 1px solid #DE9506;
+    border-radius: 10px;
+    color: white;
+}
 
 main>section:nth-child(13){
-    height: 100vh;
+    height: 60vh;
     color: white;
     position: relative;
 }
 
 main>section:nth-child(13)>div{
-    width: 30vw;
-    height: 60vh;
+    width: 25vw;
+    height: 35vh;
     background-color: #2B2922;
     position: relative;
-
     mix-blend-mode: luminosity;
 }
 
 main>section:nth-child(13)>div>figure>img{
-    width: 25vw;
-    height: 45vh;
+    width: 23vw;
+    height: 28vh;
     position: absolute;
-    top: 5vh;
+    top: 2vh;
     right: 0;
     left: 0;
     bottom: 0;
@@ -669,18 +695,18 @@ main>section:nth-child(13)>div>figure>img{
 
 main>section:nth-child(13)>div>figure>figcaption{
     font-family: 'Bricolage Grotesque', cursive;
-    font-size: 1.2vw;
+    font-size: 0.8vw;
     font-weight: lighter;
     text-align: center;
-    padding-top: 2vh;
+    padding-top: 0vh;
 }
 
 main>section:nth-child(13)>div:nth-child(2){
     width: 30vw;
-    height: 50vh;
+    height: 40vh;
     background-color: #2B2922;
     position: absolute;
-    top: -5vh;
+    top: 0;
     right: 0;
     left: 0;
     bottom: 0;
@@ -690,9 +716,10 @@ main>section:nth-child(13)>div:nth-child(2){
 }
 
 main>section:nth-child(13)>div:nth-child(2)>figure>img{
-    width: 33vw;
+    width: 28vw;
+    height: 31vh;
     position: absolute;
-    top: 10vh;
+    top: 0;
     right: 0;
     left: 0;
     bottom: 0;
@@ -701,42 +728,53 @@ main>section:nth-child(13)>div:nth-child(2)>figure>img{
 
 main>section:nth-child(13)>div:nth-child(2)>figure>figcaption{
     font-family: 'Bricolage Grotesque', cursive;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     font-weight: lighter;
     text-align: center;
 }
 
 main>section:nth-child(13)>div:nth-child(3){
-    top: 10vh;
+    top: 2vh;
     right: 0;
-    left: -20vw;
+    left: -13vw;
     margin: auto;
     z-index: 4;
 }
 
 main>section:nth-child(13)>div:nth-child(4){
-    top: -52vh;
-    right: -20vw;
+    top: -35vh;
+    right: -13vw;
     margin: auto;
     z-index: 4;
 }
 
 main>section:nth-child(13)>div:nth-child(5){
-    height: 50vh;
-    top: -110vh;
-    right: 0;
-    left: -30vw;
+    top: -70vh;
+    left: -20vw;
+    height: 30vh;
     margin: auto;
     z-index: 3;
 }
 
 main>section:nth-child(13)>div:nth-child(5)>figure>img{
-    width: 20vw;
-    height: 40vh;
-    left: -5vw;
+    width: 50vh;
+    height: 24vh;
 }
 
-main>section:nth-child(13)>img:nth-child(6){
+main>section:nth-child(13)>div:nth-child(6){
+    top: -103vh;
+    right: -20vw;
+    height: 30vh;
+    margin: auto;
+    z-index: 3;
+}
+
+main>section:nth-child(13)>div:nth-child(6)>figure>img{
+    width: 50vh;
+    height: 24vh;
+}
+
+main>section:nth-child(13)>img:nth-child(7){
     position: absolute;
     width: 5vh;
     top:10vh;
@@ -746,7 +784,7 @@ main>section:nth-child(13)>img:nth-child(6){
     opacity: 0.6;
 }
 
-main>section:nth-child(13)>img:nth-child(7){
+main>section:nth-child(13)>img:nth-child(8){
     position: absolute;
     width: 5vh;
     top:10vh;
