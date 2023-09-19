@@ -948,6 +948,270 @@ main>section:nth-child(17)>button>a{
     text-decoration: none;
 }
 
+main>section:nth-child(19){
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main>section:nth-child(19)>section{
+    width: 35vw;
+    height: 30vh;
+    background-color: #2B2922;
+    display: inline-block;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 10vw;
+    margin-right: 10vw ;
+    opacity: 0.6;
+}
+
+
+main>section:nth-child(19)>section>div{
+    width: 20vw;
+    height: 20vh;
+    background-color: #4F4B43;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+main>section:nth-child(19)>section:first-child>div>h3{
+    font-family: 'Inder', sans-serif;
+    font-size: 1.5vw;
+    font-weight: lighter;
+    text-align: center;
+    color: white;
+}
+
+main>section:nth-child(19)>section:first-child>div>button{
+    background-color: #2B2922;
+    border-color: transparent;
+    border-radius: 100%;
+    height: 6vh;
+}
+
+main>section:nth-child(19)>section:first-child>div>button:nth-child(2){
+    position: absolute;
+    left: 6vw;
+    bottom: 2vh;
+}
+
+main>section:nth-child(19)>section:first-child>div>button:nth-child(3){
+    position: absolute;
+    left: 11vw;
+    bottom: 2vh;
+}
+
+main>section:nth-child(19)>section:last-child>div:first-child{
+    height: 25vh;
+    width: 0.1vw;
+    background-color: #9A8265;
+    position: absolute;
+    z-index: 2;
+    left: -15vw;
+}
+
+main>section:nth-child(19)>section:last-child>div:nth-child(2){
+    height: 5vh;
+    width: 15vw;
+    background-color: #B2970B;
+    position: absolute;
+    z-index: 2;
+    left: 0vw;
+    bottom: 8vh;
+    border-radius: 0%;
+}
+
+main>section:nth-child(19)>section:last-child>div:last-child{
+    height: 5vh;
+    width: 5vw;
+    background-color: #B2510B;
+    position: absolute;
+    z-index: 2;
+    left: -10vw;
+    bottom: -10vh;
+    border-radius: 0%;
+}
+
+main>section:nth-child(21){
+    height: 90vh;
+    position: relative;
+    background: linear-gradient(180deg, black, #3B311F);
+}
+
+main>section:nth-child(21)>h2{
+    width: 20vw;
+    color: #DE9506;
+    font-family: 'Italianno', cursive;
+    font-weight: lighter;
+    font-size: 6vw;
+    opacity: 0.3;
+    position: absolute;
+    top: 2vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+main>section:nth-child(21)>h3{
+    width: 15vw;
+    font-family: 'Bricolage Grotesque', cursive;
+    font-size: 2vw;
+    font-weight: lighter;
+    color: white;
+    opacity: 0.7;
+    position: absolute;
+    top: 6vh;
+    left: 2vw;
+    right: 0;
+    margin: auto;
+}
+
+main>section:nth-child(21)>div:nth-child(3){
+    width: 40vw;
+    height: 70vh;
+    margin-top: 16vh;
+    margin-left: 4vw;
+    position: relative;
+    color: white;
+    display: inline-block;
+}
+
+main>section:nth-child(21)>div:nth-child(3)>p{
+    font-family: 'Inder', sans-serif;
+    font-size: 1.3vw;
+    font-weight: lighter;
+    text-align: left;
+    opacity: 0.5;
+    word-spacing: 5px;
+}
+
+main>section:nth-child(21)>div:nth-child(3)>address>ul{
+    list-style-type: none;
+}
+main>section:nth-child(21)>div:nth-child(3)>address>ul>li{
+    position: relative;
+    margin-left: -2vw;
+}
+
+main>section:nth-child(21)>div:nth-child(3)>address>ul>li>h3{
+    font-family: 'Inder', sans-serif;
+    font-size: 1.3vw;
+    font-weight: lighter;
+    display: inline-block;
+    position: absolute;
+    margin-left: 2vw;
+    opacity: 0.8;
+}
+
+main>section:nth-child(21)>div:nth-child(3)>address>ul>li>div{
+    width: 4vw;
+    height: 8vh;
+    border-radius: 100%;
+    background: linear-gradient(180deg,  #DE9506 20%, black 100%) ;
+    display: inline-block;
+    opacity: 0.7;
+    position: relative;
+}
+
+main>section:nth-child(21)>div:nth-child(3)>address>ul>li>div>img{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+main>section:nth-child(21)>div:nth-child(3)>div>div{
+    width: 4vw;
+    height: 8vh;
+    border-radius: 100%;
+    background: linear-gradient(180deg,  #655029 20%, black 100%) ;
+    display: inline-block;
+    opacity: 0.7;
+    position: relative;
+    margin-top: 6vh;
+    margin-right: 2vw;
+
+}
+
+main>section:nth-child(21)>div:nth-child(3)>div>div>img{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+main>section:nth-child(21)>div:nth-child(4){
+    width: 30vw;
+    height: 65vh;
+    display: inline-block;
+    position: absolute;
+    left: 40vw;
+    top: 24vh;
+    color: white;
+    z-index: 3;
+}
+
+main>section:nth-child(21)>div:nth-child(4)>form>input,textarea{
+    opacity: 0.7;
+    background-color: #625A46;
+    border: 2px solid #F6C827;
+    border-radius: 30px;
+}
+
+main>section:nth-child(21)>div:nth-child(4)>form>input{
+    width: 24vw;
+    height: 5vh;
+    padding-left: 1vw;
+    color: white;
+
+}
+
+main>section:nth-child(21)>div:nth-child(4)>form>textarea{
+    width: 24vw;
+    height: 20vh;
+    padding-left: 1vw;
+}
+
+main>section:nth-child(21)>div:nth-child(4)>form>input::placeholder,textarea::placeholder{
+    color: white;
+    padding-left: 1vw;
+}
+
+main>section:nth-child(21)>div:nth-child(4)>form>textarea::placeholder{
+    padding-top: 8vh;
+}
+
+main>section:nth-child(21)>div:nth-child(4)>form>button{
+    background-color: #3B311F;
+    border-color: #AB9A9A;
+    position: absolute;
+    left: 8vw;
+    border-radius: 10px;
+    height: 6vh;
+    width: 7vw;
+    color: white;
+}
+
+main>section:nth-child(21)>img{
+    position: absolute;
+    width: 40vw;
+    right: 0;
+    top: 10vh;
+    z-index: 1;
+}
+
+
 
 
 

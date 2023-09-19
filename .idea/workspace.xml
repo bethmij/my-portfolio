@@ -4,13 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified portfolio assignments">
-      <change afterPath="$PROJECT_DIR$/assets/BeautyPlus_20220620112312141_save.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/BeautyPlus_20220812133951243_save.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/BeautyPlus_20221018191601630_save.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/BeautyPlus_20220724145047403_save.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/BeautyPlus_20220724145047403_save.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/BeautyPlus_20230323181232846_save.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/BeautyPlus_20230323181232846_save.jpg" afterDir="false" />
+    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified portfolio gallery">
+      <change afterPath="$PROJECT_DIR$/assets/Media/icons8-email-100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/Media/icons8-info-100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/Media/icons8-linkedin-100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/Media/icons8-location-100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/Media/icons8-phone-100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/Screenshot__490_-removebg-preview.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/BeautyPlus_20221018191601630_save.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/BeautyPlus_20221018191601630_save.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Media/icons8-email-100 (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Media/icons8-github-100.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Media/icons8-github-100.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Media/icons8-hackerrank-64 (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Media/icons8-instagram-100.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Media/icons8-instagram-100.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Media/icons8-linkedin-100 (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Media/icons8-whatsapp-100.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Media/icons8-whatsapp-100.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons8-paper-plane-64.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons8-paper-plane-64.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
@@ -60,6 +68,7 @@
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\Transition\Case 1\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assets\gallery" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assets" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS\Case 5\assests" />
@@ -90,7 +99,7 @@
       <workItem from="1694577018432" duration="11841000" />
       <workItem from="1694681138082" duration="6101000" />
       <workItem from="1694781957282" duration="11000000" />
-      <workItem from="1694919357731" duration="34318000" />
+      <workItem from="1694919357731" duration="42156000" />
     </task>
     <task id="LOCAL-00001" summary="modified case 2">
       <created>1693631818230</created>
@@ -267,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695114238161</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="modified portfolio gallery">
+      <created>1695135613382</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1695135613382</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,6 +320,7 @@
     <MESSAGE value="modified portfolio projects" />
     <MESSAGE value="modified portfolio education" />
     <MESSAGE value="modified portfolio assignments" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified portfolio assignments" />
+    <MESSAGE value="modified portfolio gallery" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified portfolio gallery" />
   </component>
 </project>
