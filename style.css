@@ -428,7 +428,7 @@ main>#skillView>div>div>img:last-child{
 
 main>#skillView>div>div>div:nth-child(2){
     width: 20vw;
-    height: 10vh;
+    height: 8vh;
     /*border: 1px solid red;*/
     position: absolute;
     top: 20vh;
@@ -441,7 +441,7 @@ main>#skillView>div>div>div:nth-child(2){
 
 main>#skillView>div>div>div:nth-child(3){
     width:25vw;
-    height: 10vh;
+    height: 8vh;
     /*border: 1px solid red;*/
     display: block;
     position: absolute;
@@ -455,7 +455,7 @@ main>#skillView>div>div>div:nth-child(3){
 
 main>#skillView>div:last-child>div>div:nth-child(2){
     width: 20vw;
-    height: 10vh;
+    height: 8vh;
     position: absolute;
     top: 15vh;
     left: 0;
@@ -467,7 +467,7 @@ main>#skillView>div:last-child>div>div:nth-child(2){
 
 main>#skillView>div:last-child>div>div:nth-child(3){
     width:25vw;
-    height: 10vh;
+    height: 8vh;
     display: block;
     position: absolute;
     top: 28vh;
@@ -480,7 +480,7 @@ main>#skillView>div:last-child>div>div:nth-child(3){
 
 main>#skillView>div:last-child>div>div:nth-child(4){
     width: 20vw;
-    height: 10vh;
+    height: 8vh;
     display: block;
     position: absolute;
     top: 40vh;
