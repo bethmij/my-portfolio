@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified portfolio">
+    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified portfolio gallery">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/art/BeautyPlus_20211111180833604_save.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/art/BeautyPlus_20211111180833604_save.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nooo.css" beforeDir="false" afterPath="$PROJECT_DIR$/nooo.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +39,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Sample/Hostel/My-Portfolio" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/doc1" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -49,11 +49,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assets\doc1" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assets" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assets\gallery" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS\Transition" />
-      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS\Transition\Case 3\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assets\art" />
@@ -87,7 +87,7 @@
       <workItem from="1694577018432" duration="11841000" />
       <workItem from="1694681138082" duration="6101000" />
       <workItem from="1694781957282" duration="11000000" />
-      <workItem from="1694919357731" duration="62336000" />
+      <workItem from="1694919357731" duration="69520000" />
     </task>
     <task id="LOCAL-00001" summary="modified case 2">
       <created>1693631818230</created>
@@ -299,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695208558978</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="modified portfolio">
+      <created>1695217175742</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1695217175742</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,10 +343,10 @@
     <MESSAGE value="modified portfolio education" />
     <MESSAGE value="modified portfolio assignments" />
     <MESSAGE value="modified portfolio contacts" />
-    <MESSAGE value="modified portfolio gallery" />
     <MESSAGE value="modified portfolio tools" />
     <MESSAGE value="modified portfolio assessments" />
     <MESSAGE value="modified portfolio" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified portfolio" />
+    <MESSAGE value="modified portfolio gallery" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified portfolio gallery" />
   </component>
 </project>
