@@ -4,19 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified portfolio assessments">
-      <change afterPath="$PROJECT_DIR$/assesments.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/2f03b977-93a9-48c7-adac-47eceba47043.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/3420cdda-71d2-4ae6-9f8e-127d00912822.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/439e68a1-5635-406c-b5d7-f54e90775947 (1).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/4b63a663-7a20-4341-9d4b-b5bbbd1b6b7b.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/BeautyPlus_20230920160111974_save.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/f8971dbc-add1-4bff-ac3d-b7e774331bf3.jpg" afterDir="false" />
+    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified portfolio">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/art-gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/art-gallery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assessments.html" beforeDir="false" afterPath="$PROJECT_DIR$/assessments.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/art/BeautyPlus_20211111180833604_save.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/art/BeautyPlus_20211111180833604_save.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/CSS/Transition/Case 1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/CSS/Transition/Case 1/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
@@ -49,7 +39,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Sample/Hostel/My-Portfolio" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -97,7 +87,7 @@
       <workItem from="1694577018432" duration="11841000" />
       <workItem from="1694681138082" duration="6101000" />
       <workItem from="1694781957282" duration="11000000" />
-      <workItem from="1694919357731" duration="59582000" />
+      <workItem from="1694919357731" duration="62336000" />
     </task>
     <task id="LOCAL-00001" summary="modified case 2">
       <created>1693631818230</created>
@@ -302,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695195842183</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="modified portfolio assessments">
+      <created>1695208558970</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1695208558978</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,7 +332,6 @@
     <MESSAGE value="modified portfolio about me" />
     <MESSAGE value="added transition case 3" />
     <MESSAGE value="added transition case 4" />
-    <MESSAGE value="modified portfolio" />
     <MESSAGE value="modified portfolio projects" />
     <MESSAGE value="modified portfolio education" />
     <MESSAGE value="modified portfolio assignments" />
@@ -343,6 +339,7 @@
     <MESSAGE value="modified portfolio gallery" />
     <MESSAGE value="modified portfolio tools" />
     <MESSAGE value="modified portfolio assessments" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified portfolio assessments" />
+    <MESSAGE value="modified portfolio" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified portfolio" />
   </component>
 </project>

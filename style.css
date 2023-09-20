@@ -7,7 +7,7 @@ body>img{
     width: 100vw;
     position: fixed;
     z-index: -5;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 body>div{
     height: 100vh;
@@ -744,7 +744,7 @@ main>#projectView>div:nth-child(6)>p{
     display: inline-block;
 }
 
-main>#projectView>div:nth-child(6)>button{
+main>#projectView>div:nth-child(6)>a>button{
     size: 50px;
     height: 5vh;
     width: 7vw;
@@ -752,6 +752,7 @@ main>#projectView>div:nth-child(6)>button{
     border: 1px solid #DE9506;
     border-radius: 10px;
     color: white;
+    cursor: pointer;
 }
 
 main>#achievementView{
