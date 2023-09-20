@@ -4,27 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified portfolio contacts">
-      <change afterPath="$PROJECT_DIR$/assets/art/BeautyPlus_20211111180833604_save.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/art/BeautyPlus_20230823132310726_save.jpg" afterDir="false" />
+    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified portfolio gallery">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/art-gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/art-gallery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/70983798-transformed-removebg-preview.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/70983798-transformed-removebg-preview.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Untitled (5).png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Untitled (5).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Untitled__13_-removebg-preview.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Untitled__13_-removebg-preview.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/art/BeautyPlus_20220620112312141_save.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/art/BeautyPlus_20220620112312141_save.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/art/BeautyPlus_20220717101521761_save.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/art/BeautyPlus_20220717101521761_save.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/art/BeautyPlus_20220812133951243_save.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/art/BeautyPlus_20220812133951243_save.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/art/BeautyPlus_20221018191601630_save.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/art/BeautyPlus_20221018191601630_save.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/art/BeautyPlus_20221207152850410_save.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/art/BeautyPlus_20221207152850410_save.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/art/BeautyPlus_20230519165332075_save.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/art/BeautyPlus_20230519165332075_save.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/gallery/MMP21461.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/assets/gallery/MMP21461.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/imgonline-com-ua-ReplaceColor-mheUofcLJdgMW9Np.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/imgonline-com-ua-ReplaceColor-mheUofcLJdgMW9Np.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/istockphoto-1311427143-612x612-removebg-preview-removebg-preview.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/istockphoto-1311427143-612x612-removebg-preview-removebg-preview.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/istockphoto-1333511285-640x640-removebg-preview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/set-of-children-cartoon-illustration-vector-removebg-preview.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/set-of-children-cartoon-illustration-vector-removebg-preview.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/wallpaper2you_157801.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wallpaper2you_157801.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/gallery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/divider-line-png-line-with-square-ends-51575253351rlrygrgup8.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/divider-line-png-line-with-square-ends-51575253351rlrygrgup8.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
@@ -105,7 +89,7 @@
       <workItem from="1694577018432" duration="11841000" />
       <workItem from="1694681138082" duration="6101000" />
       <workItem from="1694781957282" duration="11000000" />
-      <workItem from="1694919357731" duration="48416000" />
+      <workItem from="1694919357731" duration="55407000" />
     </task>
     <task id="LOCAL-00001" summary="modified case 2">
       <created>1693631818230</created>
@@ -296,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695143421175</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="modified portfolio gallery">
+      <created>1695150445280</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1695150445280</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,8 +324,8 @@
     <MESSAGE value="modified portfolio projects" />
     <MESSAGE value="modified portfolio education" />
     <MESSAGE value="modified portfolio assignments" />
-    <MESSAGE value="modified portfolio gallery" />
     <MESSAGE value="modified portfolio contacts" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified portfolio contacts" />
+    <MESSAGE value="modified portfolio gallery" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified portfolio gallery" />
   </component>
 </project>
