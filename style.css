@@ -1,6 +1,8 @@
 body{
     background-color: black;
     width: 98vw;
+    scroll-behavior: smooth;
+
 }
 body>img{
     height: 100vh;
@@ -39,9 +41,15 @@ body>header>nav{
     right: 2vw;
     margin: auto;
     height: 8vh;
-    color: #F5D66D;
 
 }
+
+body>header>nav>ul>li>a{
+    text-decoration: none;
+    color: #F5D66D;
+    opacity: 0.8;
+}
+
 body>header>nav>ul{
     margin-top: 0;
 }
@@ -52,10 +60,6 @@ body>header>nav>ul>li{
     font-size: 1.2vw;
     opacity: 0.8;
 }
-body>header>nav>ul>li:first-child{
-    color: white;
-}
-
 main>#mainView{
     height: 100vh;
     background-color: black;
@@ -719,6 +723,9 @@ main>#projectView>div:nth-child(2)>figure>div:last-child>div>a>button{
     border-radius: 10px;
     margin-bottom: 5vh;
     cursor: pointer;
+}
+main>#projectView>div:nth-child(2)>figure>div:last-child>div>a>button:hover{
+    background-color: #2B2922;
 }
 
 main>#projectView>div:nth-child(2)>figure>div:last-child>div>label:nth-child(4){

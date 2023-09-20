@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified portfolio gallery">
+    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified portfolio assessments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nooo.css" beforeDir="false" afterPath="$PROJECT_DIR$/nooo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nooo.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +87,7 @@
       <workItem from="1694577018432" duration="11841000" />
       <workItem from="1694681138082" duration="6101000" />
       <workItem from="1694781957282" duration="11000000" />
-      <workItem from="1694919357731" duration="69520000" />
+      <workItem from="1694919357731" duration="70515000" />
     </task>
     <task id="LOCAL-00001" summary="modified case 2">
       <created>1693631818230</created>
@@ -306,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695217175742</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="modified portfolio gallery">
+      <created>1695228614636</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1695228614636</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,9 +351,9 @@
     <MESSAGE value="modified portfolio assignments" />
     <MESSAGE value="modified portfolio contacts" />
     <MESSAGE value="modified portfolio tools" />
-    <MESSAGE value="modified portfolio assessments" />
     <MESSAGE value="modified portfolio" />
     <MESSAGE value="modified portfolio gallery" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified portfolio gallery" />
+    <MESSAGE value="modified portfolio assessments" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified portfolio assessments" />
   </component>
 </project>
