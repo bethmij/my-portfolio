@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified portfolio assessments">
-      <change afterPath="$PROJECT_DIR$/assets/Untitled__12_-removebg-preview_205x288.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons8-menu-100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tab.css" afterDir="false" />
+    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified portfolio tab responsive">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Untitled__12_-removebg-preview.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/70983798-transformed-removebg-preview.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/70983798-transformed-removebg-preview.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tab.css" beforeDir="false" afterPath="$PROJECT_DIR$/tab.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +88,7 @@
       <workItem from="1694577018432" duration="11841000" />
       <workItem from="1694681138082" duration="6101000" />
       <workItem from="1694781957282" duration="11000000" />
-      <workItem from="1694919357731" duration="91674000" />
+      <workItem from="1694919357731" duration="101202000" />
     </task>
     <task id="LOCAL-00001" summary="modified case 2">
       <created>1693631818230</created>
@@ -323,7 +321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695229646689</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="modified portfolio tab responsive">
+      <created>1695312689056</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1695312689056</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -364,6 +369,7 @@
     <MESSAGE value="modified portfolio" />
     <MESSAGE value="modified portfolio gallery" />
     <MESSAGE value="modified portfolio assessments" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified portfolio assessments" />
+    <MESSAGE value="modified portfolio tab responsive" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified portfolio tab responsive" />
   </component>
 </project>

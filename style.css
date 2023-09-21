@@ -301,19 +301,19 @@ main>#aboutView{
 main>#aboutView>pre{
     margin-left: 5vw;
     color: white;
-    font-size: 1.2vw;
+    font-size: 1.4vw;
     display: inline-block;
 }
 
 main>#aboutView>img{
     position: absolute;
     right: 5vw;
-    top: 10vh;
-    width: 15vw;
+    top: 6vh;
+    width: 18vw;
 }
 
 main>#skillView{
-    margin-top: 10vh;
+    margin-top: 0vh;
     color: white;
 }
 
@@ -598,7 +598,6 @@ main>#educationView>section>div:nth-child(2)>p{
 
 main>#educationView>section:nth-child(2)>img{
     position: absolute;
-    width: 13vw;
     bottom: 4vh;
     left: 5vw;
 
@@ -982,6 +981,8 @@ main>#galleryView{
     background-size: cover;
     position: relative;
     color: white;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 
 }
 main>#galleryView>img:first-child{
@@ -1280,12 +1281,16 @@ main>#contactView>div:nth-child(3)>p{
     word-spacing: 5px;
 }
 
+main>#contactView>div:nth-child(3)>p:nth-child(2){
+    display: none;
+}
+
 main>#contactView>div:nth-child(3)>address>ul{
     list-style-type: none;
 }
 main>#contactView>div:nth-child(3)>address>ul>li{
     position: relative;
-    right:  5vw;
+    right:  3vw;
 }
 
 main>#contactView>div:nth-child(3)>address>ul>li>h3{
