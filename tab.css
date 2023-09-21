@@ -1,0 +1,452 @@
+@media all and (max-width: 768px) {
+
+    body{
+        width: 97vw;
+    }
+    body>header{
+        width: 100%;
+        position: relative;
+        background-color: black;
+    }
+
+    body>img{
+        height: 100vh;
+        width: 97vw;
+        position: fixed;
+        z-index: -5;
+        opacity: 0.3;
+    }
+
+    body>header>nav{
+        display: none;
+    }
+    body>header>div{
+        display: initial;
+        width: 6vw;
+        height: 6vh;
+        background-color: #292828;
+        border-radius: 20px 0 0 20px;
+        right: 0;
+        top: 2vh;
+        position: fixed;
+        z-index: 10;
+    }
+
+    body>header>div>div{
+        width: 3.8vw;
+        height:4.5vh;
+        background-color:#655029 ;
+        border-radius: 100%;
+        margin-top: 3px;
+        margin-left: 6px ;
+        border: 2px solid #6C634C;
+        position: relative;
+        cursor: pointer;
+    }
+
+    body>header>div>div>img{
+        position: absolute;
+        width: 2vw;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    main>#mainView{
+    }
+    main>#mainView>img:first-child{
+        content: url("assets/imgonline-com-ua-ReplaceColor-mheUofcLJdgMW9Npdf.jpg");
+        width: 96vw;
+        height: 96vh;
+        position: absolute;
+        left: 0;
+
+    }
+
+    main>#mainView>img:nth-child(2){
+        width: 35vw;
+        height: 60vh;
+        position: absolute;
+        right: 20vw;
+        top: 10vh;
+
+    }
+
+    main>#mainView>section{
+        width: 80vw;
+        height: 90vh;
+        position: relative;
+        top: 10vh;
+        left: 17vw;
+    }
+
+    main>#mainView>section>hgroup>h2:first-child{
+        font-size: 12vw;
+        font-weight: lighter;
+        opacity: 0.4;
+        top:3.2vh;
+        left: 4vw;
+    }
+
+    main>#mainView>section>hgroup>h4{
+        font-size: 5vw;
+        font-weight: lighter;
+        position: absolute;
+        top:6vh;
+        left: 10vw;
+    }
+
+    main>#mainView>section>hgroup>h2:nth-child(3){
+        font-size: 4vw;
+        position: absolute;;
+        top:17vh;
+        left: 0;
+    }
+    main>#mainView>section>hgroup>h1{
+        font-size: 4.8vw;
+        position: absolute;
+        top:53vh;
+        left: 0;
+        z-index: 2;
+    }
+
+    main>#mainView>section>div{
+        display: none;
+    }
+
+    main>#mainView>section>hgroup>p{
+        font-size: 2vw;
+        position: absolute;
+        top:61vh;
+        left: 0;
+    }
+
+    main>#mainView>section>button:nth-child(3){
+        position: absolute;
+        top:70vh;
+        left: 2vw;
+        height: 5vh;
+        width: 10vw;
+    }
+
+    main>#mainView>section>button:nth-child(3)>a,main>#mainView>section>button:nth-child(4)>a{
+        font-size: 2vw;
+    }
+
+    main>#mainView>section>button:nth-child(4){
+        position: absolute;
+        top:70vh;
+        left: 18vw;
+        height: 5vh;
+        width: 15vw;
+    }
+
+    main>#mainView>img:nth-child(3){
+        width: 10vw;
+        height: 6vh;
+        position: absolute;
+        left: 10vw;
+        top: 16.2vh;
+        opacity: 0.4;
+    }
+
+    main>#infoView{
+        display: block;
+        height: 145vh;
+        position: relative;
+    }
+
+    main>#infoView>section{
+        width: 45vw;
+        height: 80vh;
+        position: relative;
+        display: inline-block;
+    }
+
+    main>#infoView>section>div{
+        position: absolute;
+        top: 7vh;
+        width: 35vw;
+        font-size:2vw;
+    }
+
+    main>#infoView>section>div>h2{
+        margin-left: 7vw;
+    }
+
+    main>#infoView>section>div>ul>li{
+        padding-bottom: 1vh;
+    }
+
+    main>#infoView>section>div>ul>li>div{
+        width: 6vw;
+        height: 8vh;
+        position: relative;
+    }
+
+    main>#infoView>section>div>ul>li>div>img{
+        position: absolute;
+        width: 65%;
+    }
+
+    main>#infoView>section>div>ul>li>h3{
+        font-size: 2vw;
+        width: 25vw;
+        left: 7vw;
+    }
+
+    main>#infoView>section:nth-child(3){
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 70vh;
+        margin: auto;
+    }
+
+    main>#infoView>section:last-child>div>img{
+        display: initial;
+        transform: rotate(90deg);
+        height: 30vh;
+        opacity: 0.8;
+    }
+
+    main>#infoView>section:last-child>div>img:nth-child(3){
+        position: absolute;
+        top: 0;
+        bottom: 4vh;
+        margin: auto;
+        right: 40vw;
+    }
+
+    main>#infoView>section:last-child>div>img:nth-child(4){
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        bottom: 4vh;
+        margin: auto;
+        left: 40vw;
+    }
+    main>#aboutView{
+        position: relative;
+    }
+    main>#aboutView>pre{
+        margin-left: 5vw;
+        color: white;
+        font-size: 1.8vw;
+        display: inline-block;
+    }
+    main>#aboutView>img{
+        position: absolute;
+        right: 5vw;
+        top: 10vh;
+        width: 20vw;
+        z-index: -1;
+    }
+
+    main>#skillView{
+        margin-top: 10vh;
+        color: white;
+    }
+
+    main>#skillView>section{
+        display: block;
+        height: 150vh;
+        margin-top: 10vh;
+        border: 1px solid red;
+
+    }
+
+    main>#skillView>section>div{
+        width: 47vw;
+        border: 1px solid white;
+        display: inline-block;
+        /*position: relative;*/
+    }
+
+    main>#skillView>h1,main>section:nth-child(9)>h2,main>section:nth-child(11)>h2,main>section:nth-child(13)>h2 {
+        font-family: 'Bricolage Grotesque', cursive;
+        font-weight: normal;
+        margin-left: 5vw;
+        font-size: 2.5vw;
+    }
+
+    main>#skillView>section>div>div{
+        width: 12vw;
+        height: 25vh;
+        border-radius: 100%;
+        border: 3px dotted #6A4A0C;
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: relative;
+
+    }
+
+    main>#skillView>section>div>div>img{
+        width: 8vw;
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        opacity: 0.6;
+    }
+
+    main>#skillView>section>div>h2,main>section:nth-child(7)>div>h2{
+        font-family: 'Bricolage Grotesque', cursive;
+        font-weight: normal;
+        font-size: 2vw;
+        text-align: center;
+        color: #E5C079;
+
+    }
+
+    main>#skillView>section>div>h2>span,main>section:nth-child(7)>div>h2>span{
+        color: #6C634C;
+    }
+
+    main>#skillView>section>div>ul{
+        /*width: 50vw;*/
+        /*position: absolute;*/
+        margin-left: 3vw;
+        font-size: 1.5vw;
+        font-family: 'Inder', sans-serif;
+        list-style-type: none;
+    }
+
+    main>#skillView>section>div:nth-child(3)>ul,main>section:nth-child(7)>section>div:nth-child(4)>ul{
+        margin-left: 5vw;
+    }
+
+    main>#skillView>section>div>ul>li{
+        padding-bottom: 2.5vh;
+        opacity: 0.8;
+    }
+
+    main>#skillView>div{
+        position: relative;
+        display: inline-block;
+        width: calc(97vw/2);
+        height: 80vh;
+        position: relative;
+    }
+
+    main>#skillView>div>div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 40vw;
+        height: 65vh;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin:auto;
+    }
+
+    main>#skillView>div>div>img:first-child{
+        height: 15vh;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 0;
+    }
+
+    main>#skillView>div>div>img:last-child{
+        height: 15vh;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: 0;
+    }
+
+    main>#skillView>div>div>img:last-child{
+        height: 15vh;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: 0;
+    }
+
+    main>#skillView>div>div>div:nth-child(2){
+        width: 20vw;
+        height: 8vh;
+        /*border: 1px solid red;*/
+        position: absolute;
+        top: 20vh;
+        left: 0;
+        right: 0;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    main>#skillView>div>div>div:nth-child(3){
+        width:25vw;
+        height: 8vh;
+        /*border: 1px solid red;*/
+        display: block;
+        position: absolute;
+        top: 35vh;
+        left: 0;
+        right: 0;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    main>#skillView>div:last-child>div>div:nth-child(2){
+        width: 20vw;
+        height: 8vh;
+        position: absolute;
+        top: 15vh;
+        left: 0;
+        right: 0;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    main>#skillView>div:last-child>div>div:nth-child(3){
+        width:25vw;
+        height: 8vh;
+        display: block;
+        position: absolute;
+        top: 28vh;
+        left: 0;
+        right: 0;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    main>#skillView>div:last-child>div>div:nth-child(4){
+        width: 20vw;
+        height: 8vh;
+        display: block;
+        position: absolute;
+        top: 40vh;
+        left: 0;
+        right: 0;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}

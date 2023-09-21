@@ -1,12 +1,12 @@
+
 body{
     background-color: black;
     width: 98vw;
     scroll-behavior: smooth;
-
 }
 body>img{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     position: fixed;
     z-index: -5;
     opacity: 0.3;
@@ -18,7 +18,7 @@ body>div{
     opacity: 0.3;
 }
 body>header{
-    width: 100vw;
+    width: 100%;
     height: 8vh;
     background-color: #181512;
     position: fixed;
@@ -60,9 +60,14 @@ body>header>nav>ul>li{
     font-size: 1.2vw;
     opacity: 0.8;
 }
+
+body>header>div{
+    display: none;
+}
 main>#mainView{
     height: 100vh;
     background-color: black;
+    position: relative;
 }
 
 main>#mainView>img:first-child{
@@ -217,6 +222,10 @@ main>#infoView{
     height: 95vh;
 }
 
+main>#infoView>section>div>img{
+    display: none;
+}
+
 main>#infoView>section{
     width: calc(100%/3);
     color: white;
@@ -241,11 +250,8 @@ main>#infoView>section>div>h2{
 }
 
 main>#infoView>section>div>ul{
-
     list-style-type: none;
     margin-top: 6vh;
-
-
 }
 
 main>#infoView>section>div>ul>li{
@@ -266,6 +272,7 @@ main>#infoView>section>div>ul>li>div{
 
 main>#infoView>section>div>ul>li>div>img{
     position: absolute;
+    width: 65%;
     top:0;
     bottom: 0;
     left: 0;
@@ -386,7 +393,7 @@ main>#skillView>section>div>ul>li{
 main>#skillView>div{
     position: relative;
     display: inline-block;
-    width: calc(97vw/2);
+    width: calc(96vw/2);
     height: 80vh;
     position: relative;
 }
@@ -501,6 +508,7 @@ main>#educationView{
     color: white;
     margin-top: 7vh;
     position: relative;
+
 }
 main>#educationView>section>div:first-child{
     width: 30vw;
@@ -530,14 +538,15 @@ main>#educationView>section:nth-child(4)>div:first-child{
 
 main>#educationView>section:nth-child(5)>div:first-child{
     position: absolute;
-    top: 50vh;
+    top: 52vh;
     left: 50vw;
 }
 
 main>#educationView>section:nth-child(6)>div:first-child{
     position: absolute;
-    top: 29vh;
+    top: 31vh;
     left: 65vw;
+    margin: 0px;
 }
 
 main>#educationView>section>div:nth-child(2){
@@ -559,7 +568,8 @@ main>#educationView>section:nth-child(2)>div:nth-child(2){
 main>#educationView>section:nth-child(3)>div:nth-child(2){
     position: absolute;
     bottom: 26vh;
-    left: 30vw;
+    left: 28vw;
+
 }
 
 main>#educationView>section:nth-child(4)>div:nth-child(2){
@@ -576,8 +586,9 @@ main>#educationView>section:nth-child(5)>div:nth-child(2){
 
 main>#educationView>section:nth-child(6)>div:nth-child(2){
     position: absolute;
-    top: 15vh;
+    top: 16vh;
     left: 75vw;
+    margin: 0px;
 }
 
 main>#educationView>section>div:nth-child(2)>p{
@@ -606,16 +617,15 @@ main>#educationView>section:nth-child(4)>img{
 }
 
 main>#educationView>section:nth-child(5)>img{
-    width: 12vw;
     position: absolute;
-    top: 9vh;
-    left: 48vw;
+    bottom: 65vh;
+    right: 35vw;
 }
 
 main>#educationView>section:nth-child(6)>img{
     position: absolute;
-    top: -10vh;
-    left: 65vw;
+    top: -11vh;
+    right: 19vw;
 }
 
 main>#projectView{
@@ -739,25 +749,24 @@ main>#projectView>div:nth-child(2)>figure>div:last-child>div>label:nth-child(4){
 }
 
 main>#projectView>div:nth-child(3){
-    top: 10vh;
-    right: 0;
-    left: -20vw;
+    top: 8vh;
+    right: 17vw;
     margin: auto;
     z-index: 4;
 }
 
 main>#projectView>div:nth-child(4){
     top: -52vh;
-    right: -20vw;
+    left: 48vw;
     margin: auto;
     z-index: 4;
+    display: inline-block;
 }
 
 main>#projectView>div:nth-child(5){
     height: 50vh;
     top: -110vh;
-    right: 0;
-    left: -30vw;
+    right: 25vw;
     margin: auto;
     z-index: 3;
 }
@@ -787,7 +796,7 @@ main>#projectView>div:nth-child(6)>figure>img{
 main>#projectView>img:nth-child(8){
     position: absolute;
     width: 5vh;
-    top:10vh;
+    top:0;
     bottom: 0;
     left: 2vw;
     margin: auto;
@@ -796,7 +805,7 @@ main>#projectView>img:nth-child(8){
 main>#projectView>img:nth-child(9){
     position: absolute;
     width: 5vh;
-    top:10vh;
+    top:0;
     bottom: 0;
     right: 2vw;
     margin: auto;
@@ -847,6 +856,8 @@ main>#achievementView>div{
     background-color: #2B2922;
     position: relative;
     mix-blend-mode: luminosity;
+    margin: 0px;
+    display: inline-block;
 }
 
 main>#achievementView>div>figure>img{
@@ -901,43 +912,43 @@ main>#achievementView>div:nth-child(2)>figure>figcaption{
 }
 
 main>#achievementView>div:nth-child(3){
-    top: 2vh;
+    top: 1vh;
     right: 0;
-    left: -13vw;
+    left: 20vw;
     margin: auto;
     z-index: 4;
 }
 
 main>#achievementView>div:nth-child(4){
-    top: -35vh;
-    right: -13vw;
-    margin: auto;
+    top: 1vh;
+    left: 20vw;
     z-index: 4;
+    margin: 0px;
 }
 
 main>#achievementView>div:nth-child(5){
-    top: -70vh;
-    left: -20vw;
+    top: -1vh;
+    left: 2vw;
     height: 30vh;
     margin: auto;
     z-index: 3;
 }
 
 main>#achievementView>div:nth-child(5)>figure>img{
-    width: 50vh;
+    width: 22vw;
     height: 24vh;
 }
 
 main>#achievementView>div:nth-child(6){
-    top: -103vh;
-    right: -20vw;
+    top: -32vh;
+    left: 13vw;
     height: 30vh;
-    margin: auto;
+    margin: 0px;
     z-index: 3;
 }
 
 main>#achievementView>div:nth-child(6)>figure>img{
-    width: 50vh;
+    width: 23vw;
     height: 24vh;
 }
 
@@ -957,14 +968,15 @@ main>#achievementView>img:nth-child(8){
     bottom: 0;
     right: 2vw;
     margin: auto;
+
 }
 
 main>#galleryView{
     height: 85vh;
     width: 85vw;
-    margin-top: 7vh;
-    margin-left: 6vw;
-    margin-bottom: 7vh;
+    left: 0;
+    right: 0;
+    margin: auto;
     background: url("assets/BeautyPlus_20230323181232846_save.jpg");
     background-position: top;
     background-size: cover;
@@ -1043,9 +1055,10 @@ main>#galleryView>button>a{
 
 main>#artGalleryView{
     height: 85vh;
-    width: 85vw;margin-left: 6vw;
-    margin-top: 7vh;
-    margin-bottom: 7vh;
+    width: 85vw;
+    left: 0;
+    right: 0;
+    margin: auto;
     background: url("assets/BeautyPlus_20221018191601630_save.jpg");
     background-position: top;
     background-size: cover;
@@ -1189,7 +1202,7 @@ main>#graphView>section:last-child>div:first-child{
     background-color: #9A8265;
     position: absolute;
     z-index: 2;
-    left: -15vw;
+    right: 15vw;
 }
 
 main>#graphView>section:last-child>div:nth-child(2){
@@ -1209,7 +1222,7 @@ main>#graphView>section:last-child>div:last-child{
     background-color: #B2510B;
     position: absolute;
     z-index: 2;
-    left: -10vw;
+    right: 10vw;
     bottom: -10vh;
     border-radius: 0;
 }
@@ -1272,7 +1285,7 @@ main>#contactView>div:nth-child(3)>address>ul{
 }
 main>#contactView>div:nth-child(3)>address>ul>li{
     position: relative;
-    margin-left: -2vw;
+    right:  5vw;
 }
 
 main>#contactView>div:nth-child(3)>address>ul>li>h3{
@@ -1308,7 +1321,6 @@ main>#contactView>div:nth-child(3)>div>a>div{
     width: 4vw;
     height: 8vh;
     border-radius: 100%;
-    /*background: linear-gradient(180deg,  #655029 20%, black 100%) ;*/
     background-color: #655029 ;
     display: inline-block;
     opacity: 0.7;
@@ -1394,6 +1406,12 @@ footer{
     text-align: center;
     color: white;
     font-size: 1.4vw;
+}
+
+@media all and (max-width: 900px) {
+    body{
+        width: 97vw;
+    }
 }
 
 
