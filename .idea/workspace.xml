@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified portfolio tab responsive">
+    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified portfolio">
+      <change afterPath="$PROJECT_DIR$/mobile.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tab.css" beforeDir="false" afterPath="$PROJECT_DIR$/tab.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +40,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -47,10 +50,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assets" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assets\doc1" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assets\gallery" />
-      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS\Transition" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -86,7 +89,7 @@
       <workItem from="1694681138082" duration="6101000" />
       <workItem from="1694781957282" duration="11000000" />
       <workItem from="1694919357731" duration="101561000" />
-      <workItem from="1695353305225" duration="1729000" />
+      <workItem from="1695353305225" duration="10286000" />
     </task>
     <task id="LOCAL-00001" summary="modified case 2">
       <created>1693631818230</created>
@@ -333,7 +336,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695326781266</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="modified portfolio tab responsive">
+      <created>1695355174177</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1695355174177</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,10 +381,10 @@
     <MESSAGE value="modified portfolio assignments" />
     <MESSAGE value="modified portfolio contacts" />
     <MESSAGE value="modified portfolio tools" />
-    <MESSAGE value="modified portfolio" />
     <MESSAGE value="modified portfolio gallery" />
     <MESSAGE value="modified portfolio assessments" />
     <MESSAGE value="modified portfolio tab responsive" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified portfolio tab responsive" />
+    <MESSAGE value="modified portfolio" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified portfolio" />
   </component>
 </project>

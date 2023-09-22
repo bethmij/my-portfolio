@@ -1,155 +1,100 @@
-@media all and (max-width: 768px) {
+@media all and (max-width: 425px) {
 
     body{
-        width: 97vw;
+        width: 98vw;
+        border: 1px solid white;
     }
     body>header{
         width: 100%;
-        position: relative;
-        background-color: black;
-    }
-
-    body>img{
-        height: 100vh;
-        width: 97vw;
-        position: fixed;
-        z-index: -5;
-        opacity: 0.3;
+        background-color: red;
     }
 
     body>header>nav{
         display: none;
     }
-    body>header>div{
-        display: initial;
-        width: 6vw;
-        height: 6vh;
-        background-color: #292828;
-        border-radius: 20px 0 0 20px;
-        right: 0;
-        top: 2vh;
-        position: fixed;
-        z-index: 10;
-    }
 
     body>header>div>div{
-        width: 3.8vw;
-        height:4.5vh;
-        background-color:#655029 ;
-        border-radius: 100%;
-        margin-top: 3px;
-        margin-left: 6px ;
-        border: 2px solid #6C634C;
-        position: relative;
-        cursor: pointer;
-    }
-
-    body>header>div>div>img{
-        position: absolute;
-        width: 2vw;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
+        height:4vh;
     }
 
     main>#mainView{
+        height: 87vh;
     }
+
     main>#mainView>img:first-child{
-        content: url("assets/imgonline-com-ua-ReplaceColor-mheUofcLJdgMW9Npdf.jpg");
-        width: 96vw;
-        height: 96vh;
-        position: absolute;
-        left: 0;
+        height: 73vh;
 
     }
 
     main>#mainView>img:nth-child(2){
-        width: 35vw;
-        height: 60vh;
+        width: 40vw;
+        height: 40vh;
         position: absolute;
-        right: 20vw;
-        top: 10vh;
+        right: 30vw;
+        top: 20vh;
 
     }
 
     main>#mainView>section{
-        width: 80vw;
-        height: 90vh;
+        width: 90vw;
+        height: 80vh;
         position: relative;
-        top: 10vh;
-        left: 17vw;
+        top: 5vh;
+        left: 8vw;
     }
 
     main>#mainView>section>hgroup>h2:first-child{
-        font-size: 12vw;
-        font-weight: lighter;
-        opacity: 0.4;
-        top:3.2vh;
-        left: 4vw;
+        font-size: 16vw;
+        top:0;
+        left: 27vw;
     }
 
     main>#mainView>section>hgroup>h4{
-        font-size: 5vw;
-        font-weight: lighter;
-        position: absolute;
-        top:6vh;
-        left: 10vw;
+        font-size: 6vw;
+        top:3vh;
+        left: 35vw;
     }
 
     main>#mainView>section>hgroup>h2:nth-child(3){
-        font-size: 4vw;
-        position: absolute;;
-        top:17vh;
-        left: 0;
+        font-size: 5vw;
+        top:10vh;
+        left: 17vw;
     }
     main>#mainView>section>hgroup>h1{
-        font-size: 4.8vw;
-        position: absolute;
-        top:53vh;
-        left: 0;
-        z-index: 2;
-    }
-
-    main>#mainView>section>div{
-        display: none;
+        font-size: 5.7vw;
+        top:56vh;
     }
 
     main>#mainView>section>hgroup>p{
-        font-size: 2vw;
+        width: 58vw;
+        font-size: 2.8vw;
         position: absolute;
         top:61vh;
         left: 0;
     }
 
     main>#mainView>section>button:nth-child(3){
-        position: absolute;
         top:70vh;
-        left: 2vw;
-        height: 5vh;
-        width: 10vw;
-    }
-
-    main>#mainView>section>button:nth-child(3)>a,main>#mainView>section>button:nth-child(4)>a{
-        font-size: 2vw;
-    }
-
-    main>#mainView>section>button:nth-child(4){
-        position: absolute;
-        top:70vh;
-        left: 18vw;
-        height: 5vh;
+        left: 0;
+        height: 4vh;
         width: 15vw;
     }
 
+    main>#mainView>section>button:nth-child(3)>a,main>#mainView>section>button:nth-child(4)>a{
+        font-size: 2.6vw;
+    }
+
+    main>#mainView>section>button:nth-child(4){
+        top:70vh;
+        left: 18vw;
+        height: 4vh;
+        width: 20vw;
+    }
+
     main>#mainView>img:nth-child(3){
-        width: 10vw;
-        height: 6vh;
-        position: absolute;
-        left: 10vw;
-        top: 16.2vh;
-        opacity: 0.4;
+        height: 5vh;
+        left: 27vw;
+        top: 8vh;
     }
 
     main>#infoView{
@@ -771,53 +716,7 @@
         opacity: 0.8;
     }
 
-    @media all and (max-width: 550px) {
-        body{
-            width: 96vw;
-        }
 
-        main>#mainView>section{
-            width: 75vw;
-        }
-
-        main>#educationView>section:nth-child(6)>div:first-child{
-            left: 58vw;
-        }
-
-        main>#educationView>section:nth-child(6)>div:nth-child(2){
-            top: 18vh;
-            left: 70vw;
-        }
-
-        main>#infoView>section:last-child>div>img{
-            display: initial;
-            transform: rotate(90deg);
-            height: 20vh;
-            opacity: 0.8;
-            margin: 0px;
-        }
-
-        main>#infoView>section:last-child>div>img:nth-child(3){
-            position: absolute;
-            top: 0;
-            bottom: 4vh;
-            margin: auto;
-            right: 40vw;
-        }
-
-        main>#infoView>section:last-child>div>img:nth-child(4){
-            display: inline-block;
-            position: absolute;
-            top: 0;
-            bottom: 4vh;
-            margin: auto;
-            left: 40vw;
-        }
-
-
-
-
-    }
 
 
 
