@@ -651,7 +651,7 @@
     }
 
     main>#contactView{
-        height: 150vh;
+        height: 130vh;
     }
 
     main>#contactView>h2{
@@ -685,58 +685,42 @@
 
     main>#contactView>div:nth-child(3)>address>ul>li{
         position: relative;
-        right:  5vw;
+        right:  0;
+        top: 58vh;
     }
 
     main>#contactView>div:nth-child(3)>address>ul>li>h3{
-        font-family: 'Inder', sans-serif;
-        font-size: 1.3vw;
-        font-weight: lighter;
-        display: inline-block;
-        position: absolute;
-        margin-left: 2vw;
-        opacity: 0.8;
+        font-size: 2.2vw;
     }
 
     main>#contactView>div:nth-child(3)>address>ul>li>div{
-        width: 4vw;
+        width: 7vw;
         height: 8vh;
-        border-radius: 100%;
-        background: linear-gradient(180deg,  #DE9506 0%, black 100%) ;
-        display: inline-block;
-        opacity: 0.7;
-        position: relative;
     }
 
     main>#contactView>div:nth-child(3)>address>ul>li>div>img{
-        position: absolute;
-        top:0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
+        width: 70%;
     }
 
+    main>#contactView>div:nth-child(3)>div{
+        width: 60vw;
+        position: absolute;
+        left: 5vw;
+    }
     main>#contactView>div:nth-child(3)>div>a>div{
-        width: 4vw;
+        width: 7vw;
         height: 8vh;
         border-radius: 100%;
         background-color: #655029 ;
         display: inline-block;
         opacity: 0.7;
         position: relative;
-        margin-top: 6vh;
-        margin-right: 2vw;
+        top: 55vh;
 
     }
 
     main>#contactView>div:nth-child(3)>div>a>div>img{
-        position: absolute;
-        top:0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
+        width: 70%;
     }
 
     main>#contactView>div:nth-child(4){
@@ -755,8 +739,10 @@
     }
 
     main>#contactView>div:nth-child(4)>form>textarea{
-        width: 24vw;
-        height: 20vh;
+        width: 40vw;
+        height: 14vh;
+        margin-left: -15vw;
+        border: 1px solid #F6C827;
         padding-left: 1vw;
     }
 
@@ -766,21 +752,24 @@
     }
 
     main>#contactView>div:nth-child(4)>form>textarea::placeholder{
-        padding-top: 8vh;
+        padding-top: 5vh;
     }
 
     main>#contactView>div:nth-child(4)>form>button{
-        background-color: #3B311F;
-        border-color: #AB9A9A;
-        position: absolute;
-        left: 8vw;
-        border-radius: 10px;
+        left: 0;
         height: 6vh;
-        width: 7vw;
-        color: white;
-        cursor: pointer;
+        width: 12vw;
     }
 
+    main>#contactView>img{
+        width: 60vw;
+        top: 70vh;
+    }
+
+    footer{
+        font-size: 2.5vw;
+        opacity: 0.8;
+    }
 
 
 
