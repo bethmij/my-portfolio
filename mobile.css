@@ -1,8 +1,8 @@
 @media all and (max-width: 425px) {
 
     body{
-        width: 98vw;
-        border: 1px solid white;
+        /*width: 98vw;*/
+        /*border: 1px solid white;*/
     }
     body>header{
         width: 100%;

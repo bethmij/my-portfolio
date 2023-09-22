@@ -1,7 +1,8 @@
 @media all and (max-width: 768px) {
 
     body{
-        width: 97vw;
+        /*width: 97vw;*/
+        width: 100vw;
     }
     body>header{
         width: 100%;

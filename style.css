@@ -1,6 +1,5 @@
 
 body{
-    border: 1px solid white;
     background-color: black;
     /*width: 100vw;*/
     scroll-behavior: smooth;
@@ -1417,7 +1416,7 @@ footer{
 
 @media all and (max-width: 900px) {
     body{
-        width: 97vw;
+        /*width: 97vw;*/
     }
 }
 
