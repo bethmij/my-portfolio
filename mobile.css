@@ -1,11 +1,12 @@
 @media all and (max-width: 425px) {
 
+    *{
+
+    }
     body{
-        /*width: 98vw;*/
-        /*border: 1px solid white;*/
+        border: 1px solid red;
     }
     body>header{
-        width: 100%;
         background-color: red;
     }
 
@@ -13,17 +14,27 @@
         display: none;
     }
 
+    body>header>div{
+        height:6vw;
+    }
     body>header>div>div{
-        height:4vh;
+        margin-top: 2px;
+        height:4vw;
+    }
+
+    body>header>img{
+        top:4vw;
+        height: 6vw;
     }
 
     main>#mainView{
         height: 87vh;
+        width: 100%;
     }
 
     main>#mainView>img:first-child{
         height: 73vh;
-
+        width: 100%;
     }
 
     main>#mainView>img:nth-child(2){
@@ -40,7 +51,7 @@
         height: 80vh;
         position: relative;
         top: 5vh;
-        left: 8vw;
+        left: 9vw;
     }
 
     main>#mainView>section>hgroup>h2:first-child{
@@ -62,19 +73,19 @@
     }
     main>#mainView>section>hgroup>h1{
         font-size: 5.7vw;
-        top:56vh;
+        top:58vh;
     }
 
     main>#mainView>section>hgroup>p{
         width: 58vw;
         font-size: 2.8vw;
         position: absolute;
-        top:61vh;
+        top:63vh;
         left: 0;
     }
 
     main>#mainView>section>button:nth-child(3){
-        top:70vh;
+        top:72vh;
         left: 0;
         height: 4vh;
         width: 15vw;
@@ -85,7 +96,7 @@
     }
 
     main>#mainView>section>button:nth-child(4){
-        top:70vh;
+        top:72vh;
         left: 18vw;
         height: 4vh;
         width: 20vw;
@@ -98,36 +109,40 @@
     }
 
     main>#infoView{
-        display: block;
-        height: 145vh;
+        height: 168vh;
         position: relative;
     }
 
     main>#infoView>section{
-        width: 45vw;
+        width: 100%;
         height: 80vh;
+        margin-top: -5vh;
         position: relative;
-        display: inline-block;
+    }
+
+    main>#infoView>section>div>h2{
+        font-size: 4.5vw;
+        margin-left: 12vw;
     }
 
     main>#infoView>section>div{
         position: absolute;
         top: 7vh;
-        width: 35vw;
+        width: 60vw;
         font-size:2vw;
+        left: 12vw;
     }
 
-    main>#infoView>section>div>h2{
-        margin-left: 7vw;
+    main>#infoView>section>div>ul{
+        padding-left: 5vw;
     }
-
     main>#infoView>section>div>ul>li{
-        padding-bottom: 1vh;
+        padding-bottom: 1.5vh;
     }
 
     main>#infoView>section>div>ul>li>div{
-        width: 6vw;
-        height: 8vh;
+        width: 8vw;
+        height: 6vh;
         position: relative;
     }
 
@@ -137,42 +152,58 @@
     }
 
     main>#infoView>section>div>ul>li>h3{
-        font-size: 2vw;
-        width: 25vw;
+        width: 40vw;
+        font-size: 3vw;
         left: 7vw;
     }
 
+    main>#infoView>section:nth-child(2){
+        left: 0vw;
+        top: -20vh;
+    }
+
     main>#infoView>section:nth-child(3){
+        left: 0vw;
+        top: 105vh;
+    }
+
+    main>#infoView>section>div>img{
+        transform: rotate(90deg);
+        width: 10vw;
         position: absolute;
-        left: 0;
-        right: 0;
-        top: 70vh;
-        margin: auto;
+        height: 15vh;
+        opacity: 0.8;
+        top: 23vh;
+        display: inline;
     }
 
     main>#infoView>section:last-child>div>img{
-        display: initial;
-        transform: rotate(90deg);
-        height: 30vh;
-        opacity: 0.8;
+        width: 10vw;
+        height: 15vh;
+        top: -7vh;
     }
 
     main>#infoView>section:last-child>div>img:nth-child(3){
-        position: absolute;
-        top: 0;
-        bottom: 4vh;
-        margin: auto;
-        right: 40vw;
+        top: -7vh;
+        right: 62vw;
     }
 
     main>#infoView>section:last-child>div>img:nth-child(4){
-        display: inline-block;
-        position: absolute;
-        top: 0;
-        bottom: 4vh;
-        margin: auto;
-        left: 40vw;
+        top: -8vh;
+        left: 48vw;
     }
+
+    main>#infoView>section:first-child>div>img:nth-child(3),main>#infoView>section:nth-child(2)>div>img:nth-child(3){
+        top: 23vh;
+        right: 62vw;
+    }
+
+    main>#infoView>section:first-child>div>img:nth-child(4),main>#infoView>section:nth-child(2)>div>img:nth-child(4){
+        top: 23vh;
+        left: 46vw;
+
+    }
+
     main>#aboutView{
         position: relative;
     }
@@ -264,20 +295,22 @@
 
     main>#skillView>div:last-child>div>div:nth-child(2){
         width: 25vw;
-        height: 6vh;
+        height: 2vh;
         top: 18vh;
 
     }
 
     main>#skillView>div:last-child>div>div:nth-child(3){
-        width:35vw;
-        height: 6vh;
+        width:20vw;
+        height: 2vh;
     }
 
     main>#skillView>div:last-child>div>div:nth-child(4){
         width: 20vw;
-        height: 6vh;
+        height: 2vh;
     }
+
+
 
     main>#educationView{
         margin-top: 10vh;

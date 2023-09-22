@@ -2,7 +2,7 @@
 
     body{
         /*width: 97vw;*/
-        width: 100vw;
+        /*width: 100vw;*/
     }
     body>header{
         width: 100%;
@@ -12,10 +12,16 @@
 
     body>img{
         height: 100vh;
-        width: 97vw;
+        width: 100%;
         position: fixed;
         z-index: -5;
         opacity: 0.3;
+    }
+
+    body>header>img{
+        position: absolute;
+        top:2vw;
+        height: 5vw;
     }
 
     body>header>nav{
@@ -24,7 +30,7 @@
     body>header>div{
         display: initial;
         width: 6vw;
-        height: 6vh;
+        height: 6vw;
         background-color: #292828;
         border-radius: 20px 0 0 20px;
         right: 0;
@@ -35,10 +41,10 @@
 
     body>header>div>div{
         width: 3.8vw;
-        height:4.5vh;
+        height:4vw;
         background-color:#655029 ;
         border-radius: 100%;
-        margin-top: 3px;
+        margin-top: 6px;
         margin-left: 6px ;
         border: 2px solid #6C634C;
         position: relative;
@@ -211,11 +217,12 @@
         transform: rotate(90deg);
         height: 30vh;
         opacity: 0.8;
+        width: 30%;
     }
 
     main>#infoView>section:last-child>div>img:nth-child(3){
         position: absolute;
-        top: 0;
+        top: 2vw;
         bottom: 4vh;
         margin: auto;
         right: 40vw;
@@ -224,10 +231,10 @@
     main>#infoView>section:last-child>div>img:nth-child(4){
         display: inline-block;
         position: absolute;
-        top: 0;
+        top: 2vw;
         bottom: 4vh;
         margin: auto;
-        left: 40vw;
+        left: 42vw;
     }
     main>#aboutView{
         position: relative;
@@ -774,11 +781,12 @@
 
     @media all and (max-width: 550px) {
         body{
-            width: 96vw;
+            /*width: 96vw;*/
         }
 
         main>#mainView>section{
             width: 75vw;
+
         }
 
         main>#educationView>section:nth-child(6)>div:first-child{
