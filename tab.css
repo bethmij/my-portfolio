@@ -432,12 +432,7 @@
     }
 
     main>#projectView{
-        height: 100vh;
-    }
-
-    main>#projectView>div{
-        width: 30vw;
-        height: 60vh;
+        height: 120vw;
     }
 
     main>#projectView>div>figure>img{
@@ -453,80 +448,131 @@
 
     main>#projectView>div>figure>figcaption{
         font-size: 2vw;
-        padding-top: 2vh;
+        position: absolute;
+        left: 0;
+        right: 0;
+        padding-top: 15px;
     }
 
     main>#projectView>div:nth-child(2){
-        width: 40vw;
-        height: 60vh;
+        width: 30vw;
+        height: 30vw;
+        top: 71vw;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: unset;
+    }
+
+    main>#projectView>div>figure{
+        margin-top: -10px;
     }
 
     main>#projectView>div:nth-child(2)>figure>img{
-        width: 36vw;
-        height: 40vh;
+        top: 5vh;
+        width: 28vw;
+        height: 20vw;
     }
 
     main>#projectView>div:nth-child(2)>figure>figcaption{
-        font-size: 2.4vw;
+        position: absolute;
+        left: 0;
+        right: 0;
+        padding-top: 15px;
+        font-size: 2vw;
+        text-align: center;
     }
 
-   /* main>#projectView>div:nth-child(2)>figure>div:last-child>div>p:first-child{
-        font-size: 1.8vw;
-        margin-top: 8vh;
-    }
 
-    main>#projectView>div:nth-child(2)>figure>div:last-child>div>label:nth-child(2){
-        font-size: 1.8vw;
-    }
-
-    main>#projectView>div:nth-child(2)>figure>div:last-child>div>a>button{
-        width: 5vw;
-    }
-    main>#projectView>div:nth-child(2)>figure>div:last-child>div>label:nth-child(4){
-        font-size: 1.8vw;
-    }*/
 
     main>#projectView>div:nth-child(3){
-        height: 50vh;
-        top: 18vh;
+        position: absolute;
+        width: 25vw;
+        height: 25vw;
+        top: 73vw;
+        left: 66vw;
     }
 
     main>#projectView>div:nth-child(4){
-        top: -32vh;
-        height: 50vh;
+        position: absolute;
+        width: 25vw;
+        height: 25vw;
+        top: 73vw;
+        left: 7vw;
     }
 
     main>#projectView>div:nth-child(4)>figure>img, main>#projectView>div:nth-child(3)>figure>img{
-        height: 37vh;
+        width: 23vw;
+        height: 15vw;
     }
 
     main>#projectView>div:nth-child(5){
-        height: 40vh;
         top: -80vh;
+        width: 25vw;
+        height: 25vw;
+        display: none;
     }
 
     main>#projectView>div:nth-child(5)>figure>img,main>#projectView>div:nth-child(6)>figure>img{
-        height: 30vh;
+        width: 23vw;
+        height: 10vw;
     }
 
     main>#projectView>div:nth-child(6){
         position: absolute;
-        height: 40vh;
         top: 30vh;
         right: 10vw;
+        width: 35vw;
+        height: 35vw;
+        display: none;
+    }
+
+    main>#projectView>img:nth-child(8){
+        position: absolute;
+        width: 2vh;
+        top: 83vw;
+        left: 2vw;
+        bottom: unset;
+        margin: auto;
+    }
+
+    main>#projectView>img:nth-child(9){
+        position: absolute;
+        width: 2vh;
+        top: 83vw;
+        right: 2vw;
+        bottom: unset;
+        margin: auto;
     }
 
     main>#projectView>div:nth-child(7){
-        height: 5vh;
+        height: 6vw;
     }
 
     main>#projectView>div:nth-child(7)>p{
-        font-size: 2vw;
+        font-size: 3vw;
     }
 
     main>#projectView>div:nth-child(7)>a>button{
-        width: 14vw;
+        height: 5vw;
+        width: 20vw;
     }
+
+    main>#projectView>div:nth-child(7)>a{
+        font-size: 3vw;
+    }
+
+    main>#projectView>video{
+        position: absolute;
+        width: 80vw;
+        top: 13vw;
+        left: 0;
+        right: 0;
+        margin: auto;
+        padding-top: 10px;
+        border: 4px solid #2B2922;
+    }
+
 
     main>#achievementView>div:nth-child(2){
         top: -7vh;

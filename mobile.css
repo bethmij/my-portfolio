@@ -388,7 +388,7 @@
     }
 
     main>#projectView{
-        height: 83vh;
+        height: 120vw;
     }
 
     main>#projectView>div>figure>img{
@@ -413,7 +413,7 @@
     main>#projectView>div:nth-child(2){
         width: 30vw;
         height: 30vw;
-        top: 8vh;
+        top: 71vw;
         left: 0;
         right: 0;
         margin: auto;
@@ -445,7 +445,7 @@
         position: absolute;
         width: 25vw;
         height: 25vw;
-        top: 10vh;
+        top: 73vw;
         left: 68vw;
     }
 
@@ -453,7 +453,7 @@
         position: absolute;
         width: 25vw;
         height: 25vw;
-        top: 10vh;
+        top: 73vw;
         left: 7vw;
     }
 
@@ -486,7 +486,7 @@
     main>#projectView>img:nth-child(8){
         position: absolute;
         width: 2vh;
-        top:17vh;
+        top: 83vw;
         left: 2vw;
         bottom: unset;
         margin: auto;
@@ -495,7 +495,7 @@
     main>#projectView>img:nth-child(9){
         position: absolute;
         width: 2vh;
-        top:17vh;
+        top: 83vw;
         right: 2vw;
         bottom: unset;
         margin: auto;
@@ -521,7 +521,7 @@
     main>#projectView>video{
         position: absolute;
         width: 80vw;
-        top: 35vh;
+        top: 8vh;
         left: 0;
         right: 0;
         margin: auto;
@@ -624,32 +624,33 @@
     }
     main>#galleryView>img:first-child{
         width: 20vw;
-        top: 2vh;
+        top: 2vw;
     }
 
     main>#galleryView>hgroup>h4{
-        top: 12vh;
+        top: 16vw;
         font-size: 6vw;
     }
 
     main>#galleryView>hgroup>h2{
         font-size: 7vw;;
-        top: 19vh;
+        top: 25vw;
     }
 
     main>#galleryView>hgroup>blockquote{
-        font-size: 2.6vw;
+        font-size: 2.2vw;
         word-spacing: 2px;
         left: 2vw;
-        top: 27vh;
+        top: unset;
+        bottom: 10vw;
     }
 
     main>#galleryView>button{
-        height: 3vh;
-        width: 17vw;
-        font-size: 4vw;
+        height: 4vw;
+        width: 14vw;
+        font-size: 3vw;
         left: 5vw;
-        bottom: 2vh;
+        bottom: 5vw;
     }
 
     main>#artGalleryView{
@@ -659,33 +660,33 @@
 
     main>#artGalleryView>img:first-child{
         width: 20vw;
-        top: 2vh;
+        top: 2vw;
     }
 
     main>#artGalleryView>hgroup>h4{
-        top: 12vh;
+        top: 16vw;
         font-size: 6vw;
     }
 
     main>#artGalleryView>hgroup>h2{
         font-size: 7vw;;
-        top: 18vh;
+        top: 25vw;
     }
 
     main>#artGalleryView>hgroup>blockquote{
-        width: 70vw;
+        font-size: 2.2vw;
         word-spacing: 2px;
-        font-size: 2.6vw;
         left: 2vw;
-        top: 26vh;
+        top: unset;
+        bottom: 9vw;
     }
 
     main>#artGalleryView>button{
-        height: 3vh;
-        width: 17vw;
-        font-size: 4vw;
+        height: 4vw;
+        width: 14vw;
+        font-size: 3vw;
         left: 5vw;
-        bottom: 2vh;
+        bottom: 5vw;
     }
 
     main>#graphView{
