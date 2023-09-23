@@ -1,0 +1,142 @@
+main>#projectView{
+    height: 180vh;
+}
+
+main>#projectView>div{
+    width: 30vw;
+    height: 60vh;
+}
+
+main>#projectView>div>figure>img{
+    width: 25vw;
+    height: 45vh;
+    position: absolute;
+    top: 5vh;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+main>#projectView>div>figure>figcaption{
+    font-size: 2vw;
+    padding-top: 2vh;
+}
+
+main>#projectView>div:nth-child(2){
+    width: 80vw;
+    height: 60vw;
+}
+
+main>#projectView>img{
+    display: none;
+}
+
+main>#projectView>div:nth-child(2)>figure>img{
+    width: 75vw;
+    height: 45vw;
+    top: 7vh;
+}
+
+main>#projectView>div>figure>figcaption{
+    font-size: 3vw;
+    padding-top: 0px;
+    margin-top: -10px;
+}
+
+main>#projectView>div:nth-child(2)>figure>figcaption{
+    font-size: 3.6vw;
+    padding-top: 0px;
+
+}
+main>#projectView>div:nth-child(2)>figure>div:last-child>div>p:first-child{
+    font-size: 3vw;
+    margin-top: 5vh;
+}
+
+main>#projectView>div:nth-child(2)>figure>div:last-child>div>label:nth-child(2){
+    font-size: 3vw;
+}
+
+main>#projectView>div:nth-child(2)>figure>div:last-child>div>a>button{
+    width: 8vw;
+}
+main>#projectView>div:nth-child(2)>figure>div:last-child>div>label:nth-child(4){
+    font-size: 3vw;
+}
+
+main>#projectView>div:nth-child(3){
+    width: 70vw;
+    height: 50vw;
+    top: 50vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+main>#projectView>div:nth-child(3)>figure>figcaption{
+    padding-top: 11px;
+}
+
+main>#projectView>div:nth-child(4){
+    position: absolute;
+    width: 70vw;
+    height: 50vw;
+    top: 90vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+main>#projectView>div:nth-child(4)>figure>img, main>#projectView>div:nth-child(3)>figure>img{
+    height: 35vw;
+    width: 65vw;
+    top: 7vh;
+}
+
+main>#projectView>div:nth-child(5){
+    position: absolute;
+    width: 60vw;
+    height: 50vw;
+    top: 100vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+main>#projectView>div:nth-child(5)>figure>img,main>#projectView>div:nth-child(6)>figure>img{
+    height: 35vw;
+    width: 55vw;
+    top: 7vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+main>#projectView>div:nth-child(6){
+    width: 60vw;
+    height: 50vw;
+    top: 45vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+main>#projectView>div:nth-child(6)>figure>figcaption{
+    font-size: 2.5vw;
+    padding-top: -5vh;
+    margin-top: 0px;
+}
+
+main>#projectView>div:nth-child(7){
+    height: 5vh;
+}
+
+main>#projectView>div:nth-child(7)>p{
+    font-size: 2vw;
+}
+
+main>#projectView>div:nth-child(7)>a>button{
+    width: 14vw;
+}

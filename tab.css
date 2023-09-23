@@ -238,12 +238,17 @@
     }
     main>#aboutView{
         position: relative;
+        height: 70vw;
     }
-    main>#aboutView>pre{
+    main>#aboutView>code{
         margin-left: 5vw;
         color: white;
         font-size: 2vw;
         display: inline-block;
+    }
+
+    main>#aboutView>code>pre {
+        margin-left: -5vw;
     }
     main>#aboutView>img{
         position: absolute;
@@ -465,7 +470,7 @@
         font-size: 2.4vw;
     }
 
-    main>#projectView>div:nth-child(2)>figure>div:last-child>div>p:first-child{
+   /* main>#projectView>div:nth-child(2)>figure>div:last-child>div>p:first-child{
         font-size: 1.8vw;
         margin-top: 8vh;
     }
@@ -479,7 +484,7 @@
     }
     main>#projectView>div:nth-child(2)>figure>div:last-child>div>label:nth-child(4){
         font-size: 1.8vw;
-    }
+    }*/
 
     main>#projectView>div:nth-child(3){
         height: 50vh;

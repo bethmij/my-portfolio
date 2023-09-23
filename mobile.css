@@ -1,15 +1,5 @@
 @media all and (max-width: 425px) {
 
-    *{
-
-    }
-    body{
-        border: 1px solid red;
-    }
-    body>header{
-        background-color: red;
-    }
-
     body>header>nav{
         display: none;
     }
@@ -28,7 +18,7 @@
     }
 
     main>#mainView{
-        height: 87vh;
+        height: 82vh;
         width: 100%;
     }
 
@@ -206,24 +196,24 @@
 
     main>#aboutView{
         position: relative;
+        height: 120vw;
     }
-    main>#aboutView>pre{
-        margin-left: 5vw;
-        color: white;
-        font-size: 2vw;
+
+    main>#aboutView>code>pre{
+        margin-left: -13vw;
+        margin-top: 25vh;
+        font-size: 2.5vw;
         display: inline-block;
     }
     main>#aboutView>img{
         position: absolute;
-        right: 5vw;
-        top: 10vh;
-        width: 20vw;
+        top: 2vh;
+        right: 35vw;
         z-index: -1;
     }
 
-    main>#skillView{
-        margin-top: 5vh;
-        height: 215vh;
+    main>#aboutView>code {
+        margin-top: 2vh;
     }
 
     main>#skillView>section{
@@ -233,92 +223,104 @@
 
     }
 
+    main>#skillView{
+        height: 180vh;
+    }
+
     main>#skillView>section>div{
-        width: 47vw;
-        height: 55vh;
-        display: inline-block;
+        height: 45vh;
     }
 
     main>#skillView>h1,main>section:nth-child(9)>h2,main>section:nth-child(11)>h2,main>section:nth-child(13)>h2 {
-        font-size: 3.5vw;
+        font-size: 5vw;
     }
 
     main>#skillView>section>div>div{
-        width: 17vw;
-        height: 17vh;
+        width: 20vw;
+        height: 20vw;
+        margin-right: 10vw;
 
     }
 
     main>#skillView>section>div>div>img{
-        width: 10vw;
+        width: 13vw;
     }
 
     main>#skillView>section>div>h2,main>section:nth-child(7)>div>h2{
-        font-size: 3vw;
+        font-size: 4.5vw;
+        margin-left: 6vw;
     }
 
     main>#skillView>section>div>ul{
-        margin-left: 9vw;
-        font-size: 2.2vw;
+        margin-left: 3vw;
+        font-size: 3vw;
     }
 
     main>#skillView>section>div:nth-child(4)>ul{
-        margin-left: 14vw;
+        margin-left: 9vw;
     }
 
     main>#skillView>section>div:nth-child(3)>ul>li{
-        margin-left: 6vw;
+        margin-left: 2vw;
     }
 
     main>#skillView>div{
         position: absolute;
-        top: -28vh;
+        top: -55vh;
     }
     main>#skillView>div{
         position: relative;
-        display: inline-block;
-        width: calc(95vw/2);
-        height: 80vh;
-        position: relative;
+        height: 70vh;
     }
-
 
     main>#skillView>div>div>div:nth-child(2){
         width: 25vw;
-        height: 7vh;
+        height: 5.5vh;
+        margin-top: 0vh;
     }
 
     main>#skillView>div>div>div:nth-child(3){
         width:35vw;
-        height: 6vh;
+        height: 8vw;
+        margin-top: -5vh;
     }
 
     main>#skillView>div:last-child>div>div:nth-child(2){
         width: 25vw;
-        height: 2vh;
+        height: 7vw;
         top: 18vh;
 
     }
 
     main>#skillView>div:last-child>div>div:nth-child(3){
-        width:20vw;
-        height: 2vh;
+        width:40vw;
+        height: 7vw;
+        margin-top: -2vh;
     }
 
     main>#skillView>div:last-child>div>div:nth-child(4){
         width: 20vw;
-        height: 2vh;
+        height: 7vw;
+        margin-top: -5vh;
+    }
+
+    main>#skillView>div>div>img:last-child{
+        height: 15vh;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: 7vh;
     }
 
 
-
     main>#educationView{
-        margin-top: 10vh;
+        margin-top: 5vh;
 
     }
     main>#educationView>section>div:first-child{
         width: 35vw;
-        height: 1vh;
+        height: 0.5vh;
     }
 
 
@@ -327,28 +329,57 @@
         height: 12vh;
     }
 
-    main>#educationView>section:nth-child(6)>div:first-child{
-        left: 60vw;
+    main>#educationView>section>div:nth-child(2)>p{
+        font-size: 2.2vw;
     }
 
-    main>#educationView>section:nth-child(2)>div:nth-child(2){
-        bottom: 7vh;
-        left: 17vw;
+    main>#educationView>section:nth-child(2)>img{
+        position: absolute;
+        width: 22vw;
+        bottom: 5vh;
+        left: 4vw;
+
     }
 
-    main>#educationView>section:nth-child(3)>div:nth-child(2){
-        bottom: 27vh;
-        left: 32vw;
+    main>#educationView>section:nth-child(3)>img{
+        position: absolute;
+        width: 11vw;
+        bottom: 28vh;
+        left: 20vw;
     }
 
-    main>#educationView>section:nth-child(4)>div:nth-child(2){
-        bottom: 47vh;
-        left: 47vw;
+    main>#educationView>section:nth-child(4)>img{
+        position: absolute;
+        width: 11vw;
+        bottom: 42vh;
+        left: 37vw;
+    }
+
+    main>#educationView>section:nth-child(5)>img{
+        position: absolute;
+        width: 30vw;
+        bottom: 65vh;
+        right: 35vw;
+    }
+
+    main>#educationView>section:nth-child(6)>img{
+        position: absolute;
+        width: 24vw;
+        top: 8vh;
+        right: 20vw;
+    }
+
+    main>#educationView>section:nth-child(5)>div:nth-child(1){
+        left: 46vw;
+    }
+
+    main>#educationView>section:nth-child(6)>div:nth-child(1){
+        left: 61vw;
     }
 
     main>#educationView>section:nth-child(5)>div:nth-child(2){
         top: 39vh;
-        left: 62vw;
+        left: 60vw;
     }
 
     main>#educationView>section:nth-child(6)>div:nth-child(2){
@@ -356,53 +387,8 @@
         left: 72vw;
     }
 
-    main>#educationView>section>div:nth-child(2)>p{
-        font-size: 1.5vw;
-    }
-
-    main>#educationView>section:nth-child(2)>img{
-        position: absolute;
-        width: 18vw;
-        bottom: 4vh;
-        left: 4vw;
-
-    }
-
-    main>#educationView>section:nth-child(3)>img{
-        position: absolute;
-        width: 10vw;
-        bottom: 28vh;
-        left: 20vw;
-    }
-
-    main>#educationView>section:nth-child(4)>img{
-        position: absolute;
-        width: 10vw;
-        bottom: 40vh;
-        left: 35vw;
-    }
-
-    main>#educationView>section:nth-child(5)>img{
-        position: absolute;
-        width: 20vw;
-        bottom: 65vh;
-        right: 35vw;
-    }
-
-    main>#educationView>section:nth-child(6)>img{
-        position: absolute;
-        width: 20vw;
-        top: 0;
-        right: 20vw;
-    }
-
     main>#projectView{
-        height: 100vh;
-    }
-
-    main>#projectView>div{
-        width: 30vw;
-        height: 60vh;
+        height: 83vh;
     }
 
     main>#projectView>div>figure>img{
@@ -418,79 +404,129 @@
 
     main>#projectView>div>figure>figcaption{
         font-size: 2vw;
-        padding-top: 2vh;
+        position: absolute;
+        left: 0;
+        right: 0;
+        padding-top: 15px;
     }
 
     main>#projectView>div:nth-child(2){
-        width: 40vw;
-        height: 60vh;
+        width: 30vw;
+        height: 30vw;
+        top: 8vh;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: unset;
+    }
+
+    main>#projectView>div>figure{
+        margin-top: -10px;
     }
 
     main>#projectView>div:nth-child(2)>figure>img{
-        width: 36vw;
-        height: 40vh;
+        top: 5vh;
+        width: 28vw;
+        height: 20vw;
     }
 
     main>#projectView>div:nth-child(2)>figure>figcaption{
-        font-size: 2.4vw;
+        position: absolute;
+        left: 0;
+        right: 0;
+        padding-top: 15px;
+        font-size: 2vw;
+        text-align: center;
     }
 
-    main>#projectView>div:nth-child(2)>figure>div:last-child>div>p:first-child{
-        font-size: 1.8vw;
-        margin-top: 8vh;
-    }
 
-    main>#projectView>div:nth-child(2)>figure>div:last-child>div>label:nth-child(2){
-        font-size: 1.8vw;
-    }
-
-    main>#projectView>div:nth-child(2)>figure>div:last-child>div>a>button{
-        width: 5vw;
-    }
-    main>#projectView>div:nth-child(2)>figure>div:last-child>div>label:nth-child(4){
-        font-size: 1.8vw;
-    }
 
     main>#projectView>div:nth-child(3){
-        height: 50vh;
-        top: 18vh;
+        position: absolute;
+        width: 25vw;
+        height: 25vw;
+        top: 10vh;
+        left: 68vw;
     }
 
     main>#projectView>div:nth-child(4){
-        top: -32vh;
-        height: 50vh;
+        position: absolute;
+        width: 25vw;
+        height: 25vw;
+        top: 10vh;
+        left: 7vw;
     }
 
     main>#projectView>div:nth-child(4)>figure>img, main>#projectView>div:nth-child(3)>figure>img{
-        height: 37vh;
+        width: 23vw;
+        height: 15vw;
     }
 
     main>#projectView>div:nth-child(5){
-        height: 40vh;
         top: -80vh;
+        width: 25vw;
+        height: 25vw;
+        display: none;
     }
 
     main>#projectView>div:nth-child(5)>figure>img,main>#projectView>div:nth-child(6)>figure>img{
-        height: 30vh;
+        width: 23vw;
+        height: 10vw;
     }
 
     main>#projectView>div:nth-child(6){
         position: absolute;
-        height: 40vh;
         top: 30vh;
         right: 10vw;
+        width: 35vw;
+        height: 35vw;
+        display: none;
+    }
+
+    main>#projectView>img:nth-child(8){
+        position: absolute;
+        width: 2vh;
+        top:17vh;
+        left: 2vw;
+        bottom: unset;
+        margin: auto;
+    }
+
+    main>#projectView>img:nth-child(9){
+        position: absolute;
+        width: 2vh;
+        top:17vh;
+        right: 2vw;
+        bottom: unset;
+        margin: auto;
     }
 
     main>#projectView>div:nth-child(7){
-        height: 5vh;
+        height: 6vw;
     }
 
     main>#projectView>div:nth-child(7)>p{
-        font-size: 2vw;
+        font-size: 3vw;
     }
 
     main>#projectView>div:nth-child(7)>a>button{
-        width: 14vw;
+        height: 5vw;
+        width: 20vw;
+    }
+
+    main>#projectView>div:nth-child(7)>a{
+        font-size: 3vw;
+    }
+
+    main>#projectView>video{
+        position: absolute;
+        width: 80vw;
+        top: 35vh;
+        left: 0;
+        right: 0;
+        margin: auto;
+        padding-top: 10px;
+        border: 4px solid #2B2922;
     }
 
     main>#achievementView>div:nth-child(2){
@@ -506,150 +542,234 @@
 
     }
 
-    main>#galleryView{
-        height: 70vh;
-        width: 85vw;
+    main>#achievementView{
+        height: 40vh;
         margin-top: 5vh;
-        margin-bottom: 5vh;
+    }
+
+    main>#achievementView>div{
+        width: 30vw;
+        height: 25vw;
+    }
+
+    main>#achievementView>div>figure>img{
+        width: 28vw;
+        height: 23vw;
+        position: absolute;
+        top: 0;
+    }
+
+    main>#achievementView>div:nth-child(2){
+        width: 35vw;
+        height: 30vw;
+        top: 20vw;
+        bottom: unset;
+    }
+
+    main>#achievementView>div:nth-child(2)>figure>img{
+        width: 33vw;
+        height: 28vw;
+    }
+
+
+    main>#achievementView>div:nth-child(3){
+        top: 13vw;
+    }
+
+    main>#achievementView>div:nth-child(4){
+        top: 13vw;
+    }
+
+    main>#achievementView>div:nth-child(5){
+        position: absolute;
+        top: 25vw;;
+        left: 10vw;
+        width: 25vw;
+        height: 20vw;
+    }
+
+    main>#achievementView>div:nth-child(5)>figure>img{
+        width: 23vw;
+        height: 18vw;
+    }
+
+    main>#achievementView>div:nth-child(6){
+        position: absolute;
+        top: 25vw;
+        left: 65vw;
+        width: 25vw;
+        height: 20vw;
+    }
+
+    main>#achievementView>div:nth-child(6)>figure>img{
+        width: 23vw;
+        height: 18vw;
+    }
+
+    main>#achievementView>img:nth-child(7){
+        width: 2vh;
+        top:9vw;
+    }
+
+    main>#achievementView>img:nth-child(8){
+        width: 2vh;
+        top:9vw;
+
+    }
+
+    main>#galleryView{
+        height: 60vw;
+        width: 90vw;
 
     }
     main>#galleryView>img:first-child{
-        width: 23vw;
-        top: 5vh;
+        width: 20vw;
+        top: 2vh;
     }
 
     main>#galleryView>hgroup>h4{
-        top: 160px;
-        font-size: 5vw;
+        top: 12vh;
+        font-size: 6vw;
     }
 
     main>#galleryView>hgroup>h2{
         font-size: 7vw;;
-        top: 220px;
+        top: 19vh;
     }
 
     main>#galleryView>hgroup>blockquote{
-        font-size: 2vw;
+        font-size: 2.6vw;
+        word-spacing: 2px;
         left: 2vw;
-        top: 320px;
+        top: 27vh;
     }
 
     main>#galleryView>button{
-        height: 5vh;
-        width: 14vw;
-        font-size: 3vw;
+        height: 3vh;
+        width: 17vw;
+        font-size: 4vw;
         left: 5vw;
-        bottom: 5vh;
+        bottom: 2vh;
     }
 
     main>#artGalleryView{
-        height: 70vh;
-        width: 85vw;
-        margin-top: 5vh;
-        margin-bottom: 5vh;
-
+        height: 60vw;;
+        width: 90vw;
     }
 
     main>#artGalleryView>img:first-child{
-        width: 23vw;
-        top: 5vh;
+        width: 20vw;
+        top: 2vh;
     }
 
     main>#artGalleryView>hgroup>h4{
-        top: 160px;
-        font-size: 5vw;
+        top: 12vh;
+        font-size: 6vw;
     }
 
     main>#artGalleryView>hgroup>h2{
         font-size: 7vw;;
-        top: 220px;
+        top: 18vh;
     }
 
     main>#artGalleryView>hgroup>blockquote{
-        font-size: 2vw;
+        width: 70vw;
+        word-spacing: 2px;
+        font-size: 2.6vw;
         left: 2vw;
-        top: 320px;
+        top: 26vh;
     }
 
     main>#artGalleryView>button{
-        height: 5vh;
-        width: 14vw;
-        font-size: 3vw;
+        height: 3vh;
+        width: 17vw;
+        font-size: 4vw;
         left: 5vw;
-        bottom: 5vh;
+        bottom: 2vh;
     }
 
     main>#graphView{
-        height: 30vh;
+        height: 30vw;
     }
 
     main>#graphView>section{
-        height: 20vh;
-        border-radius: 10px;
+        height: 20vw;
     }
 
     main>#graphView>section>div{
-        width: 23vw;
-        height: 15vh;
-        border-radius: 10px;
+        width: 26vw;
+        height: 16vw;
     }
 
     main>#graphView>section:first-child>div>h3{
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
 
     main>#graphView>section:first-child>div>button{
-        top: 8vh;
-        height: 6vh;
-        cursor: pointer;
+        top: 6vh;
+        width: 6vw;
+        height: 6vw;
+    }
+
+    main>#graphView>section:first-child>div>button>img{
+        width: 90%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
     }
 
     main>#graphView>section:first-child>div>button:nth-child(2){
-        left: 5vw;
+        left: 6vw;
     }
 
     main>#graphView>section:first-child>div>button:nth-child(3){
-        left: 13vw;
+        left: 14vw;
     }
 
     main>#graphView>section:last-child>div:first-child{
-        height: 18vh;
+        height: 16vw;
     }
 
     main>#graphView>section:last-child>div:nth-child(2){
-        height: 4vh;
+        height: 5vw;
         width: 18vw;
         left: 3vw;
+        top: 5vw;
     }
 
     main>#graphView>section:last-child>div:last-child{
-        height: 4vh;
+        height: 5vw;
         width: 7vw;
-        right: 8vw;
+        top: -6vw;
     }
 
     main>#contactView{
-        height: 130vh;
+        height: 100vh;
     }
 
     main>#contactView>h2{
-        width: 35vw;
-        font-size: 8vw;
+        width: 45vw;
+        font-size: 11vw;
         left: 5vw;
     }
 
     main>#contactView>h3{
         width: 25vw;;
-        font-size: 3vw;
+        font-size: 4vw;
         top: 4vh;
+        left: -2vw;
     }
 
 
     main>#contactView>div:nth-child(3)>p{
         position: absolute;
-        width: 60vw;
-        font-size: 2.3vw;
-        left: 14vw;
+        width: 70vw;
+        font-size: 3.6vw;
+        left: 10vw;
+        top: -5vh;
         text-align: center;
     }
 
@@ -663,21 +783,22 @@
 
     main>#contactView>div:nth-child(3)>address>ul>li{
         position: relative;
-        right:  0;
-        top: 58vh;
+        right:  5vw;
+        top: 45vh;
     }
 
     main>#contactView>div:nth-child(3)>address>ul>li>h3{
-        font-size: 2.2vw;
+        width: 40vw;
+        font-size: 2.5vw;
     }
 
     main>#contactView>div:nth-child(3)>address>ul>li>div{
-        width: 7vw;
-        height: 8vh;
+        width: 8vw;
+        height: 8vw;
     }
 
     main>#contactView>div:nth-child(3)>address>ul>li>div>img{
-        width: 70%;
+        width: 60%;
     }
 
     main>#contactView>div:nth-child(3)>div{
@@ -686,14 +807,14 @@
         left: 5vw;
     }
     main>#contactView>div:nth-child(3)>div>a>div{
-        width: 7vw;
-        height: 8vh;
+        width: 8vw;
+        height: 8vw;
         border-radius: 100%;
         background-color: #655029 ;
         display: inline-block;
         opacity: 0.7;
         position: relative;
-        top: 55vh;
+        top: 40vh;
 
     }
 
@@ -706,42 +827,45 @@
     }
 
     main>#contactView>div:nth-child(4)>form>input{
-        width: 40vw;
-        height: 4vh;
+        width: 45vw;
+        height: 4vw;
         margin-left: -15vw;
-        border: 1px solid #F6C827;
+        border-radius: 4px;
     }
 
     main>#contactView>div:nth-child(4)>form>input:nth-child(1){
-        margin-top: 5vh;
+        margin-top: 4vh;
     }
 
     main>#contactView>div:nth-child(4)>form>textarea{
-        width: 40vw;
-        height: 14vh;
+        width: 45vw;
+        height: 8vh;
+        border-radius: 10px;
         margin-left: -15vw;
-        border: 1px solid #F6C827;
         padding-left: 1vw;
     }
 
     main>#contactView>div:nth-child(4)>form>input::placeholder,textarea::placeholder{
         color: white;
         padding-left: 1vw;
+        font-size: 2.5vw;
     }
 
     main>#contactView>div:nth-child(4)>form>textarea::placeholder{
-        padding-top: 5vh;
+        padding-top: 2.5vh;
     }
 
     main>#contactView>div:nth-child(4)>form>button{
         left: 0;
-        height: 6vh;
-        width: 12vw;
+        height: 6vw;
+        width: 20vw;
+        font-size: 3.2vw;
+        border-radius: 5px;
     }
 
     main>#contactView>img{
         width: 60vw;
-        top: 70vh;
+        top: 60vh;
     }
 
     footer{
