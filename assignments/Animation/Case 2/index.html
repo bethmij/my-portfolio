@@ -7,62 +7,55 @@
     <title>Case 2</title>
 
     <style>
-        section{
-            width: 100vw;
-            height: 100vh;
-            background-color: lightgrey;
-            position: relative;
+        body{
+            background-color: black;
         }
-
-        section>div {
-            width: 15vw;
-            height: 15vh;
-            border-radius: 10px;
+        main>div {
+            height: 30vw;
+            width: 30vw;
+            border-radius: 100%;
             position: absolute;
-            animation-name: rotate;
-            animation-duration: 7s;
-            animation-iteration-count: infinite;
-            animation-direction:alternate;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            background: linear-gradient(45deg, #1f2025, black ) ;
+
         }
 
-        @keyframes rotate {
+        main > div:first-child {
+            background: #DE9506;
+            animation-name: sun;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+        }
+
+        @keyframes sun {
             0% {
-                background-color: darkorange;
-                top: 10vh;
-                left: 2vw;
-                rotate: 0deg;
-            }
-            25% {
-                background-color: deeppink;
-                top: 70vh;
-                left: 2vw;
-                rotate: 180deg;
+                left: 70px;
+                bottom: 70px;
             }
             50% {
-                background-color: firebrick;
-                top: 70vh;
-                left: 80vw;
-                rotate: 360deg;
-            }
-            75% {
-                background-color: yellow;
-                top: 10vh;
-                left:80vw;
-                rotate: 180deg;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                box-shadow: 0 0 10vw 0px #DE9506;
             }
             100% {
-                background-color: darkorange;
-                top: 10vh;
-                left: 2vw;
-                rotate: 0deg;
+                right: 70px;
+                top: 70px;
             }
         }
     </style>
 </head>
 <body>
-
-<div></div>
-<div></div>
-
+    <main>
+        <div></div>
+        <div></div>
+    </main>
 </body>
 </html>
