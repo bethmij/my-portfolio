@@ -262,7 +262,7 @@ main>#infoView>section>div>ul>li{
 
 main>#infoView>section>div>ul>li>div{
     width: 5vw;
-    height: 10vh;
+    height: 5vw;
     border-radius: 100%;
     background: linear-gradient(180deg,  #DE9506 20%, black 100%) ;
     display: inline-block;
@@ -343,7 +343,7 @@ main>#skillView>h1,main>section:nth-child(9)>h2,main>section:nth-child(11)>h2,ma
 
 main>#skillView>section>div>div{
     width: 12vw;
-    height: 25vh;
+    height: 12vw;
     border-radius: 100%;
     border: 3px dotted #6A4A0C;
     left: 0;
@@ -921,17 +921,19 @@ main>#achievementView>div:nth-child(3){
 
 main>#achievementView>div:nth-child(4){
     top: 1vh;
-    left: 20vw;
+    left: 27vw;
     z-index: 4;
     margin: 0px;
+    border: 1px solid red;
 }
 
 main>#achievementView>div:nth-child(5){
     top: -1vh;
-    left: 2vw;
+    left: 10vw;
     height: 30vh;
     margin: auto;
     z-index: 3;
+
 }
 
 main>#achievementView>div:nth-child(5)>figure>img{
@@ -1306,7 +1308,7 @@ main>#contactView>div:nth-child(3)>address>ul>li>h3{
 
 main>#contactView>div:nth-child(3)>address>ul>li>div{
     width: 4vw;
-    height: 8vh;
+    height: 4vw;
     border-radius: 100%;
     background: linear-gradient(180deg,  #DE9506 0%, black 100%) ;
     display: inline-block;
@@ -1315,6 +1317,7 @@ main>#contactView>div:nth-child(3)>address>ul>li>div{
 }
 
 main>#contactView>div:nth-child(3)>address>ul>li>div>img{
+    width: 60%;
     position: absolute;
     top:0;
     bottom: 0;
@@ -1325,7 +1328,7 @@ main>#contactView>div:nth-child(3)>address>ul>li>div>img{
 
 main>#contactView>div:nth-child(3)>div>a>div{
     width: 4vw;
-    height: 8vh;
+    height: 4vw;
     border-radius: 100%;
     background-color: #655029 ;
     display: inline-block;
@@ -1337,6 +1340,7 @@ main>#contactView>div:nth-child(3)>div>a>div{
 }
 
 main>#contactView>div:nth-child(3)>div>a>div>img{
+    width: 70%;
     position: absolute;
     top:0;
     bottom: 0;
