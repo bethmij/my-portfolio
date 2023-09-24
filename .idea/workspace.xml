@@ -4,8 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="added animation case 2">
+    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="added animation case 3">
+      <change afterPath="$PROJECT_DIR$/assignments/Animation/Case 3/assets/1320758.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/Animation/Case 3/assets/2 (2).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/Animation/Case 3/assets/5.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/Animation/Case 3/assets/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/Animation/Case 3/assets/dfbh.avif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/Animation/Case 3/assets/download.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/Animation/Case 3/assets/wp11015295.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/Animation/Case 3/assets/wp9936566.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/Animation/Case 3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/Animation/Case 3/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignments/Animation" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignments/Animation/Case 3/assets" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -46,11 +55,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\Animation\Case 3\assets" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\Animation" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\Animation\Case 1" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assets\vid" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio" />
-      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assets\art" />
@@ -88,7 +97,7 @@
       <workItem from="1695353305225" duration="24465000" />
       <workItem from="1695449514308" duration="3455000" />
       <workItem from="1695458986614" duration="17353000" />
-      <workItem from="1695533104909" duration="5883000" />
+      <workItem from="1695533104909" duration="7613000" />
     </task>
     <task id="LOCAL-00001" summary="modified case 2">
       <created>1693631818230</created>
@@ -391,7 +400,21 @@
       <option name="project" value="LOCAL" />
       <updated>1695537527427</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="modified animation case 2">
+      <created>1695539058800</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1695539058801</updated>
+    </task>
+    <task id="LOCAL-00045" summary="added animation case 3">
+      <created>1695539149574</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1695539149574</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -409,8 +432,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added case 5" />
-    <MESSAGE value="added case 6" />
     <MESSAGE value="modified case 6" />
     <MESSAGE value="modified case 5" />
     <MESSAGE value="added transaction case 1" />
@@ -434,6 +455,8 @@
     <MESSAGE value="added animation case 1" />
     <MESSAGE value="modified animation case 1" />
     <MESSAGE value="added animation case 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="added animation case 2" />
+    <MESSAGE value="modified animation case 2" />
+    <MESSAGE value="added animation case 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="added animation case 3" />
   </component>
 </project>
