@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="added animation">
-      <change afterPath="$PROJECT_DIR$/assignments/Animation/Case 1/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/Animation/Case 1/normalize.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="added animation case 1">
+      <change afterPath="$PROJECT_DIR$/assignments/Animation/Case 2/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/Animation/Case 2/normalize.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/Animation/Case 1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/Animation/Case 1/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +38,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignments/Animation/Case 1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignments/Animation" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -48,11 +48,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\Animation" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\Animation\Case 1" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assets\vid" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assets" />
-      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assets\doc1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assets\art" />
@@ -90,7 +90,7 @@
       <workItem from="1695353305225" duration="24465000" />
       <workItem from="1695449514308" duration="3455000" />
       <workItem from="1695458986614" duration="17353000" />
-      <workItem from="1695533104909" duration="1962000" />
+      <workItem from="1695533104909" duration="2265000" />
     </task>
     <task id="LOCAL-00001" summary="modified case 2">
       <created>1693631818230</created>
@@ -372,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695533423208</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="added animation case 1">
+      <created>1695535160075</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1695535160075</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,7 +397,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added case 3" />
     <MESSAGE value="added case 4" />
     <MESSAGE value="modified case 4" />
     <MESSAGE value="added case 5" />
@@ -415,6 +421,7 @@
     <MESSAGE value="modified portfolio" />
     <MESSAGE value="modified portfolio responsive" />
     <MESSAGE value="added animation" />
-    <option name="LAST_COMMIT_MESSAGE" value="added animation" />
+    <MESSAGE value="added animation case 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="added animation case 1" />
   </component>
 </project>
