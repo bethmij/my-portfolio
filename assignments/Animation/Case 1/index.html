@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Case 1</title>
+
+    <style>
+        section{
+            width: 100vw;
+            height: 100vh;
+            background-color: lightgrey;
+            position: relative;
+        }
+
+        section>div {
+            width: 15vw;
+            height: 15vh;
+            border-radius: 10px;
+            position: absolute;
+            animation-name: rotate;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-direction:alternate;
+        }
+
+        @keyframes rotate {
+            0% {
+                background-color: darkorange;
+                top: 10vh;
+                left: 2vw;
+                rotate: 0deg;
+            }
+            25% {
+                background-color: deeppink;
+                top: 70vh;
+                left: 2vw;
+                rotate: 180deg;
+            }
+            50% {
+                background-color: firebrick;
+                top: 70vh;
+                left: 80vw;
+                rotate: 360deg;
+            }
+            75% {
+                background-color: yellow;
+                top: 10vh;
+                left:80vw;
+                rotate: 180deg;
+            }
+            100% {
+                background-color: darkorange;
+                top: 10vh;
+                left: 2vw;
+                rotate: 0deg;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <div></div>
+    </section>
+
+</body>
+</html>
