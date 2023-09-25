@@ -159,7 +159,7 @@
 
     main>#infoView{
         display: block;
-        height: 145vh;
+        height: 110vw;
         position: relative;
     }
 
@@ -172,7 +172,7 @@
 
     main>#infoView>section>div{
         position: absolute;
-        top: 7vh;
+        top: 7vw;
         width: 35vw;
         font-size:2vw;
     }
@@ -206,7 +206,7 @@
         position: absolute;
         left: 0;
         right: 0;
-        top: 70vh;
+        top: 55vw;
         margin: auto;
     }
 
@@ -218,10 +218,10 @@
         width: 30%;
     }
 
+
     main>#infoView>section:last-child>div>img:nth-child(3){
         position: absolute;
-        top: 2vw;
-        bottom: 4vh;
+        top: 16vw;
         margin: auto;
         right: 40vw;
     }
@@ -229,8 +229,7 @@
     main>#infoView>section:last-child>div>img:nth-child(4){
         display: inline-block;
         position: absolute;
-        top: 2vw;
-        bottom: 4vh;
+        top: 16vw;
         margin: auto;
         left: 42vw;
     }
@@ -257,20 +256,22 @@
     }
 
     main>#skillView{
-        margin-top: 5vh;
-        height: 215vh;
+        margin-top: 10vw;
+        height: 180vw;
+        margin-bottom: 5vw;
     }
 
     main>#skillView>section{
         display: block;
-        height: 150vh;
-        margin-top: 7vh;
+        height: 120vw;
+        margin-top: 7vw;
+
 
     }
 
     main>#skillView>section>div{
         width: 47vw;
-        height: 55vh;
+        height: 50vw;
         display: inline-block;
     }
 
@@ -280,7 +281,7 @@
 
     main>#skillView>section>div>div{
         width: 17vw;
-        height: 17vh;
+        height: 15vw;
 
     }
 
@@ -305,47 +306,57 @@
         margin-left: 6vw;
     }
 
-    main>#skillView>div{
-        position: absolute;
-        top: -28vh;
-    }
+
     main>#skillView>div{
         position: relative;
         display: inline-block;
         width: calc(95vw/2);
-        height: 80vh;
+        height: 78vw;
         position: relative;
+        top: -20vw;
+        margin-bottom: 10vw;
     }
 
 
     main>#skillView>div>div>div:nth-child(2){
         width: 25vw;
-        height: 7vh;
+        height: 6vw;
     }
 
     main>#skillView>div>div>div:nth-child(3){
         width:35vw;
-        height: 6vh;
+        height: 5vw;
     }
 
     main>#skillView>div:last-child>div>div:nth-child(2){
         width: 25vw;
-        height: 6vh;
-        top: 18vh;
+        height: 5vw;
+        /*top: 14vw;*/
 
     }
 
     main>#skillView>div:last-child>div>div:nth-child(3){
         width:35vw;
-        height: 6vh;
+        height: 5vw;
     }
 
     main>#skillView>div:last-child>div>div:nth-child(4){
         width: 20vw;
-        height: 6vh;
+        height: 5vw;
     }
 
-    main>#educationView{
+    main>#educationView>section>div:nth-child(2){
+        width: 20vw;
+        height: 11vw;
+
+    }
+
+    main>#educationView>section>div:nth-child(2)>p{
+        margin-top: 5px;
+        font-size: 1.5vw;
+    }
+
+    /*main>#educationView{
         margin-top: 10vh;
 
     }
@@ -427,7 +438,7 @@
         width: 20vw;
         top: 0;
         right: 20vw;
-    }
+    }*/
 
     main>#projectView{
         height: 120vw;
@@ -828,6 +839,22 @@
         opacity: 0.8;
     }
 
+    @media all and (max-width: 630px) {
+        main>#infoView>section:last-child>div>img:nth-child(3){
+            top: 15vw;
+        }
+
+        main>#infoView>section:last-child>div>img:nth-child(4){
+            top: 15vw;
+        }
+
+        main>#skillView{
+            margin-top: 10vh;
+            height: 190vw;
+            margin-bottom: 5vw;
+        }
+    }
+
     @media all and (max-width: 550px) {
         body{
             /*width: 96vw;*/
@@ -843,7 +870,7 @@
         }
 
         main>#educationView>section:nth-child(6)>div:nth-child(2){
-            top: 18vh;
+
             left: 70vw;
         }
 
@@ -856,20 +883,33 @@
         }
 
         main>#infoView>section:last-child>div>img:nth-child(3){
-            position: absolute;
-            top: 0;
-            bottom: 4vh;
-            margin: auto;
-            right: 40vw;
+            top: 20vw;
         }
 
         main>#infoView>section:last-child>div>img:nth-child(4){
-            display: inline-block;
+            top: 20vw;
+        }
+
+        main>#skillView{
+            margin-top: 10vh;
+            height: 200vw;
+            margin-bottom: 5vw;
+        }
+
+        main>#educationView>section:nth-child(6)>div:first-child{
             position: absolute;
-            top: 0;
-            bottom: 4vh;
-            margin: auto;
-            left: 40vw;
+            bottom: 65vw;
+            left: unset;
+            right: 4vw;
+            margin: 0px;
+        }
+
+        main>#educationView>section:nth-child(6)>div:nth-child(2){
+            position: absolute;
+            bottom: 66vw;
+            left: unset;
+            right: 2vw;
+            margin: 0px;
         }
 
 
