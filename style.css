@@ -2,14 +2,14 @@
 body{
     background-color: black;
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 body>img{
     height: 100vh;
     width: 100%;
     position: fixed;
     z-index: -5;
-    opacity: 0.3;
+    opacity: 0.6;
 }
 body>div{
     height: 100vh;
@@ -96,13 +96,14 @@ main>#mainView>section{
     left: 5vw;
 }
 
-main>#mainView>section>hgroup>h2:first-child{
+main>#mainView>section>hgroup>h2:nth-child(2){
     font-family: 'Italianno', cursive;
-    font-size: 7vw;
+    font-weight: lighter;
+    font-size: 8vw;
     position: absolute;
     color: #DE9506;
     opacity: 0.4;
-    top:7vh;
+    top:2.5vw;
     margin: 0;
 }
 
@@ -112,12 +113,13 @@ main>#mainView>section>hgroup>h4{
     font-weight: lighter;
     position: absolute;
     color: white;
-    top:9vh;
+    top:4vw;
     left: 30px;
     margin: 0;
+    opacity: 0.8;
 }
 
-main>#mainView>section>hgroup>h2:nth-child(3){
+main>#mainView>section>hgroup>h2:nth-child(4){
     font-family: 'Bricolage Grotesque', cursive;
     font-size: 3vw;
     font-weight: normal;
@@ -131,28 +133,37 @@ main>#mainView>section>hgroup>h2:nth-child(3){
 span{
     color: #DE9506;
 }
-
-main>#mainView>section>hgroup>h1{
+main>#mainView>section>hgroup>div{
+    width: 70vw;
+    height: 10vh;
+    position: relative;
+    top:37vh;
+    left: 30px;
+    /*border: 1px solid red;*/
+}
+main>#mainView>section>hgroup>div>h1{
+    width: 70vw;
+    height: 5vw;
     font-family: 'Bricolage Grotesque', cursive;
     font-size: 4vw;
     font-weight: normal;
     position: absolute;
     color: white;
-    top:39vh;
-    left: 30px;
-    margin: 0;
+    top:0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
     z-index: 2;
 }
-
-
-
-main>#mainView>section>div{
+main>#mainView>section>hgroup>div>div{
     position: absolute;
     width: 12vw;
-    height: 40vh;
+    height: 18vw;
     border: 5px solid #DE9506;
-    right: 0;
-    top:25vh;
+    right: 5.2vw;
+    top:0;
+    bottom: 0;
+    margin: auto;
 }
 
 main>#mainView>section>hgroup>p{
@@ -167,41 +178,41 @@ main>#mainView>section>hgroup>p{
     opacity: 0.7;
 }
 
-main>#mainView>section>button:nth-child(3){
+main>#mainView>section>button:nth-child(2){
     position: absolute;
-    size: 50px;
     top:73vh;
     left: 30px;
     margin: 0;
     height: 5vh;
-    width: 7vw;
-    background-color: #625A46;
+    width: 9vw;
+    background-color: transparent;
+    border: 1px solid #DE9506;
+    border-radius: 10px;
+}
+
+main>#mainView>section>button:nth-child(2)>a{
+    font-family: "Lucida Fax";
+    color: white;
+    font-size: 1.3vw;
+    text-decoration: none;
+}
+
+main>#mainView>section>button:nth-child(3){
+    position: absolute;
+    top:73vh;
+    left: 180px;
+    margin: 0;
+    height: 5vh;
+    width: 10vw;
+    background-color: transparent;
     border: 1px solid #DE9506;
     border-radius: 10px;
 }
 
 main>#mainView>section>button:nth-child(3)>a{
+    font-family: "Lucida Fax";
     color: white;
-    font-size: 1.1vw;
-    text-decoration: none;
-}
-
-main>#mainView>section>button:nth-child(4){
-    position: absolute;
-    size: 50px;
-    top:73vh;
-    left: 180px;
-    margin: 0;
-    height: 5vh;
-    width: 7vw;
-    background-color: #625A46;
-    border: 1px solid #DE9506;
-    border-radius: 10px;
-}
-
-main>#mainView>section>button:nth-child(4)>a{
-    color: white;
-    font-size: 1vw;
+    font-size: 1.2vw;
     text-decoration: none;
 }
 
@@ -209,18 +220,20 @@ hr{
     opacity: 0.2;
 }
 
-main>#mainView>img:nth-child(3){
+main>#mainView>section>hgroup>img{
     width: 5vw;
-    height: 10vh;
+    height: 3vw;
     position: absolute;
-    left: 15px;
-    top: 19.4vh;
+    left: -4vw;
+    top: 5vw;
     opacity: 0.4;
 }
 
 main>#infoView{
     display: flex;
-    height: 95vh;
+    height: 50vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
 }
 
 main>#infoView>section>div>img{
@@ -318,13 +331,13 @@ main>#aboutView>img{
 }
 
 main>#skillView{
-    margin-top: 0vh;
+    margin-top: 5vw;
     color: white;
 }
 
 main>#skillView>section{
     display: flex;
-    height: 84vh;
+    height: 40vw;
     margin-top: 10vh;
 
 }
@@ -370,6 +383,7 @@ main>#skillView>section>div>h2,main>section:nth-child(7)>div>h2{
     font-size: 2vw;
     text-align: center;
     color: #E5C079;
+    margin-bottom: 3vw;
 
 }
 
@@ -399,7 +413,9 @@ main>#skillView>div{
     position: relative;
     display: inline-block;
     width: calc(99%/2);
+
     height: 80vh;
+    margin-bottom: 5vw;
     position: relative;
 }
 
@@ -500,15 +516,15 @@ main>#skillView>div:last-child>div>div:nth-child(4){
 
 
 main>#educationView{
-    height: 120vh;
+    height: 80vw;
     color: white;
-    margin-top: 7vh;
+    margin-top: 6vw;
     position: relative;
 
 }
 main>#educationView>section>div:first-child{
     width: 30vw;
-    height: 1vh;
+    height: 0.5vw;
     background: linear-gradient(90deg, #655029, black);
     box-shadow: 4px 3px 4px 0 #2B2922;
     margin: 10px;
@@ -516,32 +532,32 @@ main>#educationView>section>div:first-child{
 }
 main>#educationView>section:nth-child(2)>div:first-child{
     position: absolute;
-    bottom: 5vh;
+    bottom: 5vw;
     left: 5vw;
 }
 
 main>#educationView>section:nth-child(3)>div:first-child{
     position: absolute;
-    bottom: 25vh;
+    bottom: 20vw;
     left: 20vw;
 }
 
 main>#educationView>section:nth-child(4)>div:first-child{
     position: absolute;
-    bottom: 45vh;
+    bottom: 35vw;
     left: 35vw;
 }
 
 main>#educationView>section:nth-child(5)>div:first-child{
     position: absolute;
-    top: 52vh;
-    left: 50vw;
+    bottom: 50vw;
+    right: 18vw;
 }
 
 main>#educationView>section:nth-child(6)>div:first-child{
     position: absolute;
-    top: 31vh;
-    left: 65vw;
+    bottom: 65vw;
+    right: 4vw;
     margin: 0px;
 }
 
@@ -556,33 +572,33 @@ main>#educationView>section>div:nth-child(2){
 }
 main>#educationView>section:nth-child(2)>div:nth-child(2){
     position: absolute;
-    bottom: 6vh;
+    bottom: 6vw;
     left: 15vw;
 
 }
 
 main>#educationView>section:nth-child(3)>div:nth-child(2){
     position: absolute;
-    bottom: 26vh;
-    left: 28vw;
+    bottom: 21vw;
+    left: 30vw;
 
 }
 
 main>#educationView>section:nth-child(4)>div:nth-child(2){
     position: absolute;
-    bottom: 46vh;
+    bottom: 36vw;
     left: 45vw;
 }
 
 main>#educationView>section:nth-child(5)>div:nth-child(2){
     position: absolute;
-    top: 36vh;
+    bottom: 51vw;
     left: 60vw;
 }
 
 main>#educationView>section:nth-child(6)>div:nth-child(2){
     position: absolute;
-    top: 16vh;
+    bottom: 66vw;
     left: 75vw;
     margin: 0px;
 }
@@ -593,34 +609,39 @@ main>#educationView>section>div:nth-child(2)>p{
 }
 
 main>#educationView>section:nth-child(2)>img{
+    width: 12%;
     position: absolute;
-    bottom: 4vh;
+    bottom: 4vw;
     left: 5vw;
 
 }
 
 main>#educationView>section:nth-child(3)>img{
+    width: 7%;
     position: absolute;
-    bottom: 28vh;
+    bottom: 22vw;
     left: 23vw;
 }
 
 main>#educationView>section:nth-child(4)>img{
+    width: 7%;
     position: absolute;
-    bottom: 39vh;
+    bottom: 32vw;
     left: 38vw;
 }
 
 main>#educationView>section:nth-child(5)>img{
+    width: 17%;
     position: absolute;
-    bottom: 65vh;
-    right: 35vw;
+    bottom:49vw;
+    right: 37vw;
 }
 
 main>#educationView>section:nth-child(6)>img{
+    width: 15%;
     position: absolute;
-    top: -11vh;
-    right: 19vw;
+    bottom:65vw;
+    right: 21vw;
 }
 
 main>#projectView{
@@ -820,9 +841,8 @@ main>#projectView>div:nth-child(7)>p{
 }
 
 main>#projectView>div:nth-child(7)>a>button{
-    size: 50px;
     height: 5vh;
-    width: 7vw;
+    /*width: 8vw;*/
     background-color: #2B2922;
     border: 1px solid #DE9506;
     border-radius: 10px;
@@ -884,11 +904,8 @@ main>#achievementView>div:nth-child(2){
     height: 40vh;
     background-color: #2B2922;
     position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    margin: auto;
+    top: 7vh;
+    left: 33vw;
     mix-blend-mode: normal;
     z-index: 5;
 }
@@ -974,7 +991,7 @@ main>#achievementView>img:nth-child(8){
 }
 
 main>#galleryView{
-    height: 85vh;
+    height: 40vw;
     width: 85vw;
     left: 0;
     right: 0;
@@ -984,15 +1001,15 @@ main>#galleryView{
     background-size: cover;
     position: relative;
     color: white;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
 
 }
 main>#galleryView>img:first-child{
     position: absolute;
     left: 5vw;
     width: 15vw;
-    top: 5vh;
+    top: 3vw;
 }
 
 main>#galleryView>hgroup>h4{
@@ -1001,7 +1018,7 @@ main>#galleryView>hgroup>h4{
     font-size: 3vw;
     position: absolute;
     left: 5vw;
-    top: 25vh;
+    top: 12vw;
 }
 
 main>#galleryView>hgroup>h2{
@@ -1010,7 +1027,7 @@ main>#galleryView>hgroup>h2{
     font-size: 4vw;
     position: absolute;
     left: 5vw;
-    top: 35vh;
+    top: 16vw;
 }
 
 main>#galleryView>hgroup>h2>span{
@@ -1030,7 +1047,7 @@ main>#galleryView>hgroup>blockquote{
     word-spacing: 8px;
     position: absolute;
     left: 5vw;
-    top: 55vh;
+    top: 25vw;
     opacity: 0.5;
 }
 
@@ -1043,7 +1060,7 @@ main>#galleryView>button{
     font-size: 1.6vw;
     position: absolute;
     left: 5vw;
-    bottom: 8vh;
+    bottom: 3vw;
 }
 
 main>#galleryView>button:hover,#artGalleryView>button:hover{
@@ -1058,7 +1075,7 @@ main>#galleryView>button>a{
 
 
 main>#artGalleryView{
-    height: 85vh;
+    height: 40vw;
     width: 85vw;
     left: 0;
     right: 0;
@@ -1068,12 +1085,14 @@ main>#artGalleryView{
     background-size: cover;
     position: relative;
     color: white;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
 }
 main>#artGalleryView>img:first-child{
     position: absolute;
     left: 5vw;
     width: 15vw;
-    top: 5vh;
+    top: 3vw;
 }
 
 main>#artGalleryView>hgroup>h4{
@@ -1082,7 +1101,7 @@ main>#artGalleryView>hgroup>h4{
     font-size: 3vw;
     position: absolute;
     left: 5vw;
-    top: 25vh;
+    top: 12vw;
 }
 
 main>#artGalleryView>hgroup>h2{
@@ -1091,7 +1110,7 @@ main>#artGalleryView>hgroup>h2{
     font-size: 4vw;
     position: absolute;
     left: 5vw;
-    top: 35vh;
+    top: 16vw;
 }
 
 main>#artGalleryView>hgroup>h2>span{
@@ -1111,7 +1130,7 @@ main>#artGalleryView>hgroup>blockquote{
     word-spacing: 8px;
     position: absolute;
     left: 5vw;
-    top: 55vh;
+    top: 25vw;
     opacity: 0.5;
 }
 
@@ -1124,7 +1143,7 @@ main>#artGalleryView>button{
     font-size: 1.6vw;
     position: absolute;
     left: 5vw;
-    bottom: 7vh;
+    bottom: 3vw;
 }
 
 main>#artGalleryView>button>a{
@@ -1176,8 +1195,13 @@ main>#graphView>section:first-child>div>button{
     background-color: #2B2922;
     border-color: transparent;
     border-radius: 100%;
-    height: 6vh;
+    width: 3.5vw;
+    height: 3.5vw;
     cursor: pointer;
+}
+
+main>#graphView>section:first-child>div>button>img{
+    width: 90%;
 }
 
 main>#graphView>section:first-child>div>button:nth-child(2):hover{
@@ -1191,13 +1215,13 @@ main>#graphView>section:first-child>div>button:nth-child(3):hover{
 main>#graphView>section:first-child>div>button:nth-child(2){
     position: absolute;
     left: 6vw;
-    bottom: 2vh;
+    top: 11vh;
 }
 
 main>#graphView>section:first-child>div>button:nth-child(3){
     position: absolute;
     left: 11vw;
-    bottom: 2vh;
+    top: 11vh;
 }
 
 main>#graphView>section:last-child>div:first-child{
@@ -1234,7 +1258,7 @@ main>#graphView>section:last-child>div:last-child{
 main>#contactView{
     height: 90vh;
     position: relative;
-    background: linear-gradient(180deg, black, #3B311F);
+    background: linear-gradient(180deg, transparent, #3B311F);
     opacity: 0.8;
 }
 
@@ -1419,10 +1443,266 @@ footer{
     opacity: 0.8;
 }
 
-@media all and (max-width: 900px) {
-    body{
-        /*width: 97vw;*/
+@media all and (max-width: 1024px) {
+    main>#mainView>section>hgroup>div>div{
+        right: 5.0vw;
     }
+
+    main>#mainView>section>hgroup>h2:nth-child(4){
+        font-size: 4vw;
+        top:28vh;
+    }
+
+    main>#mainView>section>hgroup>div{
+        width: 75vw;
+        top:38vh;
+    }
+    main>#mainView>section>hgroup>div>h1{
+        font-size: 4.4vw;
+    }
+    main>#mainView>section>hgroup>div>div{
+        right: 4.8vw;
+    }
+
+    main>#mainView>section>hgroup>p{
+        font-size: 1.8vw;
+    }
+
+    main>#mainView>section>button:nth-child(2){
+        top:70vh;
+    }
+
+    main>#mainView>section>button:nth-child(2)>a{
+        font-size: 1.4vw;
+    }
+
+    main>#mainView>section>button:nth-child(3){
+        top:70vh;
+        width: 12vw;
+    }
+
+    main>#mainView>section>button:nth-child(3)>a{
+        font-size: 1.4vw;
+    }
+
+    main>#mainView>img:nth-child(2){
+        width: 32vw;
+        height: 85vh;
+        position: absolute;
+        right: 4vw;
+        top: 10vh;
+
+    }
+
+    main>#aboutView>code{
+        margin-left: 7vw;
+
+    }
+
+    main>#aboutView>code>pre {
+        margin-left: 1vw;
+    }
+
+    main>#skillView>h1,main>section:nth-child(9)>h2,main>section:nth-child(11)>h2,main>section:nth-child(13)>h2 {
+        font-size: 2.9vw;
+    }
+
+    main>#skillView>div>div>div:nth-child(2){
+        height: 8vh;
+    }
+
+    main>#skillView>div>div>div:nth-child(3){
+        height: 7vh;
+    }
+
+    main>#skillView>div:last-child>div>div:nth-child(2){
+        width: 25vw;
+        height: 7vh;
+    }
+
+    main>#skillView>div:last-child>div>div:nth-child(3){
+        width:30vw;
+        height: 7vh;
+    }
+
+    main>#skillView>div:last-child>div>div:nth-child(4){
+        width: 25vw;
+        height: 7vh;
+    }
+
+    main>#projectView>div:nth-child(3){
+        left: 78.5vw;
+    }
+
+    main>#projectView>div:nth-child(4){
+        left: 78.5vw;;
+    }
+
+    main>#mainView>section>button:nth-child(3){
+        top:70vh;
+        left: 15vw;
+    }
+
+    main>#projectView>div:nth-child(7)>p{
+        margin-top: 2.7vh;
+        font-size: 1.8vw;
+    }
+
+    main>#galleryView{
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+
+    main>#galleryView>hgroup>h4{
+        font-size: 3.5vw;
+    }
+
+    main>#galleryView>hgroup>h2{;
+        font-size: 5vw;
+    }
+
+    main>#galleryView>hgroup>blockquote{
+        font-size: 1.5vw;
+    }
+
+    main>#galleryView>button{
+        height: 2.5vw;
+    }
+
+    main>#artGalleryView{
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+
+    main>#artGalleryView>hgroup>h4{
+        font-size: 3.5vw;
+    }
+
+    main>#artGalleryView>hgroup>h2{;
+        font-size: 5vw;
+    }
+
+    main>#artGalleryView>hgroup>blockquote{
+        font-size: 1.5vw;
+    }
+
+    main>#artGalleryView>button{
+        height: 2.5vw;
+    }
+
+    main>#graphView>section>div{
+        width: 23vw;
+        height: 14vw;
+    }
+
+    main>#graphView>section:first-child>div>h3{
+        font-size: 2vw;
+    }
+
+    main>#graphView>section:first-child>div>button{
+        width: 5vw;
+        height: 5vw;
+    }
+
+    main>#graphView>section:first-child>div>button:nth-child(2){
+        left: 6vw;
+        top: 13vh;
+    }
+
+    main>#graphView>section:first-child>div>button:nth-child(3){
+        left: 13vw;
+        top: 13vh;
+    }
+    main>#graphView>section:first-child>div>button>img{
+        width: 90%;
+    }
+
+    main>#contactView{
+        height: 85vh;
+    }
+
+    main>#contactView>h2{
+        width: 30vw;
+        font-size: 7vw;
+        left: 8vw;
+    }
+
+    main>#contactView>h3{
+        width: 20vw;
+        font-size: 2.5vw;
+        left: 5vw;
+    }
+
+    main>#contactView>div:nth-child(3){
+        width: 40vw;
+        height: 70vh;
+        margin-top: 16vh;
+        margin-left: 4vw;
+        position: relative;
+        color: white;
+        display: inline-block;
+    }
+
+    main>#contactView>div:nth-child(3)>p{
+        font-size: 1.6vw;
+    }
+
+    main>#contactView>div:nth-child(3)>address>ul>li>h3{
+        font-size: 1.5vw;
+    }
+
+    main>#contactView>div:nth-child(4){
+        top: 20vh;
+    }
+
+    main>#contactView>div:nth-child(4)>form>button{
+        left: 7vw;
+        width: 10vw;
+    }
+
+    main>#contactView>img{
+        top: 15vh;
+    }
+
+
+
+}
+
+@media all and (max-width: 870px) {
+
+    main>#mainView>section>hgroup>div>div{
+        right: 5.0vw;
+    }
+    main>#mainView>section>hgroup>h2:nth-child(4){
+        font-size: 4.3vw;
+        top:29vh;
+    }
+
+    main>#mainView>section>hgroup>div>h1{
+        font-size: 4.7vw;
+    }
+
+    main>#infoView{
+        display: flex;
+        height: 50vw;
+        margin-bottom: 5vw;
+        margin-top: -3vw;
+    }
+
+    main>#infoView>section>div>ul>li>h3{
+        width: 15vw;
+        left: 6vw;
+    }
+
+    main>#skillView>div{
+        height: 75vh;
+    }
+
+    main>#projectView>div:nth-child(7)>p{
+        margin-top: 2.7vh;
+        font-size: 2vw;
+    }
+
 }
 
 
