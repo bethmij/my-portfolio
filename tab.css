@@ -18,8 +18,9 @@
 
     body>header>img{
         position: absolute;
-        top:2vw;
-        height: 5vw;
+        top:4vw;
+        height: 7vw;
+        opacity: 0.8;
     }
 
     body>header>nav{
@@ -84,10 +85,19 @@
         height: 90vh;
         position: relative;
         top: 10vh;
-        left: 17vw;
+        left: 16vw;
     }
 
-    main>#mainView>section>hgroup>h2:first-child{
+    main>#mainView>section>hgroup>img{
+        width: 12vw;
+        height: 4vw;
+        position: absolute;
+        left: -8vw;
+        top: 6.6vw;
+        opacity: 0.4;
+    }
+
+    main>#mainView>section>hgroup>h2:nth-child(2){
         font-size: 12vw;
         font-weight: lighter;
         opacity: 0.4;
@@ -103,59 +113,73 @@
         left: 10vw;
     }
 
-    main>#mainView>section>hgroup>h2:nth-child(3){
-        font-size: 4vw;
+    main>#mainView>section>hgroup>h2:nth-child(4){
+        font-size: 4.4vw;
         position: absolute;;
         top:17vh;
         left: 0;
     }
-    main>#mainView>section>hgroup>h1{
-        font-size: 4.8vw;
+
+    main>#mainView>section>hgroup>div{
+        height: 10vh;
+        position: relative;
+        top:58vh;
+        left: 0;
+        /*border: 1px solid red;*/
+    }
+    main>#mainView>section>hgroup>div>h1{
+        width: 75vw;
+        font-size: 5vw;
         position: absolute;
-        top:53vh;
+        top:0vh;
         left: 0;
         z-index: 2;
     }
 
-    main>#mainView>section>div{
+    main>#mainView>section>hgroup>div>div{
         display: none;
     }
 
     main>#mainView>section>hgroup>p{
         font-size: 2vw;
         position: absolute;
-        top:61vh;
+        top:68vh;
         left: 0;
+    }
+
+    main>#mainView>section>button:nth-child(2){
+        position: absolute;
+        top:77vh;
+        left: 0vw;
+        height: 5vh;
+        width: 10vw;
+    }
+
+    main>#mainView>section>button:nth-child(2)>a,main>#mainView>section>button:nth-child(3)>a{
+        font-size: 1.8vw;
     }
 
     main>#mainView>section>button:nth-child(3){
         position: absolute;
-        top:70vh;
-        left: 2vw;
-        height: 5vh;
-        width: 10vw;
-    }
-
-    main>#mainView>section>button:nth-child(3)>a,main>#mainView>section>button:nth-child(4)>a{
-        font-size: 2vw;
-    }
-
-    main>#mainView>section>button:nth-child(4){
-        position: absolute;
-        top:70vh;
-        left: 18vw;
+        top:77vh;
+        left: 14vw;
         height: 5vh;
         width: 15vw;
     }
 
-    main>#mainView>img:nth-child(3){
+    main>#mainView>section>hgroup>div>img{
+        display: initial;
         width: 10vw;
         height: 6vh;
         position: absolute;
-        left: 10vw;
-        top: 16.2vh;
-        opacity: 0.4;
+        left: -7vw;
+        top: 5vw;
+        opacity: 0.8;
+        border-radius: 1px;
+        transform: rotate(90deg);
     }
+
+
 
     main>#infoView{
         display: block;
@@ -456,16 +480,17 @@
     }
 
     main>#projectView>div>figure>figcaption{
-        font-size: 2vw;
+        font-size: 1.5vw;
+        width: 30vw;
         position: absolute;
         left: 0;
         right: 0;
-        padding-top: 15px;
+        padding-top: 3vw;
     }
 
     main>#projectView>div:nth-child(2){
         width: 30vw;
-        height: 30vw;
+        height: 28vw;
         top: 71vw;
         left: 0;
         right: 0;
@@ -497,15 +522,15 @@
     main>#projectView>div:nth-child(3){
         position: absolute;
         width: 25vw;
-        height: 25vw;
+        height: 22vw;
         top: 73vw;
-        left: 66vw;
+        left: 68vw;
     }
 
     main>#projectView>div:nth-child(4){
         position: absolute;
         width: 25vw;
-        height: 25vw;
+        height: 22vw;
         top: 73vw;
         left: 7vw;
     }
@@ -530,28 +555,33 @@
     main>#projectView>div:nth-child(6){
         position: absolute;
         top: 30vh;
-        right: 10vw;
+        right: 8vw;
         width: 35vw;
         height: 35vw;
         display: none;
+
     }
 
     main>#projectView>img:nth-child(8){
         position: absolute;
         width: 2vh;
-        top: 83vw;
+        top: 85vw;
         left: 2vw;
         bottom: unset;
-        margin: auto;
+        right: unset;
+        z-index: 8;
+        transform: rotate(0deg);
     }
 
     main>#projectView>img:nth-child(9){
         position: absolute;
         width: 2vh;
-        top: 83vw;
+        top: 85vw;
         right: 2vw;
         bottom: unset;
-        margin: auto;
+        left: unset;
+        z-index: 8;
+        transform: rotate(0deg);
     }
 
     main>#projectView>div:nth-child(7){
@@ -559,16 +589,16 @@
     }
 
     main>#projectView>div:nth-child(7)>p{
-        font-size: 3vw;
+        font-size: 2vw;
     }
 
     main>#projectView>div:nth-child(7)>a>button{
-        height: 5vw;
-        width: 20vw;
+        height: 4vw;
+        width: 15vw;
     }
 
     main>#projectView>div:nth-child(7)>a{
-        font-size: 3vw;
+        font-size: 2vw;
     }
 
     main>#projectView>video{
@@ -584,7 +614,7 @@
 
 
     main>#achievementView>div:nth-child(2){
-        top: -7vh;
+        top: 6vw;
     }
 
     main>#achievementView>img:nth-child(7){
@@ -596,7 +626,7 @@
 
     }
 
-    main>#galleryView{
+    /*main>#galleryView{
         height: 70vh;
         width: 85vw;
         margin-top: 5vh;
@@ -630,9 +660,9 @@
         font-size: 3vw;
         left: 5vw;
         bottom: 5vh;
-    }
+    }*/
 
-    main>#artGalleryView{
+    /*main>#artGalleryView{
         height: 70vh;
         width: 85vw;
         margin-top: 5vh;
@@ -667,7 +697,7 @@
         font-size: 3vw;
         left: 5vw;
         bottom: 5vh;
-    }
+    }*/
 
     main>#graphView{
         height: 30vh;
@@ -690,15 +720,24 @@
 
     main>#graphView>section:first-child>div>button{
         top: 8vh;
-        height: 6vh;
+        width: 5vw;
+        height: 5vw;
         cursor: pointer;
     }
 
+    main>#graphView>section:first-child>div>button>img{
+        width: 110%;
+    }
+
     main>#graphView>section:first-child>div>button:nth-child(2){
+        top: unset;
+        bottom: 0.5vw;
         left: 5vw;
     }
 
     main>#graphView>section:first-child>div>button:nth-child(3){
+        top: unset;
+        bottom: 0.5vw;
         left: 13vw;
     }
 
@@ -763,11 +802,11 @@
 
     main>#contactView>div:nth-child(3)>address>ul>li>div{
         width: 7vw;
-        height: 8vh;
+        height: 7vw;
     }
 
     main>#contactView>div:nth-child(3)>address>ul>li>div>img{
-        width: 70%;
+        width: 60%;
     }
 
     main>#contactView>div:nth-child(3)>div{
@@ -777,7 +816,7 @@
     }
     main>#contactView>div:nth-child(3)>div>a>div{
         width: 7vw;
-        height: 8vh;
+        height: 7vw;
         border-radius: 100%;
         background-color: #655029 ;
         display: inline-block;
@@ -788,7 +827,7 @@
     }
 
     main>#contactView>div:nth-child(3)>div>a>div>img{
-        width: 70%;
+        width: 60%;
     }
 
     main>#contactView>div:nth-child(4){
@@ -803,7 +842,7 @@
     }
 
     main>#contactView>div:nth-child(4)>form>input:nth-child(1){
-        margin-top: 5vh;
+        margin-top: 10vw;
     }
 
     main>#contactView>div:nth-child(4)>form>textarea{

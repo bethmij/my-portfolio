@@ -220,6 +220,10 @@ hr{
     opacity: 0.2;
 }
 
+main>#mainView>section>hgroup>div>img{
+    display: none;
+}
+
 main>#mainView>section>hgroup>img{
     width: 5vw;
     height: 3vw;
