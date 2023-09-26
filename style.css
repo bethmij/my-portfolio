@@ -41,17 +41,16 @@ body>header>img{
 }
 #content>div{
     width: 100%;
-    height: 4.5vw;
-    background-color: #181512;
+    height: 4.3vw;
+    background-color: #0e0d0b;
     position: sticky;
     top: 0;
     z-index: 10;
-    box-shadow: 3px 1px 4px 2px #2B2922;
+    box-shadow: 3px 1px 4px 2px #16130b;
 }
-
 #content>div>nav>ul>div>li>a{
     text-decoration: none;
-    color: #F5D66D;
+    color: inherit;
     opacity: 0.5;
 }
 
@@ -64,6 +63,17 @@ body>header>img{
     padding: 1vw;
     font-size: 1.4vw;
     opacity: 0.8;
+    color: #F5D66D;
+}
+
+#content>div>nav>ul>div>li:hover{
+    box-shadow: inset 0 0.1vw 0 gray;
+    /*background-color: #181512;*/
+    color:white;
+}
+
+#content>div>nav>ul>div>li>a:hover{
+    /*color:white;*/
 }
 
 #content>div>nav>ul>div:first-child{
@@ -239,10 +249,12 @@ span{
     top:73vh;
     left: 30px;
     margin: 0;
-    height: 5vh;
+    height: 6vh;
     width: 9vw;
     background-color: transparent;
-    border: 1px solid #DE9506;
+    border: 3px solid #DE9506;
+    border-radius: 10px;
+    border-image: linear-gradient(to right, #6C634C, #DE9506) 1;
     border-radius: 10px;
 }
 
@@ -258,12 +270,15 @@ span{
     top:73vh;
     left: 180px;
     margin: 0;
-    height: 5vh;
+    height: 6vh;
     width: 10vw;
     background-color: transparent;
-    border: 1px solid #DE9506;
-    border-radius: 10px;
+    border: 3px solid #DE9506;
+    border-image: linear-gradient(to right, #6C634C, #DE9506) 1;
+    /*border-radius: 10px;*/
 }
+
+
 
 #mainView>section>button:nth-child(3)>a{
     font-family: "Lucida Fax";
@@ -1494,13 +1509,81 @@ hr{
     z-index: 1;
 }
 
-footer{
-    height: 5vh;
-    background-color: #3B311F;
-    text-align: center;
+/*footer{*/
+/*    height: 5vh;*/
+/*    background-color: #3B311F;*/
+/*    text-align: center;*/
+/*    color: white;*/
+/*    font-size: 1.4vw;*/
+/*    opacity: 0.8;*/
+/*}*/
+
+footer .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+footer .menu li a {
+    font-size: 1.5em;
     color: white;
-    font-size: 1.4vw;
-    opacity: 0.8;
+    margin: 0 10px;
+    display: inline-block;
+    transition: .5s;
+}
+
+footer .menu li a:hover {
+    transform: translateY(-5px);
+}
+footer p {
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+}
+
+footer .wave {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: url("assets/wave.png");
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+    z-index: 1000;
+    /* opacity: 1; */
+    bottom: 0;
+    animation: animateWave 5s linear infinite;
+}
+
+footer .wave#wave2 {
+    z-index: 999;
+    opacity: .8;
+    bottom: 0;
+    animation: animateWave2 4s linear infinite;
+}
+
+footer .wave#wave3 {
+    z-index: 1000;
+    opacity: .2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4 {
+    z-index: 999;
+    opacity: .7;
+    bottom: 20px;
+    animation: animateWave2 3s linear infinite;
 }
 
 @media all and (max-width: 1024px) {
