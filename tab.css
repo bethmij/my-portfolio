@@ -179,7 +179,14 @@
         transform: rotate(90deg);
     }
 
+    #content>div{
+        display: none;
+    }
 
+    /*main>hr:nth-child(2){*/
+    /*    display: initial;*/
+    /*    width: 100%;*/
+    /*}*/
 
     main>#infoView{
         display: block;

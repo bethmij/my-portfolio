@@ -889,3 +889,59 @@
     }
 }
 
+@media all and (max-width: 376px) {
+    main>#mainView>section>hgroup>div>h1{
+        top:-40vw;
+    }
+
+    main>#mainView>section>hgroup>p{
+        top:89vw;
+    }
+
+    main>#mainView>section>button:nth-child(2)>a,main>#mainView>section>button:nth-child(3)>a{
+        font-size: 2.8vw;
+    }
+
+
+    main>#mainView>section>hgroup>img{
+        height: 5vh;
+        left: 27vw;
+        top: 8vh;
+    }
+
+    main>#mainView>section>hgroup>div>img{
+        width: 18vw;
+        height: 6vh;
+        left: -17vw;
+        top: -10vw;
+    }
+}
+
+@media all and (max-width: 321px) {
+    main>#mainView>section>hgroup>div>h1{
+        top:-70vw;
+    }
+
+    main>#mainView>section>hgroup>p{
+        top:90vw;
+    }
+
+    main>#mainView>section>button:nth-child(2)>a,main>#mainView>section>button:nth-child(3)>a{
+        font-size: 2.8vw;
+    }
+
+
+    main>#mainView>section>hgroup>img{
+        height: 5vh;
+        left: 27vw;
+        top: 8vh;
+    }
+
+    main>#mainView>section>hgroup>div>img{
+        width: 18vw;
+        height: 6vh;
+        left: -17vw;
+        top: -10vw;
+    }
+}
+

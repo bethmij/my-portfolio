@@ -18,12 +18,12 @@ body>div{
     opacity: 0.3;
 }
 body>header{
-    width: 100%;
+    /*width: 100%;
     height: 4vw;
     background-color: #181512;
     position: fixed;
     top: 0;
-    z-index: 10;
+    z-index: 10;*/
 }
 
 body>header>img{
@@ -34,52 +34,108 @@ body>header>img{
     margin: auto;
     height: 3.5vw;
 }
-body>header>nav{
-    position: absolute;
+#content{
+    position: relative;
+    top: -2vh;
+    /*border: 1px solid red;*/
+}
+#content>div{
+    width: 100%;
+    height: 4.5vw;
+    background-color: #181512;
+    position: sticky;
     top: 0;
-    bottom: 0;
-    right: 2vw;
-    margin: auto;
-    height: 4vw;
-
+    z-index: 10;
+    box-shadow: 3px 1px 4px 2px #2B2922;
 }
 
-body>header>nav>ul>li>a{
+#content>div>nav>ul>div>li>a{
     text-decoration: none;
     color: #F5D66D;
     opacity: 0.5;
 }
 
-body>header>nav>ul{
+#content>div>nav>ul{
     margin-top: 0;
 }
-body>header>nav>ul>li{
+#content>div>nav>ul>div>li{
     display: inline-block;
     margin-top: 4px;
     padding: 1vw;
-    font-size: 1.3vw;
+    font-size: 1.4vw;
     opacity: 0.8;
+}
+
+#content>div>nav>ul>div:first-child{
+    position: absolute;
+    left: 2vw;
+    display: inline-block;
+}
+
+#content>div>nav>ul>div:last-child{
+    position: absolute;
+    display: inline-block;
+    /*border: 1px solid red;*/
+    width: 32vw;
+    height: 5vw;
+    right: 0vw;
+}
+#content>div>label:nth-child(2){
+    /*border: 1px solid red;*/
+    width: 13vw;
+    height: 2vw;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0.4vw;
+    margin: auto;
+    font-size: 1.5vw;
+    color: white;
+    font-family: 'Inder';
+    font-weight: lighter;
+    opacity: 0.6;
+}
+
+#content>div>label:nth-child(3){
+    /*border: 1px solid red;*/
+    width: 13vw;
+    height: 2vw;
+    position: absolute;
+    left: -1vw;
+    right: 0;
+    top: 2.5vw;
+    margin: auto;
+    font-size: 1vw;
+    color: white;
+    font-family: 'Inder';
+    font-weight: lighter;
+    opacity: 0.4;
+}
+
+main>hr:nth-child(2){
+    /*display: none;*/
 }
 
 body>header>div{
     display: none;
 }
-main>#mainView{
+
+#mainView{
     height: 100vh;
     background-color: black;
     position: relative;
 }
 
-main>#mainView>img:first-child{
+#mainView>img:first-child{
     width: 100%;
-    height: 96vh;
+    height: 100vh;
     position: absolute;
     right: 0;
     z-index: 0;
     opacity: 0.7;
 }
 
-main>#mainView>img:nth-child(2){
+#mainView>img:nth-child(2){
     width: 28vw;
     height: 85vh;
     position: absolute;
@@ -88,7 +144,7 @@ main>#mainView>img:nth-child(2){
 
 }
 
-main>#mainView>section{
+#mainView>section{
     width: 67vw;
     height: 90vh;
     position: relative;
@@ -96,7 +152,7 @@ main>#mainView>section{
     left: 5vw;
 }
 
-main>#mainView>section>hgroup>h2:nth-child(2){
+#mainView>section>hgroup>h2:nth-child(2){
     font-family: 'Italianno', cursive;
     font-weight: lighter;
     font-size: 8vw;
@@ -107,7 +163,7 @@ main>#mainView>section>hgroup>h2:nth-child(2){
     margin: 0;
 }
 
-main>#mainView>section>hgroup>h4{
+#mainView>section>hgroup>h4{
     font-family: 'Inder', sans-serif;
     font-size: 4vw;
     font-weight: lighter;
@@ -119,7 +175,7 @@ main>#mainView>section>hgroup>h4{
     opacity: 0.8;
 }
 
-main>#mainView>section>hgroup>h2:nth-child(4){
+#mainView>section>hgroup>h2:nth-child(4){
     font-family: 'Bricolage Grotesque', cursive;
     font-size: 3vw;
     font-weight: normal;
@@ -133,7 +189,7 @@ main>#mainView>section>hgroup>h2:nth-child(4){
 span{
     color: #DE9506;
 }
-main>#mainView>section>hgroup>div{
+#mainView>section>hgroup>div{
     width: 70vw;
     height: 10vh;
     position: relative;
@@ -141,7 +197,7 @@ main>#mainView>section>hgroup>div{
     left: 30px;
     /*border: 1px solid red;*/
 }
-main>#mainView>section>hgroup>div>h1{
+#mainView>section>hgroup>div>h1{
     width: 70vw;
     height: 5vw;
     font-family: 'Bricolage Grotesque', cursive;
@@ -155,7 +211,7 @@ main>#mainView>section>hgroup>div>h1{
     margin: auto;
     z-index: 2;
 }
-main>#mainView>section>hgroup>div>div{
+#mainView>section>hgroup>div>div{
     position: absolute;
     width: 12vw;
     height: 18vw;
@@ -166,7 +222,7 @@ main>#mainView>section>hgroup>div>div{
     margin: auto;
 }
 
-main>#mainView>section>hgroup>p{
+#mainView>section>hgroup>p{
     font-family: 'Inder', sans-serif;
     font-size: 1.5vw;
     font-weight: lighter;
@@ -178,7 +234,7 @@ main>#mainView>section>hgroup>p{
     opacity: 0.7;
 }
 
-main>#mainView>section>button:nth-child(2){
+#mainView>section>button:nth-child(2){
     position: absolute;
     top:73vh;
     left: 30px;
@@ -190,14 +246,14 @@ main>#mainView>section>button:nth-child(2){
     border-radius: 10px;
 }
 
-main>#mainView>section>button:nth-child(2)>a{
+#mainView>section>button:nth-child(2)>a{
     font-family: "Lucida Fax";
     color: white;
     font-size: 1.3vw;
     text-decoration: none;
 }
 
-main>#mainView>section>button:nth-child(3){
+#mainView>section>button:nth-child(3){
     position: absolute;
     top:73vh;
     left: 180px;
@@ -209,7 +265,7 @@ main>#mainView>section>button:nth-child(3){
     border-radius: 10px;
 }
 
-main>#mainView>section>button:nth-child(3)>a{
+#mainView>section>button:nth-child(3)>a{
     font-family: "Lucida Fax";
     color: white;
     font-size: 1.2vw;
@@ -220,11 +276,11 @@ hr{
     opacity: 0.2;
 }
 
-main>#mainView>section>hgroup>div>img{
+#mainView>section>hgroup>div>img{
     display: none;
 }
 
-main>#mainView>section>hgroup>img{
+#mainView>section>hgroup>img{
     width: 5vw;
     height: 3vw;
     position: absolute;
@@ -233,24 +289,24 @@ main>#mainView>section>hgroup>img{
     opacity: 0.4;
 }
 
-main>#infoView{
+#infoView{
     display: flex;
     height: 50vw;
     margin-top: 2vw;
     margin-bottom: 2vw;
 }
 
-main>#infoView>section>div>img{
+#infoView>section>div>img{
     display: none;
 }
 
-main>#infoView>section{
+#infoView>section{
     width: calc(100%/3);
     color: white;
     position: relative;
 }
 
-main>#infoView>section>div{
+#infoView>section>div{
     position: absolute;
     top: 10vh;
     bottom: 0;
@@ -261,23 +317,23 @@ main>#infoView>section>div{
     font-size:1.5vw;
 }
 
-main>#infoView>section>div>h2{
+#infoView>section>div>h2{
     font-family: 'Bricolage Grotesque', cursive;
     font-weight: normal;
     margin-left: 5vw;
 }
 
-main>#infoView>section>div>ul{
+#infoView>section>div>ul{
     list-style-type: none;
     margin-top: 6vh;
 }
 
-main>#infoView>section>div>ul>li{
+#infoView>section>div>ul>li{
     padding-bottom: 1vh;
     position: relative;
 }
 
-main>#infoView>section>div>ul>li>div{
+#infoView>section>div>ul>li>div{
     width: 5vw;
     height: 5vw;
     border-radius: 100%;
@@ -288,7 +344,7 @@ main>#infoView>section>div>ul>li>div{
     position: relative;
 }
 
-main>#infoView>section>div>ul>li>div>img{
+#infoView>section>div>ul>li>div>img{
     position: absolute;
     width: 65%;
     top:0;
@@ -298,7 +354,7 @@ main>#infoView>section>div>ul>li>div>img{
     margin: auto;
 }
 
-main>#infoView>section>div>ul>li>h3{
+#infoView>section>div>ul>li>h3{
     font-family: 'Inder', sans-serif;
     font-size: 1.4vw;
     font-weight: lighter;
@@ -313,11 +369,11 @@ main>#infoView>section>div>ul>li>h3{
     margin: auto;
 }
 
-main>#aboutView{
+#aboutView{
     position: relative;
     height: 50vw;
 }
-main>#aboutView>code{
+#aboutView>code{
     margin-top: 5vh;
     margin-bottom: 5vh;
     margin-left: 5vw;
@@ -327,38 +383,38 @@ main>#aboutView>code{
 
 }
 
-main>#aboutView>img{
+#aboutView>img{
     position: absolute;
     right: 5vw;
     top: 0vh;
     width: 18vw;
 }
 
-main>#skillView{
+#skillView{
     margin-top: 5vw;
     color: white;
 }
 
-main>#skillView>section{
+#skillView>section{
     display: flex;
     height: 40vw;
     margin-top: 10vh;
 
 }
 
-main>#skillView>section>div{
+#skillView>section>div{
     width: calc(100%/4);
     /*position: relative;*/
 }
 
-main>#skillView>h1,main>section:nth-child(9)>h2,main>section:nth-child(11)>h2,main>section:nth-child(13)>h2 {
+#skillView>h1,#educationView>h2,#projectView>h2,#achievementView>h2 {
     font-family: 'Bricolage Grotesque', cursive;
     font-weight: normal;
     margin-left: 5vw;
     font-size: 2.5vw;
 }
 
-main>#skillView>section>div>div{
+#skillView>section>div>div{
     width: 12vw;
     height: 12vw;
     border-radius: 100%;
@@ -370,7 +426,7 @@ main>#skillView>section>div>div{
 
 }
 
-main>#skillView>section>div>div>img{
+#skillView>section>div>div>img{
     width: 8vw;
     position: absolute;
     top:0;
@@ -381,7 +437,7 @@ main>#skillView>section>div>div>img{
     opacity: 0.6;
 }
 
-main>#skillView>section>div>h2,main>section:nth-child(7)>div>h2{
+#skillView>section>div>h2,#skillView>div>h2{
     font-family: 'Bricolage Grotesque', cursive;
     font-weight: normal;
     font-size: 2vw;
@@ -391,11 +447,11 @@ main>#skillView>section>div>h2,main>section:nth-child(7)>div>h2{
 
 }
 
-main>#skillView>section>div>h2>span,main>section:nth-child(7)>div>h2>span{
+#skillView>section>div>h2>span,#skillView>div>h2>span{
     color: #6C634C;
 }
 
-main>#skillView>section>div>ul{
+#skillView>section>div>ul{
     /*width: 50vw;*/
     /*position: absolute;*/
     margin-left: 3vw;
@@ -404,16 +460,16 @@ main>#skillView>section>div>ul{
     list-style-type: none;
 }
 
-main>#skillView>section>div:nth-child(3)>ul,main>section:nth-child(7)>section>div:nth-child(4)>ul{
+#skillView>section>div:nth-child(3)>ul,#skillView>section>div:nth-child(4)>ul{
     margin-left: 5vw;
 }
 
-main>#skillView>section>div>ul>li{
+#skillView>section>div>ul>li{
     padding-bottom: 2.5vh;
     opacity: 0.8;
 }
 
-main>#skillView>div{
+#skillView>div{
     position: relative;
     display: inline-block;
     width: calc(99%/2);
@@ -423,7 +479,7 @@ main>#skillView>div{
     position: relative;
 }
 
-main>#skillView>div>div{
+#skillView>div>div{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -435,7 +491,7 @@ main>#skillView>div>div{
     margin:auto;
 }
 
-main>#skillView>div>div>img:first-child{
+#skillView>div>div>img:first-child{
     height: 15vh;
     position: absolute;
     left: 0;
@@ -444,7 +500,7 @@ main>#skillView>div>div>img:first-child{
     top: 0;
 }
 
-main>#skillView>div>div>img:last-child{
+#skillView>div>div>img:last-child{
     height: 15vh;
     position: absolute;
     left: 0;
@@ -453,7 +509,7 @@ main>#skillView>div>div>img:last-child{
     bottom: 0;
 }
 
-main>#skillView>div>div>div:nth-child(2){
+#skillView>div>div>div:nth-child(2){
     width: 20vw;
     height: 8vh;
     /*border: 1px solid red;*/
@@ -466,7 +522,7 @@ main>#skillView>div>div>div:nth-child(2){
     justify-content: space-around;
 }
 
-main>#skillView>div>div>div:nth-child(3){
+#skillView>div>div>div:nth-child(3){
     width:25vw;
     height: 8vh;
     /*border: 1px solid red;*/
@@ -480,7 +536,7 @@ main>#skillView>div>div>div:nth-child(3){
     justify-content: space-around;
 }
 
-main>#skillView>div:last-child>div>div:nth-child(2){
+#skillView>div:last-child>div>div:nth-child(2){
     width: 20vw;
     height: 8vh;
     position: absolute;
@@ -492,7 +548,7 @@ main>#skillView>div:last-child>div>div:nth-child(2){
     justify-content: space-around;
 }
 
-main>#skillView>div:last-child>div>div:nth-child(3){
+#skillView>div:last-child>div>div:nth-child(3){
     width:25vw;
     height: 8vh;
     display: block;
@@ -505,7 +561,7 @@ main>#skillView>div:last-child>div>div:nth-child(3){
     justify-content: space-around;
 }
 
-main>#skillView>div:last-child>div>div:nth-child(4){
+#skillView>div:last-child>div>div:nth-child(4){
     width: 20vw;
     height: 8vh;
     display: block;
@@ -519,14 +575,14 @@ main>#skillView>div:last-child>div>div:nth-child(4){
 }
 
 
-main>#educationView{
+#educationView{
     height: 80vw;
     color: white;
     margin-top: 6vw;
     position: relative;
 
 }
-main>#educationView>section>div:first-child{
+#educationView>section>div:first-child{
     width: 30vw;
     height: 0.5vw;
     background: linear-gradient(90deg, #655029, black);
@@ -534,38 +590,38 @@ main>#educationView>section>div:first-child{
     margin: 10px;
     border-radius: 10px;
 }
-main>#educationView>section:nth-child(2)>div:first-child{
+#educationView>section:nth-child(2)>div:first-child{
     position: absolute;
     bottom: 5vw;
     left: 5vw;
 }
 
-main>#educationView>section:nth-child(3)>div:first-child{
+#educationView>section:nth-child(3)>div:first-child{
     position: absolute;
     bottom: 20vw;
     left: 20vw;
 }
 
-main>#educationView>section:nth-child(4)>div:first-child{
+#educationView>section:nth-child(4)>div:first-child{
     position: absolute;
     bottom: 35vw;
     left: 35vw;
 }
 
-main>#educationView>section:nth-child(5)>div:first-child{
+#educationView>section:nth-child(5)>div:first-child{
     position: absolute;
     bottom: 50vw;
     right: 18vw;
 }
 
-main>#educationView>section:nth-child(6)>div:first-child{
+#educationView>section:nth-child(6)>div:first-child{
     position: absolute;
     bottom: 65vw;
     right: 4vw;
     margin: 0px;
 }
 
-main>#educationView>section>div:nth-child(2){
+#educationView>section>div:nth-child(2){
     width: 20vw;
     height: 14vh;
     background: linear-gradient(180deg, #2B2922, black);
@@ -574,45 +630,45 @@ main>#educationView>section>div:nth-child(2){
     border-radius: 10px;
     opacity: 0.8;
 }
-main>#educationView>section:nth-child(2)>div:nth-child(2){
+#educationView>section:nth-child(2)>div:nth-child(2){
     position: absolute;
     bottom: 6vw;
     left: 15vw;
 
 }
 
-main>#educationView>section:nth-child(3)>div:nth-child(2){
+#educationView>section:nth-child(3)>div:nth-child(2){
     position: absolute;
     bottom: 21vw;
     left: 30vw;
 
 }
 
-main>#educationView>section:nth-child(4)>div:nth-child(2){
+#educationView>section:nth-child(4)>div:nth-child(2){
     position: absolute;
     bottom: 36vw;
     left: 45vw;
 }
 
-main>#educationView>section:nth-child(5)>div:nth-child(2){
+#educationView>section:nth-child(5)>div:nth-child(2){
     position: absolute;
     bottom: 51vw;
     left: 60vw;
 }
 
-main>#educationView>section:nth-child(6)>div:nth-child(2){
+#educationView>section:nth-child(6)>div:nth-child(2){
     position: absolute;
     bottom: 66vw;
     left: 75vw;
     margin: 0px;
 }
 
-main>#educationView>section>div:nth-child(2)>p{
+#educationView>section>div:nth-child(2)>p{
     text-align: center;
     font-size: 1.1vw;
 }
 
-main>#educationView>section:nth-child(2)>img{
+#educationView>section:nth-child(2)>img{
     width: 12%;
     position: absolute;
     bottom: 4vw;
@@ -620,42 +676,42 @@ main>#educationView>section:nth-child(2)>img{
 
 }
 
-main>#educationView>section:nth-child(3)>img{
+#educationView>section:nth-child(3)>img{
     width: 7%;
     position: absolute;
     bottom: 22vw;
     left: 23vw;
 }
 
-main>#educationView>section:nth-child(4)>img{
+#educationView>section:nth-child(4)>img{
     width: 7%;
     position: absolute;
     bottom: 32vw;
     left: 38vw;
 }
 
-main>#educationView>section:nth-child(5)>img{
+#educationView>section:nth-child(5)>img{
     width: 17%;
     position: absolute;
     bottom:49vw;
     right: 37vw;
 }
 
-main>#educationView>section:nth-child(6)>img{
+#educationView>section:nth-child(6)>img{
     width: 15%;
     position: absolute;
     bottom:65vw;
     right: 21vw;
 }
 
-main>#projectView{
+#projectView{
     height: 60vw;
     color: white;
     position: relative;
     margin-top: 5vw;
 }
 
-main>#projectView>div:nth-child(3),main>#projectView>div:nth-child(4){
+#projectView>div:nth-child(3),#projectView>div:nth-child(4){
     width: 13vw;
     height: 9vw;
     background-color: #2B2922;
@@ -665,7 +721,7 @@ main>#projectView>div:nth-child(3),main>#projectView>div:nth-child(4){
     /*border: 1px solid red;*/
 }
 
-main>#projectView>div>figure>img{
+#projectView>div>figure>img{
     width: 12vw;
     height: 6vw;
     position: absolute;
@@ -675,7 +731,7 @@ main>#projectView>div>figure>img{
     margin: auto;
 }
 
-main>#projectView>div>figure>figcaption{
+#projectView>div>figure>figcaption{
     font-family: 'Bricolage Grotesque', cursive;
     font-size: 0.7vw;
     width: 12vw;
@@ -684,7 +740,7 @@ main>#projectView>div>figure>figcaption{
     text-align: center;
 }
 
-main>#projectView>div:nth-child(2){
+#projectView>div:nth-child(2){
     width: 16vw;
     height: 14vw;
     background-color: #2B2922;
@@ -695,7 +751,7 @@ main>#projectView>div:nth-child(2){
     right: 7vw;
 }
 
-main>#projectView>div:nth-child(2)>figure>img{
+#projectView>div:nth-child(2)>figure>img{
     width: 15vw;
     height: 9vw;
     position: absolute;
@@ -704,7 +760,7 @@ main>#projectView>div:nth-child(2)>figure>img{
     left: 0;
 }
 
-main>#projectView>div:nth-child(2)>figure>figcaption{
+#projectView>div:nth-child(2)>figure>figcaption{
     font-family: 'Bricolage Grotesque', cursive;
     font-size: 1.1vw;
     font-weight: lighter;
@@ -713,15 +769,15 @@ main>#projectView>div:nth-child(2)>figure>figcaption{
     padding-left: 25px;
 }
 
-main>#projectView>div:nth-child(2)>figure>div:last-child{
+#projectView>div:nth-child(2)>figure>div:last-child{
     display: none;
 }
 
-main>#projectView>div:nth-child(4)>figure>div{
+#projectView>div:nth-child(4)>figure>div{
     display: none;
 }
 
-/*main>#projectView>div:nth-child(2)>figure>div:last-child{
+/*#projectView>div:nth-child(2)>figure>div:last-child{
     width: 100%;
     height: 0;
     background: black;
@@ -733,11 +789,11 @@ main>#projectView>div:nth-child(4)>figure>div{
     opacity: 0.8;
 }
 
-main>#projectView>div:nth-child(2):hover>figure>div:last-child{
+#projectView>div:nth-child(2):hover>figure>div:last-child{
     height: 75%;
 }
 
-main>#projectView>div:nth-child(2)>figure>div:last-child>div>p:first-child{
+#projectView>div:nth-child(2)>figure>div:last-child>div>p:first-child{
     font-family: 'Bricolage Grotesque', cursive;
     font-size: 1.2vw;
     font-weight: lighter;
@@ -745,7 +801,7 @@ main>#projectView>div:nth-child(2)>figure>div:last-child>div>p:first-child{
     margin-top: 10vh;
 }
 
-main>#projectView>div:nth-child(2)>figure>div:last-child>div>label:nth-child(2){
+#projectView>div:nth-child(2)>figure>div:last-child>div>label:nth-child(2){
     font-family: 'Bricolage Grotesque', cursive;
     font-size: 1.2vw;
     font-weight: lighter;
@@ -754,7 +810,7 @@ main>#projectView>div:nth-child(2)>figure>div:last-child>div>label:nth-child(2){
     margin-left: 16vw;
 }
 
-main>#projectView>div:nth-child(2)>figure>div:last-child>div>a>button{
+#projectView>div:nth-child(2)>figure>div:last-child>div>a>button{
     height: 4vh;
     width: 3vw;
     background-color: transparent;
@@ -763,11 +819,11 @@ main>#projectView>div:nth-child(2)>figure>div:last-child>div>a>button{
     margin-bottom: 5vh;
     cursor: pointer;
 }
-main>#projectView>div:nth-child(2)>figure>div:last-child>div>a>button:hover{
+#projectView>div:nth-child(2)>figure>div:last-child>div>a>button:hover{
     background-color: #2B2922;
 }
 
-main>#projectView>div:nth-child(2)>figure>div:last-child>div>label:nth-child(4){
+#projectView>div:nth-child(2)>figure>div:last-child>div>label:nth-child(4){
     font-family: 'Bricolage Grotesque', cursive;
     font-size: 1.2vw;
     font-weight: lighter;
@@ -777,40 +833,40 @@ main>#projectView>div:nth-child(2)>figure>div:last-child>div>label:nth-child(4){
     margin-left: 16vw;
 }*/
 
-main>#projectView>div:nth-child(3){
+#projectView>div:nth-child(3){
     top: 37vw;
     left: 77vw;
     z-index: 3;
     mix-blend-mode: luminosity;
 }
 
-main>#projectView>div:nth-child(4){
+#projectView>div:nth-child(4){
     top: 12vw;
     left: 77vw;
     z-index: 4;
     mix-blend-mode: luminosity;
 }
 
-main>#projectView>div>figure{
+#projectView>div>figure{
     margin-top: 0px;
 }
 
-main>#projectView>div:nth-child(5){
+#projectView>div:nth-child(5){
     display: none;
 }
 
 
-main>#projectView>div:nth-child(6){
+#projectView>div:nth-child(6){
     display: none;
 }
 
-main>#projectView>div:nth-child(6)>figure>img{
+#projectView>div:nth-child(6)>figure>img{
     width: 20vw;
     height: 40vh;
     left: 0;
 }
 
-main>#projectView>img:nth-child(8){
+#projectView>img:nth-child(8){
     position: absolute;
     width: 1vw;
     transform: rotate(90deg);
@@ -818,7 +874,7 @@ main>#projectView>img:nth-child(8){
     right: 15vw;
 }
 
-main>#projectView>img:nth-child(9){
+#projectView>img:nth-child(9){
     position: absolute;
     width: 1vw;
     transform: rotate(90deg);
@@ -826,7 +882,7 @@ main>#projectView>img:nth-child(9){
     right: 15vw;
 }
 
-main>#projectView>div:nth-child(7){
+#projectView>div:nth-child(7){
     position: absolute;
     height: 7vh;
     width: 100%;
@@ -836,7 +892,7 @@ main>#projectView>div:nth-child(7){
     text-align: center;
 }
 
-main>#projectView>div:nth-child(7)>p{
+#projectView>div:nth-child(7)>p{
     font-family: 'Bricolage Grotesque', cursive;
     margin-top: 1.3vh;
     margin-right: 2vw;
@@ -844,7 +900,7 @@ main>#projectView>div:nth-child(7)>p{
     display: inline-block;
 }
 
-main>#projectView>div:nth-child(7)>a>button{
+#projectView>div:nth-child(7)>a>button{
     height: 5vh;
     /*width: 8vw;*/
     background-color: #2B2922;
@@ -854,12 +910,12 @@ main>#projectView>div:nth-child(7)>a>button{
     cursor: pointer;
 }
 
-main>#projectView>div:nth-child(7)>a>button:hover,main>#mainView>section>button:hover,main>#contactView>div:nth-child(4)>form>button:hover{
+#projectView>div:nth-child(7)>a>button:hover,#mainView>section>button:hover,#contactView>div:nth-child(4)>form>button:hover{
     background-color: #1c1b17;
 }
 
 
-main>#projectView>video{
+#projectView>video{
     position: absolute;
     width: 65vw;
     top: 10vw;
@@ -868,13 +924,13 @@ main>#projectView>video{
     border: 4px solid #2B2922;
 }
 
-main>#achievementView{
+#achievementView{
     height: 60vh;
     color: white;
     position: relative;
 }
 
-main>#achievementView>div{
+#achievementView>div{
     width: 25vw;
     height: 35vh;
     background-color: #2B2922;
@@ -884,7 +940,7 @@ main>#achievementView>div{
     display: inline-block;
 }
 
-main>#achievementView>div>figure>img{
+#achievementView>div>figure>img{
     width: 23vw;
     height: 28vh;
     position: absolute;
@@ -895,7 +951,7 @@ main>#achievementView>div>figure>img{
     margin: auto;
 }
 
-main>#achievementView>div>figure>figcaption{
+#achievementView>div>figure>figcaption{
     font-family: 'Bricolage Grotesque', cursive;
     font-size: 0.8vw;
     font-weight: lighter;
@@ -903,7 +959,7 @@ main>#achievementView>div>figure>figcaption{
     padding-top: 0;
 }
 
-main>#achievementView>div:nth-child(2){
+#achievementView>div:nth-child(2){
     width: 30vw;
     height: 40vh;
     background-color: #2B2922;
@@ -914,7 +970,7 @@ main>#achievementView>div:nth-child(2){
     z-index: 5;
 }
 
-main>#achievementView>div:nth-child(2)>figure>img{
+#achievementView>div:nth-child(2)>figure>img{
     width: 28vw;
     height: 31vh;
     position: absolute;
@@ -925,14 +981,14 @@ main>#achievementView>div:nth-child(2)>figure>img{
     margin: auto;
 }
 
-main>#achievementView>div:nth-child(2)>figure>figcaption{
+#achievementView>div:nth-child(2)>figure>figcaption{
     font-family: 'Bricolage Grotesque', cursive;
     font-size: 1.2vw;
     font-weight: lighter;
     text-align: center;
 }
 
-main>#achievementView>div:nth-child(3){
+#achievementView>div:nth-child(3){
     top: 1vh;
     right: 0;
     left: 20vw;
@@ -940,7 +996,7 @@ main>#achievementView>div:nth-child(3){
     z-index: 4;
 }
 
-main>#achievementView>div:nth-child(4){
+#achievementView>div:nth-child(4){
     top: 1vh;
     left: 27vw;
     z-index: 4;
@@ -948,7 +1004,7 @@ main>#achievementView>div:nth-child(4){
     border: 1px solid red;
 }
 
-main>#achievementView>div:nth-child(5){
+#achievementView>div:nth-child(5){
     top: -1vh;
     left: 10vw;
     height: 30vh;
@@ -957,12 +1013,12 @@ main>#achievementView>div:nth-child(5){
 
 }
 
-main>#achievementView>div:nth-child(5)>figure>img{
+#achievementView>div:nth-child(5)>figure>img{
     width: 22vw;
     height: 24vh;
 }
 
-main>#achievementView>div:nth-child(6){
+#achievementView>div:nth-child(6){
     top: -32vh;
     left: 13vw;
     height: 30vh;
@@ -970,12 +1026,12 @@ main>#achievementView>div:nth-child(6){
     z-index: 3;
 }
 
-main>#achievementView>div:nth-child(6)>figure>img{
+#achievementView>div:nth-child(6)>figure>img{
     width: 23vw;
     height: 24vh;
 }
 
-main>#achievementView>img:nth-child(7){
+#achievementView>img:nth-child(7){
     position: absolute;
     width: 5vh;
     top:10vh;
@@ -984,7 +1040,7 @@ main>#achievementView>img:nth-child(7){
     margin: auto;
 }
 
-main>#achievementView>img:nth-child(8){
+#achievementView>img:nth-child(8){
     position: absolute;
     width: 5vh;
     top:10vh;
@@ -994,7 +1050,7 @@ main>#achievementView>img:nth-child(8){
 
 }
 
-main>#galleryView{
+#galleryView{
     height: 40vw;
     width: 85vw;
     left: 0;
@@ -1009,14 +1065,14 @@ main>#galleryView{
     margin-bottom: 4vw;
 
 }
-main>#galleryView>img:first-child{
+#galleryView>img:first-child{
     position: absolute;
     left: 5vw;
     width: 15vw;
     top: 3vw;
 }
 
-main>#galleryView>hgroup>h4{
+#galleryView>hgroup>h4{
     font-family: 'Italianno', cursive;
     font-weight: lighter;
     font-size: 3vw;
@@ -1025,7 +1081,7 @@ main>#galleryView>hgroup>h4{
     top: 12vw;
 }
 
-main>#galleryView>hgroup>h2{
+#galleryView>hgroup>h2{
     font-family: 'Inder', sans-serif;
     font-weight: lighter;
     font-size: 4vw;
@@ -1034,7 +1090,7 @@ main>#galleryView>hgroup>h2{
     top: 16vw;
 }
 
-main>#galleryView>hgroup>h2>span{
+#galleryView>hgroup>h2>span{
     color: white;
     font-family: Impact, serif;
     text-shadow:
@@ -1044,7 +1100,7 @@ main>#galleryView>hgroup>h2>span{
             2px 1px 0 #000;
 }
 
-main>#galleryView>hgroup>blockquote{
+#galleryView>hgroup>blockquote{
     font-family: 'Inder', sans-serif;
     font-size: 1.2vw;
     font-weight: lighter;
@@ -1055,7 +1111,7 @@ main>#galleryView>hgroup>blockquote{
     opacity: 0.5;
 }
 
-main>#galleryView>button{
+#galleryView>button{
     height: 6vh;
     width: 9vw;
     background-color: transparent;
@@ -1067,18 +1123,18 @@ main>#galleryView>button{
     bottom: 3vw;
 }
 
-main>#galleryView>button:hover,#artGalleryView>button:hover{
+#galleryView>button:hover,#artGalleryView>button:hover{
     background-color: dimgray;
 }
 
-main>#galleryView>button>a{
+#galleryView>button>a{
     color: white;
     text-decoration: none;
 }
 
 
 
-main>#artGalleryView{
+#artGalleryView{
     height: 40vw;
     width: 85vw;
     left: 0;
@@ -1092,14 +1148,14 @@ main>#artGalleryView{
     margin-top: 4vw;
     margin-bottom: 4vw;
 }
-main>#artGalleryView>img:first-child{
+#artGalleryView>img:first-child{
     position: absolute;
     left: 5vw;
     width: 15vw;
     top: 3vw;
 }
 
-main>#artGalleryView>hgroup>h4{
+#artGalleryView>hgroup>h4{
     font-family: 'Italianno', cursive;
     font-weight: lighter;
     font-size: 3vw;
@@ -1108,7 +1164,7 @@ main>#artGalleryView>hgroup>h4{
     top: 12vw;
 }
 
-main>#artGalleryView>hgroup>h2{
+#artGalleryView>hgroup>h2{
     font-family: 'Inder', sans-serif;
     font-weight: lighter;
     font-size: 4vw;
@@ -1117,7 +1173,7 @@ main>#artGalleryView>hgroup>h2{
     top: 16vw;
 }
 
-main>#artGalleryView>hgroup>h2>span{
+#artGalleryView>hgroup>h2>span{
     color: white;
     font-family: Impact, serif;
     text-shadow:
@@ -1127,7 +1183,7 @@ main>#artGalleryView>hgroup>h2>span{
             2px 1px 0 #000;
 }
 
-main>#artGalleryView>hgroup>blockquote{
+#artGalleryView>hgroup>blockquote{
     font-family: 'Inder', sans-serif;
     font-size: 1.2vw;
     font-weight: lighter;
@@ -1138,7 +1194,7 @@ main>#artGalleryView>hgroup>blockquote{
     opacity: 0.5;
 }
 
-main>#artGalleryView>button{
+#artGalleryView>button{
     height: 6vh;
     width: 9vw;
     background-color: transparent;
@@ -1150,19 +1206,19 @@ main>#artGalleryView>button{
     bottom: 3vw;
 }
 
-main>#artGalleryView>button>a{
+#artGalleryView>button>a{
     color: white;
     text-decoration: none;
 }
 
-main>#graphView{
+#graphView{
     height: 40vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-main>#graphView>section{
+#graphView>section{
     width: 35vw;
     height: 30vh;
     background-color: #1c1b17;
@@ -1174,7 +1230,7 @@ main>#graphView>section{
 }
 
 
-main>#graphView>section>div{
+#graphView>section>div{
     width: 20vw;
     height: 20vh;
     background-color: #4F4B43;
@@ -1187,7 +1243,7 @@ main>#graphView>section>div{
     margin: auto;
 }
 
-main>#graphView>section:first-child>div>h3{
+#graphView>section:first-child>div>h3{
     font-family: 'Inder', sans-serif;
     font-size: 1.5vw;
     font-weight: lighter;
@@ -1195,7 +1251,7 @@ main>#graphView>section:first-child>div>h3{
     color: white;
 }
 
-main>#graphView>section:first-child>div>button{
+#graphView>section:first-child>div>button{
     background-color: #2B2922;
     border-color: transparent;
     border-radius: 100%;
@@ -1204,31 +1260,31 @@ main>#graphView>section:first-child>div>button{
     cursor: pointer;
 }
 
-main>#graphView>section:first-child>div>button>img{
+#graphView>section:first-child>div>button>img{
     width: 90%;
 }
 
-main>#graphView>section:first-child>div>button:nth-child(2):hover{
+#graphView>section:first-child>div>button:nth-child(2):hover{
     border: 2px solid #CBA136;
 }
 
-main>#graphView>section:first-child>div>button:nth-child(3):hover{
+#graphView>section:first-child>div>button:nth-child(3):hover{
     border: 2px solid #9F5600;
 }
 
-main>#graphView>section:first-child>div>button:nth-child(2){
+#graphView>section:first-child>div>button:nth-child(2){
     position: absolute;
     left: 6vw;
     top: 11vh;
 }
 
-main>#graphView>section:first-child>div>button:nth-child(3){
+#graphView>section:first-child>div>button:nth-child(3){
     position: absolute;
     left: 11vw;
     top: 11vh;
 }
 
-main>#graphView>section:last-child>div:first-child{
+#graphView>section:last-child>div:first-child{
     height: 25vh;
     width: 0.1vw;
     background-color: #9A8265;
@@ -1237,7 +1293,7 @@ main>#graphView>section:last-child>div:first-child{
     right: 15vw;
 }
 
-main>#graphView>section:last-child>div:nth-child(2){
+#graphView>section:last-child>div:nth-child(2){
     height: 5vh;
     width: 15vw;
     background-color: #B2970B;
@@ -1248,7 +1304,7 @@ main>#graphView>section:last-child>div:nth-child(2){
     border-radius: 0;
 }
 
-main>#graphView>section:last-child>div:last-child{
+#graphView>section:last-child>div:last-child{
     height: 5vh;
     width: 5vw;
     background-color: #B2510B;
@@ -1259,14 +1315,14 @@ main>#graphView>section:last-child>div:last-child{
     border-radius: 0;
 }
 
-main>#contactView{
+#contactView{
     height: 90vh;
     position: relative;
     background: linear-gradient(180deg, transparent, #3B311F);
     opacity: 0.8;
 }
 
-main>#contactView>h2{
+#contactView>h2{
     width: 20vw;
     color: #DE9506;
     font-family: 'Italianno', cursive;
@@ -1280,7 +1336,7 @@ main>#contactView>h2{
     margin: auto;
 }
 
-main>#contactView>h3{
+#contactView>h3{
     width: 15vw;
     font-family: 'Bricolage Grotesque', cursive;
     font-size: 2vw;
@@ -1293,7 +1349,7 @@ main>#contactView>h3{
     margin: auto;
 }
 
-main>#contactView>div:nth-child(3){
+#contactView>div:nth-child(3){
     width: 40vw;
     height: 70vh;
     margin-top: 16vh;
@@ -1303,7 +1359,7 @@ main>#contactView>div:nth-child(3){
     display: inline-block;
 }
 
-main>#contactView>div:nth-child(3)>p{
+#contactView>div:nth-child(3)>p{
     font-family: 'Inder', sans-serif;
     font-size: 1.3vw;
     font-weight: lighter;
@@ -1312,19 +1368,19 @@ main>#contactView>div:nth-child(3)>p{
     word-spacing: 5px;
 }
 
-main>#contactView>div:nth-child(3)>p:nth-child(2){
+#contactView>div:nth-child(3)>p:nth-child(2){
     display: none;
 }
 
-main>#contactView>div:nth-child(3)>address>ul{
+#contactView>div:nth-child(3)>address>ul{
     list-style-type: none;
 }
-main>#contactView>div:nth-child(3)>address>ul>li{
+#contactView>div:nth-child(3)>address>ul>li{
     position: relative;
     right:  3vw;
 }
 
-main>#contactView>div:nth-child(3)>address>ul>li>h3{
+#contactView>div:nth-child(3)>address>ul>li>h3{
     font-family: 'Inder', sans-serif;
     font-size: 1.3vw;
     font-weight: lighter;
@@ -1334,7 +1390,7 @@ main>#contactView>div:nth-child(3)>address>ul>li>h3{
     opacity: 0.8;
 }
 
-main>#contactView>div:nth-child(3)>address>ul>li>div{
+#contactView>div:nth-child(3)>address>ul>li>div{
     width: 4vw;
     height: 4vw;
     border-radius: 100%;
@@ -1344,7 +1400,7 @@ main>#contactView>div:nth-child(3)>address>ul>li>div{
     position: relative;
 }
 
-main>#contactView>div:nth-child(3)>address>ul>li>div>img{
+#contactView>div:nth-child(3)>address>ul>li>div>img{
     width: 60%;
     position: absolute;
     top:0;
@@ -1354,7 +1410,7 @@ main>#contactView>div:nth-child(3)>address>ul>li>div>img{
     margin: auto;
 }
 
-main>#contactView>div:nth-child(3)>div>a>div{
+#contactView>div:nth-child(3)>div>a>div{
     width: 4vw;
     height: 4vw;
     border-radius: 100%;
@@ -1367,7 +1423,7 @@ main>#contactView>div:nth-child(3)>div>a>div{
 
 }
 
-main>#contactView>div:nth-child(3)>div>a>div>img{
+#contactView>div:nth-child(3)>div>a>div>img{
     width: 70%;
     position: absolute;
     top:0;
@@ -1377,7 +1433,7 @@ main>#contactView>div:nth-child(3)>div>a>div>img{
     margin: auto;
 }
 
-main>#contactView>div:nth-child(4){
+#contactView>div:nth-child(4){
     width: 30vw;
     height: 65vh;
     display: inline-block;
@@ -1388,14 +1444,14 @@ main>#contactView>div:nth-child(4){
     z-index: 3;
 }
 
-main>#contactView>div:nth-child(4)>form>input,textarea{
+#contactView>div:nth-child(4)>form>input,textarea{
     opacity: 0.7;
     background-color: #625A46;
     border: 2px solid #F6C827;
     border-radius: 30px;
 }
 
-main>#contactView>div:nth-child(4)>form>input{
+#contactView>div:nth-child(4)>form>input{
     width: 24vw;
     height: 5vh;
     padding-left: 1vw;
@@ -1403,22 +1459,22 @@ main>#contactView>div:nth-child(4)>form>input{
 
 }
 
-main>#contactView>div:nth-child(4)>form>textarea{
+#contactView>div:nth-child(4)>form>textarea{
     width: 24vw;
     height: 20vh;
     padding-left: 1vw;
 }
 
-main>#contactView>div:nth-child(4)>form>input::placeholder,textarea::placeholder{
+#contactView>div:nth-child(4)>form>input::placeholder,textarea::placeholder{
     color: white;
     padding-left: 1vw;
 }
 
-main>#contactView>div:nth-child(4)>form>textarea::placeholder{
+#contactView>div:nth-child(4)>form>textarea::placeholder{
     padding-top: 8vh;
 }
 
-main>#contactView>div:nth-child(4)>form>button{
+#contactView>div:nth-child(4)>form>button{
     background-color: #3B311F;
     border-color: #AB9A9A;
     position: absolute;
@@ -1430,7 +1486,7 @@ main>#contactView>div:nth-child(4)>form>button{
     cursor: pointer;
 }
 
-main>#contactView>img{
+#contactView>img{
     position: absolute;
     width: 40vw;
     right: 0;
@@ -1448,48 +1504,48 @@ footer{
 }
 
 @media all and (max-width: 1024px) {
-    main>#mainView>section>hgroup>div>div{
+    #mainView>section>hgroup>div>div{
         right: 5.0vw;
     }
 
-    main>#mainView>section>hgroup>h2:nth-child(4){
+    #mainView>section>hgroup>h2:nth-child(4){
         font-size: 4vw;
         top:28vh;
     }
 
-    main>#mainView>section>hgroup>div{
+    #mainView>section>hgroup>div{
         width: 75vw;
         top:38vh;
     }
-    main>#mainView>section>hgroup>div>h1{
+    #mainView>section>hgroup>div>h1{
         font-size: 4.4vw;
     }
-    main>#mainView>section>hgroup>div>div{
+    #mainView>section>hgroup>div>div{
         right: 4.8vw;
     }
 
-    main>#mainView>section>hgroup>p{
+    #mainView>section>hgroup>p{
         font-size: 1.8vw;
     }
 
-    main>#mainView>section>button:nth-child(2){
+    #mainView>section>button:nth-child(2){
         top:70vh;
     }
 
-    main>#mainView>section>button:nth-child(2)>a{
+    #mainView>section>button:nth-child(2)>a{
         font-size: 1.4vw;
     }
 
-    main>#mainView>section>button:nth-child(3){
+    #mainView>section>button:nth-child(3){
         top:70vh;
         width: 12vw;
     }
 
-    main>#mainView>section>button:nth-child(3)>a{
+    #mainView>section>button:nth-child(3)>a{
         font-size: 1.4vw;
     }
 
-    main>#mainView>img:nth-child(2){
+    #mainView>img:nth-child(2){
         width: 32vw;
         height: 85vh;
         position: absolute;
@@ -1498,146 +1554,146 @@ footer{
 
     }
 
-    main>#aboutView>code{
+    #aboutView>code{
         margin-left: 7vw;
 
     }
 
-    main>#aboutView>code>pre {
+    #aboutView>code>pre {
         margin-left: 1vw;
     }
 
-    main>#skillView>h1,main>section:nth-child(9)>h2,main>section:nth-child(11)>h2,main>section:nth-child(13)>h2 {
+    #skillView>h1,section:nth-child(9)>h2,section:nth-child(11)>h2,section:nth-child(13)>h2 {
         font-size: 2.9vw;
     }
 
-    main>#skillView>div>div>div:nth-child(2){
+    #skillView>div>div>div:nth-child(2){
         height: 8vh;
     }
 
-    main>#skillView>div>div>div:nth-child(3){
+    #skillView>div>div>div:nth-child(3){
         height: 7vh;
     }
 
-    main>#skillView>div:last-child>div>div:nth-child(2){
+    #skillView>div:last-child>div>div:nth-child(2){
         width: 25vw;
         height: 7vh;
     }
 
-    main>#skillView>div:last-child>div>div:nth-child(3){
+    #skillView>div:last-child>div>div:nth-child(3){
         width:30vw;
         height: 7vh;
     }
 
-    main>#skillView>div:last-child>div>div:nth-child(4){
+    #skillView>div:last-child>div>div:nth-child(4){
         width: 25vw;
         height: 7vh;
     }
 
-    main>#projectView>div:nth-child(3){
+    #projectView>div:nth-child(3){
         left: 78.5vw;
     }
 
-    main>#projectView>div:nth-child(4){
+    #projectView>div:nth-child(4){
         left: 78.5vw;;
     }
 
-    main>#mainView>section>button:nth-child(3){
+    #mainView>section>button:nth-child(3){
         top:70vh;
         left: 15vw;
     }
 
-    main>#projectView>div:nth-child(7)>p{
+    #projectView>div:nth-child(7)>p{
         margin-top: 2.7vh;
         font-size: 1.8vw;
     }
 
-    main>#galleryView{
+    #galleryView{
         margin-top: 3vw;
         margin-bottom: 3vw;
     }
 
-    main>#galleryView>hgroup>h4{
+    #galleryView>hgroup>h4{
         font-size: 3.5vw;
     }
 
-    main>#galleryView>hgroup>h2{;
+    #galleryView>hgroup>h2{;
         font-size: 5vw;
     }
 
-    main>#galleryView>hgroup>blockquote{
+    #galleryView>hgroup>blockquote{
         font-size: 1.5vw;
     }
 
-    main>#galleryView>button{
+    #galleryView>button{
         height: 2.5vw;
     }
 
-    main>#artGalleryView{
+    #artGalleryView{
         margin-top: 3vw;
         margin-bottom: 3vw;
     }
 
-    main>#artGalleryView>hgroup>h4{
+    #artGalleryView>hgroup>h4{
         font-size: 3.5vw;
     }
 
-    main>#artGalleryView>hgroup>h2{;
+    #artGalleryView>hgroup>h2{;
         font-size: 5vw;
     }
 
-    main>#artGalleryView>hgroup>blockquote{
+    #artGalleryView>hgroup>blockquote{
         font-size: 1.5vw;
     }
 
-    main>#artGalleryView>button{
+    #artGalleryView>button{
         height: 2.5vw;
     }
 
-    main>#graphView>section>div{
+    #graphView>section>div{
         width: 23vw;
         height: 14vw;
     }
 
-    main>#graphView>section:first-child>div>h3{
+    #graphView>section:first-child>div>h3{
         font-size: 2vw;
     }
 
-    main>#graphView>section:first-child>div>button{
+    #graphView>section:first-child>div>button{
         width: 5vw;
         height: 5vw;
     }
 
-    main>#graphView>section:first-child>div>button:nth-child(2){
+    #graphView>section:first-child>div>button:nth-child(2){
         left: 6vw;
         top: 13vh;
     }
 
-    main>#graphView>section:first-child>div>button:nth-child(3){
+    #graphView>section:first-child>div>button:nth-child(3){
         left: 13vw;
         top: 13vh;
     }
-    main>#graphView>section:first-child>div>button>img{
+    #graphView>section:first-child>div>button>img{
         width: 90%;
     }
 
-    main>#contactView{
+    #contactView{
         height: 85vh;
     }
 
-    main>#contactView>h2{
+    #contactView>h2{
         width: 30vw;
         font-size: 7vw;
         left: 8vw;
     }
 
-    main>#contactView>h3{
+    #contactView>h3{
         width: 20vw;
         font-size: 2.5vw;
         left: 5vw;
     }
 
-    main>#contactView>div:nth-child(3){
+    #contactView>div:nth-child(3){
         width: 40vw;
         height: 70vh;
         margin-top: 16vh;
@@ -1647,24 +1703,24 @@ footer{
         display: inline-block;
     }
 
-    main>#contactView>div:nth-child(3)>p{
+    #contactView>div:nth-child(3)>p{
         font-size: 1.6vw;
     }
 
-    main>#contactView>div:nth-child(3)>address>ul>li>h3{
+    #contactView>div:nth-child(3)>address>ul>li>h3{
         font-size: 1.5vw;
     }
 
-    main>#contactView>div:nth-child(4){
+    #contactView>div:nth-child(4){
         top: 20vh;
     }
 
-    main>#contactView>div:nth-child(4)>form>button{
+    #contactView>div:nth-child(4)>form>button{
         left: 7vw;
         width: 10vw;
     }
 
-    main>#contactView>img{
+    #contactView>img{
         top: 15vh;
     }
 
@@ -1674,35 +1730,35 @@ footer{
 
 @media all and (max-width: 870px) {
 
-    main>#mainView>section>hgroup>div>div{
+    #mainView>section>hgroup>div>div{
         right: 5.0vw;
     }
-    main>#mainView>section>hgroup>h2:nth-child(4){
+    #mainView>section>hgroup>h2:nth-child(4){
         font-size: 4.3vw;
         top:29vh;
     }
 
-    main>#mainView>section>hgroup>div>h1{
+    #mainView>section>hgroup>div>h1{
         font-size: 4.7vw;
     }
 
-    main>#infoView{
+    #infoView{
         display: flex;
         height: 50vw;
         margin-bottom: 5vw;
         margin-top: -3vw;
     }
 
-    main>#infoView>section>div>ul>li>h3{
+    #infoView>section>div>ul>li>h3{
         width: 15vw;
         left: 6vw;
     }
 
-    main>#skillView>div{
+    #skillView>div{
         height: 75vh;
     }
 
-    main>#projectView>div:nth-child(7)>p{
+    #projectView>div:nth-child(7)>p{
         margin-top: 2.7vh;
         font-size: 2vw;
     }
