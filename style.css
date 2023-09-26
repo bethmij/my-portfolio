@@ -304,6 +304,218 @@ hr{
     opacity: 0.4;
 }
 
+.fireflies {
+    list-style: none;
+}
+
+.fireflies>li {
+    border-radius: 50%;
+    background-color: rgb(255, 255, 73);
+    background-image: radial-gradient(rgb(249, 206, 36) 5%,
+    rgb(254, 179, 4) 25%,
+    rgb(252, 191, 7) 60%);
+    box-shadow: 0 0 5px 2px rgb(250, 193, 93),
+    0 0 20px 10px rgb(255, 228, 140),
+    0 0 40px 15px rgb(255, 219, 41);
+    height: 5px;
+    width: 5px;
+    top: -20px;
+    position: absolute;
+    animation: leftright 24s infinite cubic-bezier(0.39, 0, 0.63, 1),
+    updown 8s infinite 1.25s cubic-bezier(0.39, 0, 0.63, 1),
+    blinking 3s infinite;
+    opacity: 0.4;
+}
+
+/* first 10 */
+.fireflies>li:nth-of-type(1) {
+    animation-delay: 1s;
+    animation-duration: 65s, 81s, 0.01s;
+    animation-fill-mode: backwards, backwards;
+}
+
+.fireflies>li:nth-of-type(2) {
+    animation-delay: 0.5s;
+    animation-duration: 80s, 75s, 0.01s;
+}
+
+.fireflies>li:nth-of-type(3) {
+    animation-delay: 1.5s;
+    animation-duration: 70s, 60s, 0.01s;
+    animation-fill-mode: backwards, backwards;
+}
+
+.fireflies>li:nth-of-type(4) {
+    animation-delay: 2.5s;
+    animation-duration: 90s, 80s, 0.01s;
+}
+
+.fireflies>li:nth-of-type(5) {
+    animation-delay: 0.3s;
+    animation-duration: 55s, 75s, 0.01s;
+}
+
+.fireflies>li:nth-of-type(6) {
+    animation-delay: 2.2s;
+    animation-duration: 79s, 63s, 0.01s;
+    animation-fill-mode: backwards, backwards;
+}
+
+.fireflies>li:nth-of-type(7) {
+    animation-delay: 0.9s;
+    animation-duration: 70s, 80s, 0.01s;
+}
+
+.fireflies>li:nth-of-type(8) {
+    animation-delay: 1.6s;
+    animation-duration: 50s, 40s, 0.01s;
+    animation-fill-mode: backwards, backwards;
+}
+
+.fireflies>li:nth-of-type(9) {
+    animation-delay: 1.8s;
+    animation-duration: 77s, 88s, 0.01s;
+}
+
+.fireflies>li:nth-of-type(10) {
+    animation-delay: 3s;
+    animation-duration: 87s, 73s, 0.01s;
+    animation-fill-mode: backwards, backwards;
+}
+
+/* last 10 */
+.fireflies>li:nth-of-type(11) {
+    animation-delay: 1s;
+    animation-duration: 60s, 78s, 0.01s;
+    animation-fill-mode: backwards, backwards;
+}
+
+.fireflies>li:nth-of-type(12) {
+    animation-delay: 0.5s;
+    animation-duration: 85s, 80s, 0.01s;
+}
+
+.fireflies>li:nth-of-type(13) {
+    animation-delay: 1.5s;
+    animation-duration: 75s, 66s, 0.01s;
+    animation-fill-mode: backwards, backwards;
+}
+
+.fireflies>li:nth-of-type(14) {
+    animation-delay: 2.5s;
+    animation-duration: 87s, 75s, 0.01s;
+}
+
+.fireflies>li:nth-of-type(15) {
+    animation-delay: 0.3s;
+    animation-duration: 69s, 85s, 0.01s;
+}
+
+.fireflies>li:nth-of-type(16) {
+    animation-delay: 2.2s;
+    animation-duration: 80s, 77s, 0.01s;
+    animation-fill-mode: backwards, backwards;
+}
+
+.fireflies>li:nth-of-type(17) {
+    animation-delay: 0.9s;
+    animation-duration: 65s, 88s, 0.01s;
+}
+
+.fireflies>li:nth-of-type(18) {
+    animation-delay: 1.6s;
+    animation-duration: 59s, 63s, 0.01s;
+    animation-fill-mode: backwards, backwards;
+}
+
+.fireflies>li:nth-of-type(19) {
+    animation-delay: 1.8s;
+    animation-duration: 88s, 79s, 0.01s;
+}
+
+.fireflies>li:nth-of-type(20) {
+    animation-delay: 3s;
+    animation-duration: 59s, 75s, 0.01s;
+    animation-fill-mode: backwards, backwards;
+}
+
+/* animations */
+
+/* It will create the left right movement */
+@keyframes leftright {
+
+    0%,
+    100% {
+        left: 80%;
+    }
+
+    16.666% {
+        left: 95%;
+    }
+
+    33.333% {
+        left: 10%;
+    }
+
+    50% {
+        left: 60%;
+    }
+
+    66.666% {
+        left: 70%;
+    }
+
+    83.333% {
+        left: 5%;
+    }
+}
+
+/* It will create the up down movement */
+@keyframes updown {
+
+    0%,
+    100% {
+        top: 10px;
+    }
+
+    25% {
+        top: 90%;
+    }
+
+    50% {
+        top: 50%;
+    }
+
+    75% {
+        top: 95%;
+    }
+}
+
+/* It will create the blinking effect */
+@keyframes blinking {
+
+    0%,
+    100% {
+        box-shadow: 0 0 5px 2px rgb(250, 193, 93),
+        0 0 10px 5px rgb(255, 242, 63),
+        0 0 30px 10px rgb(255, 219, 41);
+        height: 0;
+        width: 0;
+    }
+
+    50% {
+        box-shadow: 0 0 5px 2px rgb(250, 193, 93),
+        0 0 20px 10px rgb(255, 228, 140),
+        0 0 40px 15px rgb(255, 219, 41);
+    }
+
+    75% {
+        box-shadow: 0 0 0px 0px rgb(250, 193, 93),
+        0 0 0px 0px rgb(255, 228, 140),
+        0 0 0px 0px rgb(255, 219, 41);
+    }
+}
+
 #infoView{
     display: flex;
     height: 50vw;
@@ -1333,7 +1545,7 @@ hr{
 #contactView{
     height: 90vh;
     position: relative;
-    background: linear-gradient(180deg, transparent, #3B311F);
+    /*background: linear-gradient(180deg, transparent, #5b4112);*/
     opacity: 0.8;
 }
 
@@ -1425,28 +1637,7 @@ hr{
     margin: auto;
 }
 
-#contactView>div:nth-child(3)>div>a>div{
-    width: 4vw;
-    height: 4vw;
-    border-radius: 100%;
-    background-color: #655029 ;
-    display: inline-block;
-    opacity: 0.7;
-    position: relative;
-    margin-top: 6vh;
-    margin-right: 2vw;
 
-}
-
-#contactView>div:nth-child(3)>div>a>div>img{
-    width: 70%;
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
 
 #contactView>div:nth-child(4){
     width: 30vw;
@@ -1518,73 +1709,171 @@ hr{
 /*    opacity: 0.8;*/
 /*}*/
 
-footer .menu {
+footer{
+    width: 100%;
+    height: 13vw;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
-    flex-wrap: wrap;
-    list-style: none;
 }
 
-footer .menu li a {
-    font-size: 1.5em;
-    color: white;
-    margin: 0 10px;
+footer>div:last-child{
+    background-color:#5b4112;
+    opacity: 0.8;
+    width: 100%;
+    height: 8vw;
+    bottom: 0;
+    position: absolute;
+    margin-top: -1vw;
+    overflow: hidden;
+}
+
+#media{
+    width: 30vw;
+    position: absolute;
+    left: 8vw;
+    right: 0;
+    bottom: 3vw;
+    margin: auto;
+    /*border: 1px solid red;*/
+}
+
+#media>a>div{
+    width: 3vw;
+    height: 3vw;
+    border-radius: 100%;
+    border: 2px solid #3B311F ;
     display: inline-block;
-    transition: .5s;
+    opacity: 0.7;
+    position: relative;
+    margin-right: 1vw;
 }
 
-footer .menu li a:hover {
-    transform: translateY(-5px);
+#media>a>div>img{
+    width: 60%;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
-footer p {
+
+footer>div>p {
+    width: 30vw;
     color: white;
     text-align: center;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    font-size: 1.1em;
+    position: absolute;
+    bottom: 1vw;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 1.5vw;
     letter-spacing: 2px;
+    opacity: 0.5;
 }
 
-footer .wave {
+#waves>div {
     position: absolute;
-    top: -80px;
+   top: 0vw;
     left: 0;
     width: 100%;
     height: 80px;
     background: url("assets/wave.png");
     background-size: 1000px 100px;
+    z-index: 10;
+
 }
 
-footer .wave#wave1 {
-    z-index: 1000;
+#waves>div:first-child {
+    z-index: 10;
     /* opacity: 1; */
+    opacity: 0.8;
     bottom: 0;
     animation: animateWave 5s linear infinite;
 }
 
-footer .wave#wave2 {
-    z-index: 999;
-    opacity: .8;
+#waves>div:nth-child(2) {
+    z-index: 9;
+    opacity: .7;
     bottom: 0;
     animation: animateWave2 4s linear infinite;
 }
 
-footer .wave#wave3 {
-    z-index: 1000;
+#waves>div:nth-child(3) {
+    z-index: 10;
     opacity: .2;
     bottom: 15px;
     animation: animateWave 3s linear infinite;
 }
 
-footer .wave#wave4 {
-    z-index: 999;
-    opacity: .7;
+#waves>div:last-child {
+    z-index: 9;
+    opacity: .5;
     bottom: 20px;
     animation: animateWave2 3s linear infinite;
 }
+
+@keyframes animateWave {
+    0% {
+        background-position-x: 1000px;
+    }
+
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave2 {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+
+/*.ocean {*/
+/*    height: 280px; !* change the height of the waves here *!*/
+/*    width: 100%;*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    overflow-x: hidden;*/
+/*}*/
+
+/*.wave {*/
+/*    background: url("assets/wave.png");*/
+/*    position: absolute;*/
+/*    width: 200%;*/
+/*    height: 100%;*/
+/*    animation: wave 10s -3s linear infinite;*/
+/*    transform: translate3d(0, 0, 0);*/
+/*    opacity: 0.8;*/
+/*}*/
+
+/*.wave:nth-of-type(2) {*/
+/*    bottom: 0;*/
+/*    animation: wave 18s linear reverse infinite;*/
+/*    opacity: 0.5;*/
+/*}*/
+
+/*.wave:nth-of-type(3) {*/
+/*    bottom: 0;*/
+/*    animation: wave 20s -1s linear infinite;*/
+/*    opacity: 0.5;*/
+/*}*/
+
+/*@keyframes wave {*/
+/*    0% {transform: translateX(0);}*/
+/*    50% {transform: translateX(-25%);}*/
+/*    100% {transform: translateX(-50%);}*/
+/*}*/
+
+
+
+
 
 @media all and (max-width: 1024px) {
     #mainView>section>hgroup>div>div{
