@@ -5,9 +5,9 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Manage Customer</title>
+    <title>Manage Store</title>
     <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/customer.css">
+    <link rel="stylesheet" href="css/item.css">
 
 </head>
 <body >
@@ -27,19 +27,15 @@
                 <div  class="col-1 bg-transparent p-0 ">
                     <nav class="navbar  p-0 position-relative" style="height: 100vh; width:60%; background-color: #171717">
                         <div class="container-fluid z-0 " >
-<!--                            <a class="navbar-brand" href="#">-->
-<!--                                <img src="assets/Green_Leaf_Aesthetic_Organic_Skincare_Logo__2_-removebg-preview.png" alt="Logo" width="10%"  class="d-inline-block align-text-top">-->
-<!--                                Harvest Mart Pos System-->
-<!--                            </a>-->
                             <div style="width:70%; height: 20vw ; top: 5vw" class=" bg-transparent d-flex flex-column position-absolute ">
                                 <a class="mb-5 p-0" href="#">
                                     <img src="assets/Screenshot__540_-removebg-preview.png" alt="Logo" width="90%"  class="opacity-50">
                                 </a>
                                 <a class="mb-5" href="#">
-                                    <img src="assets/Screenshot__541_-removebg-preview.png" alt="Logo" width="90%"  class="">
+                                    <img src="assets/Screenshot__541_-removebg-preview.png" alt="Logo" width="90%"  class="opacity-50">
                                 </a>
                                 <a class="mb-5" href="#">
-                                    <img src="assets/Screenshot__546_-removebg-preview.png" alt="Logo" width="90%"  class="opacity-50">
+                                    <img src="assets/Screenshot__546_-removebg-preview.png" alt="Logo" width="90%"  class="">
                                 </a>
                                 <a class="mb-5" href="#">
                                     <img src="assets/Screenshot__543_-removebg-preview.png" alt="Logo" width="90%"  class="opacity-50">
@@ -59,29 +55,29 @@
                 <div class="col-5 position-relative">
                     <div class=" position-absolute top-50 start-50 translate-middle mt-4 p-0" style="height: 85vh; width: 95%; background-color: #151515">
                         <div class="position-relative" style="width: 100%; height: 5vw; background-color: #252525" >
-                            <img src="assets/Screenshot__541_-removebg-preview.png" alt="Logo" width="10%"  class="position-absolute " style="left: 5vw; top: 1vw">
-                            <h1 class="text-center  fs-2 top-50 start-50 translate-middle position-absolute" style="color: #019D30">Manage Customer</h1>
+                            <img src="assets/Screenshot__546_-removebg-preview.png" alt="Logo" width="10%"  class="position-absolute " style="left: 5vw; top: 1vw">
+                            <h1 class="text-center  fs-2 top-50 start-50 translate-middle position-absolute" style="color: #019D30">Manage Store</h1>
                         </div>
 
                         <form class=" start-50 translate-middle position-absolute" style="width: 90%; top:20vw;">
                             <div class="form-floating mb-3 ">
                                 <input type="email" class="form-control" id="floatingInput1" placeholder="name@example.com" style="background-color: #252525; ">
-                                <label for="floatingInput1" class="text-dark-emphasis">Customer ID</label>
+                                <label for="floatingInput1" class="text-dark-emphasis">Item Code</label>
                             </div>
 
                             <div class="form-floating mb-3">
                                 <input type="email" class="form-control" id="floatingInput2" placeholder="name@example.com" style="background-color: #252525">
-                                <label for="floatingInput2" class="text-dark-emphasis">Customer Address</label>
+                                <label for="floatingInput2" class="text-dark-emphasis">Item Name</label>
                             </div>
 
                             <div class="form-floating mb-3">
                                 <input type="email" class="form-control" id="floatingInput3" placeholder="name@example.com" style="background-color: #252525">
-                                <label for="floatingInput3" class="text-dark-emphasis">Customer Address</label>
+                                <label for="floatingInput3" class="text-dark-emphasis">Item Price</label>
                             </div>
 
                             <div class="form-floating mb-5">
                                 <input type="email" class="form-control mb-5" id="floatingInput4" placeholder="name@example.com" style="background-color: #252525">
-                                <label for="floatingInput4" class="text-dark-emphasis">Customer TP</label>
+                                <label for="floatingInput4" class="text-dark-emphasis">Item QuantityP</label>
                             </div>
 
                             <button type="submit"  class="btn btn-outline-danger me-5 " id="btn2">Clear</button>
@@ -111,33 +107,33 @@
                                 <table class="table table table-striped table-hover table-dark">
                                     <thead>
                                     <tr bgcolor="teal">
-                                        <th scope="col">ID</th>
+                                        <th scope="col">Code</th>
                                         <th scope="col">Name</th>
-                                        <th scope="col">Address</th>
-                                        <th scope="col">Salary (LKR)</th>
+                                        <th scope="col">Price (LKR)</th>
+                                        <th scope="col">Quantity</th>
                                         <th scope="col"></th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <th scope="row">C001</th>
-                                        <td>Mark</td>
-                                        <td>Galle</td>
-                                        <td>50000</td>
+                                        <th scope="row">I001</th>
+                                        <td>Soap</td>
+                                        <td>55.00</td>
+                                        <td>120 pkg</td>
                                         <td style="width: 5vw"><img src="assets/icons8-delete-96.png" alt="Logo" width="50%"  class="opacity-50"></td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">C002</th>
-                                        <td>Jacob</td>
-                                        <td>Matara</td>
-                                        <td>25000</td>
+                                        <th scope="row">I002</th>
+                                        <td>Milk Powder</td>
+                                        <td>1150.00</td>
+                                        <td>90 pkg</td>
                                         <td style="width: 5vw"><img src="assets/icons8-delete-96.png" alt="Logo" width="50%"  class="opacity-50"></td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">C003</th>
-                                        <td >Larry the Bird</td>
-                                        <td>Colombo</td>
-                                        <td>65000</td>
+                                        <th scope="row">I003</th>
+                                        <td >Rice</td>
+                                        <td>95.00</td>
+                                        <td>100 kg</td>
                                         <td style="width: 5vw"><img src="assets/icons8-delete-96.png" alt="Logo" width="50%"  class="opacity-50"></td>
                                     </tr>
 
