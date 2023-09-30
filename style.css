@@ -1327,69 +1327,60 @@ hr{
     padding-left: 25px;
 }
 
-#projectView>div:nth-child(2)>figure>div:last-child{
-    display: none;
-}
 
 #projectView>div:nth-child(4)>figure>div{
     display: none;
 }
 
-/*#projectView>div:nth-child(2)>figure>div:last-child{
-    width: 100%;
-    height: 0;
-    background: black;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    transition: height 1s;
-    opacity: 0.8;
-}
+/*#projectView>div:nth-child(2)>figure>div:last-child{*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    background: black;*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    bottom: 0;*/
+/*    overflow: hidden;*/
+/*    transition: height 1s;*/
+/*    opacity: 0.8;*/
+/*    display: none;*/
+/*}*/
 
-#projectView>div:nth-child(2):hover>figure>div:last-child{
-    height: 75%;
-}
+/*!*#projectView>div:nth-child(2):hover>figure>div{*/
+/*    height: 75%;*/
+/*}*!*/
 
-#projectView>div:nth-child(2)>figure>div:last-child>div>p:first-child{
-    font-family: 'Bricolage Grotesque', cursive;
-    font-size: 1.2vw;
-    font-weight: lighter;
-    text-align: center;
-    margin-top: 10vh;
-}
+/*#projectView>div:nth-child(2)>figure>div:last-child>div>label{*/
+/*    font-family: 'Bricolage Grotesque', cursive;*/
+/*    font-size: 1.2vw;*/
+/*    font-weight: lighter;*/
+/*    text-align: center;*/
+/*    margin-left: 30vw;*/
+/*    display: none;*/
+/*    color: red;*/
+/*}*/
 
-#projectView>div:nth-child(2)>figure>div:last-child>div>label:nth-child(2){
-    font-family: 'Bricolage Grotesque', cursive;
-    font-size: 1.2vw;
-    font-weight: lighter;
-    text-align: center;
-    margin-right: 2vw;
-    margin-left: 16vw;
-}
+/*#projectView>div:nth-child(2)>figure>div:last-child>div>a>button{*/
+/*    height: 4vh;*/
+/*    width: 3vw;*/
+/*    background-color: transparent;*/
+/*    border: 1px solid white;*/
+/*    border-radius: 10px;*/
+/*    margin-bottom: 5vh;*/
+/*    cursor: pointer;*/
+/*}*/
+/*#projectView>div:nth-child(2)>figure>div:last-child>div>a>button:hover{*/
+/*    background-color: #2B2922;*/
+/*}*/
 
-#projectView>div:nth-child(2)>figure>div:last-child>div>a>button{
-    height: 4vh;
-    width: 3vw;
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 10px;
-    margin-bottom: 5vh;
-    cursor: pointer;
-}
-#projectView>div:nth-child(2)>figure>div:last-child>div>a>button:hover{
-    background-color: #2B2922;
-}
-
-#projectView>div:nth-child(2)>figure>div:last-child>div>label:nth-child(4){
-    font-family: 'Bricolage Grotesque', cursive;
-    font-size: 1.2vw;
-    font-weight: lighter;
-    text-align: center;
-    padding-top: 5vh;
-    margin-right: 2vw;
-    margin-left: 16vw;
-}*/
+/*#projectView>div:nth-child(2)>figure>div:last-child>div>label:nth-child(4){*/
+/*    font-family: 'Bricolage Grotesque', cursive;*/
+/*    font-size: 1.2vw;*/
+/*    font-weight: lighter;*/
+/*    text-align: center;*/
+/*    padding-top: 5vh;*/
+/*    margin-right: 2vw;*/
+/*    margin-left: 16vw;*/
+/*}*/
 
 #projectView>div:nth-child(3){
     top: 37vw;
@@ -1481,6 +1472,31 @@ hr{
     padding-top: 10px;
     border: 4px solid #2B2922;
 }
+
+#projectView>div:nth-child(2)>figure>div>div{
+        width: 100%;
+        height: 0%;
+        background: black;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+        transition: height 1s;
+        opacity: 0.8;
+}
+
+#projectView>div:nth-child(2):hover>figure>div>div{
+    height: 75%;
+}
+
+/*#projectView>div:nth-child(2)>figure>div:last-child>div>label{*/
+/*    font-family: 'Bricolage Grotesque', cursive;*/
+/*    font-size:1.2vw;*/
+/*    font-weight: lighter;*/
+/*    text-align: center;*/
+/*    margin-left: 30vw;*/
+/*    color: red;*/
+/*}*/
 
 #achievementView{
     height: 60vh;
