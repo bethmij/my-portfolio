@@ -1,4 +1,6 @@
-
+#menu{
+    display: none;
+}
 body {
     background: linear-gradient(180deg, #030E00, #010600);
 }
@@ -6,6 +8,14 @@ body {
 #btn1,#btn2{
     width: 5vw;
     font-size: 1.2vw;
+    bottom: -2vw;
+}
+
+#btn2{
+    left: 10vw;
+}
+#btn1{
+    right: 10vw;
 }
 
 #search::placeholder{
@@ -17,12 +27,100 @@ body {
     top: 4vw;
     height: 3vw;
     width: 8vw;
-    right: 10vw;
+    right: 15vw;
+    font-size: 1vw;
 }
 #btn4{
     position: absolute;
     top: 4vw;
     height: 3vw;
-    width: 6vw;
+    width: 8vw;
     right: 6vw;
+    font-size: 1vw;
 }
+
+.input::placeholder, .select::placeholder{
+    color: #919191;
+}
+
+@media all and (max-width: 768px){
+    #navbar{
+        display: none;
+    }
+    body {
+        background: linear-gradient(180deg, #030E00, #010600);
+    }
+}
+@media all and (max-width: 768px){
+    #table{
+        width: 100vw;
+        margin-left: 3vw;
+        margin-top: 10vh;
+    }
+
+    #tb1{
+        width: 90vw;
+        margin-top: 8vw;
+    }
+    #serch1{
+        width: 90vw;
+    }
+
+    #btn3{
+        position: absolute;
+        top: 7vw;
+        height: 5vw;
+        width: 15vw;
+        right: 20vw;
+        font-size: 2vw;
+    }
+    #btn4{
+        position: absolute;
+        top: 7vw;
+        height: 5vw;
+        width: 15vw;
+        right: 6vw;
+        font-size: 2vw;
+    }
+
+    #form{
+        width: 90vw;
+        margin-left: 5vw;
+        margin-top: 10vh;
+    }
+
+    #i2{
+        margin-top: 3vw;
+    }
+    #i3{
+        margin-top: 6vw;
+    }
+
+    #i4{
+        margin-top: 9vw;
+    }
+
+    #i5{
+        margin-top: 12vw;
+    }
+
+    #btn1,#btn2{
+        width: 15vw;
+        height: 6vw;
+        font-size: 3vw;
+        bottom: -2vw;
+    }
+
+    #img{
+        width: 5%;
+    }
+
+    #menu{
+        display: inline-block;
+        width: 7%;
+        position: absolute;
+        right: 2vw;
+    }
+}
+
+

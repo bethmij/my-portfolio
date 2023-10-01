@@ -5,183 +5,170 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Manage Store</title>
+    <title>Manage Customer</title>
     <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/item.css">
+    <link rel="stylesheet" href="css/customer.css">
 
 </head>
 <body >
-    <header>
-        <nav class="navbar bg-body-tertiary p-0 z-3">
-            <div class="container-fluid position-fixed top-0" style="background-color: #252525;">
-                <a class="navbar-brand " href="#" style="color: #919191;">
-                    <img src="assets/Green_Leaf_Aesthetic_Organic_Skincare_Logo__2_-removebg-preview.png" alt="Logo" width="10%"  class="d-inline-block align-text-top ">
-                    Harvest Mart Pos System
-                </a>
+<header>
+    <nav class="navbar bg-body-tertiary p-0 z-3">
+        <div class="container-fluid position-fixed top-0" style="background-color: #252525;">
+            <a class="navbar-brand " href="#" style="color: #919191;">
+                <img src="assets/Green_Leaf_Aesthetic_Organic_Skincare_Logo__2_-removebg-preview.png" alt="Logo" width="10%"  class="d-inline-block align-text-top ">
+                Harvest Mart Pos System
+                <img id="menu" src="assets/icons8-menu-100.png" alt="Logo" width="80%"  class="opacity-50">
+            </a>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="container-fluid text-center position-relative">
+        <div class="row">
+            <div  class="col-0 col-sm-0 col-md-1  bg-transparent p-0 ">
+                <nav id="navbar" class="navbar  p-0 position-relative" style="height: 100vh; width:60%; background-color: #171717">
+                    <div class="container-fluid z-0 " >
+                        <div style="width:70%; height: 20vw ; top: 5vw" class=" bg-transparent d-flex flex-column position-absolute ">
+                            <a class="mb-5 p-0" href="#">
+                                <img src="assets/Screenshot__540_-removebg-preview.png" alt="Logo" width="80%"  class="opacity-50">
+                            </a>
+                            <a class="mb-5" href="customer.html">
+                                <img src="assets/Screenshot__541_-removebg-preview.png" alt="Logo" width="80%"  class="opacity-50">
+                            </a>
+                            <a class="mb-5" href="item.html">
+                                <img src="assets/Screenshot__546_-removebg-preview.png" alt="Logo" width="80%"  class="">
+                            </a>
+                            <a class="mb-5" href="order.html">
+                                <img src="assets/Screenshot__543_-removebg-preview.png" alt="Logo" width="80%"  class="opacity-50">
+                            </a>
+                        </div>
+                        <div style="width:70%; height: 10vw; bottom: 0vw;" class=" bg-transparent d-flex flex-column position-absolute ">
+                            <a class="mb-5 p-0" href="#">
+                                <img src="assets/Screenshot__545_-removebg-preview.png" alt="Logo" width=70%"  class="opacity-50">
+                            </a>
+                            <a class="mb-5" href="#">
+                                <img src="assets/Screenshot__544_-removebg-preview.png" alt="Logo" width="70%"  class="opacity-50">
+                            </a>
+                        </div>
+                    </div>
+                </nav>
             </div>
-        </nav>
-    </header>
-    <main>
-        <div class="container-fluid text-center position-relative">
-            <div class="row">
-                <div  class="col-1 bg-transparent p-0 ">
-                    <nav class="navbar  p-0 position-relative" style="height: 100vh; width:60%; background-color: #171717">
-                        <div class="container-fluid z-0 " >
-                            <div style="width:70%; height: 20vw ; top: 5vw" class=" bg-transparent d-flex flex-column position-absolute ">
-                                <a class="mb-5 p-0" href="#">
-                                    <img src="assets/Screenshot__540_-removebg-preview.png" alt="Logo" width="90%"  class="opacity-50">
-                                </a>
-                                <a class="mb-5" href="#">
-                                    <img src="assets/Screenshot__541_-removebg-preview.png" alt="Logo" width="90%"  class="opacity-50">
-                                </a>
-                                <a class="mb-5" href="#">
-                                    <img src="assets/Screenshot__546_-removebg-preview.png" alt="Logo" width="90%"  class="">
-                                </a>
-                                <a class="mb-5" href="#">
-                                    <img src="assets/Screenshot__543_-removebg-preview.png" alt="Logo" width="90%"  class="opacity-50">
-                                </a>
-                            </div>
-                            <div style="width:70%; height: 10vw; bottom: 0vw;" class=" bg-transparent d-flex flex-column position-absolute ">
-                                <a class="mb-5 p-0" href="#">
-                                    <img src="assets/Screenshot__545_-removebg-preview.png" alt="Logo" width="80%"  class="opacity-50">
-                                </a>
-                                <a class="mb-5" href="#">
-                                    <img src="assets/Screenshot__544_-removebg-preview.png" alt="Logo" width="80%"  class="opacity-50">
-                                </a>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-                <div class="col-5 position-relative">
-                    <div class=" position-absolute top-50 start-50 translate-middle mt-4 p-0" style="height: 85vh; width: 95%; background-color: #151515">
-                        <div class="position-relative" style="width: 100%; height: 5vw; background-color: #252525" >
-                            <img src="assets/Screenshot__546_-removebg-preview.png" alt="Logo" width="10%"  class="position-absolute " style="left: 5vw; top: 1vw">
-                            <h1 class="text-center  fs-2 top-50 start-50 translate-middle position-absolute" style="color: #019D30">Manage Store</h1>
-                        </div>
-
-                        <form class=" start-50 translate-middle position-absolute" style="width: 90%; top:20vw;">
-                            <div class="form-floating mb-3 ">
-                                <input type="email" class="form-control" id="floatingInput1" placeholder="name@example.com" style="background-color: #252525; ">
-                                <label for="floatingInput1" class="text-dark-emphasis">Item Code</label>
-                            </div>
-
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="floatingInput2" placeholder="name@example.com" style="background-color: #252525">
-                                <label for="floatingInput2" class="text-dark-emphasis">Item Name</label>
-                            </div>
-
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="floatingInput3" placeholder="name@example.com" style="background-color: #252525">
-                                <label for="floatingInput3" class="text-dark-emphasis">Item Price</label>
-                            </div>
-
-                            <div class="form-floating mb-5">
-                                <input type="email" class="form-control mb-5" id="floatingInput4" placeholder="name@example.com" style="background-color: #252525">
-                                <label for="floatingInput4" class="text-dark-emphasis">Item QuantityP</label>
-                            </div>
-
-                            <button type="submit"  class="btn btn-outline-danger me-5 " id="btn2">Clear</button>
-                            <button type="submit" class="btn  btn-outline-success ms-5" id="btn1">Save </button>
-
-                        </form>
+            <div id="form" class="col-12 col-sm-12 col-md-5  position-relative " style="height: 85vh; top: 5vw;">
+                <div class=" position-absolute top-0 p-0" style="height: 100%; width: 95%; background-color: #151515">
+                    <div class="position-relative" style="width: 100%; height: 5vw; background-color: #252525" >
+                        <img id="img" src="assets/Screenshot__541_-removebg-preview.png" alt="Logo" width="10%"  class="position-absolute " style="left: 5vw; top: 1vw">
+                        <h1 class="text-center  top-50 start-50 translate-middle position-absolute" style="color: #019D30; font-size: 2vw;">Manage Item</h1>
                     </div>
 
+                    <form class=" start-50 translate-middle position-absolute top-50  " style="width: 90%; ; height: 80%;">
 
+                        <input id="i1"  class="input form-control text-white position-absolute ms-3 "  placeholder="Item Code" style="height: 10%; width: 90%; background-color: #252525; top:3vw;">
+                        <input id="i2"  class="input form-control text-white position-absolute ms-3"  placeholder="Item Name" style="height: 10%; width: 90%; background-color: #252525;  top: 8vw;">
+                        <input id="i3"  class="input form-control text-white position-absolute ms-3 "  placeholder="Item Price" style="height: 10%; width:90%; background-color: #252525; top:13vw;  ">
+                        <input id="i4"  class="input form-control text-white position-absolute ms-3"  placeholder="Item Quantity" style="height: 10%; width: 90%; background-color: #252525;  top: 18vw">
+
+                        <button type="submit"  class="btn btn-outline-danger me-5 position-absolute " id="btn2">Clear</button>
+                        <button type="submit" class="btn  btn-outline-success ms-5 position-absolute" id="btn1">Save </button>
+
+                    </form>
                 </div>
-                <div class="col-6 border-info position-relative  " style="width: 95vh;">
-                    <div class="container position-absolute " style="top: 5vw;">
-                        <div class="row " >
-                            <div class="col" style="height: 10vw">
-                                <div class="container-fluid">
-                                    <form class="d-flex position-relative" role="search">
-                                        <input id="search" class="form-control me-2 bg-transparent" type="search" placeholder="Search" aria-label="Search">
-                                        <button class="btn btn-outline-success" type="submit">Search</button>
-                                        <button type="submit" class="btn btn-outline-success me-5  " id="btn3"><img src="assets/Screenshot__550_-removebg-preview.png" alt="Logo" width="30%"  class="opacity-50 me-2">Get All</button>
-                                        <button type="submit" class="btn btn-outline-success ms-5" id="btn4"><img src="assets/Screenshot__549_-removebg-preview.png" alt="Logo" width="40%"  class="opacity-50 me-2">Edit </button>
-                                    </form>
-                                </div>
+
+
+            </div>
+            <div id="table" class="col-12 col-sm-12 col-md-6  border-info position-relative p-0 " style="height: 85vh; top: 0vw;">
+                <div class="container position-absolute " style="top: 5vw;">
+                    <div class="row " >
+                        <div class="col" style="height: 10vw">
+                            <div id="serch1" class="container-fluid">
+                                <form class="d-flex position-relative" role="search">
+                                    <input id="search" class="form-control me-2 bg-transparent" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                    <button type="submit" class="btn btn-outline-success me-5  " id="btn3"><img src="assets/Screenshot__550_-removebg-preview.png" alt="Logo" width="30%"  class="opacity-50 me-2">Get All</button>
+                                    <button type="submit" class="btn btn-outline-success ms-5" id="btn4"><img src="assets/Screenshot__549_-removebg-preview.png" alt="Logo" width="30%"  class="opacity-50 me-2">Edit </button>
+                                </form>
                             </div>
                         </div>
-                        <div class="row " style="height: 100%;">
-                            <div class="col">
-                                <table class="table table table-striped table-hover table-dark">
-                                    <thead>
-                                    <tr bgcolor="teal">
-                                        <th scope="col">Code</th>
-                                        <th scope="col">Name</th>
-                                        <th scope="col">Price (LKR)</th>
-                                        <th scope="col">Quantity</th>
-                                        <th scope="col"></th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <th scope="row">I001</th>
-                                        <td>Soap</td>
-                                        <td>55.00</td>
-                                        <td>120 pkg</td>
-                                        <td style="width: 5vw"><img src="assets/icons8-delete-96.png" alt="Logo" width="50%"  class="opacity-50"></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">I002</th>
-                                        <td>Milk Powder</td>
-                                        <td>1150.00</td>
-                                        <td>90 pkg</td>
-                                        <td style="width: 5vw"><img src="assets/icons8-delete-96.png" alt="Logo" width="50%"  class="opacity-50"></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">I003</th>
-                                        <td >Rice</td>
-                                        <td>95.00</td>
-                                        <td>100 kg</td>
-                                        <td style="width: 5vw"><img src="assets/icons8-delete-96.png" alt="Logo" width="50%"  class="opacity-50"></td>
-                                    </tr>
+                    </div>
+                    <div class="row " style="height: 100%;">
+                        <div class="col">
+                            <table id="tb1" class="table table table-striped table-hover table-dark">
+                                <thead>
+                                <tr bgcolor="teal">
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Quantity (LKR)</th>
+                                    <th scope="col"></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">I001</th>
+                                    <td>Soap</td>
+                                    <td>55.00</td>
+                                    <td>180 pkg</td>
+                                    <td style="width: 5vw"><img src="assets/icons8-delete-96.png" alt="Logo" width="50%"  class="opacity-50"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">I002</th>
+                                    <td >Rice</td>
+                                    <td>95.00</td>
+                                    <td>110 kg</td>
+                                    <td style="width: 5vw"><img src="assets/icons8-delete-96.png" alt="Logo" width="50%"  class="opacity-50"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">C003</th>
+                                    <td>Milk Powder</td>
+                                    <td>1150.00</td>
+                                    <td>120 pkg</td>
+                                    <td style="width: 5vw"><img src="assets/icons8-delete-96.png" alt="Logo" width="50%"  class="opacity-50"></td>
+                                </tr>
 
-                                    <tr style="height: 3vw;">
-                                        <th scope="row"></th>
-                                        <td ></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td style="width: 5vw"></td>
-                                    </tr>
-                                    <tr style="height: 3vw;">
-                                        <th scope="row"></th>
-                                        <td ></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td style="width: 5vw"></td>
-                                    </tr>
-                                    <tr style="height: 3vw;">
-                                        <th scope="row"></th>
-                                        <td ></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td style="width: 5vw"></td>
-                                    </tr>
-                                    <tr style="height: 3vw;">
-                                        <th scope="row"></th>
-                                        <td ></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td style="width: 5vw"></td>
-                                    </tr>
-                                    <tr style="height: 3vw;">
-                                        <th scope="row"></th>
-                                        <td ></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td style="width: 5vw"></td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                                <tr style="height: 3vw;">
+                                    <th scope="row"></th>
+                                    <td ></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td style="width: 5vw"></td>
+                                </tr>
+                                <tr style="height: 3vw;">
+                                    <th scope="row"></th>
+                                    <td ></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td style="width: 5vw"></td>
+                                </tr>
+                                <tr style="height: 3vw;">
+                                    <th scope="row"></th>
+                                    <td ></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td style="width: 5vw"></td>
+                                </tr>
+                                <tr style="height: 3vw;">
+                                    <th scope="row"></th>
+                                    <td ></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td style="width: 5vw"></td>
+                                </tr>
+                                <tr style="height: 3vw;">
+                                    <th scope="row"></th>
+                                    <td ></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td style="width: 5vw"></td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
+    </div>
+</main>
 
-    <script src="css/bootstrap/js/bootstrap.js"></script>
+<script src="css/bootstrap/js/bootstrap.js"></script>
 </body>
 </html>

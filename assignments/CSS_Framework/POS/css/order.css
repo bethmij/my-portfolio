@@ -1,0 +1,47 @@
+
+body {
+    background: linear-gradient(180deg, #030E00, #010600);
+}
+
+
+.input::placeholder, .select::placeholder{
+    color: #919191;
+}
+
+#menu{
+    display: none;
+}
+
+#btn6{
+    position: absolute;
+    bottom: -1vw;
+    height: 2.5vw;
+    width: 12vw;
+    right: 11vw;
+}
+
+#btn7{
+    position: absolute;
+    bottom: -1vw;
+    height: 2.5vw;
+    width: 12vw;
+    right: 13vw;
+}
+
+@media all and (max-width: 768px){
+    #navbar{
+        display: none;
+    }
+    body {
+        background: linear-gradient(180deg, #030E00, #010600);
+    }
+
+    #menu{
+        display: inline-block;
+        width: 7%;
+        position: absolute;
+        right: 2vw;
+    }
+}
+
+
