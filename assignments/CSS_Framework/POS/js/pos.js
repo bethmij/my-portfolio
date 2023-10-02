@@ -58,4 +58,32 @@
      });
  });
 
+ var img =  document.querySelectorAll(".menuImg");
+ img.forEach(function(element5) {
+     element5.addEventListener("mouseover",function (){
+         element5.style.opacity = "1";
+         element5.style.cursor = "pointer";
+     });
+     element5.addEventListener("mouseout",function (){
+         element5.style.opacity = "0.7";
+         element5.style.cursor = "unset";
+     });
+ });
+
+ var btn =  document.querySelectorAll(".menuBtn");
+ btn.forEach(function(element) {
+     element.addEventListener("mouseover",function (){
+         element.style.cursor = "pointer";
+         element.style.opacity = "1";
+     });
+     element.addEventListener("mouseout",function (){
+         element.style.cursor = "unset";
+         element.style.opacity = "0.5";
+     });
+ });
+
+
+
+
+
 
