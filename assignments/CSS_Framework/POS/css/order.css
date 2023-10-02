@@ -1,47 +1,34 @@
 
-body {
-    background: linear-gradient(180deg, #030E00, #010600);
-}
-
-
 .input::placeholder, .select::placeholder{
     color: #919191;
 }
 
-#menu{
-    display: none;
-}
-
-#btn6{
-    position: absolute;
-    bottom: -1vw;
-    height: 2.5vw;
-    width: 12vw;
-    right: 11vw;
-}
-
-#btn7{
-    position: absolute;
-    bottom: -1vw;
-    height: 2.5vw;
-    width: 12vw;
-    right: 13vw;
-}
-
 @media all and (max-width: 768px){
-    #navbar{
-        display: none;
-    }
-    body {
-        background: linear-gradient(180deg, #030E00, #010600);
-    }
+   #menuContainer{
+       display:none;
+   }
 
     #menu{
-        display: inline-block;
-        width: 7%;
+        display: inline-block!important;
+        width: 4%;
         position: absolute;
         right: 2vw;
     }
+
+    .p-3{
+        padding: 0.5rem!important;
+    }
+
+    #total{
+        width: 90vw!important;
+        margin-left: 1rem!important;
+    }
+
+    span{
+
+    }
+
+
 }
 
 

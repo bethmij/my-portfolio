@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="css/order.css">
 
 </head>
-<body >
+<body style = "background: linear-gradient(180deg, #030E00, #010600); /*overflow: hidden;*/">
     <header>
-        <nav class="navbar bg-body-tertiary p-0 z-3">
-            <div class="container-fluid position-fixed top-0" style="background-color: #252525;">
+        <nav class="navbar bg-body-tertiary p-0 z-3" >
+            <div class="container-fluid position-fixed top-0 p-0" style="background-color: #252525; height: 60px;" >
                 <a class="navbar-brand " href="#" style="color: #919191;">
-                    <img src="assets/Green_Leaf_Aesthetic_Organic_Skincare_Logo__2_-removebg-preview.png" alt="Logo" width="10%"  class="d-inline-block align-text-top ">
-                    Harvest Mart Pos System
-                    <img id="menu" src="assets/icons8-menu-100.png" alt="Logo" width="80%"  class="opacity-50">
+                    <img src="assets/Green_Leaf_Aesthetic_Organic_Skincare_Logo__2_-removebg-preview.png" alt="Logo" width="15%"  class="d-inline-block align-text-top ">
+                    <label class="position-absolute fs-4" style="">Harvest Mart Pos System</label>
+                    <img  id="menu" class="d-none" src="assets/icons8-menu-100.png" alt="Logo" width="100%" >
                 </a>
             </div>
         </nav>
@@ -25,82 +25,107 @@
     <main>
         <div class="container-fluid text-center position-relative">
             <div class="row">
-                <div  class="col-0 col-sm-0 col-md-1  bg-transparent p-0 ">
-                    <nav id="navbar" class="navbar  p-0 position-relative" style="height: 100vh; width:60%; background-color: #171717">
-                        <div class="container-fluid z-0 " >
-                            <div style="width:70%; height: 20vw ; top: 5vw" class=" bg-transparent d-flex flex-column position-absolute ">
-                                <a class="mb-5 p-0" href="#">
-                                    <img src="assets/Screenshot__540_-removebg-preview.png" alt="Logo" width="80%"  class="opacity-50">
+                <div id="menuContainer" class=" col-sm-1 col-md-1  p-0 " style="height: 91vh; margin-top: 60px;">
+                    <nav id="navbar" class="navbar  p-0 position-relative" style="height: 100%; width:60%; background-color: #171717">
+
+                            <div style="width:70%; height: 20vw ; top: 1vw" class=" bg-transparent d-flex flex-column position-absolute ">
+                                <a class="mb-5 p-0 ms-2" href="#">
+                                    <img src="assets/Screenshot__540_-removebg-preview.png" alt="Logo" width="90%"  class="opacity-50">
                                 </a>
-                                <a class="mb-5" href="customer.html">
-                                    <img src="assets/Screenshot__541_-removebg-preview.png" alt="Logo" width="80%"  class="opacity-50">
+                                <a class="mb-5 ms-2" href="customer.html">
+                                    <img src="assets/Screenshot__541_-removebg-preview.png" alt="Logo" width="90%"  class="opacity-50">
                                 </a>
-                                <a class="mb-5" href="item.html">
-                                    <img src="assets/Screenshot__546_-removebg-preview.png" alt="Logo" width="80%"  class="opacity-50">
+                                <a class="mb-5 ms-2" href="item.html">
+                                    <img src="assets/Screenshot__546_-removebg-preview.png" alt="Logo" width="90%"  class="opacity-50">
                                 </a>
-                                <a class="mb-5" href="order.html">
-                                    <img src="assets/Screenshot__543_-removebg-preview.png" alt="Logo" width="80%"  class="">
+                                <a class="mb-5 ms-2" href="order.html">
+                                    <img src="assets/Screenshot__543_-removebg-preview.png" alt="Logo" width="90%"  class="">
                                 </a>
                             </div>
                             <div style="width:70%; height: 10vw; bottom: 0vw;" class=" bg-transparent d-flex flex-column position-absolute ">
-                                <a class="mb-5 p-0" href="#">
-                                    <img src="assets/Screenshot__545_-removebg-preview.png" alt="Logo" width="70%"  class="opacity-50">
+                                <a class="mb-5 p-0 ms-2" href="#">
+                                    <img src="assets/Screenshot__545_-removebg-preview.png" alt="Logo" width="80%"  class="opacity-50">
                                 </a>
-                                <a class="mb-5" href="#">
-                                    <img src="assets/Screenshot__544_-removebg-preview.png" alt="Logo" width="70%"  class="opacity-50">
+                                <a class="mb-5 ms-2" href="#">
+                                    <img src="assets/Screenshot__544_-removebg-preview.png" alt="Logo" width="80%"  class="opacity-50">
                                 </a>
                             </div>
-                        </div>
+
                     </nav>
                 </div>
 
-                <div class="col-12 col-sm-12 col-md-5 position-relative mt-5 ">
-                    <div class="container position-relative  " style="width: 90%; height: 100%; left: -2vw;" >
-                        <div class="row mt-4 mb-5 " style="width: 100%; height: 35%;">
+                <div class=" col-sm-12 col-md-5  position-relative p-0 " style="height: 91vh; margin-top: 60px;">
+                    <div class="container   p-0  mt-0" style="width: 100%; height: 100%; border: 1px solid transparent; ">
+                        <div class="row ms-0 mb-5 bg-info" style="width: 100%; height: 35%; margin-top: 1vw;">
                                 <div class="col  p-0" style="height: 100%; width: 100%; background-color: #151515">
-                                    <div class="position-relative" style="width: 100%; height: 15%; background-color: #252525" >
+                                    <div class="position-relative " style="width: 100%; height: 15%; background-color: #252525" >
                                         <h1 class="text-center  fs-5 top-50 start-50 translate-middle position-absolute" style="color: #019D30">Invoice Details</h1>
                                     </div>
 
-                                    <form class=" mt-4 position-relative" style="width: 100%; height: 65%;">
-                                        <select class="select mt-2 form-select position-absolute top-0 start-50 translate-middle" aria-label="Default select example" style="height: 20%; width: 30%; background-color: #252525">
-                                            <option  class="text-white" value="1">One</option>
-                                            <option  class="text-white" value="2">Two</option>
-                                            <option class="text-white" value="3">Three</option>
-                                        </select>
-                                        <input  class="input form-control text-white position-absolute ms-3 "  placeholder="Customer Name" style="height: 25%; width: 40%; background-color: #252525; top:3vw;">
-                                        <input  class="input form-control text-white position-absolute"  placeholder="Customer Salary" style="height: 25%; width: 40%; background-color: #252525; top:3vw; right: 2vw;">
-                                        <input  class="input form-control text-white position-absolute ms-3 mt-3"  placeholder="Customer Address" style="height: 25%; width:90%; background-color: #252525; top:6vw;  ">
+                                    <form class="container position-relative text-center " style="width: 100%; height: 85%;">
+                                        <div class="  row row-cols-1 justify-content-center p-2" style="height: calc(100%/3);">
+                                            <select class="select  form-select text-white-50" aria-label="Default select example" style="height: 100%; width: 30%; background-color: #252525;">-->
+                                                <option  class="text-white" value="1">C001</option>
+                                                <option  class="text-white" value="2">C002</option>
+                                                <option class="text-white" value="3">C003</option>
+                                            </select>
+                                        </div>
+                                        <div class="  row p-2 justify-content-end align-items-center " style="height: calc(100%/3);">
+                                            <div class="col  ">
+                                                <input  class="input form-control  "  placeholder="Customer Name" style="height: 100%; width: 80%; background-color: #252525; ">
+                                            </div>
+                                            <div class="col  ">
+                                                <input  class="input form-control text-white ms-4 "  placeholder="Customer Salary" style="height: 100%; width: 80%; background-color: #252525; right: 0;">
+                                            </div>
+                                        </div>
+                                        <div class="  row row-cols-1 p-2 " style="height: calc(100%/3);">
+                                            <input  class="input form-control text-white e ms-3 "  placeholder="Customer Address" style="height: 100%; width:90%; background-color: #252525;  ">
+                                        </div>
+
                                     </form>
                                 </div>
                         </div>
-                        <div class="row  bg-info" style="width: 100%; height: 50%;">
+                        <div class="row ms-0 bg-success" style="width: 100%; height: 55%;">
                             <div class="col  p-0" style="height: 100%; width: 100%; background-color: #151515">
                                 <div class="position-relative" style="width: 100%; height: 10%; background-color: #252525" >
                                     <h1 class="text-center  fs-5 top-50 start-50 translate-middle position-absolute" style="color: #019D30">Item Select</h1>
                                 </div>
+                                <form class="container position-relative " style="width: 100%; height: 90%;">
+                                    <div class="row row-cols-1 justify-content-center p-2 mt-1 " style="height: calc(100%/5);">
+                                        <select class="select  form-select text-white-50" aria-label="Default select example" style="height: 100%; width: 30%; background-color: #252525; ">-->
+                                            <option  class="text-white" value="1">I001</option>
+                                            <option  class="text-white" value="2">I002</option>
+                                            <option class="text-white" value="3">I003</option>
+                                        </select>
+                                    </div>
+                                    <div class="row row-cols-1 p-2 " style="height: calc(100%/5);">
+                                        <input  class="input form-control text-white e ms-3 "  placeholder="Customer Address" style="height: 95%; width:90%; background-color: #252525;  ">
+                                    </div>
+                                    <div class="row p-2 justify-content-end " style="height: calc(100%/5);">
+                                        <div class="col  ">
+                                            <input  class="input form-control text-white  "  placeholder="Customer Name" style="height: 95%; width: 80%; background-color: #252525; ">
+                                        </div>
+                                        <div class="col  ">
+                                            <input  class="input form-control text-white ms-4 "  placeholder="Customer Salary" style="height: 95%; width: 80%; background-color: #252525; right: 0;">
+                                        </div>
+                                    </div>
+                                    <div class="row row-cols-1 p-2 " style="height: calc(100%/5);">
+                                        <input  class="input form-control text-white ms-3"  placeholder="Order Quantity" style="height: 95%; width: 90%; background-color: #252525; ">
+                                    </div>
+                                    <div class="row row-cols-1 p-2  justify-content-center" style="height: calc(100%/5);">
+                                        <button type="submit" class="btn btn-outline-success "  style="width: 45%;"><img src="assets/Screenshot__543_-removebg-preview.png" alt="Logo" width="25vw"  class="opacity-50 me-3">Add to Cart </button>
 
-                                <form class=" mt-4 position-relative" style="width: 100%; height: 75%;">
-                                    <select class="select mt-2 form-select position-absolute top-0 start-50 translate-middle" aria-label="Default select example" style="height: 15%; width: 30%; background-color: #252525">
-                                        <option  class="text-white" value="1">One</option>
-                                        <option  class="text-white" value="2">Two</option>
-                                        <option class="text-white" value="3">Three</option>
-                                    </select>
-                                    <input  class="input form-control text-white position-absolute ms-3 "  placeholder="Item Name" style="height: 15%; width: 90%; background-color: #252525; top:3vw;">
-                                    <input  class="input form-control text-white position-absolute"  placeholder="Item Price" style="height: 15%; width: 40%; background-color: #252525; top:7vw; right: 2vw;">
-                                    <input  class="input form-control text-white position-absolute ms-3 mt-3"  placeholder="Item Qty" style="height: 15%; width:40%; background-color: #252525; top:6vw;  ">
-                                    <input  class="input form-control text-white position-absolute ms-3 "  placeholder="Order Quantity" style="height: 15%; width: 90%; background-color: #252525; top:11vw;">
-                                    <button type="submit" class="btn btn-outline-success ms-5" id="btn6"><img src="assets/Screenshot__543_-removebg-preview.png" alt="Logo" width="25vw"  class="opacity-50 me-2">Add to Cart </button>
+                                    </div>
+
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-12 col-md-6  border-info position-relative p-0 " style="right: 2vw;">
-                    <div class="container position-absolute " style="top: 5vw;">
-
-                        <div class="row  " style="height: 20vw; overflow-y:scroll ">
+                <div class=" col-sm-12 col-md-6   position-relative p-0 " style="height: 91vh; margin-top: 60px;">
+                    <div class="container-fluid position-absolute top-0" style="height: 100%; width: 95%;">
+                        <div class="row ms-0 pt-3" style="height: 50%; overflow-y:scroll;  ">
                             <div class="col">
                                 <table class="table table-hover table-striped table-dark" style="height: 10vw;">
 
@@ -168,15 +193,27 @@
                             </div>
                         </div>
 
-                        <div class="row mt-5 ms-3 position-relative" style="height: 15vw; width: 98%;">
-                            <div class="col" style="">
-                                <span id="total-text " class="text-white fs-2 me-5">Total : 00.0</span>
-                                <span id="total-text1" class="text-white fs-2 ms-5">Sub Total : 00.0</span>
-                                <br><br>
-                                <input  class="input form-control text-white position-absolute ms-3 "  placeholder="Cash" style="height: 18%; width: 40%; background-color: #252525; top:5vw;">
-                                <input  class="input form-control text-white position-absolute"  placeholder="Discount" style="height: 18%; width: 40%; background-color: #252525; top:5vw; right: 2vw;">
-                                <input  class="input form-control text-white position-absolute ms-3 mt-3"  placeholder="Balance" style="height: 18%; width:90%; background-color: #252525; top:8vw;  ">
-                                <button type="submit" class="btn btn-outline-success ms-5" id="btn7"><img src="assets/Screenshot__550_-removebg-preview.png" alt="Logo" width="25vw"  class="opacity-50 me-2">Place Order </button>
+                        <div id="total" class="row mt-5 ms-5 " style="height: 40%; width: 40vw;">
+                            <div class="container-fluid w-100 h-100 ">
+                                <div class="row " style="height: calc(100%/4);">
+                                    <div class="col"><span id="total-text " class="text-white  me-5" style="font-size: 2vw;">Total : 00.0</span></div>
+                                    <div class="col"><span id="total-text1" class="text-white  " style="font-size: 2vw;">Sub Total : 00.0</span></div>
+                                </div>
+                                <div class="row " style="height: calc(100%/4);">
+                                    <div class="col p-3 ms-5">
+                                        <input  class="input form-control text-white p-2 "  placeholder="Cash" style="height: 100%; width: 70%; background-color: #252525; ">
+                                    </div>
+                                    <div class="col p-3 ms-5">
+                                        <input  class="input form-control text-white p-2"  placeholder="Discount" style="height: 100%; width: 70%; background-color: #252525; ">
+                                    </div>
+                                </div>
+                                <div class="row-cols-1 p-1 ms-5" style="height: calc(100%/4);">
+                                    <input  class="input form-control text-white "  placeholder="Balance" style="height: 78%; width:87%; background-color: #252525;  ">
+                                </div>
+                                <div class="row-cols-1 justify-content-center" style="height: calc(100%/4); ">
+                                    <button type="submit" class="btn btn-outline-success " style="width: 45%;" id="btn7"><img src="assets/Screenshot__550_-removebg-preview.png" alt="Logo" width="25vw"  class="opacity-50 me-2">Place Order </button>
+                                </div>
+
                             </div>
                         </div>
                     </div>
