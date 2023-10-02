@@ -1,0 +1,13 @@
+@media all and (max-width: 768px){
+    .top-50{
+        top: 30%!important;
+    }
+
+    .img{
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+}

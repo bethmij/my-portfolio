@@ -7,15 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Manage Customer</title>
     <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/pos.css">
+    <link rel="stylesheet" href="css/index.css">
     <script src="js/pos.js"></script>
 
 </head>
-<body style="background: linear-gradient(180deg, #030E00, #010600);">
+<body style="background: linear-gradient(180deg, #030E00, #010600); height: 100vh;">
 <header>
     <nav class="navbar bg-body-tertiary p-0 z-3" >
         <div class="container-fluid position-fixed top-0 p-0" style="background-color: #252525; height: 60px;" >
-            <a class="navbar-brand " href="#" style="color: #919191;">
+            <a class="navbar-brand " style="color: #919191;">
                 <img src="assets/Green_Leaf_Aesthetic_Organic_Skincare_Logo__2_-removebg-preview.png" alt="Logo" width="15%"  class="d-inline-block align-text-top ">
                 <label class="position-absolute fs-4" style="">Harvest Mart Pos System</label>
                 <img  class=" menu d-none" src="assets/icons8-menu-100.png" alt="Logo" width="100%" >
@@ -23,14 +23,56 @@
         </div>
     </nav>
 </header>
-<main id="customer" class="" >
+
+<main id="home">
+    <div id="container" class="container-fluid position-absolute top-50 start-50 translate-middle" style="height:25vw; width: 100%; ">
+        <div class="row justify-content-around h-100">
+            <div class="col-sm-5 col-md-3" style="height:30vw;  ">
+                <div class="row-cols-1  position-relative border"  style="height: calc((100%/6)*4)">
+                    <img id="i1" class=" img btnCustomer" src="assets/icons8-customer-100_(2).png" alt="Logo" class="position-absolute top-50 start-50 translate-middle opacity-75" style="width: 20vw; " >
+                </div>
+                <div class="row-cols-1 position-relative opacity-50 " style="height: calc((100%/6)*1);  background-color: #153823;">
+                    <p class="text-center  text-white " style="font-size: 3vw;">Customers</p>
+                </div>
+                <div class="row-cols-1 position-relative opacity-50 " style="height: calc((100%/6)*1);  background-color:#1D2320;">
+                    <p class="text-center text-white " style="font-size: 3vw;">05</p>
+                </div>
+            </div>
+            <div class="col-sm-5 col-md-3" style="height:30vw; ">
+                <div class="row-cols-1  position-relative border"  style="height: calc((100%/6)*4); width: 100%;">
+                    <img  class=" img btnItem" src="assets/icons8-item-100_(1).png" alt="Logo" class="position-absolute top-50 start-50 translate-middle opacity-75" style="width: 20vw;" >
+                </div>
+                <div class="row-cols-1 position-relative opacity-50 " style="height: calc((100%/6)*1);  background-color: #153823;">
+                    <p class="text-center  text-white " style="font-size: 3vw;">Items</p>
+                </div>
+                <div class="row-cols-1 position-relative opacity-50 " style="height: calc((100%/6)*1);  background-color: #1D2320;">
+                    <p class="text-center  text-white " style="font-size: 3vw;">10</p>
+                </div>
+            </div>
+            <div class="col-sm-5 col-md-3 " style="height:30vw; ">
+                <div class="row-cols-1  position-relative border"  style="height: calc((100%/6)*4)">
+                    <img  class=" img btnOrder" src="assets/icons8-cart-100_(2).png" alt="Logo" class="position-absolute top-50 start-50 translate-middle opacity-75" style="width: 20vw;" >
+                </div>
+                <div class="row-cols-1 position-relative opacity-50 " style="height: calc((100%/6)*1);  background-color: #153823;">
+                    <p class="text-center text-white " style="font-size: 3vw;">Orders</p>
+                </div>
+                <div class="row-cols-1 position-relative opacity-50 " style="height: calc((100%/6)*1);  background-color:#1D2320;">
+                    <p class="text-center  text-white " style="font-size: 3vw;">08</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<main id="customer" class="d-none" >
     <div class="container-fluid text-center position-relative">
         <div class="row">
             <div  class="menuContainer col-sm-1 col-md-1  p-0 " style="height: 91vh; margin-top: 60px;">
                 <nav  class=" navbar  p-0 position-relative" style="height: 100%; width:60%; background-color: #171717">
 
                     <div style="width:70%; height: 20vw ; top: 1vw" class=" bg-transparent d-flex flex-column position-absolute ">
-                        <a class=" mb-5 p-0 ms-2" href="#">
+                        <a class="btnHome mb-5 p-0 ms-2" href="#">
                             <img src="assets/Screenshot__540_-removebg-preview.png" alt="Logo" width="90%"  class="opacity-50">
                         </a>
                         <a class="btnCustomer  mb-5 ms-2" >
@@ -191,7 +233,7 @@
                 <nav class="navbar  p-0 position-relative" style="height: 100%; width:60%; background-color: #171717">
 
                     <div style="width:70%; height: 20vw ; top: 1vw" class=" bg-transparent d-flex flex-column position-absolute ">
-                        <a class="mb-5 p-0 ms-2">
+                        <a class=" btnHome mb-5 p-0 ms-2">
                             <img src="assets/Screenshot__540_-removebg-preview.png" alt="Logo" width="90%"  class="opacity-50">
                         </a>
                         <a class=" btnCustomer mb-5 ms-2">
@@ -352,7 +394,7 @@
                 <nav id="navbar" class="navbar  p-0 position-relative" style="height: 100%; width:60%; background-color: #171717">
 
                     <div style="width:70%; height: 20vw ; top: 1vw" class=" bg-transparent d-flex flex-column position-absolute ">
-                        <a class="btnC mb-5 p-0 ms-2" >
+                        <a class="btnHome mb-5 p-0 ms-2" >
                             <img src="assets/Screenshot__540_-removebg-preview.png" alt="Logo" width="90%"  class="opacity-50">
                         </a>
                         <a class="btnCustomer mb-5 ms-2" >

@@ -30,6 +30,17 @@
         margin-left: 1rem!important;
     }
 
+    .top-50{
+        top: 30%!important;
+    }
+
+    .img{
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
 }
 
 

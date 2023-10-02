@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified portfolio">
-      <change afterPath="$PROJECT_DIR$/assignments/CSS_Framework/POS/css/pos.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS_Framework/POS/js/pos.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/CSS_Framework/POS/pos.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS_Framework/POS/assets/icons8-cart-100_(2).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS_Framework/POS/assets/icons8-customer-100_(2).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS_Framework/POS/assets/icons8-item-100_(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS_Framework/POS/css/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS_Framework/POS/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/CSS_Framework/POS/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/CSS_Framework/POS/order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/CSS_Framework/POS/css/pos.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/CSS_Framework/POS/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/CSS_Framework/POS/js/pos.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/CSS_Framework/POS/js/pos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/CSS_Framework/POS/pos.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/CSS_Framework/POS/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +23,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -58,11 +62,11 @@
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS_Framework\POS\assets" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS_Framework\POS" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\Animation\Case 4\assets" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assets\art" />
-      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assets\gallery" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -99,14 +103,7 @@
       <workItem from="1695870515275" duration="7992000" />
       <workItem from="1696090858343" duration="13100000" />
       <workItem from="1696166985465" duration="16212000" />
-      <workItem from="1696217995893" duration="29191000" />
-    </task>
-    <task id="LOCAL-00010" summary="modified case 5">
-      <created>1694078485675</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1694078485675</updated>
+      <workItem from="1696217995893" duration="38934000" />
     </task>
     <task id="LOCAL-00011" summary="modified case 5">
       <created>1694078550423</created>
@@ -444,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696241532246</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="modified portfolio">
+      <created>1696252780056</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1696252780056</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
