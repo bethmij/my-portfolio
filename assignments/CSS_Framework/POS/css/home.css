@@ -1,3 +1,8 @@
+.img:hover{
+    opacity: 0.1;
+    cursor: pointer;
+}
+
 @media all and (max-width: 768px){
     .top-50{
         top: 30%!important;
@@ -9,5 +14,4 @@
         right: 0;
         margin: auto;
     }
-
 }

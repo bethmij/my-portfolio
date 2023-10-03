@@ -26,10 +26,10 @@
         <div class="container-fluid text-center position-relative">
             <div class="row">
                 <div id="menuContainer" class=" col-sm-1 col-md-1  p-0 " style="height: 91vh; margin-top: 60px;">
-                    <nav id="navbar" class="navbar  p-0 position-relative" style="height: 100%; width:60%; background-color: #171717">
+                    <nav id="navbar" class="navbar  p-0 position-relative" style="height: 100%; width:60%; background-color: #171717; z-index: 0">
 
                             <div style="width:70%; height: 20vw ; top: 1vw" class=" bg-transparent d-flex flex-column position-absolute ">
-                                <a class="mb-5 p-0 ms-2" href="#">
+                                <a class="mb-5 p-0 ms-2" href="home.html">
                                     <img src="assets/Screenshot__540_-removebg-preview.png" alt="Logo" width="90%"  class="opacity-50">
                                 </a>
                                 <a class="mb-5 ms-2" href="customer.html">
@@ -38,8 +38,9 @@
                                 <a class="mb-5 ms-2" href="item.html">
                                     <img src="assets/Screenshot__546_-removebg-preview.png" alt="Logo" width="90%"  class="opacity-50">
                                 </a>
-                                <a class="mb-5 ms-2" href="order.html">
-                                    <img src="assets/Screenshot__543_-removebg-preview.png" alt="Logo" width="90%"  class="">
+                                <a class="mb-5 ms-2 position-relative" href="order.html">
+                                    <div class=" position-absolute " style="width: 5.5vw; height: 4vw; top: -1vw; left: -1vw; border-right: 3px solid #0d4920; background-color:#030E00; z-index: -1;"></div>
+                                    <img src="assets/Screenshot__543_-removebg-preview.png" alt="Logo" width="90%"  style="z-index: 4;">
                                 </a>
                             </div>
                             <div style="width:70%; height: 10vw; bottom: 0vw;" class=" bg-transparent d-flex flex-column position-absolute ">
@@ -196,8 +197,8 @@
                         <div id="total" class="row mt-5 ms-5 " style="height: 40%; width: 40vw;">
                             <div class="container-fluid w-100 h-100 ">
                                 <div class="row " style="height: calc(100%/4);">
-                                    <div class="col"><span id="total-text " class="text-white  me-5" style="font-size: 4vw;">Total : 00.0</span></div>
-                                    <div class="col"><span id="total-text1" class="text-white  ">Sub Total : 00.0</span></div>
+                                    <div class="col"><span id="total-text " class="text-white  me-5" style="font-size: 2vw;">Total : 00.0</span></div>
+                                    <div class="col"><span id="total-text1" class="text-white  " style="font-size: 2vw;">Sub Total : 00.0</span></div>
                                 </div>
                                 <div class="row " style="height: calc(100%/4);">
                                     <div class="col p-3 ms-5">
