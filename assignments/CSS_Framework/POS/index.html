@@ -29,7 +29,7 @@
         <div class="row justify-content-around h-100">
             <div class="col-sm-5 col-md-3" style="height:30vw;  ">
                 <div class="row-cols-1  position-relative border"  style="height: calc((100%/6)*4)">
-                    <img  class=" menuImg btnCustomer" src="assets/icons8-customer-100_(2).png" alt="Logo" class="position-absolute top-50 start-50 translate-middle " style="width: 20vw; opacity: 0.7;" >
+                    <img  class="img menuImg btnCustomer" src="assets/icons8-customer-100_(2).png" alt="Logo" class="position-absolute top-50 start-50 translate-middle " style="width: 20vw; opacity: 0.7;" >
                 </div>
                 <div class="row-cols-1 position-relative opacity-50 " style="height: calc((100%/6)*1);  background-color: #153823;">
                     <p class="text-center  text-white " style="font-size: 3vw;">Customers</p>
@@ -40,7 +40,7 @@
             </div>
             <div class="col-sm-5 col-md-3" style="height:30vw; ">
                 <div class="row-cols-1  position-relative border"  style="height: calc((100%/6)*4); width: 100%;">
-                    <img  class=" menuImg btnItem" src="assets/icons8-item-100_(1).png" alt="Logo" class="position-absolute top-50 start-50 translate-middle opacity-75" style="width: 20vw; opacity: 0.7;" >
+                    <img  class="img menuImg btnItem" src="assets/icons8-item-100_(1).png" alt="Logo" class="position-absolute top-50 start-50 translate-middle opacity-75" style="width: 20vw; opacity: 0.7;" >
                 </div>
                 <div class="row-cols-1 position-relative opacity-50 " style="height: calc((100%/6)*1);  background-color: #153823;">
                     <p class="text-center  text-white " style="font-size: 3vw;">Items</p>
@@ -51,7 +51,7 @@
             </div>
             <div class="col-sm-5 col-md-3 " style="height:30vw; ">
                 <div class="row-cols-1  position-relative border"  style="height: calc((100%/6)*4)">
-                    <img  class=" menuImg btnOrder " src="assets/icons8-cart-100_(2).png" alt="Logo" class="position-absolute top-50 start-50 translate-middle opacity-75" style="width: 20vw; opacity: 0.7;" >
+                    <img  class="img menuImg btnOrder " src="assets/icons8-cart-100_(2).png" alt="Logo" class="position-absolute top-50 start-50 translate-middle opacity-75" style="width: 20vw; opacity: 0.7;" >
                 </div>
                 <div class="row-cols-1 position-relative opacity-50 " style="height: calc((100%/6)*1);  background-color: #153823;">
                     <p class="text-center text-white " style="font-size: 3vw;">Orders</p>
@@ -72,17 +72,17 @@
                 <nav  class=" navbar  p-0 position-relative" style="height: 100%; width:60%; background-color: #171717; z-index: 0">
 
                     <div style="width:70%; height: 20vw ; top: 1vw" class=" bg-transparent d-flex flex-column position-absolute ">
-                        <a class="menuBtn btnHome mb-5 p-0 ms-2" >
+                        <a class="menuBtn btnHome mb-5 p-0 ms-2" href="#">
                             <img src="assets/Screenshot__540_-removebg-preview.png" alt="Logo" width="90%"  style="opacity: 0.5;">
                         </a>
-                        <a class="menuBtn btnCustomer position-relative mb-5 ms-2" >
+                        <a class="menuBtn btnCustomer position-relative mb-5 ms-2" href="#">
                             <div class=" position-absolute " style="width: 5.5vw; height: 4vw; top: -1vw; left: -1vw; border-right: 3px solid #0d4920; background-color:#030E00; z-index: -1;"></div>
                             <img src="assets/Screenshot__541_-removebg-preview.png" alt="Logo" width="90%" style="z-index: 10;" >
                         </a>
-                        <a class="menuBtn  btnItem mb-5 ms-2" >
+                        <a class="menuBtn  btnItem mb-5 ms-2" href="#" >
                             <img src="assets/Screenshot__546_-removebg-preview.png" alt="Logo" width="90%"  style="opacity: 0.5;">
                         </a>
-                        <a class="menuBtn btnOrder mb-5 ms-2" >
+                        <a class="menuBtn btnOrder mb-5 ms-2" href="#">
                             <img src="assets/Screenshot__543_-removebg-preview.png" alt="Logo" width="90%"  style="opacity: 0.5;">
                         </a>
                     </div>
@@ -106,20 +106,20 @@
 
                     <form class="container-fluid  mt-4" style="height: 76%; ">
                         <div class=" row row-cols-1 p-3 justify-content-center" style="height: calc(100%/5)">
-                            <input  class="input form-control text-white "  placeholder="Customer ID" style="height: 90%; width: 70%; background-color: #252525;">
+                            <input id="txtCusID" class=" cusInput input form-control text-white "  placeholder="Customer ID" style="height: 90%; width: 70%; background-color: #252525;">
                         </div>
                         <div class="row row-cols-1 p-3 justify-content-center" style="height: calc(100%/5)">
-                            <input  class="input form-control text-white "  placeholder="Customer Name" style="height: 90%; width: 70%; background-color: #252525;">
+                            <input id="txtCusName" class=" cusInput input form-control text-white "  placeholder="Customer Name" style="height: 90%; width: 70%; background-color: #252525;">
                         </div>
                         <div class="row row-cols-1 p-3 justify-content-center" style="height: calc(100%/5)">
-                            <input  class="input form-control text-white "  placeholder="Customer Address" style="height: 90%; width: 70%; background-color: #252525;">
+                            <input id="txtCusAddress" class=" cusInput input form-control text-white "  placeholder="Customer Address" style="height: 90%; width: 70%; background-color: #252525;">
                         </div>
                         <div class="row row-cols-1 p-3 justify-content-center" style="height: calc(100%/5)">
-                            <input  class="input form-control text-white "  placeholder="Customer Salary" style="height: 90%; width: 70%; background-color: #252525;">
+                            <input id="txtCusSalary" class=" cusInput input form-control text-white "  placeholder="Customer Salary" style="height: 90%; width: 70%; background-color: #252525;">
                         </div>
                         <div class="row p-3" style="height: calc(100%/5)">
-                            <div class="col"><button type="submit"  class="btn btn-outline-danger ms-5 " style="width: 10vw; " >Clear</button></div>
-                            <div class="col "><button type="submit" class="btn  btn-outline-success me-5" style="width: 10vw;">Save </button></div>
+                            <div class="col"><button  type="submit"  class="btn btn-outline-danger ms-5 " style="width: 10vw; " >Clear</button></div>
+                            <div class="col "><button id="customerSave"  type="submit" class="btn  btn-outline-success me-5" style="width: 10vw;">Save </button></div>
                         </div>
                     </form>
                 </div>
@@ -138,7 +138,7 @@
                             </div>
                             <div class="row justify-content-end" style="height: calc(100%/2)">
                                 <div class="col-3 ">
-                                    <button type="submit" class="btn btn-outline-success mt-3" style="height: 70%; width:100%; " ><img src="assets/Screenshot__550_-removebg-preview.png" alt="Logo" width="20%"  class="opacity-50 me-2">Get All</button>
+                                    <button id="getAll" type="submit" class="btn btn-outline-success mt-3" style="height: 70%; width:100%; " ><img src="assets/Screenshot__550_-removebg-preview.png" alt="Logo" width="20%"  class="opacity-50 me-2">Get All</button>
                                 </div>
                                 <div class="col-3 " >
                               <button id="edit" type="submit" class="btn btn-outline-success mt-3" style="height: 70%; width:100%; " ><img src="assets/Screenshot__549_-removebg-preview.png" alt="Logo" width="20%"  class="opacity-50 me-2">Edit </button>
@@ -149,7 +149,7 @@
                     </div>
                     <div class="row  " style="height: calc((100%/4)*3)">
                         <div class="col" style="">
-                            <table class="table table table-striped table-hover table-dark">
+                            <table id="cusTable" class="table table table-striped table-hover table-dark">
                                 <thead>
                                 <tr bgcolor="teal">
                                     <th scope="col">ID</th>
@@ -159,7 +159,7 @@
                                     <th scope="col"></th>
                                 </tr>
                                 </thead>
-                                <tbody>
+                                <tbody id="cusTBody">
                                 <tr>
                                     <th scope="row">C001</th>
                                     <td>Kasun</td>
@@ -182,41 +182,7 @@
                                     <td style="width: 10%"><img src="assets/icons8-delete-96.png" alt="Logo" width="50%"  class="opacity-50"></td>
                                 </tr>
 
-                                <tr style="height: 7vh;">
-                                    <th scope="row"></th>
-                                    <td ></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td style="width: 10%"></td>
-                                </tr>
-                                <tr style="height: 7vh;">
-                                    <th scope="row"></th>
-                                    <td ></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td style="width: 10%"></td>
-                                </tr>
-                                <tr style="height: 7vh;">
-                                    <th scope="row"></th>
-                                    <td ></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td style="width: 10%"></td>
-                                </tr>
-                                <tr style="height: 7vh;">
-                                    <th scope="row"></th>
-                                    <td ></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td style="width: 10%"></td>
-                                </tr>
-                                <tr style="height: 7vh;">
-                                    <th scope="row"></th>
-                                    <td ></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td style="width: 10%"></td>
-                                </tr>
+
                                 </tbody>
                             </table>
                         </div>
@@ -234,17 +200,17 @@
                 <nav class="navbar  p-0 position-relative" style="height: 100%; width:60%; background-color: #171717; z-index: 0;">
 
                     <div style="width:70%; height: 20vw ; top: 1vw" class=" bg-transparent d-flex flex-column position-absolute ">
-                        <a class="menuBtn btnHome mb-5 p-0 ms-2">
+                        <a class="menuBtn btnHome mb-5 p-0 ms-2" href="#">
                             <img src="assets/Screenshot__540_-removebg-preview.png" alt="Logo" width="90%"  style="opacity: 0.5;">
                         </a>
-                        <a class="menuBtn  btnCustomer mb-5 ms-2">
+                        <a class="menuBtn  btnCustomer mb-5 ms-2" href="#">
                             <img src="assets/Screenshot__541_-removebg-preview.png" alt="Logo" width="90%"  style="opacity: 0.5;">
                         </a>
-                        <a class="menuBtn position-relative  btnItem mb-5 ms-2" >
+                        <a class="menuBtn position-relative  btnItem mb-5 ms-2" href="#">
                             <div class=" position-absolute " style="width: 5.5vw; height: 4vw; top: -1vw; left: -1vw; border-right: 3px solid #0d4920; background-color:#030E00; z-index: -1;"></div>
                             <img src="assets/Screenshot__546_-removebg-preview.png" alt="Logo" width="90%"  style="z-index: 10;">
                         </a>
-                        <a class="menuBtn  btnOrder mb-5 ms-2" >
+                        <a class="menuBtn  btnOrder mb-5 ms-2" href="#">
                             <img src="assets/Screenshot__543_-removebg-preview.png" alt="Logo" width="90%"  style="opacity: 0.5;">
                         </a>
                     </div>
@@ -396,16 +362,16 @@
                 <nav id="navbar" class="navbar  p-0 position-relative" style="height: 100%; width:60%; background-color: #171717; z-index: 0;">
 
                     <div style="width:70%; height: 20vw ; top: 1vw" class=" bg-transparent d-flex flex-column position-absolute ">
-                        <a class="menuBtn btnHome mb-5 p-0 ms-2" >
+                        <a class="menuBtn btnHome mb-5 p-0 ms-2" href="#">
                             <img src="assets/Screenshot__540_-removebg-preview.png" alt="Logo" width="90%"  style="opacity: 0.5;">
                         </a>
-                        <a class="menuBtn btnCustomer mb-5 ms-2" >
+                        <a class="menuBtn btnCustomer mb-5 ms-2" href="#" >
                             <img src="assets/Screenshot__541_-removebg-preview.png" alt="Logo" width="90%"  style="opacity: 0.5;">
                         </a>
-                        <a class="menuBtn btnItem mb-5 ms-2">
+                        <a class="menuBtn btnItem mb-5 ms-2" href="#">
                             <img src="assets/Screenshot__546_-removebg-preview.png" alt="Logo" width="90%"  style="opacity: 0.5;">
                         </a>
-                        <a class="menuBtn btnOrder position-relative mb-5 ms-2" >
+                        <a class="menuBtn btnOrder position-relative mb-5 ms-2" href="#">
                             <div class=" position-absolute " style="width: 5.5vw; height: 4vw; top: -1vw; left: -1vw; border-right: 3px solid #0d4920; background-color:#030E00; z-index: -1;"></div>
                             <img src="assets/Screenshot__543_-removebg-preview.png" alt="Logo" width="90%"  style="z-index: 10;">
                         </a>

@@ -12,6 +12,7 @@
          item.className = element.className.replace("d-none", "d-block");
          item.className = item.className.replace("ms-2", "ms-0");
          item.className = item.className.replace("mb-5", "mb-0");
+         event.preventDefault();
 
     });
  });
@@ -44,6 +45,7 @@
          customer.className = element3.className.replace("d-none", "d-block");
          customer.className = customer.className.replace("ms-2", "ms-0");
          customer.className = customer.className.replace("mb-5", "mb-0");
+         event.preventDefault();
      });
  });
 
@@ -55,6 +57,7 @@
          document.querySelector("#order").style.display = "none";
          document.querySelector("#customer").style.display = "none";
          document.querySelector("#home").style.display = "block";
+         event.preventDefault();
      });
  });
 
@@ -80,6 +83,54 @@
          element.style.cursor = "unset";
          element.style.opacity = "0.5";
      });
+ });
+
+var detail = [];
+txtID = document.querySelector("#txtCusID");
+txtName = document.querySelector("#txtCusName");
+txtAddress = document.querySelector("#txtCusAddress");
+txtSalary = document.querySelector("#txtCusSalary");
+
+document.querySelector("#customerSave").addEventListener("click",function (event){
+
+    // var input =  document.querySelectorAll(".cusInput");
+    // input.forEach(function(element) {
+    //     var inputValue =  element.value;
+    //     detail.push(inputValue);
+    // });
+    // console.log(detail);
+    // event.preventDefault();
+
+    var customer = {
+        id: txtID.value,
+        name: txtName.value,
+        address: txtAddress.value,
+        salary: txtSalary.value
+    }
+
+    detail.push(customer);
+    console.log(detail);
+    event.preventDefault();
+});
+
+table =  document.querySelector("#cusTable");
+ document.querySelector("#getAll").addEventListener("click",function (event){
+     let tbody = document.querySelector("#cusTBody");
+
+     for (let i=0; i<detail.length; i++){
+         let tr = document.createElement("tr");
+         let td1 = document.createElement("td");
+         td1.textContent = detail[i].id;
+         let td2 = document.createElement("td");
+         td2.textContent = detail[i].name;
+         let td3 = document.createElement("td");
+         td3.textContent = detail[i].address;
+         let td4 = document.createElement("td");
+         td4.textContent = detail[i].salary;
+         tr.append(td1,td2,td3,td4);
+         tbody.append(tr);
+
+     }
  });
 
 
