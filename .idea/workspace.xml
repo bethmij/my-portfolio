@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified portfolio">
-      <change afterPath="$PROJECT_DIR$/assignments/JS/Que/assets/f6a6643c03cd6b0bea0ae2adf994f6d9.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/Que/assets/output-onlinegiftools (22).gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/Que/assets/output-onlinegiftools (24).gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/Que/assets/output-onlinegiftools (25).gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/Que/index2.html" afterDir="false" />
+    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="added knight rider">
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Knight-Rider/assets/10811796.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Knight-Rider/assets/ThemeSong.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Knight-Rider/assets/download-removebg-preview.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assessments.html" beforeDir="false" afterPath="$PROJECT_DIR$/assessments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/Que/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/Que/index1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/JS/Knight-Rider/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/Knight-Rider/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/JS/Knight-Rider/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/Knight-Rider/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +43,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignments/JS/Que/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignments/JS/Knight-Rider/assets" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -54,11 +53,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\Knight-Rider\assets" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\Que\assets" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\Night-Rider" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\SPA" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\Que" />
-      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS_Framework\POS\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\Que" />
@@ -104,14 +103,7 @@
       <workItem from="1696166985465" duration="16212000" />
       <workItem from="1696217995893" duration="44635000" />
       <workItem from="1696301772007" duration="35120000" />
-      <workItem from="1696391344084" duration="8291000" />
-    </task>
-    <task id="LOCAL-00019" summary="added transition case 3">
-      <created>1694921253434</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1694921253434</updated>
+      <workItem from="1696391344084" duration="26391000" />
     </task>
     <task id="LOCAL-00020" summary="added transition case 4">
       <created>1694924032369</created>
@@ -449,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696392543159</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="added que">
+      <created>1696400114345</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1696400114345</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -467,8 +466,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="modified transaction case 1" />
-    <MESSAGE value="added transaction case 2" />
     <MESSAGE value="modified transaction case 2" />
     <MESSAGE value="modified portfolio about me" />
     <MESSAGE value="added transition case 3" />
@@ -492,6 +489,8 @@
     <MESSAGE value="modified animation case 4" />
     <MESSAGE value="modified portfolio assessments" />
     <MESSAGE value="modified portfolio" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified portfolio" />
+    <MESSAGE value="added que" />
+    <MESSAGE value="added knight rider" />
+    <option name="LAST_COMMIT_MESSAGE" value="added knight rider" />
   </component>
 </project>
