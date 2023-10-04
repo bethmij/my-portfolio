@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified portfolio" />
+    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified portfolio">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/JS/Que/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/Que/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +38,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignments/JS/Night-Rider" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Sample/Knight" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -94,14 +97,8 @@
       <workItem from="1696090858343" duration="13100000" />
       <workItem from="1696166985465" duration="16212000" />
       <workItem from="1696217995893" duration="44635000" />
-      <workItem from="1696301772007" duration="34456000" />
-    </task>
-    <task id="LOCAL-00017" summary="modified transaction case 2">
-      <created>1694872260563</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1694872260563</updated>
+      <workItem from="1696301772007" duration="35120000" />
+      <workItem from="1696391344084" duration="935000" />
     </task>
     <task id="LOCAL-00018" summary="modified portfolio about me">
       <created>1694874865668</created>
@@ -439,7 +436,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696363154450</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="modified portfolio">
+      <created>1696364060899</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1696364060919</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
