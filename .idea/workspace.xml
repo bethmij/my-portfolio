@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified knight rider">
-      <change beforePath="$PROJECT_DIR$/assessments.html" beforeDir="false" afterPath="$PROJECT_DIR$/assessments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/Knight-Rider/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/Knight-Rider/index.html" afterDir="false" />
+    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified portfolio">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,14 +97,7 @@
       <workItem from="1696166985465" duration="16212000" />
       <workItem from="1696217995893" duration="44635000" />
       <workItem from="1696301772007" duration="35120000" />
-      <workItem from="1696391344084" duration="26809000" />
-    </task>
-    <task id="LOCAL-00021" summary="modified portfolio">
-      <created>1695015713616</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1695015713616</updated>
+      <workItem from="1696391344084" duration="27706000" />
     </task>
     <task id="LOCAL-00022" summary="modified portfolio education">
       <created>1695018470767</created>
@@ -443,7 +435,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696435936399</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="modified portfolio">
+      <created>1696436225636</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1696436225636</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,10 +481,10 @@
     <MESSAGE value="added animation case 4" />
     <MESSAGE value="modified animation case 4" />
     <MESSAGE value="modified portfolio assessments" />
-    <MESSAGE value="modified portfolio" />
     <MESSAGE value="added que" />
     <MESSAGE value="added knight rider" />
     <MESSAGE value="modified knight rider" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified knight rider" />
+    <MESSAGE value="modified portfolio" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified portfolio" />
   </component>
 </project>
