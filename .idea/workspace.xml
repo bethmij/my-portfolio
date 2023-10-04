@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified portfolio">
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Que/assets/f6a6643c03cd6b0bea0ae2adf994f6d9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Que/assets/output-onlinegiftools (22).gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Que/assets/output-onlinegiftools (24).gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Que/assets/output-onlinegiftools (25).gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Que/index2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/Que/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/Que/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assessments.html" beforeDir="false" afterPath="$PROJECT_DIR$/assessments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/JS/Que/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/Que/index1.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +23,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -38,7 +44,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Sample/Knight" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignments/JS/Que/assets" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -48,18 +54,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\Que\assets" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\Night-Rider" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\SPA" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\Que" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS_Framework\POS\assets" />
-      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS_Framework\POS\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\Que" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\SPA" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS_Framework\POS\assets" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS_Framework\POS" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS" />
-      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\Animation\Case 4\assets" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -98,14 +104,7 @@
       <workItem from="1696166985465" duration="16212000" />
       <workItem from="1696217995893" duration="44635000" />
       <workItem from="1696301772007" duration="35120000" />
-      <workItem from="1696391344084" duration="935000" />
-    </task>
-    <task id="LOCAL-00018" summary="modified portfolio about me">
-      <created>1694874865668</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1694874865668</updated>
+      <workItem from="1696391344084" duration="8291000" />
     </task>
     <task id="LOCAL-00019" summary="added transition case 3">
       <created>1694921253434</created>
@@ -443,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696364060919</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="modified portfolio">
+      <created>1696392543156</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1696392543159</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
