@@ -166,21 +166,21 @@
                                     <td class="name">Kasun</td>
                                     <td class="address">Galle</td>
                                     <td class="salary">50000</td>
-                                    <td style="width: 10%"><img  class="delete"  src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50"></td>
+                                    <td style="width: 10%"><!--<img  class="delete"  src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50">--></td>
                                 </tr>
                                 <tr>
                                     <th  class="id"scope="row">C002</th>
                                     <td class="name">Amal</td>
                                     <td class="address" >Matara</td>
                                     <td class="salary">25000</td>
-                                    <td style="width: 10%"><img class="delete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50"></td>
+                                    <td style="width: 10%"><!--<img class="delete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50">--></td>
                                 </tr>
                                 <tr>
                                     <th class="id" scope="row">C003</th>
                                     <td class="name" >Sadun</td>
                                     <td class="address">Colombo</td>
                                     <td class="salary">65000</td>
-                                    <td style="width: 10%"><img class="delete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50"></td>
+                                    <td style="width: 10%"><!--<img class="delete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50">--></td>
                                 </tr>
 
 
@@ -590,6 +590,8 @@
                     <td class="salary">${customer.salary}</td>
                     <td style="width: 10%"></td>
                 </tr> `)
+        setTable();
+        deleteRow();
         detail.push(customer);
         console.log(detail);
         event.preventDefault();
@@ -612,25 +614,41 @@
                 </tr> `)
         }
 
+        setTable();
+        deleteRow();
         event.preventDefault();
 
     });
 
-     $("#cusTBody>tr").click(function (){
-         let id = $(this).children(':eq(0)').text();
-         let name = $(this).children(':eq(1)').text();
-         let address = $(this).children(':eq(2)').text();
-         let salary = $(this).children(':eq(3)').text();
 
-         $('#txtCusID').val(id);
-         $("#txtCusName").val(name);
-         $("#txtCusAddress").val(address);
-         $("#txtCusSalary").val(salary);
-     });
 
-    $("#cusTBody>tr").dblclick(function (){
-         $(this).remove();
-    })
+    function setTable() {
+        $("#cusTBody>tr").click(function () {
+            let id = $(this).children(':eq(0)').text();
+            let name = $(this).children(':eq(1)').text();
+            let address = $(this).children(':eq(2)').text();
+            let salary = $(this).children(':eq(3)').text();
+
+            $('#txtCusID').val(id);
+            $("#txtCusName").val(name);
+            $("#txtCusAddress").val(address);
+            $("#txtCusSalary").val(salary);
+        });
+    }
+
+    setTable    ();
+
+    function deleteRow() {
+        $("#cusTBody>tr").dblclick(function () {
+            $(this).remove();
+        });
+    }
+
+    deleteRow();
+
+
+
+
 
 
 </script>
