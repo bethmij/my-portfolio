@@ -1,18 +1,18 @@
 @media all and (max-width: 426px) {
 
-    body>header>nav{
+    body>#mainContent>header>nav{
         display: none;
     }
 
-    body>header>div{
+    body>#mainContent>header>div{
         height:6vw;
     }
-    body>header>div>div{
+    body>#mainContent>header>div>div{
         margin-top: 2px;
         height:4vw;
     }
 
-    body>header>img{
+    body>#mainContent>header>img{
         top:6vw;
         height: 8vw;
     }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
 
     <title>My Portfolio</title>
@@ -23,9 +23,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Borel&family=Inter:wght@200&family=Italianno&display=swap" rel="stylesheet">
-    
+
+
 </head>
-<body>
+<body >
+<div id="loading" class="bg-danger" style="position: fixed; width: 100vw; height: 100vh; z-index: 8000; top: 0;">
+    <img src="assets/b6e0b072897469.5bf6e79950d23.gif" class="" >
+</div>
+
+<section id="mainContent" style="display: none">
 <img src="assets/wallpaper2you_157801.jpg" alt="">
 <div></div>
     <header>
@@ -593,6 +599,13 @@
         <p>©2023 All Rights Reserved | Nethmi Thathsarani</p>-->
     </footer>
 
-
+</section>
+<script src="assignments/JS/SPA/js/jquery-3.7.1.min.js"></script>
+<script>
+    $(window).on('load',function (){
+        $('#loading').css("display","none");
+        $('#mainContent').css("display","block");
+    });
+</script>
 </body>
 </html>

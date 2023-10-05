@@ -2,13 +2,13 @@
 
     body{
     }
-    body>header{
+    body>#mainContent>header{
         width: 100%;
         position: relative;
         background-color: black;
     }
 
-    body>img{
+    body>#mainContent>img{
         height: 100vh;
         width: 100%;
         position: fixed;
@@ -16,17 +16,17 @@
         opacity: 0.3;
     }
 
-    body>header>img{
+    body>#mainContent>header>img{
         position: absolute;
         top:4vw;
         height: 7vw;
         opacity: 0.8;
     }
 
-    body>header>nav{
+    body>#mainContent>header>nav{
         display: none;
     }
-    body>header>div{
+    body>#mainContent>header>div{
         display: initial;
         width: 6vw;
         height: 6vw;
@@ -38,7 +38,7 @@
         z-index: 10;
     }
 
-    body>header>div>div{
+    body>#mainContent>header>div>div{
         width: 3.8vw;
         height:4vw;
         background-color:#655029 ;
@@ -50,7 +50,7 @@
         cursor: pointer;
     }
 
-    body>header>div>div>img{
+    body>#mainContent>header>div>div>img{
         position: absolute;
         width: 2vw;
         top: 0;
