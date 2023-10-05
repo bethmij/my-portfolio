@@ -162,24 +162,24 @@
                                 </thead>
                                 <tbody id="cusTBody">
                                 <tr>
-                                    <th scope="row">C001</th>
-                                    <td>Kasun</td>
-                                    <td>Galle</td>
-                                    <td>50000</td>
+                                    <th class="id" scope="row">C001</th>
+                                    <td class="name">Kasun</td>
+                                    <td class="address">Galle</td>
+                                    <td class="salary">50000</td>
                                     <td style="width: 10%"><img src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50"></td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">C002</th>
-                                    <td>Amal</td>
-                                    <td>Matara</td>
-                                    <td>25000</td>
+                                    <th  class="id"scope="row">C002</th>
+                                    <td class="name">Amal</td>
+                                    <td class="address" >Matara</td>
+                                    <td class="salary">25000</td>
                                     <td style="width: 10%"><img src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50"></td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">C003</th>
-                                    <td >Sadun</td>
-                                    <td>Colombo</td>
-                                    <td>65000</td>
+                                    <th class="id" scope="row">C003</th>
+                                    <td class="name" >Sadun</td>
+                                    <td class="address">Colombo</td>
+                                    <td class="salary">65000</td>
                                     <td style="width: 10%"><img src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50"></td>
                                 </tr>
 
@@ -581,15 +581,13 @@
             salary: txtSalary
         }
 
-
-
         let tbody = $("#cusTBody");
         tbody.append(
             `<tr>
-                    <th scope="row">${customer.id}</th>
-                    <td>${customer.name}</td>
-                    <td>${customer.address}</td>
-                    <td>${customer.salary}</td>
+                    <th class="id" scope="row">${customer.id}</th>
+                    <td class="name" >${customer.name}</td>
+                    <td class="address">${customer.address}</td>
+                    <td class="salary">${customer.salary}</td>
                     <td style="width: 10%"></td>
                 </tr> `)
         detail.push(customer);
@@ -617,6 +615,18 @@
         event.preventDefault();
 
     });
+
+     $("#cusTBody>tr").click(function (){
+         let id = $(this).find('.id').text();
+         let name = $(this).find('.name').text();
+         let address = $(this).find('.address').text();
+         let salary = $(this).find('.salary').text();
+
+         $('#txtCusID').val(id);
+         $("#txtCusName").val(name);
+         $("#txtCusAddress").val(address);
+         $("#txtCusSalary").val(salary);
+     });
 </script>
 </body>
 </html>
