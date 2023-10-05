@@ -617,10 +617,10 @@
     });
 
      $("#cusTBody>tr").click(function (){
-         let id = $(this).find('.id').text();
-         let name = $(this).find('.name').text();
-         let address = $(this).find('.address').text();
-         let salary = $(this).find('.salary').text();
+         let id = $(this).children(':eq(0)').text();
+         let name = $(this).children(':eq(1)').text();
+         let address = $(this).children(':eq(2)').text();
+         let salary = $(this).children(':eq(3)').text();
 
          $('#txtCusID').val(id);
          $("#txtCusName").val(name);
