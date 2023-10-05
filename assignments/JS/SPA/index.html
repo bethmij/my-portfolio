@@ -8,7 +8,8 @@
     <title>POS System</title>
     <link rel="stylesheet" href="../../CSS_Framework/POS/css/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../CSS_Framework/POS/css/index.css">
-    <script src="../../CSS_Framework/POS/js/index.js"></script>
+
+
 
 </head>
 <body style="background: linear-gradient(180deg, #030E00, #010600); height: 100vh;">
@@ -560,12 +561,72 @@
 
 <script src="../../CSS_Framework/POS/css/bootstrap/js/bootstrap.js"></script>
 <script src="js/index.js"></script>
+<script src="js/jquery-3.7.1.min.js"></script>
 <script>
 
-    // document.querySelector("#edit").addEventListener("click",function(){
-    //     // document.querySelector("#customer").style.display = "block";
-    //     // console.log("hello");
-    // });
+    var detail = [];
+
+
+    $("#customerSave").click(function (event){
+        // alert("hello");
+        txtID = $('#txtCusID').val();
+        txtName = $("#txtCusName").val();
+        txtAddress = $("#txtCusAddress").val();
+        txtSalary = $("#txtCusSalary").val();
+
+        var customer = {
+            id: txtID,
+            name: txtName,
+            address: txtAddress,
+            salary: txtSalary
+        }
+
+        detail.push(customer);
+
+        let tbody = $("#cusTBody");
+        tbody.append(
+            `<tr>
+                    <th scope="row">${customer.id}</th>
+                    <td>${customer.name}</td>
+                    <td>${customer.address}</td>
+                    <td>${customer.salary}</td>
+                    <td style="width: 10%"></td>
+                </tr> `)
+        console.log(detail);
+        event.preventDefault();
+    });
+
+    $("#getAll").click(function (event){
+        // alert("hello");
+
+        let tbody = $("#cusTBody");
+        tbody.empty();
+
+        for (let i=0; i<detail.length; i++){
+            tbody.append(
+                `<tr>
+                    <th scope="row">${detail[i].id}</th>
+                    <td>${detail[i].name}</td>
+                    <td>${detail[i].address}</td>
+                    <td>${detail[i].salary}</td>
+                    <td style="width: 10%"></td>
+                </tr> `)
+        }
+
+        event.preventDefault();
+
+    });
 </script>
 </body>
 </html>
+
+<!--// let td1 = document.createElement("td");
+            td1.textContent = detail[i].id;
+            let td2 = document.createElement("td");
+            // td2.textContent = detail[i].name;
+            // let td3 = document.createElement("td");
+            // td3.textContent = detail[i].address;
+            // let td4 = document.createElement("td");
+            // td4.textContent = detail[i].salary;
+            // tr.append(td1,td2,td3,td4);
+            // tbody.append(tr);-->

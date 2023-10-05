@@ -85,13 +85,13 @@
      });
  });
 
-var detail = [];
+/*var detail = [];
 txtID = document.querySelector("#txtCusID");
 txtName = document.querySelector("#txtCusName");
 txtAddress = document.querySelector("#txtCusAddress");
-txtSalary = document.querySelector("#txtCusSalary");
+txtSalary = document.querySelector("#txtCusSalary");*/
 
-document.querySelector("#customerSave").addEventListener("click",function (event){
+/*document.querySelector("#customerSave").addEventListener("click",function (event){
 
     // var input =  document.querySelectorAll(".cusInput");
     // input.forEach(function(element) {
@@ -131,7 +131,7 @@ table =  document.querySelector("#cusTable");
          tbody.append(tr);
 
      }
- });
+ });*/
 
 
 

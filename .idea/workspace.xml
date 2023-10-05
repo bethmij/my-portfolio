@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified portfolio">
+      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/js/jquery-3.7.1.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/js/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +40,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignments/JS/Knight-Rider/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignments/JS/SPA/js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -47,11 +50,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\SPA\js" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\Knight-Rider\assets" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\Que\assets" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\Night-Rider" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\SPA" />
-      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\Que" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\Que" />
@@ -98,6 +101,7 @@
       <workItem from="1696217995893" duration="44635000" />
       <workItem from="1696301772007" duration="35120000" />
       <workItem from="1696391344084" duration="27706000" />
+      <workItem from="1696475890630" duration="3611000" />
     </task>
     <task id="LOCAL-00022" summary="modified portfolio education">
       <created>1695018470767</created>
