@@ -166,21 +166,21 @@
                                     <td class="name">Kasun</td>
                                     <td class="address">Galle</td>
                                     <td class="salary">50000</td>
-                                    <td style="width: 10%"><img src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50"></td>
+                                    <td style="width: 10%"><img  class="delete"  src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50"></td>
                                 </tr>
                                 <tr>
                                     <th  class="id"scope="row">C002</th>
                                     <td class="name">Amal</td>
                                     <td class="address" >Matara</td>
                                     <td class="salary">25000</td>
-                                    <td style="width: 10%"><img src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50"></td>
+                                    <td style="width: 10%"><img class="delete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50"></td>
                                 </tr>
                                 <tr>
                                     <th class="id" scope="row">C003</th>
                                     <td class="name" >Sadun</td>
                                     <td class="address">Colombo</td>
                                     <td class="salary">65000</td>
-                                    <td style="width: 10%"><img src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50"></td>
+                                    <td style="width: 10%"><img class="delete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50"></td>
                                 </tr>
 
 
@@ -627,9 +627,17 @@
          $("#txtCusAddress").val(address);
          $("#txtCusSalary").val(salary);
      });
+
+    $("#cusTBody>tr").dblclick(function (){
+         $(this).remove();
+    })
+
+
 </script>
 </body>
 </html>
+
+
 
 <!--// let td1 = document.createElement("td");
             td1.textContent = detail[i].id;
