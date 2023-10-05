@@ -581,7 +581,7 @@
             salary: txtSalary
         }
 
-        detail.push(customer);
+
 
         let tbody = $("#cusTBody");
         tbody.append(
@@ -592,6 +592,7 @@
                     <td>${customer.salary}</td>
                     <td style="width: 10%"></td>
                 </tr> `)
+        detail.push(customer);
         console.log(detail);
         event.preventDefault();
     });
