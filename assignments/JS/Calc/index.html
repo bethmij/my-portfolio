@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome/css/all.min.css">
+    <title>Calc</title>
+
+</head>
+<body >
+    <div class="container-fluid w-100 h-100 ">
+        <div class="row-cols-1 w-100 h-100 d-flex justify-content-center p-3">
+            <div class="h-100 border rounded-5 position-relative" style="width: 25%; background-color: #031010">
+                <div class="container w-100 h-100">
+                    <div class="row  position-relative" style="height: 35%">
+                        <div class="container h-100">
+                            <div class="row h-50 position-relative">
+                                <input id="panel" class="input text-end text-white-50 bg-transparent fs-4 h-75 mt-4 border-0" style="outline: none;">
+                            </div>
+                            <div class="row h-50 ">
+                                <input id="result" class="input text-end bg-transparent fs-1 border-0" style="color: #048f81; outline: none;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row position-relative" style="height: 60%">
+                        <div class="container w-100 h-100 ">
+                            <div class="row " style="height: calc(100%/5); border-top: 3px solid #0b231d; ">
+                                <div class="col-3 text-center fs-3 p-3" style="color: #048f81">C</div>
+                                <div class="col text-center fs-3 p-3" style="color: #048f81">(</div>
+                                <div class="col text-center fs-3 p-3" style="color: #048f81">)</div>
+                                <div class="col text-center fs-3 p-3" style="color: #048f81; background-color: #0b231d">/</div>
+                            </div>
+                            <div class="row " style="height: calc(100%/5)">
+                                <div class="col text-white text-center fs-3 p-3">7</div>
+                                <div class="col text-white text-center fs-3 p-3">8</div>
+                                <div class="col text-white text-center fs-3 p-3">9</div>
+                                <div class="col text-center fs-3 p-3" style="color: #048f81; background-color: #0b231d">x</div>
+                            </div>
+                            <div class="row" style="height: calc(100%/5)">
+                                <div class="col text-white text-center fs-3 p-3">4</div>
+                                <div class="col text-white text-center fs-3 p-3">5</div>
+                                <div class="col text-white text-center fs-3 p-3">6</div>
+                                <div class="col text-center fs-3 p-3" style="color: #048f81; background-color: #0b231d;">-</div>
+                            </div>
+                            <div class="row" style="height: calc(100%/5)">
+                                <div class="col text-white text-center fs-3 p-3">1</div>
+                                <div class="col text-white text-center fs-3 p-3">2</div>
+                                <div class="col text-white text-center fs-3 p-3">3</div>
+                                <div class="col text-center fs-3 p-3" style="color: #048f81; background-color: #0b231d">+</div>
+                            </div>
+                            <div class="row" style="height: calc(100%/5)">
+                                <div class="col-3 text-white text-center fs-3 p-3">
+                                    <i class="fa-solid fa-delete-left" style="color: #048f81;"></i>
+                                </div>
+                                <div class="col text-white text-center fs-3 p-3">0</div>
+                                <div class="col text-white text-center fs-3 p-3">.</div>
+                                <div id="equal" class="col text-white text-center fs-3 p-3" style="background-color: #05523e">=</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="css/bootstrap/js/bootstrap.js"></script>
+    <script src="css/bootstrap/js/jquery-3.7.1.min.js"></script>
+    <script>
+        let expression;
+
+        $('.col').click(function (){
+            expression = $('#panel').val();
+            $('#panel').val(expression+" "+$(this).text());
+        });
+
+        $('#equal').click(functio)
+    </script>
+</body>
+</html>
