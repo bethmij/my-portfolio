@@ -563,16 +563,15 @@
 <script src="js/index.js"></script>
 <script src="js/jquery-3.7.1.min.js"></script>
 <script>
-
     var detail = [];
 
 
     $("#customerSave").click(function (event){
         // alert("hello");
-        txtID = $('#txtCusID').val();
-        txtName = $("#txtCusName").val();
-        txtAddress = $("#txtCusAddress").val();
-        txtSalary = $("#txtCusSalary").val();
+        var txtID = $('#txtCusID').val();
+        var txtName = $("#txtCusName").val();
+        var txtAddress = $("#txtCusAddress").val();
+        var txtSalary = $("#txtCusSalary").val();
 
         var customer = {
             id: txtID,
