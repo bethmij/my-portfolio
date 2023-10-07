@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified calc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/Calc/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assessments.html" beforeDir="false" afterPath="$PROJECT_DIR$/assessments.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignments/JS/Calc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/Calc/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +107,7 @@
       <workItem from="1696391344084" duration="27706000" />
       <workItem from="1696475890630" duration="16057000" />
       <workItem from="1696607200929" duration="4795000" />
-      <workItem from="1696648684240" duration="18522000" />
+      <workItem from="1696648684240" duration="19176000" />
     </task>
     <task id="LOCAL-00032" summary="modified portfolio gallery">
       <created>1695228614636</created>
