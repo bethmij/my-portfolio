@@ -4,8 +4,55 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified portfolio">
+    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified calc">
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/assets/mesh-211 (2).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/css/bootstrap-utilities.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/css/bootstrap.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/js/bootstrap.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/js/bootstrap.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/js/bootstrap.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Calc/css/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/JS/Knight-Rider/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/Knight-Rider/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +62,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -37,7 +84,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignments/JS/Calc/assets" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -47,18 +94,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\Calc\assets" />
+      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\Calc" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assets" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\SPA\js" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\Knight-Rider\assets" />
-      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\Que\assets" />
-      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\Night-Rider" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\Calc\css" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\Que" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\SPA" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS_Framework\POS\assets" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS_Framework\POS" />
-      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\CSS" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -100,14 +147,7 @@
       <workItem from="1696391344084" duration="27706000" />
       <workItem from="1696475890630" duration="16057000" />
       <workItem from="1696607200929" duration="4795000" />
-      <workItem from="1696648684240" duration="3487000" />
-    </task>
-    <task id="LOCAL-00030" summary="modified portfolio assessments">
-      <created>1695208558970</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1695208558978</updated>
+      <workItem from="1696648684240" duration="9486000" />
     </task>
     <task id="LOCAL-00031" summary="modified portfolio">
       <created>1695217175742</created>
@@ -445,7 +485,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696685670542</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="modified portfolio">
+      <created>1696688205948</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1696688205948</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -463,7 +510,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="modified portfolio about me" />
     <MESSAGE value="added transition case 3" />
     <MESSAGE value="added transition case 4" />
     <MESSAGE value="modified portfolio projects" />
@@ -488,6 +534,7 @@
     <MESSAGE value="added knight rider" />
     <MESSAGE value="modified knight rider" />
     <MESSAGE value="modified portfolio" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified portfolio" />
+    <MESSAGE value="modified calc" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified calc" />
   </component>
 </project>
