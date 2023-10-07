@@ -12,52 +12,54 @@
 </head>
 <body >
     <div class="container-fluid w-100 h-100 ">
-        <div class="row-cols-1 w-100 h-100 d-flex justify-content-center p-3">
-            <div class="h-100 border rounded-5 position-relative" style="width: 25%; background-color: #031010">
-                <div class="container w-100 h-100">
-                    <div class="row  position-relative" style="height: 35%">
-                        <div class="container h-100">
-                            <div class="row h-50 position-relative">
-                                <input id="panel" class="input text-end text-white-50 bg-transparent fs-4 h-75 mt-4 border-0" style="outline: none;">
-                            </div>
-                            <div class="row h-50 ">
-                                <input id="result" class="input text-end bg-transparent fs-1 border-0" style="color: #048f81; outline: none;">
+        <div class="row row-cols-sm-6 w-100 h-100 d-flex justify-content-center p-3">
+            <div class=" col-9 col-sm-3 h-100 p-0">
+                <div class="h-100 border rounded-5 position-relative" style="width: 100%; background-color: #031010">
+                    <div class="container w-100 h-100">
+                        <div class="row  position-relative" style="height: 35%">
+                            <div class="container h-100">
+                                <div class="row h-50 position-relative">
+                                    <input id="panel" class="input text-end text-white-50 bg-transparent fs-4 h-75 mt-4 border-0" style="outline: none;">
+                                </div>
+                                <div class="row h-50 ">
+                                    <input id="result" class="input text-end bg-transparent fs-1 border-0" style="color: #048f81; outline: none;">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row position-relative" style="height: 60%">
-                        <div class="container w-100 h-100 ">
-                            <div class="row " style="height: calc(100%/5); border-top: 3px solid #0b231d; ">
-                                <div class="col-3 text-center fs-3 p-3" style="color: #048f81">C</div>
-                                <div class="col text-center fs-3 p-3" style="color: #048f81">(</div>
-                                <div class="col text-center fs-3 p-3" style="color: #048f81">)</div>
-                                <div class="col text-center fs-3 p-3" style="color: #048f81; background-color: #0b231d">/</div>
-                            </div>
-                            <div class="row " style="height: calc(100%/5)">
-                                <div class="col text-white text-center fs-3 p-3">7</div>
-                                <div class="col text-white text-center fs-3 p-3">8</div>
-                                <div class="col text-white text-center fs-3 p-3">9</div>
-                                <div class="col text-center fs-3 p-3" style="color: #048f81; background-color: #0b231d">x</div>
-                            </div>
-                            <div class="row" style="height: calc(100%/5)">
-                                <div class="col text-white text-center fs-3 p-3">4</div>
-                                <div class="col text-white text-center fs-3 p-3">5</div>
-                                <div class="col text-white text-center fs-3 p-3">6</div>
-                                <div class="col text-center fs-3 p-3" style="color: #048f81; background-color: #0b231d;">-</div>
-                            </div>
-                            <div class="row" style="height: calc(100%/5)">
-                                <div class="col text-white text-center fs-3 p-3">1</div>
-                                <div class="col text-white text-center fs-3 p-3">2</div>
-                                <div class="col text-white text-center fs-3 p-3">3</div>
-                                <div class="col text-center fs-3 p-3" style="color: #048f81; background-color: #0b231d">+</div>
-                            </div>
-                            <div class="row" style="height: calc(100%/5)">
-                                <div class="col-3 text-white text-center fs-3 p-3">
-                                    <i class="fa-solid fa-delete-left" style="color: #048f81;"></i>
+                        <div class="row position-relative" style="height: 60%">
+                            <div class="container w-100 h-100 ">
+                                <div class="row " style="height: calc(100%/5); border-top: 3px solid #0b231d; ">
+                                    <div id="clear" class="col-3 text-center fs-3 p-3" style="color: #048f81">C</div>
+                                    <div class="col text-center fs-3 p-3" style="color: #048f81">(</div>
+                                    <div class="col text-center fs-3 p-3" style="color: #048f81">)</div>
+                                    <div class="col text-center fs-3 p-3 mark" style="color: #048f81; background-color: #0b231d">/</div>
                                 </div>
-                                <div class="col text-white text-center fs-3 p-3">0</div>
-                                <div class="col text-white text-center fs-3 p-3">.</div>
-                                <div id="equal" class="col text-white text-center fs-3 p-3" style="background-color: #05523e">=</div>
+                                <div class="row " style="height: calc(100%/5)">
+                                    <div class="col text-white text-center fs-3 p-3">7</div>
+                                    <div class="col text-white text-center fs-3 p-3">8</div>
+                                    <div class="col text-white text-center fs-3 p-3">9</div>
+                                    <div class="col text-center fs-3 p-3 mark" style="color: #048f81; background-color: #0b231d">*</div>
+                                </div>
+                                <div class="row" style="height: calc(100%/5)">
+                                    <div class="col text-white text-center fs-3 p-3">4</div>
+                                    <div class="col text-white text-center fs-3 p-3">5</div>
+                                    <div class="col text-white text-center fs-3 p-3">6</div>
+                                    <div class="col text-center fs-3 p-3 mark" style="color: #048f81; background-color: #0b231d;">-</div>
+                                </div>
+                                <div class="row" style="height: calc(100%/5)">
+                                    <div class="col text-white text-center fs-3 p-3">1</div>
+                                    <div class="col text-white text-center fs-3 p-3">2</div>
+                                    <div class="col text-white text-center fs-3 p-3">3</div>
+                                    <div id="df" class="col text-center fs-3 p-3 mark" style="color: #048f81; background-color: #0b231d">+</div>
+                                </div>
+                                <div class="row" style="height: calc(100%/5)">
+                                    <div id="backSpace" class="col-3 text-white text-center fs-3 p-3">
+                                        <i class="fa-solid fa-delete-left" style="color: #048f81;"></i>
+                                    </div>
+                                    <div class="col text-white text-center fs-3 p-3">0</div>
+                                    <div class="col text-white text-center fs-3 p-3">.</div>
+                                    <div id="equal" class="col-3 text-white text-center fs-3 p-3" style="background-color: #05523e">=</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -72,13 +74,26 @@
     <script src="css/bootstrap/js/jquery-3.7.1.min.js"></script>
     <script>
         let expression;
+        $('#panel').prop( "disabled", true );
+        $('#result').prop( "disabled", true );
 
         $('.col').click(function (){
             expression = $('#panel').val();
             $('#panel').val(expression+" "+$(this).text());
         });
 
-        $('#equal').click(functio)
+        $('#equal').click(function (){
+            expression = $('#panel').val().replace(/\s/g, '');
+            $('#result').val(eval(expression));
+        })
+
+        $('#clear').click(function (){
+            $('#panel').val("");
+        })
+
+        $('#backSpace').click(function (){
+            $('#panel').val($.trim($('#panel').val()).slice(0, -1));
+        })
     </script>
 </body>
 </html>

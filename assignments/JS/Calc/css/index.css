@@ -3,3 +3,16 @@ body{
     background-size: contain;
     background: url("../assets/mesh-211 (2).png") no-repeat left;
 }
+
+.col, .col-3{
+    cursor: pointer;
+}
+
+.col:hover, #clear:hover{
+    background-color: #0b231d;
+}
+
+.mark:hover{
+    background-color: transparent!important;
+}
+
