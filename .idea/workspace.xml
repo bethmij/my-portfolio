@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified portfolio">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,14 +100,7 @@
       <workItem from="1696391344084" duration="27706000" />
       <workItem from="1696475890630" duration="16057000" />
       <workItem from="1696607200929" duration="4795000" />
-      <workItem from="1696648684240" duration="1223000" />
-    </task>
-    <task id="LOCAL-00029" summary="modified portfolio tools">
-      <created>1695195842183</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1695195842183</updated>
+      <workItem from="1696648684240" duration="3487000" />
     </task>
     <task id="LOCAL-00030" summary="modified portfolio assessments">
       <created>1695208558970</created>
@@ -446,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696502703281</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="modified portfolio">
+      <created>1696685670540</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1696685670542</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

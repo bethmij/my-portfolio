@@ -1,6 +1,6 @@
 
-let opacity = [0.3,0.4,0.4,0.4,0.5,0.5,0.6,0.7,0.8,0.9,1,1,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2];
-let newopacity = [0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,1,1,0.9,0.8,0.7,0.6,0.5,0.5,0.4,0.4,0.4,0.3];
+let opacity = [0.25,0.3,0.4,0.4,0.5,0.5,0.6,0.7,0.8,0.9,1,1,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2];
+let newopacity = [0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,1,1,0.9,0.8,0.7,0.6,0.5,0.5,0.4,0.4,0.3,0.25];
 let element = document.querySelectorAll(".col-1");
 let range = document.querySelector("#customRange");
 let txtSpeed = document.querySelector("#speed");
@@ -34,9 +34,9 @@ function setColor() {
          let lastColor = opacity.pop();
          opacity.unshift(lastColor);
 
-        if(lastDiv.style.opacity == `0.3`){
-            clearInterval(intervalReverse);
+        if(lastDiv.style.opacity == `0.25`){
             clearInterval(interval);
+            clearInterval(intervalReverse);
             setColorReverse();
         }
     }, value);
@@ -52,7 +52,7 @@ function setColorReverse() {
         let firstColor = newopacity.shift();
         newopacity.push(firstColor);
 
-        if(firstDiv.style.opacity == `0.3`){
+        if(firstDiv.style.opacity == `0.25`){
             clearInterval(interval);
             clearInterval(intervalReverse)
             setColor();
