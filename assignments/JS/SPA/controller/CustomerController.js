@@ -1,17 +1,16 @@
 import {customer} from "../model/Customer.js";
-import {detail} from "../db/DB.js";
+import {customerDetail} from "../db/DB.js";
 
 let cusId = $('#txtCusID');
 let cusName = $('#txtCusName');
 let cusAddress = $('#txtCusAddress');
 let cusSalary = $('#txtCusSalary');
 
-
 $('#btnSave').click(function (event){
 
     customer.addValue(cusId.val(), cusName.val(), cusAddress.val(), cusSalary.val());
 
-    detail.push(customer);
+    customerDetail.push(customer);
 
     $('#cusTBody').append(
         `<tr>
@@ -19,9 +18,10 @@ $('#btnSave').click(function (event){
             <td>${customer.name}</td>
             <td>${customer.address}</td>
             <td>${customer.salary}</td>
-            <td style="width: 10%"><img className="delete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" className="opacity-75"></td>
+            <td style="width: 10%"><img class="delete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" className="opacity-75"></td>
         </tr>`
     );
+    deleteDetail();
     setFeilds();
     event.preventDefault();
 })
@@ -38,14 +38,15 @@ $('#getAll').click(function (){
     let tBody = $('#cusTBody')
     tBody.empty();
 
-    for (let i = 0; i <detail.length ; i++) {
+    for (let i = 0; i <customerDetail.length ; i++) {
         tBody.append(`<tr>
-            <th scope="row">${detail[i].id}</th>
-            <td>${detail[i].name}</td>
-            <td>${detail[i].address}</td>
-            <td>${detail[i].salary}</td>
-            <td style="width: 10%"><img className="delete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" className="opacity-75"></td>
+            <th scope="row">${customerDetail[i].id}</th>
+            <td>${customerDetail[i].name}</td>
+            <td>${customerDetail[i].address}</td>
+            <td>${customerDetail[i].salary}</td>
+            <td style="width: 10%"><img class="delete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" className="opacity-75"></td>
             </tr>`);
+        deleteDetail();
         setFeilds();
     };
 
@@ -74,4 +75,25 @@ function deleteDetail() {
         $(this).parents('tr').remove();
     })
 }
+
+$('#btnSearch').click(function (){
+    let id = $('#txtSearch').val();
+    let tbody = $('#cusTBody');
+
+    for (let i = 0; i < customerDetail.length; i++) {
+        if(customerDetail[i].id==id){
+            tbody.empty();
+
+            tbody.append(`<tr>
+                <th scope="row">${customerDetail[i].id}</th>
+                <td>${customerDetail[i].name}</td>
+                <td>${customerDetail[i].address}</td>
+                <td>${customerDetail[i].salary}</td>
+                <td style="width: 10%"><img class="delete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" className="opacity-75"></td>
+                </tr>`);
+                deleteDetail();
+                setFeilds();
+        }
+    }
+})
 

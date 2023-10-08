@@ -12,4 +12,3 @@ export var customer = {
     },
 }
 
-// window.customer = customer;

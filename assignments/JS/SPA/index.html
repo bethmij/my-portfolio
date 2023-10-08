@@ -65,7 +65,6 @@
     </div>
 </main>
 
-
 <main id="customerContent" style="display: block" >
     <div class="container-fluid text-center position-relative">
         <div class="row">
@@ -133,9 +132,9 @@
                         <div class="container-fluid " style="height: 100%">
                             <div class="row " style="height: calc(100%/2)">
                                 <div class="col-9 ">
-                                    <input class="search form-control me-2 bg-transparent" type="search" style="height: 100%;" placeholder="Search" aria-label="Search">
+                                    <input id="txtSearch" class="search form-control me-2 bg-transparent text-white-50" type="search" style="height: 90%;" placeholder="Search" aria-label="Search">
                                 </div>
-                                <div class="col-3 mt-2"><button class="btn btn-outline-success" type="submit">Search</button></div>
+                                <div class="col-3 mt-2"><button id="btnSearch" class="btn btn-outline-success" type="submit" style="height: 90%; width:100%;">Search</button></div>
                             </div>
                             <div class="row justify-content-end" style="height: calc(100%/2)">
                                 <div class="col-3 ">
@@ -235,20 +234,20 @@
 
                     <form class="container-fluid  mt-4" style="height: 76%; ">
                         <div class=" row row-cols-1 p-3 justify-content-center" style="height: calc(100%/5)">
-                            <input  class="input form-control text-white "  placeholder="Item Code" style="height: 90%; width: 70%; background-color: #252525;">
+                            <input id="txtItemCode" class="input form-control text-white " placeholder="Item Code" style="height: 90%; width: 70%; background-color: #252525;">
                         </div>
                         <div class="row row-cols-1 p-3 justify-content-center" style="height: calc(100%/5)">
-                            <input  class="input form-control text-white "  placeholder="Item Name" style="height: 90%; width: 70%; background-color: #252525;">
+                            <input id="txtItemName" class="input form-control text-white " placeholder="Item Name" style="height: 90%; width: 70%; background-color: #252525;">
                         </div>
                         <div class="row row-cols-1 p-3 justify-content-center" style="height: calc(100%/5)">
-                            <input  class="input form-control text-white "  placeholder="Item Price" style="height: 90%; width: 70%; background-color: #252525;">
+                            <input id="txtItemPrice" class="input form-control text-white " placeholder="Item Price" style="height: 90%; width: 70%; background-color: #252525;">
                         </div>
                         <div class="row row-cols-1 p-3 justify-content-center" style="height: calc(100%/5)">
-                            <input  class="input form-control text-white "  placeholder="Item Quantity" style="height: 90%; width: 70%; background-color: #252525;">
+                            <input id="txtItemQuantity" class="input form-control text-white " placeholder="Item Quantity" style="height: 90%; width: 70%; background-color: #252525;">
                         </div>
                         <div class="row p-3" style="height: calc(100%/5)">
-                            <div class="col"><button type="submit"  class="btn btn-outline-danger ms-5 " style="width: 10vw; " >Clear</button></div>
-                            <div class="col "><button type="submit" class="btn  btn-outline-success me-5" style="width: 10vw;">Save </button></div>
+                            <div class="col"><button type="submit" id="itemClear" class="btn btn-outline-danger ms-5 " style="width: 10vw; " >Clear</button></div>
+                            <div class="col "><button id="itemSave" type="submit" class="btn  btn-outline-success me-5" style="width: 10vw;">Save </button></div>
                         </div>
                     </form>
                 </div>
@@ -261,16 +260,16 @@
                         <div class="container-fluid " style="height: 100%">
                             <div class="row " style="height: calc(100%/2)">
                                 <div class="col-9 ">
-                                    <input class="search form-control me-2 bg-transparent" type="search" style="height: 100%;" placeholder="Search" aria-label="Search">
+                                    <input id="txtItemSearch" class="search form-control me-2 bg-transparent text-white-50" type="search" style="height: 90%;" placeholder="Search" aria-label="Search">
                                 </div>
-                                <div class="col-3 mt-2"><button class="btn btn-outline-success" type="submit">Search</button></div>
+                                <div class="col-3 mt-2"><button id="itemSearch" class="btn btn-outline-success" type="submit" style="height: 90%; width:100%;">Search</button></div>
                             </div>
                             <div class="row justify-content-end" style="height: calc(100%/2)">
                                 <div class="col-3 ">
-                                    <button type="submit" class="btn btn-outline-success mt-3" style="height: 70%; width:100%; " ><img src="../../CSS_Framework/POS/assets/Screenshot__550_-removebg-preview.png" alt="Logo" width="20%" class="opacity-50 me-2">Get All</button>
+                                    <button type="submit" id="itemGetAll" class="btn btn-outline-success mt-3" style="height: 70%; width:100%; " ><img src="../../CSS_Framework/POS/assets/Screenshot__550_-removebg-preview.png" alt="Logo" width="20%" class="opacity-50 me-2">Get All</button>
                                 </div>
                                 <div class="col-3 " >
-                                    <button type="submit" class="btn btn-outline-success mt-3" style="height: 70%; width:100%; " ><img src="../../CSS_Framework/POS/assets/Screenshot__549_-removebg-preview.png" alt="Logo" width="20%" class="opacity-50 me-2">Edit </button>
+                                    <button type="submit" id="itemEdit" class="btn btn-outline-success mt-3" style="height: 70%; width:100%; " ><img src="../../CSS_Framework/POS/assets/Screenshot__549_-removebg-preview.png" alt="Logo" width="20%" class="opacity-50 me-2">Edit </button>
 
                                 </div>
                             </div>
@@ -280,7 +279,7 @@
                         <div class="col" style="">
                             <table class="table table table-striped table-hover table-dark">
                                 <thead>
-                                <tr bgcolor="teal">
+                                <tr >
                                     <th scope="col">Code</th>
                                     <th scope="col">Name</th>
                                     <th scope="col">Price</th>
@@ -288,64 +287,29 @@
                                     <th scope="col"></th>
                                 </tr>
                                 </thead>
-                                <tbody>
+                                <tbody id="itemBody">
                                 <tr>
-                                    <th scope="row">I001</th>
+                                    <th scope="row">I00-001</th>
                                     <td>Soap</td>
                                     <td>55.00</td>
                                     <td>200 pkg</td>
-                                    <td style="width: 10%"><img src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50"></td>
+                                    <td style="width: 10%"><img class="delete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50"></td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">C002</th>
+                                    <th scope="row">I00-002</th>
                                     <td >Rice</td>
                                     <td>95.00</td>
                                     <td>100 kg</td>
-                                    <td style="width: 10%"><img src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50"></td>
+                                    <td style="width: 10%"><img class="delete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50"></td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">C003</th>
+                                    <th scope="row">I00-003</th>
                                     <td>Milk Powder</td>
                                     <td>1150.00</td>
                                     <td>122 pkg</td>
-                                    <td style="width: 10%"><img src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50"></td>
+                                    <td style="width: 10%"><img class="delete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50"></td>
                                 </tr>
 
-                                <tr style="height: 7vh;">
-                                    <th scope="row"></th>
-                                    <td ></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td style="width: 10%"></td>
-                                </tr>
-                                <tr style="height: 7vh;">
-                                    <th scope="row"></th>
-                                    <td ></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td style="width: 10%"></td>
-                                </tr>
-                                <tr style="height: 7vh;">
-                                    <th scope="row"></th>
-                                    <td ></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td style="width: 10%"></td>
-                                </tr>
-                                <tr style="height: 7vh;">
-                                    <th scope="row"></th>
-                                    <td ></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td style="width: 10%"></td>
-                                </tr>
-                                <tr style="height: 7vh;">
-                                    <th scope="row"></th>
-                                    <td ></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td style="width: 10%"></td>
-                                </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -563,96 +527,11 @@
 <script src="assests/js/jquery-3.7.1.min.js"></script>
 <script src="controller/DashboardController.js"></script>
 <script type="module" src="controller/CustomerController.js"></script>
+<script type="module" src="controller/validations/CustomerValidation.js"></script>
+<script type="module" src="controller/ItemController.js"></script>
+
 
 <script>
-/*
-    var detail = [];
-
-
-    $("#customerSave").click(function (event){
-        // alert("hello");
-        var txtID = $('#txtCusID').val();
-        var txtName = $("#txtCusName").val();
-        var txtAddress = $("#txtCusAddress").val();
-        var txtSalary = $("#txtCusSalary").val();
-
-        var customer = {
-            id: txtID,
-            name: txtName,
-            address: txtAddress,
-            salary: txtSalary
-        }
-
-        let tbody = $("#cusTBody");
-        tbody.append(
-            `<tr>
-                    <th class="id" scope="row">${customer.id}</th>
-                    <td class="name" >${customer.name}</td>
-                    <td class="address">${customer.address}</td>
-                    <td class="salary">${customer.salary}</td>
-                    <td style="width: 10%"></td>
-                </tr> `)
-        setTable();
-        deleteRow();
-        detail.push(customer);
-        console.log(detail);
-        event.preventDefault();
-    });
-
-    $("#getAll").click(function (event){
-        // alert("hello");
-
-        let tbody = $("#cusTBody");
-        tbody.empty();
-
-        for (let i=0; i<detail.length; i++){
-            tbody.append(
-                `<tr>
-                    <th scope="row">${detail[i].id}</th>
-                    <td>${detail[i].name}</td>
-                    <td>${detail[i].address}</td>
-                    <td>${detail[i].salary}</td>
-                    <td style="width: 10%"></td>
-                </tr> `)
-        }
-
-        setTable();
-        deleteRow();
-        event.preventDefault();
-
-    });
-
-
-
-    function setTable() {
-        $("#cusTBody>tr").click(function () {
-            let id = $(this).children(':eq(0)').text();
-            let name = $(this).children(':eq(1)').text();
-            let address = $(this).children(':eq(2)').text();
-            let salary = $(this).children(':eq(3)').text();
-
-            $('#txtCusID').val(id);
-            $("#txtCusName").val(name);
-            $("#txtCusAddress").val(address);
-            $("#txtCusSalary").val(salary);
-        });
-    }
-
-    setTable    ();
-
-    function deleteRow() {
-        $("#cusTBody>tr").dblclick(function () {
-            $(this).remove();
-        });
-    }
-
-    deleteRow();
-
-
-
-
-*/
-
 
 </script>
 </body>

@@ -7,10 +7,12 @@
     <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified SPA">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/controller/CustomerController.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/controller/CustomerController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/controller/DashboardController.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/controller/DashboardController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/controller/ItemController.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/controller/ItemController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/controller/validations/CustomerValidation.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/controller/validations/CustomerValidation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/db/DB.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/db/DB.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/model/Customer.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/model/Customer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/model/Item.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/model/Item.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +113,7 @@
       <workItem from="1696475890630" duration="16057000" />
       <workItem from="1696607200929" duration="4795000" />
       <workItem from="1696648684240" duration="19176000" />
-      <workItem from="1696746073819" duration="10992000" />
+      <workItem from="1696746073819" duration="15805000" />
     </task>
     <task id="LOCAL-00033" summary="modified portfolio assessments">
       <created>1695229646685</created>
