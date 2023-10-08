@@ -25,7 +25,7 @@
     </nav>
 </header>
 
-<main id="home">
+<main id="home" style="display: block">
     <div id="container" class="container-fluid position-absolute top-50 start-50 translate-middle" style="height:25vw; width: 100%; ">
         <div class="row justify-content-around h-100">
             <div class="col-sm-5 col-md-3" style="height:30vw;  ">
@@ -66,7 +66,7 @@
 </main>
 
 
-<main id="customer" class="d-none" >
+<main id="customer" style="display: block" >
     <div class="container-fluid text-center position-relative">
         <div class="row">
             <div  class="menuContainer col-sm-1 col-md-1  p-0 " style="height: 91vh; margin-top: 60px;">
@@ -119,8 +119,8 @@
                             <input id="txtCusSalary" class=" cusInput input form-control text-white "  placeholder="Customer Salary" style="height: 90%; width: 70%; background-color: #252525;">
                         </div>
                         <div class="row p-3" style="height: calc(100%/5)">
-                            <div class="col"><button  type="submit"  class="btn btn-outline-danger ms-5 " style="width: 10vw; " >Clear</button></div>
-                            <div class="col "><button id="customerSave"  type="submit" class="btn  btn-outline-success me-5" style="width: 10vw;">Save </button></div>
+                            <div class="col"><button id="clear" type="submit"  class="btn btn-outline-danger ms-5 " style="width: 10vw; " >Clear</button></div>
+                            <div class="col "><button id="btnSave"  type="submit" class="btn  btn-outline-success me-5" style="width: 10vw;">Save </button></div>
                         </div>
                     </form>
                 </div>
@@ -166,21 +166,21 @@
                                     <td class="name">Kasun</td>
                                     <td class="address">Galle</td>
                                     <td class="salary">50000</td>
-                                    <td style="width: 10%"><!--<img  class="delete"  src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50">--></td>
+                                    <td style="width: 10%"><img  class="delete"  src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-75"></td>
                                 </tr>
                                 <tr>
                                     <th  class="id"scope="row">C002</th>
                                     <td class="name">Amal</td>
                                     <td class="address" >Matara</td>
                                     <td class="salary">25000</td>
-                                    <td style="width: 10%"><!--<img class="delete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50">--></td>
+                                    <td style="width: 10%"><img class="delete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-75"></td>
                                 </tr>
                                 <tr>
                                     <th class="id" scope="row">C003</th>
                                     <td class="name" >Sadun</td>
                                     <td class="address">Colombo</td>
                                     <td class="salary">65000</td>
-                                    <td style="width: 10%"><!--<img class="delete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50">--></td>
+                                    <td style="width: 10%"><img class="delete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-75"></td>
                                 </tr>
 
 
@@ -194,7 +194,7 @@
     </div>
 </main>
 
-<main id="item" class="d-none ">
+<main id="item" style="display: block">
     <div class="container-fluid text-center position-relative">
         <div class="row">
             <div class="menuContainer col-sm-1 col-md-1  p-0 " style="height: 91vh; margin-top: 60px;">
@@ -356,7 +356,7 @@
     </div>
 </main>
 
-<main id="order" class="d-none ">
+<main id="order" style="display: block">
     <div class="container-fluid text-center position-relative">
         <div class="row">
             <div class="menuContainer col-sm-1 col-md-1  p-0 " style="height: 91vh; margin-top: 60px;">
@@ -560,9 +560,12 @@
 
 
 <script src="../../CSS_Framework/POS/css/bootstrap/js/bootstrap.js"></script>
-<script src="assests/jsindex.js"></script>
 <script src="assests/js/jquery-3.7.1.min.js"></script>
+<script src="controller/DashboardController.js"></script>
+<script src="controller/CustomerController.js"></script>
+
 <script>
+/*
     var detail = [];
 
 
@@ -648,21 +651,9 @@
 
 
 
+*/
 
 
 </script>
 </body>
 </html>
-
-
-
-<!--// let td1 = document.createElement("td");
-            td1.textContent = detail[i].id;
-            let td2 = document.createElement("td");
-            // td2.textContent = detail[i].name;
-            // let td3 = document.createElement("td");
-            // td3.textContent = detail[i].address;
-            // let td4 = document.createElement("td");
-            // td4.textContent = detail[i].salary;
-            // tr.append(td1,td2,td3,td4);
-            // tbody.append(tr);-->
