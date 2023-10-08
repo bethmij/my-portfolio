@@ -3,7 +3,7 @@ initiateUI();
 
 function initiateUI() {
     clearAll();
-    $("#home").css("display", "block");
+    $("#homeContent").css("display", "block");
     setTheLastView();
 }
 
@@ -28,24 +28,24 @@ function setTheLastView() {
     let view = localStorage.getItem("view");
     switch (view) {
         case "HOME":
-            setView($("#home"));
+            setView($("#homeContent"));
             break;
         case "ITEM":
-            setView($("#item"));
+            setView($("#itemContent"));
             break;
         case "CUSTOMER":
-            setView($("#customer"));
+            setView($("#customerContent"));
             break;
         case "ORDER":
-            setView($("#order"));
+            setView($("#orderContent"));
             break;
         default:
-            setView($("#home"));
+            setView($("#homeContent"));
     }
 }
 
 function clearAll() {
-    $("#home,#customer,#item,#order").css('display', 'none');
+    $("#homeContent,#customerContent,#itemContent,#orderContent").css('display', 'none');
 }
 
 
@@ -58,19 +58,19 @@ function setView(viewOb) {
 
 //bind events
 $(".btnHome").click(function () {
-    setView($("#home"));
+    setView($("#homeContent"));
 });
 
 $(".btnCustomer").click(function () {
-    setView($("#customer"));
+    setView($("#customerContent"));
 });
 
 $(".btnItem").click(function () {
-    setView($("#item"));
+    setView($("#itemContent"));
 });
 
 $(".btnOrder").click(function () {
-    setView($("#order"));
+    setView($("#orderContent"));
 });
 
 var img =  document.querySelectorAll(".menuImg");
