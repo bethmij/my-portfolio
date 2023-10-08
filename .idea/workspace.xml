@@ -4,67 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified SPA">
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/controller/CustomerController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/controller/IndexController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/controller/ItemController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/controller/OrderController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/db/DB.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/model/Customer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/model/Index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/model/Item.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/model/Order.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/css/bootstrap-grid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/css/bootstrap-grid.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/css/bootstrap-grid.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/css/bootstrap-grid.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/css/bootstrap-grid.rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/css/bootstrap-grid.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/css/bootstrap-grid.rtl.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/css/bootstrap-grid.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/css/bootstrap-grid.rtl.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/css/bootstrap-reboot.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/css/bootstrap-reboot.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/css/bootstrap-reboot.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/css/bootstrap-reboot.rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/css/bootstrap-reboot.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/css/bootstrap-reboot.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/css/bootstrap-utilities.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/css/bootstrap-utilities.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/css/bootstrap-utilities.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/css/bootstrap-utilities.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/css/bootstrap-utilities.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/css/bootstrap-utilities.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/css/bootstrap-utilities.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/css/bootstrap-utilities.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/css/bootstrap-utilities.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/css/bootstrap-utilities.rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/css/bootstrap-utilities.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/css/bootstrap-utilities.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/css/bootstrap.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/css/bootstrap.rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/css/bootstrap.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/css/bootstrap.rtl.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/css/bootstrap.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/css/bootstrap.rtl.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/css/bootstrap.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/css/bootstrap.rtl.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/js/bootstrap.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/js/bootstrap.bundle.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/js/bootstrap.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/js/bootstrap.esm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/js/bootstrap.esm.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/js/bootstrap.esm.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/js/bootstrap.esm.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/js/bootstrap.esm.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/js/bootstrap.esm.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/js/bootstrap.esm.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/js/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/js/bootstrap.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/bootstrap/js/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/js/jquery-3.7.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/js/jquery-3.7.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified SPA" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -164,7 +104,7 @@
       <workItem from="1696475890630" duration="16057000" />
       <workItem from="1696607200929" duration="4795000" />
       <workItem from="1696648684240" duration="19176000" />
-      <workItem from="1696746073819" duration="1105000" />
+      <workItem from="1696746073819" duration="1484000" />
     </task>
     <task id="LOCAL-00033" summary="modified portfolio assessments">
       <created>1695229646685</created>
