@@ -8,19 +8,32 @@
     <title>POS System</title>
     <link rel="stylesheet" href="../../CSS_Framework/POS/css/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../CSS_Framework/POS/css/index.css">
-
+    <link rel="stylesheet" href="assests/font-awesome/css/all.min.css">
 
 
 </head>
 <body style="background: linear-gradient(180deg, #030E00, #010600); height: 100vh;">
 <header>
     <nav class="navbar bg-body-tertiary p-0 z-3" >
-        <div class="container-fluid position-fixed top-0 p-0" style="background-color: #252525; height: 60px;" >
+        <div class="container-fluid position-fixed top-0 p-0 " style="background-color: #252525; height: 60px;" >
             <a class="navbar-brand " style="color: #919191;">
                 <img src="../../CSS_Framework/POS/assets/Green_Leaf_Aesthetic_Organic_Skincare_Logo__2_-removebg-preview.png" alt="Logo" width="15%" class="d-inline-block align-text-top ">
                 <label class="position-absolute fs-4" style="">Harvest Mart Pos System</label>
                 <img class=" menu d-none" src="../../CSS_Framework/POS/assets/icons8-menu-100.png" alt="Logo" width="100%" >
             </a>
+            <div class="container w-50 h-100 position-absolute end-0 border" >
+                <div class="row w-100 h-100">
+                    <div id="currDate" class="col border text-white-50 fs-5 text-center mt-3">
+
+                    </div>
+                    <div class="col border"></div>
+                    <div class="col border ">
+                        <i class="fa-regular fa-circle-user fa-2x mt-3 ms-2 p-0" style="color: #014919;"></i>
+                        <p class="text-white-50 d-inline-block p-0" >Sign Up</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </nav>
 </header>
@@ -438,28 +451,28 @@
                             <table class="table table-hover table-striped table-dark" style="height: 10vw;">
 
                                 <tbody id="orderTbody">
-<!--                                <tr>-->
-<!--                                    <th scope="row">I001</th>-->
-<!--                                    <td>Soap</td>-->
-<!--                                    <td>55.00</td>-->
-<!--                                    <td>9 pkg</td>-->
-<!--                                    <td style="width: 5vw"><img src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50"></td>-->
-<!--                                </tr>-->
-<!--                                <tr>-->
-<!--                                    <th scope="row">I002</th>-->
-<!--                                    <td>Milk Powder</td>-->
-<!--                                    <td>1150.00</td>-->
-<!--                                    <td>2 pkg</td>-->
-<!--                                    <td style="width: 5vw"><img src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50"></td>-->
-<!--                                </tr>-->
-<!--                                <tr>-->
-<!--                                    <th scope="row">I003</th>-->
-<!--                                    <td >Rice</td>-->
-<!--                                    <td>95.00</td>-->
-<!--                                    <td>10 kg</td>-->
-<!--                                    <td style="width: 5vw"><img src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50"></td>-->
-<!--                                </tr>-->
-<!--                             -->
+                                <tr >
+                                    <th scope="col">Code</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Order Qty</th>
+                                    <th scope="col"></th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">I00-001</th>
+                                    <td>Soap Rose Scented</td>
+                                    <td>55</td>
+                                    <td>3</td>
+                                    <td style="width: 10%"><img class="orderDelete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" className="opacity-75"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">I00-002</th>
+                                    <td >Rice Basmathi</td>
+                                    <td>95</td>
+                                    <td>10</td>
+                                    <td style="width: 10%"><img class="orderDelete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" className="opacity-75"></td>
+                                </tr>
+
                                 </tbody>
                             </table>
                         </div>
@@ -468,8 +481,8 @@
                     <div id="total" class="row mt-5 ms-5 " style="height: 40%; width: 40vw;">
                         <div class="container-fluid w-100 h-100 ">
                             <div class="row " style="height: calc(100%/4);">
-                                <div class="col"><span id="total-text " class="text-white  me-5" style="font-size: 2vw;">Total : 00.0</span></div>
-                                <div class="col"><span id="total-text1" class="text-white  " style="font-size: 2vw;">Sub Total : 00.0</span></div>
+                                <div class="col"><span id="total-text" class="text-white  me-5" style="font-size: 2vw;">Total : 1115.00</span></div>
+                                <div class="col"><span id="subTotal-text" class="text-white  " style="font-size: 2vw;">Sub Total : 1115.00</span></div>
                             </div>
                             <div class="row " style="height: calc(100%/4);">
                                 <div class="col p-3 ms-5">

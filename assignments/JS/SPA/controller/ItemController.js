@@ -146,7 +146,6 @@ function deleteDetail() {
             $(this).parents('tr').remove();
         }
     })
-
 }
 
 $('#itemSearch').click(function (){

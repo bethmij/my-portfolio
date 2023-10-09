@@ -1,5 +1,6 @@
 
 initiateUI();
+setDate();
 
 function initiateUI() {
     clearAll();
@@ -105,3 +106,10 @@ window.addEventListener("load", function(event) {
         window.scrollTo(0, savedScrollPosition);
     }
 });
+
+function setDate() {
+    let currentDate = new Date();
+    let formattedDate = currentDate.getDate() + '/' + currentDate.getMonth() + '/' + currentDate.getFullYear();
+    $('#currDate').text(`Date : ${formattedDate}`);
+}
+

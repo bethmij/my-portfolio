@@ -6,6 +6,15 @@ import {item} from "../model/Item.js";
 let selectCusOp = $('#cusID');
 let selectItemOp = $('#itemCode');
 let btnSave = $('#btnAddCart');
+let txtItemName = $('#itemName');
+let txtItemPrice = $('#itemPrice');
+let txtItemQty = $('#itemQuantity');
+let txtOrderQty = $('#orderQuantity');
+let totalTxt = $('#total-text').text().split("Total : ");
+let subTotalTxt = $('#subTotal-text');
+let total = totalTxt[1].split(".");
+let total1 = parseInt(total);
+
 
 setCusID();
 setOrderID();
@@ -66,27 +75,58 @@ selectItemOp.change(function () {
     let itemCode = selectItemOp.val();
     for (let i = 0; i < itemDetail.length; i++) {
         if (itemDetail[i].code == itemCode) {
-            $('#itemName').val(`Item Name : ${itemDetail[i].name}`);
-            $('#itemPrice').val(`Item Price : ${itemDetail[i].price}`);
-            $('#itemQuantity').val(`Item Quantity : ${itemDetail[i].quantity}`);
+            txtItemName.val(`Item Name : ${itemDetail[i].name}`);
+            txtItemPrice.val(`Item Price : ${itemDetail[i].price}`);
+            txtItemQty.val(`Item Quantity : ${itemDetail[i].quantity}`);
         }else if(itemCode == "Item Code" ){
-            $('#itemName').val(`Item Name : `);
-            $('#itemPrice').val(`Item Price : `);
-            $('#itemQuantity').val(`Item Quantity : `);
+            txtItemName.val(`Item Name : `);
+            txtItemPrice.val(`Item Price : `);
+            txtItemQty.val(`Item Quantity : `);
             btnSave.attr("disabled", true);
         }
     }
 })
 
+
+
 btnSave.click(function (){
+    let itemName = txtItemName.val().split("Item Name : ");
+    let itemPrice = txtItemPrice.val().split("Item Price : ");
+
     $('#orderTbody').append(
-        `<tr>
-             <th scope="row">${item.code}</th>
-             <td>${item.name}</td>
-             <td>${item.price}</td>
-             <td>${item.quantity}</td>
-             <td style="width: 10%"><img class="itemDelete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" className="opacity-75"></td>
+        `<tr style="height: 2vw">
+             <th scope="row">${selectItemOp.val()}</th>
+             <td>${itemName[1]}</td>
+             <td>${itemPrice[1]}</td>
+             <td>${txtOrderQty.val()}</td>
+             <td style="width: 10%"><img class="orderDelete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" className="opacity-75"></td>
         </tr>`
     );
+    deleteDetail();
+    calcTotal(itemPrice[1], txtOrderQty.val());
+
 })
 
+deleteDetail();
+
+function deleteDetail() {
+    let btnDelete = $('.orderDelete');
+    btnDelete.on("mouseover", function (){
+        $(this).css("cursor", "pointer");}
+    )
+
+    btnDelete.click(function () {
+        var userChoice = window.confirm("Do you want to delete the item?");
+
+        if (userChoice) {
+            $(this).parents('tr').remove();
+        }
+    })
+}
+
+function calcTotal(price, qty) {
+    let tot = price*qty;
+    total1 += tot;
+    $('#total-text').text(`Total : ${total1}.00`);
+    $('#subTotal-text').text(`Sub Total : ${total1}.00`);
+}
