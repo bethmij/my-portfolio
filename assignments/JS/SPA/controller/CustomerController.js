@@ -1,42 +1,90 @@
 import {customer} from "../model/Customer.js";
-import {customerDetail} from "../db/DB.js";
+import {customerDetail, itemDetail} from "../db/DB.js";
 
 let cusId = $('#txtCusID');
 let cusName = $('#txtCusName');
 let cusAddress = $('#txtCusAddress');
 let cusSalary = $('#txtCusSalary');
+let btnCustomerSave = $('#btnSave');
 
-$('#btnSave').attr("disabled", true);
+$(document).on('keydown', function(event) {
+    if (event.keyCode === 9) {
+        event.preventDefault();
+    }
+});
 
-$('#btnSave').click(function (event){
-    var userChoice = window.confirm("Do you want to save the customer?");
+btnCustomerSave.click(function (event){
 
-    if (userChoice) {
-        customer.addValue(cusId.val(), cusName.val(), cusAddress.val(), cusSalary.val());
-        customerDetail.push(customer);
+    if(btnCustomerSave.text()=="Save ") {
+        let count = 0;
+        var userChoice = window.confirm("Do you want to save the customer?");
 
-        $('#cusTBody').append(
-            `<tr>
-            <th scope="row">${customer.id}</th>
-            <td>${customer.name}</td>
-            <td>${customer.address}</td>
-            <td>${customer.salary}</td>
-            <td style="width: 10%"><img class="delete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" className="opacity-75"></td>
-        </tr>`
-        );
-        deleteDetail();
-        setFeilds();
+        if (userChoice) {
+            for (let i = 0; i < customerDetail.length; i++) {
+                if(customerDetail[i].id!=cusId.val()) {
+                    count++;
+                }
+            }
+            if(count==customerDetail.length) {
+                customer.addValue(cusId.val(), cusName.val(), cusAddress.val(), cusSalary.val());
+                customerDetail.push(customer);
+
+                $('#cusTBody').append(
+                    `<tr>
+                        <th scope="row">${customer.id}</th>
+                        <td>${customer.name}</td>
+                        <td>${customer.address}</td>
+                        <td>${customer.salary}</td>
+                        <td style="width: 10%"><img class="delete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" className="opacity-75"></td>
+                    </tr>`
+                );
+                deleteDetail();
+                setFeilds();
+                clearAll(event);
+                btnCustomerSave.attr("disabled", true);
+            }else {
+                alert("Duplicate customer ID!");
+            }
+        }
+    }else if(btnCustomerSave.text()=="Update ") {
+        for (let i = 0; i < customerDetail.length; i++) {
+
+            if(customerDetail[i].id == $('#txtCusID').val()){
+                customerDetail[i].name = $('#txtCusName').val();
+                customerDetail[i].address = $('#txtCusAddress').val();
+                customerDetail[i].salary = $('#txtCusSalary').val();
+                getAll();
+                clearAll(event);
+                btnCustomerSave.text("Save ");
+                btnCustomerSave.attr("disabled", true);
+                cusId.val($(this).children(':eq(0)').text()).attr("disabled", false);
+            }
+        }
     }
     event.preventDefault();
 })
 
 $('#clear').click(function (event){
+    clearAll(event);
+})
+
+function clearAll(event) {
     cusId.val("");
     cusName.val("");
     cusAddress.val("");
     cusSalary.val("");
+    $('#txtCusID').css("border","1px solid white");
+    $('#cusIDPara').text("");
+    $('#txtCusName').css("border","1px solid white");;
+    $('#cusNamePara').text("");
+    $('#txtCusAddress').css("border","1px solid white");;
+    $('#cusAddressPara').text("");
+    $('#txtCusSalary').css("border","1px solid white");;
+    $('#cusSalaryPara').text("");
     event.preventDefault();
-})
+}
+
+
 
 $('#getAll').click(function (){
     getAll();
@@ -69,7 +117,9 @@ function setFeilds() {
         cusName.val($(this).children(':eq(1)').text());
         cusAddress.val($(this).children(':eq(2)').text());
         cusSalary.val($(this).children(':eq(3)').text());
-        $('#btnSave').attr("disabled", true);
+        btnCustomerSave.text("Update ");
+        btnCustomerSave.attr("disabled", false);
+        cusId.val($(this).children(':eq(0)').text()).attr("disabled", true);
     })
 }
 
@@ -117,18 +167,6 @@ $('#btnSearch').click(function (){
         }
     }else {
         alert("Please enter the ID");
-    }
-})
-
-$('#edit').click(function (){
-    for (let i = 0; i < customerDetail.length; i++) {
-
-        if(customerDetail[i].id == $('#txtCusID').val()){
-            customerDetail[i].name = $('#txtCusName').val();
-            customerDetail[i].address = $('#txtCusAddress').val();
-            customerDetail[i].salary = $('#txtCusSalary').val();
-            getAll();
-        }
     }
 })
 

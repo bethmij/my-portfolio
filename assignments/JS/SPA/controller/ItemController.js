@@ -5,39 +5,90 @@ let itemCode = $('#txtItemCode');
 let itemName = $('#txtItemName');
 let itemPrice = $('#txtItemPrice');
 let itemQuantity = $('#txtItemQuantity');
+let btnItemSave = $('#itemSave');
 
-$('#itemSave').click(function (event){
-    alert($('#itemSave').content);
-    var userChoice = window.confirm("Do you want to save the item?");
+$(document).on('keydown', function(event) {
+    if (event.keyCode === 9) {
+        event.preventDefault();
+    }
+});
 
-    if (userChoice) {
+btnItemSave.click(function (event){
 
-        item.addValue(itemCode.val(), itemName.val(), itemPrice.val(), itemQuantity.val());
+    if(btnItemSave.text()=="Save ") {
+        let count = 0;
+        var userChoice = window.confirm("Do you want to save the item?");
 
-        itemDetail.push(item);
+        if (userChoice) {
+            for (let i = 0; i < itemDetail.length; i++) {
+                if(itemDetail[i].code!=itemCode.val()) {
+                    count++;
+                }
+            }
+            if(count==itemDetail.length){
+                item.addValue(itemCode.val(), itemName.val(), itemPrice.val(), itemQuantity.val());
 
-        $('#itemBody').append(
-            `<tr>
-            <th scope="row">${item.code}</th>
-            <td>${item.name}</td>
-            <td>${item.price}</td>
-            <td>${item.quantity}</td>
-            <td style="width: 10%"><img class="itemDelete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" className="opacity-75"></td>
-        </tr>`
-        );
-        deleteDetail();
-        setFeilds();
+                itemDetail.push(item);
+
+                $('#itemBody').append(
+                    `<tr>
+                         <th scope="row">${item.code}</th>
+                            <td>${item.name}</td>
+                            <td>${item.price}</td>
+                            <td>${item.quantity}</td>
+                            <td style="width: 10%"><img class="itemDelete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" className="opacity-75"></td>
+                        </tr>`
+                );
+                deleteDetail();
+                setFeilds();
+                clearAll(event);
+                btnItemSave.attr("disabled", true);
+            } else {
+                alert("Duplicate item code!");
+            }
+        }
+    }else if(btnItemSave.text()=="Update ") {
+        for (let i = 0; i < itemDetail.length; i++) {
+
+            if(itemDetail[i].code == $('#txtItemCode').val()){
+                itemDetail[i].name = $('#txtItemName').val();
+                itemDetail[i].price = $('#txtItemPrice').val();
+                itemDetail[i].quantity = $('#txtItemQuantity').val();
+                getAll();
+                clearAll(event);
+                btnItemSave.text("Save ");
+                btnItemSave.attr("disabled", true);
+                itemCode.val($(this).children(':eq(0)').text()).attr("disabled", false);
+            }
+        }
     }
     event.preventDefault();
 })
 
 $('#itemClear').click(function (event){
+    clearAll(event);
+})
+
+function clearAll(event) {
     itemCode.val("");
     itemName.val("");
     itemPrice.val("");
     itemQuantity.val("");
+    $('#txtItemCode').css("border", "1px solid white");
+    $('#itemCodePara').text("");
+    $('#txtItemName').css("border", "1px solid white");
+    ;
+    $('#itemNamePara').text("");
+    $('#txtItemPrice').css("border", "1px solid white");
+    ;
+    $('#itemPricePara').text("");
+    $('#txtItemQuantity').css("border", "1px solid white");
+    ;
+    $('#itemQtyPara').text("");
     event.preventDefault();
-})
+}
+
+
 
 $('#itemGetAll').click(function (){
     getAll();
@@ -72,7 +123,9 @@ function setFeilds() {
         itemName.val($(this).children(':eq(1)').text());
         itemPrice.val($(this).children(':eq(2)').text());
         itemQuantity.val($(this).children(':eq(3)').text());
-        $('#itemSave').attr("disabled", true);
+        btnItemSave.text("Update ");
+        btnItemSave.attr("disabled", false);
+        itemCode.val($(this).children(':eq(0)').text()).attr("disabled", true);
     })
 }
 
@@ -124,16 +177,3 @@ $('#itemSearch').click(function (){
         alert("Please enter the code");
     }
 })
-
-$('#itemEdit').click(function (){
-    for (let i = 0; i < itemDetail.length; i++) {
-
-        if(itemDetail[i].code == $('#txtItemCode').val()){
-            itemDetail[i].name = $('#txtItemName').val();
-            itemDetail[i].price = $('#txtItemPrice').val();
-            itemDetail[i].quantity = $('#txtItemQuantity').val();
-            getAll();
-        }
-    }
-})
-
