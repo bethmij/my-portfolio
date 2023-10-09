@@ -1,5 +1,5 @@
 import {item} from "../model/Item.js";
-import {itemDetail} from "../db/DB.js";
+import {customerDetail, itemDetail} from "../db/DB.js";
 
 let itemCode = $('#txtItemCode');
 let itemName = $('#txtItemName');
@@ -7,6 +7,7 @@ let itemPrice = $('#txtItemPrice');
 let itemQuantity = $('#txtItemQuantity');
 
 $('#itemSave').click(function (event){
+    alert($('#itemSave').content);
     var userChoice = window.confirm("Do you want to save the item?");
 
     if (userChoice) {
@@ -39,10 +40,15 @@ $('#itemClear').click(function (event){
 })
 
 $('#itemGetAll').click(function (){
+    getAll();
+
+})
+
+function getAll() {
     let tBody = $('#itemBody')
     tBody.empty();
 
-    for (let i = 0; i <itemDetail.length ; i++) {
+    for (let i = 0; i < itemDetail.length; i++) {
         tBody.append(`<tr>
             <th scope="row">${itemDetail[i].code}</th>
             <td>${itemDetail[i].name}</td>
@@ -52,9 +58,11 @@ $('#itemGetAll').click(function (){
             </tr>`);
         deleteDetail();
         setFeilds();
-    };
+    }
+    ;
+}
 
-})
+
 
 setFeilds();
 
@@ -64,6 +72,7 @@ function setFeilds() {
         itemName.val($(this).children(':eq(1)').text());
         itemPrice.val($(this).children(':eq(2)').text());
         itemQuantity.val($(this).children(':eq(3)').text());
+        $('#itemSave').attr("disabled", true);
     })
 }
 
@@ -86,22 +95,44 @@ function deleteDetail() {
 }
 
 $('#itemSearch').click(function (){
+
     let code = $('#txtItemSearch').val();
     let tbody = $('#itemBody');
+    let count = 0;
 
-    for (let i = 0; i < itemDetail.length; i++) {
-        if(itemDetail[i].code==code){
-            tbody.empty();
+    if(code.length!=0) {
+        for (let i = 0; i < itemDetail.length; i++) {
+            if (itemDetail[i].code == code) {
+                count++;
+                tbody.empty();
 
-            tbody.append(`<tr>
+                tbody.append(`<tr>
                 <th scope="row">${itemDetail[i].code}</th>
                 <td>${itemDetail[i].name}</td>
                 <td>${itemDetail[i].price}</td>
                 <td>${itemDetail[i].quantity}</td>
                 <td style="width: 10%"><img class="itemDelete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" className="opacity-75"></td>
                 </tr>`);
-            deleteDetail();
-            setFeilds();
+                deleteDetail();
+                setFeilds();
+            }
+        }
+        if (count != 1) {
+            alert("No such Item..please check the code");
+        }
+    }else {
+        alert("Please enter the code");
+    }
+})
+
+$('#itemEdit').click(function (){
+    for (let i = 0; i < itemDetail.length; i++) {
+
+        if(itemDetail[i].code == $('#txtItemCode').val()){
+            itemDetail[i].name = $('#txtItemName').val();
+            itemDetail[i].price = $('#txtItemPrice').val();
+            itemDetail[i].quantity = $('#txtItemQuantity').val();
+            getAll();
         }
     }
 })
