@@ -378,14 +378,14 @@
                                 </div>
                                 <div class="  row p-2 justify-content-end align-items-center  " style="height: calc(100%/3);">
                                     <div class="col  h-100 ">
-                                        <input  class="input form-control ms-0 mt-2 bg-transparent border-0 text-white-50" disabled="true" value="Customer Name : " style="height: 85%; width: 80%; background-color: #252525; outline: none;">
+                                        <input id="cusName" class="input form-control ms-0 mt-2 bg-transparent border-0 text-white-50" disabled="true" value="Customer Name : " style="height: 85%; width: 100%; background-color: #252525; outline: none;">
                                     </div>
                                     <div class="col h-100 ">
-                                        <input  class="input form-control text-white  me-2 mt-2 bg-transparent border-0 text-white-50" disabled="true" value="Customer Salary : " style="height: 85%; width: 80%; background-color: #252525; right: 0; outline: none;">
+                                        <input id="cusSalary" class="input form-control text-white  me-2 mt-2 bg-transparent border-0 text-white-50" disabled="true" value="Customer Salary : " style="height: 85%; width: 80%; background-color: #252525; right: 0; outline: none;">
                                     </div>
                                 </div>
                                 <div class="  row row-cols-1 ps-3 " style="height: calc(100%/3);">
-                                    <input  class="input form-control text-white e ms-2 bg-transparent border-0 text-white-50" disabled="true" value="Customer Address : " style="height: 90%; width:90%; background-color: #252525; outline: none; ">
+                                    <input id="cusAddress" class="input form-control text-white e ms-2 bg-transparent border-0 text-white-50" disabled="true" value="Customer Address : " style="height: 80%; width:95%; background-color: #252525; outline: none; ">
                                 </div>
 
                             </form>
@@ -397,30 +397,32 @@
                                 <h1 class="text-center  fs-5 top-50 start-50 translate-middle position-absolute" style="color: #019D30">Item Select</h1>
                             </div>
                             <form class="container position-relative " style="width: 100%; height: 90%;">
-                                <div class="row row-cols-1 justify-content-center p-2 mt-1 " style="height: calc(100%/5);">
-                                    <select class="select  form-select text-white-50 mt-2" aria-label="Default select example" style="height: 90%; width: 30%; background-color: #252525; ">-->
-                                        <option  class="text-white" value="1">I001</option>
-                                        <option  class="text-white" value="2">I002</option>
-                                        <option class="text-white" value="3">I003</option>
-                                    </select>
-                                </div>
-                                <div class="row row-cols-1 p-2 " style="height: calc(100%/5);">
-                                    <input  class="input form-control text-white e ms-3 "  placeholder="Customer Address" style="height: 95%; width:90%; background-color: #252525;  ">
-                                </div>
-                                <div class="row p-2 justify-content-end " style="height: calc(100%/5);">
-                                    <div class="col  ">
-                                        <input  class="input form-control text-white  "  placeholder="Customer Name" style="height: 95%; width: 80%; background-color: #252525; ">
+                                <div class="row mt-4 justify-content-center p-2 mt-1 " style="height: calc(100%/5);">
+                                    <div class="col-6">
+                                        <input id="itemName"  class="input form-control text-white e ms-4 bg-transparent border-0 text-white-50"  value="Item Name : " style="height: 90%; width:90%; background-color: #252525;  ">
                                     </div>
-                                    <div class="col  ">
-                                        <input  class="input form-control text-white ms-4 "  placeholder="Customer Salary" style="height: 95%; width: 80%; background-color: #252525; right: 0;">
+                                    <div class="col-6">
+                                        <select id="itemCode" class="select  form-select text-white-50 mt-2 ms-3" aria-label="Default select example"  style="height: 80%; width: 75%; background-color: #252525; ">-->
+                                            <option  class="text-white" value="1">I001</option>
+                                            <option  class="text-white" value="2">I002</option>
+                                            <option class="text-white" value="3">I003</option>
+                                        </select>
                                     </div>
                                 </div>
-                                <div class="row row-cols-1 p-2 " style="height: calc(100%/5);">
-                                    <input  class="input form-control text-white ms-3"  placeholder="Order Quantity" style="height: 95%; width: 90%; background-color: #252525; ">
+                                <div class="row p-2 justify-content-end  " style="height: calc(100%/5);">
+                                    <div class="col  ">
+                                        <input id="itemPrice" class="input form-control text-white bg-transparent border-0 text-white-50 ms-4"  value="Item Price : " style="height: 95%; width: 80%; background-color: #252525; ">
+                                    </div>
+                                    <div class="col  ">
+                                        <input id="itemQuantity" class="input form-control text-white ms-2 bg-transparent border-0 text-white-50"  value="Item Quantity : " style="height: 95%; width: 80%; background-color: #252525; right: 0;">
+                                    </div>
                                 </div>
-                                <div class="row row-cols-1 p-2  justify-content-center" style="height: calc(100%/5);">
-                                    <button type="submit" class="btn btn-outline-success "  style="width: 45%;"><img src="../../CSS_Framework/POS/assets/Screenshot__543_-removebg-preview.png" alt="Logo" width="25vw" class="opacity-50 me-3">Add to Cart </button>
-
+                                <div class="row row-cols-1 p-2 " style="height: calc(100%/5);">
+                                    <input id="orderQuantity"  class="input form-control text-white ms-5 "  placeholder="Order Quantity" style="height: 90%; width: 80%; background-color: #252525; ">
+                                    <p id="orderQtyPara" class="text-danger-emphasis text-start ms-5" style="width: 70%;"></p>
+                                </div>
+                                <div class="row row-cols-1 p-2  justify-content-center mt-3" style="height: calc(100%/5);">
+                                    <button id="btnAddCart" type="submit" class="btn btn-outline-success "  style="width: 45%;"><img src="../../CSS_Framework/POS/assets/Screenshot__543_-removebg-preview.png" alt="Logo" width="25vw" class="opacity-50 me-3">Add to Cart </button>
                                 </div>
 
                             </form>
@@ -435,65 +437,29 @@
                         <div class="col">
                             <table class="table table-hover table-striped table-dark" style="height: 10vw;">
 
-                                <tbody>
-                                <tr>
-                                    <th scope="row">I001</th>
-                                    <td>Soap</td>
-                                    <td>55.00</td>
-                                    <td>9 pkg</td>
-                                    <td style="width: 5vw"><img src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50"></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">I002</th>
-                                    <td>Milk Powder</td>
-                                    <td>1150.00</td>
-                                    <td>2 pkg</td>
-                                    <td style="width: 5vw"><img src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50"></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">I003</th>
-                                    <td >Rice</td>
-                                    <td>95.00</td>
-                                    <td>10 kg</td>
-                                    <td style="width: 5vw"><img src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50"></td>
-                                </tr>
-
-                                <tr style="height: 3vw;">
-                                    <th scope="row"></th>
-                                    <td ></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td style="width: 5vw"></td>
-                                </tr>
-                                <tr style="height: 3vw;">
-                                    <th scope="row"></th>
-                                    <td ></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td style="width: 5vw"></td>
-                                </tr>
-                                <tr style="height: 3vw;">
-                                    <th scope="row"></th>
-                                    <td ></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td style="width: 5vw"></td>
-                                </tr>
-                                <tr style="height: 3vw;">
-                                    <th scope="row"></th>
-                                    <td ></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td style="width: 5vw"></td>
-                                </tr>
-                                <tr style="height: 3vw;">
-                                    <th scope="row"></th>
-                                    <td ></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td style="width: 5vw"></td>
-                                </tr>
-
+                                <tbody id="orderTbody">
+<!--                                <tr>-->
+<!--                                    <th scope="row">I001</th>-->
+<!--                                    <td>Soap</td>-->
+<!--                                    <td>55.00</td>-->
+<!--                                    <td>9 pkg</td>-->
+<!--                                    <td style="width: 5vw"><img src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50"></td>-->
+<!--                                </tr>-->
+<!--                                <tr>-->
+<!--                                    <th scope="row">I002</th>-->
+<!--                                    <td>Milk Powder</td>-->
+<!--                                    <td>1150.00</td>-->
+<!--                                    <td>2 pkg</td>-->
+<!--                                    <td style="width: 5vw"><img src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50"></td>-->
+<!--                                </tr>-->
+<!--                                <tr>-->
+<!--                                    <th scope="row">I003</th>-->
+<!--                                    <td >Rice</td>-->
+<!--                                    <td>95.00</td>-->
+<!--                                    <td>10 kg</td>-->
+<!--                                    <td style="width: 5vw"><img src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50"></td>-->
+<!--                                </tr>-->
+<!--                             -->
                                 </tbody>
                             </table>
                         </div>
@@ -537,7 +503,8 @@
 <script type="module" src="controller/validations/CustomerValidation.js"></script>
 <script type="module" src="controller/ItemController.js"></script>
 <script type="module" src="controller/validations/ItemValidation.js"></script>
-
+<script type="module" src="controller/OrderController.js"></script>
+<script type="module" src="controller/validations/OrderValidation.js"></script>
 
 <script>
 

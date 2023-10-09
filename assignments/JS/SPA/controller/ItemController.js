@@ -1,5 +1,6 @@
 import {item} from "../model/Item.js";
 import {itemDetail} from "../db/DB.js";
+import {setItemCode} from "./OrderController.js";
 
 let itemCode = $('#txtItemCode');
 let itemName = $('#txtItemName');
@@ -42,6 +43,7 @@ btnItemSave.click(function (event){
                 deleteDetail();
                 setFeilds();
                 clearAll(event);
+                setItemCode();
                 btnItemSave.attr("disabled", true);
             } else {
                 alert("Duplicate item code!");
