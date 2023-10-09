@@ -107,15 +107,19 @@
                     <form class="container-fluid  mt-4" style="height: 76%; ">
                         <div class=" row row-cols-1 p-3 justify-content-center" style="height: calc(100%/5)">
                             <input id="txtCusID" class=" cusInput input form-control text-white "  placeholder="Customer ID" style="height: 90%; width: 70%; background-color: #252525;">
+                            <p id="cusIDPara" class="text-danger-emphasis text-start" style="width: 70%;"></p>
                         </div>
                         <div class="row row-cols-1 p-3 justify-content-center" style="height: calc(100%/5)">
                             <input id="txtCusName" class=" cusInput input form-control text-white "  placeholder="Customer Name" style="height: 90%; width: 70%; background-color: #252525;">
+                            <p id="cusNamePara" class="text-danger-emphasis text-start ms-5" style="width: 85%;;"></p>
                         </div>
                         <div class="row row-cols-1 p-3 justify-content-center" style="height: calc(100%/5)">
                             <input id="txtCusAddress" class=" cusInput input form-control text-white "  placeholder="Customer Address" style="height: 90%; width: 70%; background-color: #252525;">
+                            <p id="cusAddressPara" class="text-danger-emphasis text-start" style="width: 70%;"></p>
                         </div>
                         <div class="row row-cols-1 p-3 justify-content-center" style="height: calc(100%/5)">
                             <input id="txtCusSalary" class=" cusInput input form-control text-white "  placeholder="Customer Salary" style="height: 90%; width: 70%; background-color: #252525;">
+                            <p id="cusSalaryPara" class="text-danger-emphasis text-start" style="width: 70%;"></p>
                         </div>
                         <div class="row p-3" style="height: calc(100%/5)">
                             <div class="col"><button id="clear" type="submit"  class="btn btn-outline-danger ms-5 " style="width: 10vw; " >Clear</button></div>
@@ -151,7 +155,7 @@
                         <div class="col" style="">
                             <table id="cusTable" class="table table table-striped table-hover table-dark">
                                 <thead>
-                                <tr bgcolor="teal">
+                                <tr>
                                     <th scope="col">ID</th>
                                     <th scope="col">Name</th>
                                     <th scope="col">Address</th>
@@ -235,15 +239,19 @@
                     <form class="container-fluid  mt-4" style="height: 76%; ">
                         <div class=" row row-cols-1 p-3 justify-content-center" style="height: calc(100%/5)">
                             <input id="txtItemCode" class="input form-control text-white " placeholder="Item Code" style="height: 90%; width: 70%; background-color: #252525;">
+                            <p id="itemCodePara" class="text-danger-emphasis text-start" style="width: 70%;"></p>
                         </div>
                         <div class="row row-cols-1 p-3 justify-content-center" style="height: calc(100%/5)">
                             <input id="txtItemName" class="input form-control text-white " placeholder="Item Name" style="height: 90%; width: 70%; background-color: #252525;">
+                            <p id="itemNamePara" class="text-danger-emphasis text-start ms-5" style="width: 85%;"></p>
                         </div>
                         <div class="row row-cols-1 p-3 justify-content-center" style="height: calc(100%/5)">
-                            <input id="txtItemPrice" class="input form-control text-white " placeholder="Item Price" style="height: 90%; width: 70%; background-color: #252525;">
+                            <input id="txtItemPrice" class="input form-control text-white " placeholder="Item Unit Price" style="height: 90%; width: 70%; background-color: #252525;">
+                            <p id="itemPricePara" class="text-danger-emphasis text-start" style="width: 70%;"></p>
                         </div>
                         <div class="row row-cols-1 p-3 justify-content-center" style="height: calc(100%/5)">
                             <input id="txtItemQuantity" class="input form-control text-white " placeholder="Item Quantity" style="height: 90%; width: 70%; background-color: #252525;">
+                            <p id="itemQtyPara" class="text-danger-emphasis text-start" style="width: 70%;"></p>
                         </div>
                         <div class="row p-3" style="height: calc(100%/5)">
                             <div class="col"><button type="submit" id="itemClear" class="btn btn-outline-danger ms-5 " style="width: 10vw; " >Clear</button></div>
@@ -292,22 +300,22 @@
                                     <th scope="row">I00-001</th>
                                     <td>Soap</td>
                                     <td>55.00</td>
-                                    <td>200 pkg</td>
-                                    <td style="width: 10%"><img class="delete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50"></td>
+                                    <td>200</td>
+                                    <td style="width: 10%"><img class="itemDelete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50"></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">I00-002</th>
                                     <td >Rice</td>
                                     <td>95.00</td>
-                                    <td>100 kg</td>
-                                    <td style="width: 10%"><img class="delete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50"></td>
+                                    <td>100</td>
+                                    <td style="width: 10%"><img class="itemDelete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50"></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">I00-003</th>
                                     <td>Milk Powder</td>
                                     <td>1150.00</td>
-                                    <td>122 pkg</td>
-                                    <td style="width: 10%"><img class="delete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50"></td>
+                                    <td>122</td>
+                                    <td style="width: 10%"><img class="itemDelete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" class="opacity-50"></td>
                                 </tr>
 
                                 </tbody>
@@ -529,6 +537,7 @@
 <script type="module" src="controller/CustomerController.js"></script>
 <script type="module" src="controller/validations/CustomerValidation.js"></script>
 <script type="module" src="controller/ItemController.js"></script>
+<script type="module" src="controller/validations/ItemValidation.js"></script>
 
 
 <script>

@@ -5,8 +5,8 @@ export var customerDetail = [
 ];
 
 export var itemDetail = [
-    {code: 'I00-001', name:'Soap', price: 55.00, quantity: '200 pkg'},
-    {code: 'I00-002', name:'Rice', price: 95.00, quantity: '100 kg'},
-    {code: 'I00-003', name:'Milk Powder',price: 1150.00, quantity: '122 pkg'}
+    {code: 'I00-001', name:'Soap', price: 55.00, quantity: 200},
+    {code: 'I00-002', name:'Rice', price: 95.00, quantity: 100},
+    {code: 'I00-003', name:'Milk Powder',price: 1150.00, quantity: 122}
 ];
 
