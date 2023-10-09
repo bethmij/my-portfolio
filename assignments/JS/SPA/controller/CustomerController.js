@@ -1,5 +1,6 @@
 import {customer} from "../model/Customer.js";
 import {customerDetail, itemDetail} from "../db/DB.js";
+import {setCusID} from "./OrderController.js";
 
 let cusId = $('#txtCusID');
 let cusName = $('#txtCusName');
@@ -41,6 +42,7 @@ btnCustomerSave.click(function (event){
                 deleteDetail();
                 setFeilds();
                 clearAll(event);
+                setCusID();
                 btnCustomerSave.attr("disabled", true);
             }else {
                 alert("Duplicate customer ID!");

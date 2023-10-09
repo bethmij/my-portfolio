@@ -367,23 +367,25 @@
                             </div>
 
                             <form class="container position-relative text-center " style="width: 100%; height: 85%;">
-                                <div class="  row row-cols-1 justify-content-center p-2" style="height: calc(100%/3);">
-                                    <select class="select  form-select text-white-50 mt-2" aria-label="Default select example" style="height: 90%; width: 30%; background-color: #252525;">-->
-                                        <option  class="text-white" value="1">C001</option>
-                                        <option  class="text-white" value="2">C002</option>
-                                        <option class="text-white" value="3">C003</option>
-                                    </select>
-                                </div>
-                                <div class="  row p-2 justify-content-end align-items-center " style="height: calc(100%/3);">
-                                    <div class="col  ">
-                                        <input  class="input form-control  "  placeholder="Customer Name" style="height: 100%; width: 80%; background-color: #252525; ">
+                                <div class="  row justify-content-center p-2" style="height: calc(100%/3);">
+                                    <div class="col-6 ">
+                                        <input id="orderID" class="input form-control me-1 mt-2 bg-transparent border-0 text-white-50" disabled="true"  value="Order ID : " style="height: 85%; width: 80%; background-color: #252525; outline: none; ">
                                     </div>
-                                    <div class="col  ">
-                                        <input  class="input form-control text-white ms-4 "  placeholder="Customer Salary" style="height: 100%; width: 80%; background-color: #252525; right: 0;">
+                                    <div class="col-6 ps-3 "  >
+                                        <select id="cusID" class="  ms-0 select  form-select text-white-50 mt-2" value="dsfsdfsdg" aria-label="Default select example" style="height: 80%; width: 83%; background-color: #252525;">--></select>
+                                    </div>
+
+                                </div>
+                                <div class="  row p-2 justify-content-end align-items-center  " style="height: calc(100%/3);">
+                                    <div class="col  h-100 ">
+                                        <input  class="input form-control ms-0 mt-2 bg-transparent border-0 text-white-50" disabled="true" value="Customer Name : " style="height: 85%; width: 80%; background-color: #252525; outline: none;">
+                                    </div>
+                                    <div class="col h-100 ">
+                                        <input  class="input form-control text-white  me-2 mt-2 bg-transparent border-0 text-white-50" disabled="true" value="Customer Salary : " style="height: 85%; width: 80%; background-color: #252525; right: 0; outline: none;">
                                     </div>
                                 </div>
-                                <div class="  row row-cols-1 p-2 " style="height: calc(100%/3);">
-                                    <input  class="input form-control text-white e ms-3 "  placeholder="Customer Address" style="height: 100%; width:90%; background-color: #252525;  ">
+                                <div class="  row row-cols-1 ps-3 " style="height: calc(100%/3);">
+                                    <input  class="input form-control text-white e ms-2 bg-transparent border-0 text-white-50" disabled="true" value="Customer Address : " style="height: 90%; width:90%; background-color: #252525; outline: none; ">
                                 </div>
 
                             </form>

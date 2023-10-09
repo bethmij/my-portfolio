@@ -1,5 +1,5 @@
 import {item} from "../model/Item.js";
-import {customerDetail, itemDetail} from "../db/DB.js";
+import {itemDetail} from "../db/DB.js";
 
 let itemCode = $('#txtItemCode');
 let itemName = $('#txtItemName');

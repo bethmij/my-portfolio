@@ -10,3 +10,7 @@ export var itemDetail = [
     {code: 'I00-003', name:'Milk Powder',price: 1150.00, quantity: 122}
 ];
 
+export var orders = [];
+
+export var orderDetail = [];
+
