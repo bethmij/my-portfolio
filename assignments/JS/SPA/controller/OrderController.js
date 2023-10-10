@@ -16,6 +16,7 @@ let total = totalTxt[1].split(".");
 let total1 = parseInt(total);
 let cash = $('#cash');
 let discount = $('#discount');
+let btnOrder = $('#btnPlaceOrder');
 
 
 setCusID();
@@ -152,17 +153,56 @@ cash.change(function (){
 cash.keyup(function (){
     let balance = (parseInt( cash.val()) - total1).toFixed(2);
     $('#balance').val(`Balance : ${balance}`);
+    if(cash.val()==""){
+        $('#balance').val(`Balance : 0.00`);
+    }
 })
 
 discount.change(function (){
     let dis = total1 - ((total1*parseInt(discount.val()))/100).toFixed(2);
-    alert(dis)
-    // let dis1 = dis.split(".");
-    // $('#subTotal-text').text(`Sub Total : ${dis1[0]}.00`);
+    $('#subTotal-text').text(`Sub Total : ${dis}`);
 })
 
 discount.keyup(function (){
     let dis = total1 - ((total1*parseInt(discount.val()))/100).toFixed(2);
-    // let dis1 = dis.split(".");
-    // $('#subTotal-text').text(`Sub Total : ${dis1[0]}.00`);
+    $('#subTotal-text').text(`Sub Total : ${dis}`);
+    if(discount.val()==""){
+        $('#subTotal-text').text(`Sub Total : 0.00`);
+    }
+})
+
+btnOrder.click(function (){
+    let oID = $('#orderID').val.split("Order ID : OR00-");
+    let currDate = $('#currDate').text().split("Date : ");
+    let itemPrice = txtItemPrice.val().split("Item Price : ");
+
+    if(cash.val()!=""){
+        if(!(parseInt(cash.val())<total1)){
+            let tableCode = $('#orderTbody').children('tr').children(':first-child');
+            for (let i =1; i <= tableCode.length; i++) {
+                orderDetails = {
+                    oid:oID[1],
+                    code:$(tableCode[i]).text();,
+                    qty:itemPrice[1],
+                    unitPrice:txtOrderQty.val()
+                }
+            }
+
+            order = {
+                oid:oID[1],
+                date:currDate[1],
+                customerID:selectCusOp.val(),
+                orderDetails:orderDetails
+            }
+
+            orders.push(order);
+            orderDetail.push(orderDetails);
+        }else {
+            alert("Insufficient payment amount")
+        }
+    }else {
+        alert("Please add ur payment")
+    }
+    console.log(orders);
+    console.log(orderDetail);
 })
