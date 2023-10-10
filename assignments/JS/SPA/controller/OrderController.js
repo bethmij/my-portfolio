@@ -90,20 +90,31 @@ selectItemOp.change(function () {
 
 
 btnSave.click(function (){
-    let itemName = txtItemName.val().split("Item Name : ");
-    let itemPrice = txtItemPrice.val().split("Item Price : ");
+    let itemQty = txtItemQty.val().split("Item Quantity : ");
+    let tableCode = $('#orderTbody').children('tr').children(':first-child').text();
 
-    $('#orderTbody').append(
-        `<tr style="height: 2vw">
+    if(parseInt(itemQty[1]) >= parseInt(txtOrderQty.val())) {
+        if(tableCode.indexOf(selectItemOp.val())== -1){
+            let itemName = txtItemName.val().split("Item Name : ");
+            let itemPrice = txtItemPrice.val().split("Item Price : ");
+
+            $('#orderTbody').append(
+                `<tr style="height: 2vw">
              <th scope="row">${selectItemOp.val()}</th>
              <td>${itemName[1]}</td>
              <td>${itemPrice[1]}</td>
              <td>${txtOrderQty.val()}</td>
              <td style="width: 10%"><img class="orderDelete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" className="opacity-75"></td>
         </tr>`
-    );
-    deleteDetail();
-    calcTotal(itemPrice[1], txtOrderQty.val());
+            );
+            deleteDetail();
+            calcTotal(itemPrice[1], txtOrderQty.val());
+        }else {
+            alert("duplicate item!");
+        }
+    }else {
+        alert("Stock unavailable!");
+    }
 
 })
 

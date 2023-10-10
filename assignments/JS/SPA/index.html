@@ -21,15 +21,13 @@
                 <label class="position-absolute fs-4" style="">Harvest Mart Pos System</label>
                 <img class=" menu d-none" src="../../CSS_Framework/POS/assets/icons8-menu-100.png" alt="Logo" width="100%" >
             </a>
-            <div class="container w-50 h-100 position-absolute end-0 border" >
+            <div class="container  h-100 position-absolute end-0 " style="width:35%;" >
                 <div class="row w-100 h-100">
-                    <div id="currDate" class="col border text-white-50 fs-5 text-center mt-3">
-
-                    </div>
-                    <div class="col border"></div>
-                    <div class="col border ">
+                    <div id="currDate" class="col  text-white-50  text-center mt-3" style="font-size: 1.2vw;"></div>
+                    <div id="currTime" class="col  text-white-50  text-center mt-3" style="font-size: 1.2vw;"></div>
+                    <div class="col  ">
                         <i class="fa-regular fa-circle-user fa-2x mt-3 ms-2 p-0" style="color: #014919;"></i>
-                        <p class="text-white-50 d-inline-block p-0" >Sign Up</p>
+                        <p class="text-white-50 d-inline-block  ms-3 mt-3 position-absolute" style="font-size: 1.2vw;">Sign Up</p>
                     </div>
                 </div>
             </div>
@@ -481,19 +479,19 @@
                     <div id="total" class="row mt-5 ms-5 " style="height: 40%; width: 40vw;">
                         <div class="container-fluid w-100 h-100 ">
                             <div class="row " style="height: calc(100%/4);">
-                                <div class="col"><span id="total-text" class="text-white  me-5" style="font-size: 2vw;">Total : 1115.00</span></div>
-                                <div class="col"><span id="subTotal-text" class="text-white  " style="font-size: 2vw;">Sub Total : 1115.00</span></div>
+                                <div class="col"><span id="total-text" class="text-white-50  me-5" style="font-size: 2vw;">Total : 1115.00</span></div>
+                                <div class="col"><span id="subTotal-text" class="text-white-50  " style="font-size: 2vw;">Sub Total : 1115.00</span></div>
                             </div>
                             <div class="row " style="height: calc(100%/4);">
                                 <div class="col p-3 ms-5">
-                                    <input  class="input form-control text-white p-2 "  placeholder="Cash" style="height: 100%; width: 70%; background-color: #252525; ">
+                                    <input  class="input form-control text-white p-2 "  placeholder="Cash" style="height: 100%; width: 80%; background-color: #252525; ">
                                 </div>
-                                <div class="col p-3 ms-5">
-                                    <input  class="input form-control text-white p-2"  placeholder="Discount" style="height: 100%; width: 70%; background-color: #252525; ">
+                                <div class="col p-3 ms-2">
+                                    <input  class="input form-control text-white p-2"  placeholder="Discount (%)" style="height: 100%; width: 80%; background-color: #252525; ">
                                 </div>
                             </div>
                             <div class="row-cols-1 p-1 ms-5" style="height: calc(100%/4);">
-                                <input  class="input form-control text-white "  placeholder="Balance" style="height: 78%; width:87%; background-color: #252525;  ">
+                                <input  class="input form-control text-white bg-transparent border-0" disabled="true"  placeholder="Balance : 0.00" style="height: 78%; width:87%; background-color: #252525;  ">
                             </div>
                             <div class="row-cols-1 justify-content-center" style="height: calc(100%/4); ">
                                 <button type="submit" class="btn btn-outline-success " style="width: 45%;" id="btn7"><img src="../../CSS_Framework/POS/assets/Screenshot__550_-removebg-preview.png" alt="Logo" width="25vw" class="opacity-50 me-2">Place Order </button>

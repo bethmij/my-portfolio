@@ -1,6 +1,7 @@
 
 initiateUI();
 setDate();
+setTime();
 
 function initiateUI() {
     clearAll();
@@ -111,5 +112,28 @@ function setDate() {
     let currentDate = new Date();
     let formattedDate = currentDate.getDate() + '/' + currentDate.getMonth() + '/' + currentDate.getFullYear();
     $('#currDate').text(`Date : ${formattedDate}`);
+}
+
+function setTime() {
+    setInterval(function (){
+        let currentTime = new Date();
+        let hours = currentTime.getHours();
+        let minutes = currentTime.getMinutes();
+        let seconds = currentTime.getSeconds();
+
+
+        if (hours < 10) {
+            hours = "0" + hours;
+        }
+        if (minutes < 10) {
+            minutes = "0" + minutes;
+        }
+        if (seconds < 10) {
+            seconds = "0" + seconds;
+        }
+
+        var formattedTime = hours + ":" + minutes + ":" + seconds;
+        $('#currTime').text(`Time : ${formattedTime}`);
+    },1000);
 }
 
