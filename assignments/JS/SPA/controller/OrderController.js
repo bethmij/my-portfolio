@@ -1,6 +1,6 @@
 import {customer} from "../model/Customer.js";
 import {order} from "../model/Order.js";
-import {orderDetails} from "../model/OrderDetail.js";
+// import {orderDetails} from "../model/OrderDetail.js";
 import {customerDetail, itemDetail, orders, orderDetail} from "../db/DB.js";
 import {item} from "../model/Item.js";
 let selectCusOp = $('#cusID');
@@ -13,7 +13,7 @@ let txtOrderQty = $('#orderQuantity');
 let totalTxt = $('#total-text').text().split("Total : ");
 let subTotalTxt = $('#subTotal-text');
 let total = totalTxt[1].split(".");
-let total1 = parseInt(total);
+let total1 = parseInt(total[0]);
 let cash = $('#cash');
 let discount = $('#discount');
 let btnOrder = $('#btnPlaceOrder');
@@ -140,8 +140,8 @@ function deleteDetail() {
 
 function calcTotal(price, qty) {
     let tot = price*qty;
-    total1 += tot.toFixed(2);
-    $('#total-text').text(`Total : ${total1}`);
+    total1 += tot;
+    $('#total-text').text(`Total : ${total1.toFixed(2)}`);
     $('#subTotal-text').text(`Sub Total : ${total1}`);
 }
 
@@ -172,31 +172,35 @@ discount.keyup(function (){
 })
 
 btnOrder.click(function (){
-    let oID = $('#orderID').val.split("Order ID : OR00-");
+    let oID = $('#orderID').val().split("Order ID : ");
+    let orderID = oID[1];
     let currDate = $('#currDate').text().split("Date : ");
-    let itemPrice = txtItemPrice.val().split("Item Price : ");
+    // let itemPrice = txtItemPrice.val().split("Item Price : ");
 
     if(cash.val()!=""){
         if(!(parseInt(cash.val())<total1)){
-            let tableCode = $('#orderTbody').children('tr').children(':first-child');
-            for (let i =1; i <= tableCode.length; i++) {
-                orderDetails = {
-                    oid:oID[1],
-                    code:$(tableCode[i]).text();,
-                    qty:itemPrice[1],
-                    unitPrice:txtOrderQty.val()
+            let tableCode = $('#orderTbody').children('tr').children(':nth-child(1)');
+            let tablePrice = $('#orderTbody').children('tr').children(':nth-child(3)');
+            let tableQty = $('#orderTbody').children('tr').children(':nth-child(4)');
+            let newOrderDetails = Object.assign({}, orderDetails);
+            for (let i =1; i <=2; i++) {
+
+                newOrderDetails = {
+                    oid: orderID,
+                    code: $(tableCode[i]).text(),
+                    unitPrice: parseInt($(tablePrice[i]).text()),
+                    qty: parseInt($(tableQty[i]).text())
                 }
+                console.log(i);
+                // console.log(orderDetails);
+                orderDetail.push(orderDetails);
+
+                console.log(orderDetail);
             }
 
-            order = {
-                oid:oID[1],
-                date:currDate[1],
-                customerID:selectCusOp.val(),
-                orderDetails:orderDetails
-            }
-
+            order.addValue(oID[1], currDate[1], selectCusOp.val(), orderDetail);
             orders.push(order);
-            orderDetail.push(orderDetails);
+
         }else {
             alert("Insufficient payment amount")
         }
@@ -204,5 +208,5 @@ btnOrder.click(function (){
         alert("Please add ur payment")
     }
     console.log(orders);
-    console.log(orderDetail);
+
 })

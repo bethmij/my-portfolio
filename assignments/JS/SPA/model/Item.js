@@ -9,6 +9,6 @@ export var item = {
         this.name += name;
         this.price += price;
         this.quantity += quantity;
-    },
+    }
 }
 
