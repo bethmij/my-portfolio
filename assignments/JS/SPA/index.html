@@ -12,7 +12,7 @@
 
 
 </head>
-<body style="background: linear-gradient(180deg, #030E00, #010600); height: 100vh;">
+<body style="background: url(assests/imgonline-com-ua-ReplaceColor-LlnI7ILIDhL9E7O.jpg)  center; background-size :cover; height: 100vh;">
 <header>
     <nav class="navbar bg-body-tertiary p-0 z-3" >
         <div class="container-fluid position-fixed top-0 p-0 " style="background-color: #252525; height: 60px;" >
@@ -407,9 +407,9 @@
                             <div class="position-relative" style="width: 100%; height: 10%; background-color: #252525" >
                                 <h1 class="text-center  fs-5 top-50 start-50 translate-middle position-absolute" style="color: #019D30">Item Select</h1>
                             </div>
-                            <form class="container position-relative " style="width: 100%; height: 90%;">
-                                <div class="row mt-4 justify-content-center p-2 mt-1 " style="height: calc(100%/5);">
-                                    <div class="col-6">
+                            <form class="container position-relative " style="width: 100%; height: 80%;">
+                                <div class="row mt-3 mb-4 justify-content-center p-2 mt-1 " style="height: calc(100%/5);">
+                                    <div class="col-6 ">
                                         <input id="itemName"  class="input form-control text-white e ms-4 bg-transparent border-0 text-white-50"  value="Item Name : " style="height: 90%; width:90%; background-color: #252525;  ">
                                     </div>
                                     <div class="col-6">
@@ -420,7 +420,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="row p-2 justify-content-end  " style="height: calc(100%/5);">
+                                <div class="row p-2 justify-content-end mb-3  " style="height: calc(100%/5);">
                                     <div class="col  ">
                                         <input id="itemPrice" class="input form-control text-white bg-transparent border-0 text-white-50 ms-4"  value="Item Price : " style="height: 95%; width: 80%; background-color: #252525; ">
                                     </div>
@@ -429,7 +429,7 @@
                                     </div>
                                 </div>
                                 <div class="row row-cols-1 p-2 " style="height: calc(100%/5);">
-                                    <input id="orderQuantity"  class="input form-control text-white ms-5 "  placeholder="Order Quantity" style="height: 90%; width: 80%; background-color: #252525; ">
+                                    <input id="orderQuantity" class="input form-control text-white ms-5 "  placeholder="Order Quantity" style="height: 100%; width: 80%; background-color: #252525; ">
                                     <p id="orderQtyPara" class="text-danger-emphasis text-start ms-5" style="width: 70%;"></p>
                                 </div>
                                 <div class="row row-cols-1 p-2  justify-content-center mt-3" style="height: calc(100%/5);">
@@ -484,14 +484,14 @@
                             </div>
                             <div class="row " style="height: calc(100%/4);">
                                 <div class="col p-3 ms-5">
-                                    <input  class="input form-control text-white p-2 "  placeholder="Cash" style="height: 100%; width: 80%; background-color: #252525; ">
+                                    <input id="cash" type="number" class="input form-control text-white p-2 " min="0" placeholder="Cash" style="height: 100%; width: 80%; background-color: #252525; ">
                                 </div>
                                 <div class="col p-3 ms-2">
-                                    <input  class="input form-control text-white p-2"  placeholder="Discount (%)" style="height: 100%; width: 80%; background-color: #252525; ">
+                                    <input id="discount" type="number" class="input form-control text-white p-2" min="0" max="100" placeholder="Discount (%)" style="height: 100%; width: 80%; background-color: #252525; ">
                                 </div>
                             </div>
                             <div class="row-cols-1 p-1 ms-5" style="height: calc(100%/4);">
-                                <input  class="input form-control text-white bg-transparent border-0" disabled="true"  placeholder="Balance : 0.00" style="height: 78%; width:87%; background-color: #252525;  ">
+                                <input id="balance" class="input form-control text-white bg-transparent border-0 fs-4" disabled="true"  placeholder="Balance : 0" style="height: 78%; width:87%; background-color: #252525;  ">
                             </div>
                             <div class="row-cols-1 justify-content-center" style="height: calc(100%/4); ">
                                 <button type="submit" class="btn btn-outline-success " style="width: 45%;" id="btn7"><img src="../../CSS_Framework/POS/assets/Screenshot__550_-removebg-preview.png" alt="Logo" width="25vw" class="opacity-50 me-2">Place Order </button>

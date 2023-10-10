@@ -1,3 +1,10 @@
+body{
+
+
+    /*background-size :contain;*/
+    /*background: url("../imgonline-com-ua-ReplaceColor-LlnI7ILIDhL9E7O.jpg") no-repeat center;*/
+    /*background-color: black;*/
+}
 
 .input::placeholder, .select::placeholder, .search::placeholder{
     color: #919191;

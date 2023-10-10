@@ -14,6 +14,8 @@ let totalTxt = $('#total-text').text().split("Total : ");
 let subTotalTxt = $('#subTotal-text');
 let total = totalTxt[1].split(".");
 let total1 = parseInt(total);
+let cash = $('#cash');
+let discount = $('#discount');
 
 
 setCusID();
@@ -123,7 +125,7 @@ deleteDetail();
 function deleteDetail() {
     let btnDelete = $('.orderDelete');
     btnDelete.on("mouseover", function (){
-        $(this).css("cursor", "pointer");}
+        $(this).css("cursor", "pointer")}
     )
 
     btnDelete.click(function () {
@@ -137,7 +139,30 @@ function deleteDetail() {
 
 function calcTotal(price, qty) {
     let tot = price*qty;
-    total1 += tot;
-    $('#total-text').text(`Total : ${total1}.00`);
-    $('#subTotal-text').text(`Sub Total : ${total1}.00`);
+    total1 += tot.toFixed(2);
+    $('#total-text').text(`Total : ${total1}`);
+    $('#subTotal-text').text(`Sub Total : ${total1}`);
 }
+
+cash.change(function (){
+    let balance = (parseInt( cash.val()) - total1).toFixed(2);
+    $('#balance').val(`Balance : ${balance}`);
+})
+
+cash.keyup(function (){
+    let balance = (parseInt( cash.val()) - total1).toFixed(2);
+    $('#balance').val(`Balance : ${balance}`);
+})
+
+discount.change(function (){
+    let dis = total1 - ((total1*parseInt(discount.val()))/100).toFixed(2);
+    alert(dis)
+    // let dis1 = dis.split(".");
+    // $('#subTotal-text').text(`Sub Total : ${dis1[0]}.00`);
+})
+
+discount.keyup(function (){
+    let dis = total1 - ((total1*parseInt(discount.val()))/100).toFixed(2);
+    // let dis1 = dis.split(".");
+    // $('#subTotal-text').text(`Sub Total : ${dis1[0]}.00`);
+})
