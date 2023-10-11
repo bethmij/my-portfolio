@@ -1,6 +1,7 @@
 import {item} from "../model/Item.js";
-import {itemDetail} from "../db/DB.js";
-import {setItemCode} from "./OrderController.js";
+import {customerDetail, itemDetail} from "../db/DB.js";
+import {setCusID, setItemCode} from "./OrderController.js";
+import {customer} from "../model/Customer.js";
 
 let itemCode = $('#txtItemCode');
 let itemName = $('#txtItemName');
@@ -27,16 +28,20 @@ btnItemSave.click(function (event){
                 }
             }
             if(count==itemDetail.length){
-                item.addValue(itemCode.val(), itemName.val(), itemPrice.val(), itemQuantity.val());
+                let newItemDetails = Object.assign({}, item);
+                newItemDetails.code = itemCode.val();
+                newItemDetails.name = itemName.val();
+                newItemDetails.price = itemPrice.val();
+                newItemDetails.quantity = itemQuantity.val();
 
-                itemDetail.push(item);
+                itemDetail.push(newItemDetails);
 
                 $('#itemBody').append(
                     `<tr>
-                         <th scope="row">${item.code}</th>
-                            <td>${item.name}</td>
-                            <td>${item.price}</td>
-                            <td>${item.quantity}</td>
+                         <th scope="row">${itemCode.val()}</th>
+                            <td>${itemName.val()}</td>
+                            <td>${itemPrice.val()}</td>
+                            <td>${itemQuantity.val()}</td>
                             <td style="width: 10%"><img class="itemDelete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" className="opacity-75"></td>
                         </tr>`
                 );
@@ -60,7 +65,7 @@ btnItemSave.click(function (event){
                 clearAll(event);
                 btnItemSave.text("Save ");
                 btnItemSave.attr("disabled", true);
-                itemCode.val($(this).children(':eq(0)').text()).attr("disabled", false);
+                itemCode.attr("disabled", false);
             }
         }
     }
@@ -86,6 +91,7 @@ function clearAll(event) {
     $('#itemQtyPara').text("");
     btnItemSave.text("Save ");
     btnItemSave.attr("disabled", true);
+    itemCode.attr("disabled", false);
     event.preventDefault();
 }
 
@@ -126,7 +132,7 @@ function setFeilds() {
         itemQuantity.val($(this).children(':eq(3)').text());
         btnItemSave.text("Update ");
         btnItemSave.attr("disabled", false);
-        itemCode.val($(this).children(':eq(0)').text()).attr("disabled", true);
+        itemCode.attr("disabled", true);
     })
 }
 
@@ -143,6 +149,15 @@ function deleteDetail() {
 
         if (userChoice) {
             $(this).parents('tr').remove();
+            let tableCode = $(this).parents('tr').children(':nth-child(1)');
+
+            for (let i = 0; i < itemDetail.length; i++) {
+                if($(tableCode[0]).text() == itemDetail[i].code){
+                    itemDetail.splice(i,1);
+                    console.log(itemDetail);
+                }
+            }
+            setItemCode();
         }
     })
 }

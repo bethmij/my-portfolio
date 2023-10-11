@@ -102,7 +102,7 @@ btnSave.click(function (event){
         let tableCode = $('#orderTbody').children('tr').children(':first-child').text();
 
         if (parseInt(itemQty[1]) >= parseInt(txtOrderQty.val())) {
-            if (tableCode.indexOf(selectItemOp.val()) == -1) {
+            // if (tableCode.indexOf(selectItemOp.val()) == -1) {
                 $('#orderTbody').append(
                     `<tr>
                         <th scope="row">${selectItemOp.val()}</th>
@@ -115,9 +115,9 @@ btnSave.click(function (event){
                 setFeilds();
                 deleteDetail();
                 calcTotal(itemPrice[1], txtOrderQty.val());
-            } else {
-                alert("duplicate item!");
-            }
+            // } else {
+            //     alert("duplicate item!");
+            // }
         } else {
             alert("Stock unavailable!");
         }
@@ -338,11 +338,9 @@ function clearTotal(){
 
 $('#orderSearch').click(function (){
     let search = $('#orderSearch');
-    if (search.text().includes("Search")) {
-
-        let id = $('#txtOrderSearch').val();
-        let count = 0;
-        let tbody = $('#orderTbody');
+    let id = $('#txtOrderSearch').val();
+    let count = 0;
+    let tbody = $('#orderTbody');
 
         if (id.length != 0) {
             for (let i = 0; i < orders.length; i++) {
@@ -351,8 +349,6 @@ $('#orderSearch').click(function (){
                     currOID = $('#orderID').val().split("Order ID : ");
                     $('#orderID').val("Order ID : " + orders[i].oid);
                     count++;
-                    search.removeClass('btn-outline-success').addClass('btn-outline-danger');
-                    search.text("Clear Search");
                     total1 = 0;
                     cash.attr("disabled", true);
                     discount.attr("disabled", true);
@@ -398,23 +394,8 @@ $('#orderSearch').click(function (){
             }
         } else {
             alert("Please enter the order ID");
-        }
-    }
-    if (search.text().includes("Clear Search")) {
-        alert("huuuu");
-        // clearItemSelect();
-        // clearCusDetail();
-        // clearTotal();
-        // $('#orderID').val(`Order ID : ${currOID[1]}`);
-        // btnOrder.text("");
-        // btnOrder.append(`<img src="../../CSS_Framework/POS/assets/Screenshot__550_-removebg-preview.png" alt="Logo" width="25vw" class="opacity-50 me-2">Place Order`);
-        // cash.attr("disabled", false);
-        // discount.attr("disabled", false);
-        // $('#txtOrderSearch').val("");
-        // $('#orderSearch').removeClass('btn-outline-danger').addClass('btn-outline-success');
-        // $('#orderSearch').text("Search");
 
-    }
+        }
 })
 
 

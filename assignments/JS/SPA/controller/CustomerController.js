@@ -1,6 +1,7 @@
 import {customer} from "../model/Customer.js";
 import {customerDetail, itemDetail} from "../db/DB.js";
 import {setCusID} from "./OrderController.js";
+import {orderDetails} from "../model/OrderDetail.js";
 
 let cusId = $('#txtCusID');
 let cusName = $('#txtCusName');
@@ -27,15 +28,20 @@ btnCustomerSave.click(function (event){
                 }
             }
             if(count==customerDetail.length) {
-                customer.addValue(cusId.val(), cusName.val(), cusAddress.val(), cusSalary.val());
-                customerDetail.push(customer);
+            let newCustomerDetails = Object.assign({}, customer);
+                newCustomerDetails.id = cusId.val();
+                newCustomerDetails.name = cusName.val();
+                newCustomerDetails.address = cusAddress.val();
+                newCustomerDetails.salary = cusSalary.val();
+
+                customerDetail.push(newCustomerDetails);
 
                 $('#cusTBody').append(
                     `<tr>
-                        <th scope="row">${customer.id}</th>
-                        <td>${customer.name}</td>
-                        <td>${customer.address}</td>
-                        <td>${customer.salary}</td>
+                        <th scope="row">${cusId.val()}</th>
+                        <td>${cusName.val()}</td>
+                        <td>${cusAddress.val()}</td>
+                        <td>${cusSalary.val()}</td>
                         <td style="width: 10%"><img class="delete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" className="opacity-75"></td>
                     </tr>`
                 );
@@ -59,7 +65,7 @@ btnCustomerSave.click(function (event){
                 clearAll(event);
                 btnCustomerSave.text("Save ");
                 btnCustomerSave.attr("disabled", true);
-                cusId.val($(this).children(':eq(0)').text()).attr("disabled", false);
+                cusId.attr("disabled", false);
             }
         }
     }
@@ -86,6 +92,7 @@ function clearAll(event) {
     btnCustomerSave.text("Save ");
     btnCustomerSave.attr("disabled", true);
     event.preventDefault();
+    cusId.attr("disabled", false);
 }
 
 
@@ -123,13 +130,14 @@ function setFeilds() {
         cusSalary.val($(this).children(':eq(3)').text());
         btnCustomerSave.text("Update ");
         btnCustomerSave.attr("disabled", false);
-        cusId.val($(this).children(':eq(0)').text()).attr("disabled", true);
+        cusId.attr("disabled", true);
     })
 }
 
 deleteDetail();
 
 function deleteDetail() {
+
     let btnDelete = $('.delete');
     btnDelete.on("mouseover", function (){
         $(this).css("cursor", "pointer");}
@@ -140,6 +148,15 @@ function deleteDetail() {
 
         if (userChoice) {
             $(this).parents('tr').remove();
+            let tableCode = $(this).parents('tr').children(':nth-child(1)');
+
+            for (let i = 0; i < customerDetail.length; i++) {
+                if($(tableCode[0]).text() ==customerDetail[i].id){
+                    customerDetail.splice(i,1);
+                    console.log(customerDetail);
+                }
+            }
+            setCusID();
         }
     })
 }

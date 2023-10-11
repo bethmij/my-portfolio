@@ -1,9 +1,28 @@
+
+
 body{
+    background: url("../imgonline-com-ua-ReplaceColor-LlnI7ILIDhL9E7O.jpg") center;
+    background-size :cover;
+    height: 100vh;
+}
 
+.tableDiv {
+    overflow-y: scroll;
+}
+.tableDiv::-webkit-scrollbar {
+    width: 12px;
+}
 
-    /*background-size :contain;*/
-    /*background: url("../imgonline-com-ua-ReplaceColor-LlnI7ILIDhL9E7O.jpg") no-repeat center;*/
-    /*background-color: black;*/
+.tableDiv::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.tableDiv::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.tableDiv::-webkit-scrollbar-track {
+    background: transparent;
 }
 
 .input::placeholder, .select::placeholder, .search::placeholder{
