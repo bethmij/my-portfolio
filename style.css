@@ -2,8 +2,19 @@
 body{
     background-color: black;
     scroll-behavior: smooth;
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
 }
+
+#loading{
+    background: url("assets/Untitled ‑ Made with FlexClip (2).gif") center;
+    background-size: cover;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 8000;
+    top: 0;
+}
+
 body>#mainContent>img{
     height: 100vh;
     width: 100%;

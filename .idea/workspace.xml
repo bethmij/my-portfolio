@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified SPA">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/assests/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/controller/CustomerController.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/controller/CustomerController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/controller/ItemController.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/controller/ItemController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/controller/OrderController.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/controller/OrderController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/model/Customer.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/model/Customer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.html" beforeDir="false" afterPath="$PROJECT_DIR$/1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignments/JS/SPA/assests" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -59,11 +55,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assets" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\SPA\assests" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\SPA\controller\validations" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\SPA\model" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\SPA\controller" />
-      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\Calc\css\bootstrap\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\SPA\assests" />
@@ -115,7 +111,7 @@
       <workItem from="1696648684240" duration="19176000" />
       <workItem from="1696746073819" duration="24812000" />
       <workItem from="1696825141902" duration="51220000" />
-      <workItem from="1696998037180" duration="22136000" />
+      <workItem from="1696998037180" duration="23825000" />
     </task>
     <task id="LOCAL-00033" summary="modified portfolio assessments">
       <created>1695229646685</created>
