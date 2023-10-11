@@ -17,7 +17,7 @@ let total1 = parseInt(total[0]);
 let cash = $('#cash');
 let discount = $('#discount');
 let btnOrder = $('#btnPlaceOrder');
-let tbRow;
+let tbRow, tblQty, tblPrice, currOID, orderID;
 
 
 setCusID();
@@ -125,6 +125,13 @@ btnSave.click(function (event){
         tbRow.children(':eq(1)').text(itemName[1]);
         tbRow.children(':eq(2)').text(itemPrice[1]);
         tbRow.children(':eq(3)').text(txtOrderQty.val());
+
+        total1 -= (tblPrice*tblQty);
+        calcTotal(itemPrice[1], txtOrderQty.val());
+        selectItemOp.attr("disabled", false);
+        setFeilds();
+        deleteDetail();
+        clearItemSelect();
     }
     event.preventDefault();
 })
@@ -142,6 +149,11 @@ function deleteDetail() {
 
         if (userChoice) {
             $(this).parents('tr').remove();
+            let tablePrice = $(this).parents('tr').children(':nth-child(3)').text();
+            let tableQty = $(this).parents('tr').children(':nth-child(4)').text();
+            total1 -= (tablePrice*tableQty);
+            $('#total-text').text(`Total : ${total1.toFixed(2)}`);
+            $('#subTotal-text').text(`Sub Total : ${total1.toFixed(2)}`);
         }
     })
 }
@@ -179,48 +191,75 @@ discount.keyup(function (){
     }
 })
 
+function setOrderArray(orderID, newOrderDetailArray, oID, currDate) {
+    let tableCode = $('#orderTbody').children('tr').children(':nth-child(1)');
+    let tablePrice = $('#orderTbody').children('tr').children(':nth-child(3)');
+    let tableQty = $('#orderTbody').children('tr').children(':nth-child(4)');
+
+    for (let i = 1; i < tableCode.length; i++) {
+        let newOrderDetails = Object.assign({}, orderDetails);
+        newOrderDetails.oid = orderID;
+        newOrderDetails.code = $(tableCode[i]).text();
+        newOrderDetails.unitPrice = parseInt($(tablePrice[i]).text());
+        newOrderDetails.qty = parseInt($(tableQty[i]).text());
+
+        newOrderDetailArray.push(newOrderDetails);
+    }
+
+    let newOrder = Object.assign({}, order);
+    newOrder.oid = oID[1];
+    newOrder.date = currDate[1];
+    newOrder.customerID = selectCusOp.val();
+    newOrder.orderDetails = newOrderDetailArray;
+
+    orders.push(newOrder);
+}
+
 btnOrder.click(function (event){
-    let oID = $('#orderID').val().split("Order ID : ");
-    let orderID = oID[1];
-    let currDate = $('#currDate').text().split("Date : ");
-    let newOrderDetailArray = Object.assign([], orderDetail);
+    let tableCode = $('#orderTbody').children('tr').children(':nth-child(1)');
+    if($(tableCode[1]).text()!=0) {
+        var userChoice = window.confirm("Do you want to place the order?");
 
-    if(cash.val()!=""){
-        if(!(parseInt(cash.val())<total1)){
-            let tableCode = $('#orderTbody').children('tr').children(':nth-child(1)');
-            let tablePrice = $('#orderTbody').children('tr').children(':nth-child(3)');
-            let tableQty = $('#orderTbody').children('tr').children(':nth-child(4)');
+        if (userChoice) {
+            let oID = $('#orderID').val().split("Order ID : ");
+            let orderID = oID[1];
+            let currDate = $('#currDate').text().split("Date : ");
+            let newOrderDetailArray = Object.assign([], orderDetail);
 
-            for (let i =1; i <tableCode.length; i++) {
-                let newOrderDetails = Object.assign({}, orderDetails);
-                newOrderDetails.oid = orderID;
-                newOrderDetails.code = $(tableCode[i]).text();
-                newOrderDetails.unitPrice = parseInt($(tablePrice[i]).text());
-                newOrderDetails.qty = parseInt($(tableQty[i]).text());
+            if (btnOrder.text().includes("Place Order")) {
+                if (cash.val() != "") {
+                    if (!(parseInt(cash.val()) < total1)) {
+                        setOrderArray(orderID, newOrderDetailArray, oID, currDate);
+                        clearItemSelect();
+                        clearCusDetail();
+                        clearTotal();
+                        setOrderID();
+                        console.log(orders);
+                    } else {
+                        alert("Insufficient payment amount")
+                    }
+                } else {
+                    alert("Please add ur payment")
+                }
+            } else if (btnOrder.text().includes("Update Order")) {
+                        for (let i = 0; i < orders.length; i++) {
+                            if (orders[i].oid == orderID) {
+                                orders.splice(i, 1);
+                                setOrderArray(orderID, newOrderDetailArray, oID, currDate);
+                                clearItemSelect();
+                                clearCusDetail();
+                                clearTotal();
+                                $('#orderID').val(`Order ID : ${currOID[1]}`);
+                                btnOrder.text("");
+                                btnOrder.append(`<img src="../../CSS_Framework/POS/assets/Screenshot__550_-removebg-preview.png" alt="Logo" width="25vw" class="opacity-50 me-2">Place Order`);
+                                console.log(orders);
+                            }
+                        }
+                    }
 
-
-                newOrderDetailArray.push(newOrderDetails);
-            }
-
-            let newOrder= Object.assign({}, order);
-            newOrder.oid = oID[1];
-            newOrder.date = currDate[1];
-            newOrder.customerID = selectCusOp.val();
-            newOrder.orderDetails = newOrderDetailArray;
-
-            orders.push(newOrder);
-
-            clearItemSelect();
-            clearCusDetail();
-            clearTotal();
-            setOrderID();
-            console.log(orders);
-
-        }else {
-            alert("Insufficient payment amount")
         }
     }else {
-        alert("Please add ur payment")
+        alert("Add items to your cart");
     }
     event.preventDefault();
 })
@@ -230,10 +269,13 @@ setFeilds();
 function setFeilds() {
     $('#orderTbody>tr').click(function () {
         tbRow = $(this);
+        tblQty = $(this).children(':eq(3)').text();
+        tblPrice = $(this).children(':eq(2)').text();
+
         let itemCode = $(this).children(':eq(0)').text();
         txtItemName.val(`Item Name : ${$(this).children(':eq(1)').text()}`);
-        txtItemPrice.val(`Item Price : ${$(this).children(':eq(2)').text()}`);
-        txtOrderQty.val($(this).children(':eq(3)').text());
+        txtItemPrice.val(`Item Price : ${tblPrice}`);
+        txtOrderQty.val(tblQty);
         selectItemOp.val(itemCode);
         selectItemOp.attr("disabled", true);
 
@@ -262,6 +304,7 @@ function clearItemSelect(){
     txtOrderQty.css("border", "1px solid white");
     btnSave.text("");
     btnSave.append(`<img src="../../CSS_Framework/POS/assets/Screenshot__543_-removebg-preview.png" alt="Logo" width="25vw" class="opacity-50 me-3">Add to Cart`);
+    btnSave.attr("disabled", true);
 }
 
 function clearCusDetail(){
@@ -285,18 +328,21 @@ function clearTotal(){
         <th scope="col">Order Qty</th>
         <th scope="col"></th>
     </tr>`);
+    total1 = parseInt(total[0]);
 }
 
 $('#orderSearch').click(function (){
 
     let id = $('#txtOrderSearch').val();
-    let tbody = $('#orderTbody');
     let count = 0;
+    let tbody = $('#orderTbody');
 
     if(id.length!=0) {
         for (let i = 0; i < orders.length; i++) {
             if (orders[i].oid == id) {
-                $('#orderID').val(orders[i].oid);
+                orderID = orders[i].oid;
+                currOID = $('#orderID').val().split("Order ID : ");
+                $('#orderID').val("Order ID : "+orders[i].oid);
                 count++;
                 if(orders[i].customerID == customerDetail[i].id ){
                     selectCusOp.val(customerDetail[i].id);
@@ -306,8 +352,18 @@ $('#orderSearch').click(function (){
                 }
 
                 for (let j = 0; j < orders[i].orderDetails.length; j++) {
+
                     if(orders[i].orderDetails[j].code == itemDetail[j].code){
-                        $('#orderTbody').append(
+                        tbody.empty();
+                        tbody.append(`
+                             <tr >
+                                    <th scope="col">Code</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Order Qty</th>
+                                    <th scope="col"></th>
+                             </tr> `);
+                        tbody.append(
                             `<tr>
                         <th scope="row">${orders[i].orderDetails[j].code}</th>
                         <td>${itemDetail[j].name}</td>
@@ -318,12 +374,11 @@ $('#orderSearch').click(function (){
                         );
                         setFeilds();
                         deleteDetail();
-                        calcTotal(itemPrice[1], txtOrderQty.val());
+                        calcTotal(orders[i].orderDetails[j].unitPrice, orders[i].orderDetails[j].qty);
+                        btnOrder.text("");
+                        btnOrder.append(`<img src="../../CSS_Framework/POS/assets/Screenshot__550_-removebg-preview.png" alt="Logo" width="25vw" class="opacity-50 me-2">Update Order`);
                     }
                 }
-
-
-
             }
         }
         if (count != 1) {
