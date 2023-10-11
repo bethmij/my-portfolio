@@ -218,7 +218,7 @@ function setOrderArray(orderID, newOrderDetailArray, oID, currDate) {
 btnOrder.click(function (event){
     let tableCode = $('#orderTbody').children('tr').children(':nth-child(1)');
     if($(tableCode[1]).text()!=0) {
-        var userChoice = window.confirm("Do you want to place the order?");
+        var userChoice = window.confirm("Do you want to continue?");
 
         if (userChoice) {
             let oID = $('#orderID').val().split("Order ID : ");
@@ -242,20 +242,25 @@ btnOrder.click(function (event){
                     alert("Please add ur payment")
                 }
             } else if (btnOrder.text().includes("Update Order")) {
-                        for (let i = 0; i < orders.length; i++) {
-                            if (orders[i].oid == orderID) {
-                                orders.splice(i, 1);
-                                setOrderArray(orderID, newOrderDetailArray, oID, currDate);
-                                clearItemSelect();
-                                clearCusDetail();
-                                clearTotal();
-                                $('#orderID').val(`Order ID : ${currOID[1]}`);
-                                btnOrder.text("");
-                                btnOrder.append(`<img src="../../CSS_Framework/POS/assets/Screenshot__550_-removebg-preview.png" alt="Logo" width="25vw" class="opacity-50 me-2">Place Order`);
-                                console.log(orders);
-                            }
-                        }
+                for (let i = 0; i < orders.length; i++) {
+                    if (orders[i].oid == orderID) {
+                        orders.splice(i, 1);
+                        setOrderArray(orderID, newOrderDetailArray, oID, currDate);
+                        clearItemSelect();
+                        clearCusDetail();
+                        clearTotal();
+                        $('#orderID').val(`Order ID : ${currOID[1]}`);
+                        btnOrder.text("");
+                        btnOrder.append(`<img src="../../CSS_Framework/POS/assets/Screenshot__550_-removebg-preview.png" alt="Logo" width="25vw" class="opacity-50 me-2">Place Order`);
+                        cash.attr("disabled", false);
+                        discount.attr("disabled", false);
+                        $('#txtOrderSearch').val("");
+                        $('#orderSearch').removeClass('btn-outline-danger').addClass('btn-outline-success');
+                        $('#orderSearch').text("Search");
+                        console.log(orders);
                     }
+                }
+            }
 
         }
     }else {
@@ -332,59 +337,84 @@ function clearTotal(){
 }
 
 $('#orderSearch').click(function (){
+    let search = $('#orderSearch');
+    if (search.text().includes("Search")) {
 
-    let id = $('#txtOrderSearch').val();
-    let count = 0;
-    let tbody = $('#orderTbody');
+        let id = $('#txtOrderSearch').val();
+        let count = 0;
+        let tbody = $('#orderTbody');
 
-    if(id.length!=0) {
-        for (let i = 0; i < orders.length; i++) {
-            if (orders[i].oid == id) {
-                orderID = orders[i].oid;
-                currOID = $('#orderID').val().split("Order ID : ");
-                $('#orderID').val("Order ID : "+orders[i].oid);
-                count++;
-                if(orders[i].customerID == customerDetail[i].id ){
-                    selectCusOp.val(customerDetail[i].id);
-                    $('#cusName').val(`Customer Name : ${customerDetail[i].name}`);
-                    $('#cusAddress').val(`Customer Address : ${customerDetail[i].address}`);
-                    $('#cusSalary').val(`Customer Salary : ${customerDetail[i].salary}`);
-                }
+        if (id.length != 0) {
+            for (let i = 0; i < orders.length; i++) {
+                if (orders[i].oid == id) {
+                    orderID = orders[i].oid;
+                    currOID = $('#orderID').val().split("Order ID : ");
+                    $('#orderID').val("Order ID : " + orders[i].oid);
+                    count++;
+                    search.removeClass('btn-outline-success').addClass('btn-outline-danger');
+                    search.text("Clear Search");
+                    total1 = 0;
+                    cash.attr("disabled", true);
+                    discount.attr("disabled", true);
+                    if (orders[i].customerID == customerDetail[i].id) {
+                        selectCusOp.val(customerDetail[i].id);
+                        $('#cusName').val(`Customer Name : ${customerDetail[i].name}`);
+                        $('#cusAddress').val(`Customer Address : ${customerDetail[i].address}`);
+                        $('#cusSalary').val(`Customer Salary : ${customerDetail[i].salary}`);
+                    }
 
-                for (let j = 0; j < orders[i].orderDetails.length; j++) {
-
-                    if(orders[i].orderDetails[j].code == itemDetail[j].code){
-                        tbody.empty();
-                        tbody.append(`
-                             <tr >
+                    tbody.empty();
+                    tbody.append(`<tr >
                                     <th scope="col">Code</th>
                                     <th scope="col">Name</th>
                                     <th scope="col">Price</th>
                                     <th scope="col">Order Qty</th>
                                     <th scope="col"></th>
                              </tr> `);
-                        tbody.append(
-                            `<tr>
+
+                    for (let j = 0; j < orders[i].orderDetails.length; j++) {
+                        if (orders[i].orderDetails[j].code == itemDetail[j].code) {
+
+                            tbody.append(
+                                `<tr>
                         <th scope="row">${orders[i].orderDetails[j].code}</th>
                         <td>${itemDetail[j].name}</td>
                         <td>${orders[i].orderDetails[j].unitPrice}</td>
                         <td>${orders[i].orderDetails[j].qty}</td>                        
                         <td style="width: 10%"><img class="orderDelete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" className="opacity-75"></td>
                     </tr>`
-                        );
-                        setFeilds();
-                        deleteDetail();
-                        calcTotal(orders[i].orderDetails[j].unitPrice, orders[i].orderDetails[j].qty);
-                        btnOrder.text("");
-                        btnOrder.append(`<img src="../../CSS_Framework/POS/assets/Screenshot__550_-removebg-preview.png" alt="Logo" width="25vw" class="opacity-50 me-2">Update Order`);
+                            );
+                            setFeilds();
+                            deleteDetail();
+                            calcTotal(orders[i].orderDetails[j].unitPrice, orders[i].orderDetails[j].qty);
+                            btnOrder.text("");
+                            btnOrder.append(`<img src="../../CSS_Framework/POS/assets/Screenshot__550_-removebg-preview.png" alt="Logo" width="25vw" class="opacity-50 me-2">Update Order`);
+                        }
                     }
                 }
             }
+            if (count != 1) {
+                alert("No such Order..please check the order ID");
+            }
+        } else {
+            alert("Please enter the order ID");
         }
-        if (count != 1) {
-            alert("No such Item..please check the code");
-        }
-    }else {
-        alert("Please enter the code");
+    }
+    if (search.text().includes("Clear Search")) {
+        alert("huuuu");
+        // clearItemSelect();
+        // clearCusDetail();
+        // clearTotal();
+        // $('#orderID').val(`Order ID : ${currOID[1]}`);
+        // btnOrder.text("");
+        // btnOrder.append(`<img src="../../CSS_Framework/POS/assets/Screenshot__550_-removebg-preview.png" alt="Logo" width="25vw" class="opacity-50 me-2">Place Order`);
+        // cash.attr("disabled", false);
+        // discount.attr("disabled", false);
+        // $('#txtOrderSearch').val("");
+        // $('#orderSearch').removeClass('btn-outline-danger').addClass('btn-outline-success');
+        // $('#orderSearch').text("Search");
+
     }
 })
+
+
