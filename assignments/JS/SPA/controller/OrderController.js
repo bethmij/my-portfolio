@@ -38,17 +38,15 @@ export function setCusID() {
 }
 
 function setOrderID() {
-    $('#orderID').val(`Order ID : OR00-1`);
-    // let id = "";
-    // let orderID = $('#orderID');
-    //
-    // if(id==""){
-    //     orderID.val(`Order ID : OR00-1`);
-    // }else {
-        // let num = id.split("OR00-");
-        // let nextID = parseInt(num[1])+1;
-        // orderID.val(`Order ID : OR00-${nextID}`);
-    // }
+    let orderID = $('#orderID');
+    if(orders.length===0){
+        orderID.val(`Order ID : OR00-1`);
+    }else{
+        let id = orders[orders.length-1].oid;
+        let num = id.split("OR00-");
+        let nextID = parseInt(num[1])+1;
+        orderID.val(`Order ID : OR00-${nextID}`);
+    }
 }
 
 selectCusOp.change(function () {
@@ -87,6 +85,8 @@ selectItemOp.change(function () {
             txtItemName.val(`Item Name : `);
             txtItemPrice.val(`Item Price : `);
             txtItemQty.val(`Item Quantity : `);
+            txtOrderQty.val("");
+            txtOrderQty.css("border", "1px solid white");
             btnSave.attr("disabled", true);
         }
     }
@@ -103,8 +103,6 @@ btnSave.click(function (event){
 
         if (parseInt(itemQty[1]) >= parseInt(txtOrderQty.val())) {
             if (tableCode.indexOf(selectItemOp.val()) == -1) {
-
-
                 $('#orderTbody').append(
                     `<tr>
                         <th scope="row">${selectItemOp.val()}</th>
@@ -114,6 +112,7 @@ btnSave.click(function (event){
                         <td style="width: 10%"><img class="orderDelete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" className="opacity-75"></td>
                     </tr>`
                 );
+                setFeilds();
                 deleteDetail();
                 calcTotal(itemPrice[1], txtOrderQty.val());
             } else {
@@ -214,7 +213,7 @@ btnOrder.click(function (event){
             clearItemSelect();
             clearCusDetail();
             clearTotal();
-            // orderDetail.splice(0,orderDetail.length);
+            setOrderID();
             console.log(orders);
 
         }else {
@@ -243,7 +242,7 @@ function setFeilds() {
                 txtItemQty.val(`Item Quantity : ${itemDetail[i].quantity}`);
             }
         }
-
+        setFeilds();
         btnSave.text("Update ");
         btnSave.attr("disabled", false);
     })
@@ -287,3 +286,50 @@ function clearTotal(){
         <th scope="col"></th>
     </tr>`);
 }
+
+$('#orderSearch').click(function (){
+
+    let id = $('#txtOrderSearch').val();
+    let tbody = $('#orderTbody');
+    let count = 0;
+
+    if(id.length!=0) {
+        for (let i = 0; i < orders.length; i++) {
+            if (orders[i].oid == id) {
+                $('#orderID').val(orders[i].oid);
+                count++;
+                if(orders[i].customerID == customerDetail[i].id ){
+                    selectCusOp.val(customerDetail[i].id);
+                    $('#cusName').val(`Customer Name : ${customerDetail[i].name}`);
+                    $('#cusAddress').val(`Customer Address : ${customerDetail[i].address}`);
+                    $('#cusSalary').val(`Customer Salary : ${customerDetail[i].salary}`);
+                }
+
+                for (let j = 0; j < orders[i].orderDetails.length; j++) {
+                    if(orders[i].orderDetails[j].code == itemDetail[j].code){
+                        $('#orderTbody').append(
+                            `<tr>
+                        <th scope="row">${orders[i].orderDetails[j].code}</th>
+                        <td>${itemDetail[j].name}</td>
+                        <td>${orders[i].orderDetails[j].unitPrice}</td>
+                        <td>${orders[i].orderDetails[j].qty}</td>                        
+                        <td style="width: 10%"><img class="orderDelete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" className="opacity-75"></td>
+                    </tr>`
+                        );
+                        setFeilds();
+                        deleteDetail();
+                        calcTotal(itemPrice[1], txtOrderQty.val());
+                    }
+                }
+
+
+
+            }
+        }
+        if (count != 1) {
+            alert("No such Item..please check the code");
+        }
+    }else {
+        alert("Please enter the code");
+    }
+})
