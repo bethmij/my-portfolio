@@ -79,14 +79,13 @@ function clearAll(event) {
     $('#txtItemCode').css("border", "1px solid white");
     $('#itemCodePara').text("");
     $('#txtItemName').css("border", "1px solid white");
-    ;
     $('#itemNamePara').text("");
     $('#txtItemPrice').css("border", "1px solid white");
-    ;
     $('#itemPricePara').text("");
     $('#txtItemQuantity').css("border", "1px solid white");
-    ;
     $('#itemQtyPara').text("");
+    btnItemSave.text("Save ");
+    btnItemSave.attr("disabled", true);
     event.preventDefault();
 }
 
@@ -120,7 +119,7 @@ function getAll() {
 setFeilds();
 
 function setFeilds() {
-    $('#itemBody>tr').dblclick(function () {
+    $('#itemBody>tr').click(function () {
         itemCode.val($(this).children(':eq(0)').text());
         itemName.val($(this).children(':eq(1)').text());
         itemPrice.val($(this).children(':eq(2)').text());

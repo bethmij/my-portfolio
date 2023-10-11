@@ -83,6 +83,8 @@ function clearAll(event) {
     $('#cusAddressPara').text("");
     $('#txtCusSalary').css("border","1px solid white");;
     $('#cusSalaryPara').text("");
+    btnCustomerSave.text("Save ");
+    btnCustomerSave.attr("disabled", true);
     event.preventDefault();
 }
 
@@ -114,7 +116,7 @@ function getAll() {
 setFeilds();
 
 function setFeilds() {
-    $('#cusTBody>tr').dblclick(function () {
+    $('#cusTBody>tr').click(function () {
         cusId.val($(this).children(':eq(0)').text());
         cusName.val($(this).children(':eq(1)').text());
         cusAddress.val($(this).children(':eq(2)').text());

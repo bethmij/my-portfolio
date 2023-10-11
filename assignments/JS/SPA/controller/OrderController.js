@@ -1,6 +1,6 @@
 import {customer} from "../model/Customer.js";
 import {order} from "../model/Order.js";
-// import {orderDetails} from "../model/OrderDetail.js";
+import {orderDetails} from "../model/OrderDetail.js";
 import {customerDetail, itemDetail, orders, orderDetail} from "../db/DB.js";
 import {item} from "../model/Item.js";
 let selectCusOp = $('#cusID');
@@ -17,6 +17,7 @@ let total1 = parseInt(total[0]);
 let cash = $('#cash');
 let discount = $('#discount');
 let btnOrder = $('#btnPlaceOrder');
+let tbRow;
 
 
 setCusID();
@@ -37,16 +38,17 @@ export function setCusID() {
 }
 
 function setOrderID() {
-    let id = order.oid;
-    let orderID = $('#orderID');
-
-    if(id==""){
-        orderID.val(`Order ID : OR00-1`);
-    }else {
-        let num = iddd.split("OR00-");
-        let nextID = parseInt(num[1])+1;
-        orderID.val(`Order ID : OR00-${nextID}`);
-    }
+    $('#orderID').val(`Order ID : OR00-1`);
+    // let id = "";
+    // let orderID = $('#orderID');
+    //
+    // if(id==""){
+    //     orderID.val(`Order ID : OR00-1`);
+    // }else {
+        // let num = id.split("OR00-");
+        // let nextID = parseInt(num[1])+1;
+        // orderID.val(`Order ID : OR00-${nextID}`);
+    // }
 }
 
 selectCusOp.change(function () {
@@ -93,30 +95,37 @@ selectItemOp.change(function () {
 
 
 btnSave.click(function (){
-    let itemQty = txtItemQty.val().split("Item Quantity : ");
-    let tableCode = $('#orderTbody').children('tr').children(':first-child').text();
+    let itemName = txtItemName.val().split("Item Name : ");
+    let itemPrice = txtItemPrice.val().split("Item Price : ");
+    if(btnSave.text().includes("Add to Cart")) {
+        let itemQty = txtItemQty.val().split("Item Quantity : ");
+        let tableCode = $('#orderTbody').children('tr').children(':first-child').text();
 
-    if(parseInt(itemQty[1]) >= parseInt(txtOrderQty.val())) {
-        if(tableCode.indexOf(selectItemOp.val())== -1){
-            let itemName = txtItemName.val().split("Item Name : ");
-            let itemPrice = txtItemPrice.val().split("Item Price : ");
+        if (parseInt(itemQty[1]) >= parseInt(txtOrderQty.val())) {
+            if (tableCode.indexOf(selectItemOp.val()) == -1) {
 
-            $('#orderTbody').append(
-                `<tr style="height: 2vw">
-             <th scope="row">${selectItemOp.val()}</th>
-             <td>${itemName[1]}</td>
-             <td>${itemPrice[1]}</td>
-             <td>${txtOrderQty.val()}</td>
-             <td style="width: 10%"><img class="orderDelete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" className="opacity-75"></td>
-        </tr>`
-            );
-            deleteDetail();
-            calcTotal(itemPrice[1], txtOrderQty.val());
-        }else {
-            alert("duplicate item!");
+
+                $('#orderTbody').append(
+                    `<tr>
+                        <th scope="row">${selectItemOp.val()}</th>
+                        <td>${itemName[1]}</td>
+                        <td>${itemPrice[1]}</td>
+                        <td>${txtOrderQty.val()}</td>
+                        <td style="width: 10%"><img class="orderDelete" src="../../CSS_Framework/POS/assets/icons8-delete-96.png" alt="Logo" width="50%" className="opacity-75"></td>
+                    </tr>`
+                );
+                deleteDetail();
+                calcTotal(itemPrice[1], txtOrderQty.val());
+            } else {
+                alert("duplicate item!");
+            }
+        } else {
+            alert("Stock unavailable!");
         }
-    }else {
-        alert("Stock unavailable!");
+    }else if(btnSave.text()=="Update "){
+        tbRow.children(':eq(1)').text(itemName[1]);
+        tbRow.children(':eq(2)').text(itemPrice[1]);
+        tbRow.children(':eq(3)').text(txtOrderQty.val());
     }
 
 })
@@ -142,7 +151,7 @@ function calcTotal(price, qty) {
     let tot = price*qty;
     total1 += tot;
     $('#total-text').text(`Total : ${total1.toFixed(2)}`);
-    $('#subTotal-text').text(`Sub Total : ${total1}`);
+    $('#subTotal-text').text(`Sub Total : ${total1.toFixed(2)}`);
 }
 
 cash.change(function (){
@@ -182,24 +191,24 @@ btnOrder.click(function (){
             let tableCode = $('#orderTbody').children('tr').children(':nth-child(1)');
             let tablePrice = $('#orderTbody').children('tr').children(':nth-child(3)');
             let tableQty = $('#orderTbody').children('tr').children(':nth-child(4)');
-            let newOrderDetails = Object.assign({}, orderDetails);
-            for (let i =1; i <=2; i++) {
 
-                newOrderDetails = {
-                    oid: orderID,
-                    code: $(tableCode[i]).text(),
-                    unitPrice: parseInt($(tablePrice[i]).text()),
-                    qty: parseInt($(tableQty[i]).text())
-                }
-                console.log(i);
-                // console.log(orderDetails);
-                orderDetail.push(orderDetails);
+            for (let i =1; i <tableCode.length; i++) {
+                let newOrderDetails = Object.assign({}, orderDetails);
+                newOrderDetails.oid = orderID;
+                newOrderDetails.code = $(tableCode[i]).text();
+                newOrderDetails.unitPrice = parseInt($(tablePrice[i]).text());
+                newOrderDetails.qty = parseInt($(tableQty[i]).text());
 
-                console.log(orderDetail);
+                orderDetail.push(newOrderDetails);
             }
 
             order.addValue(oID[1], currDate[1], selectCusOp.val(), orderDetail);
             orders.push(order);
+            clearItemSelect();
+            clearCusDetail();
+            clearTotal();
+            orderDetail=[];
+            console.log(orders);
 
         }else {
             alert("Insufficient payment amount")
@@ -207,6 +216,66 @@ btnOrder.click(function (){
     }else {
         alert("Please add ur payment")
     }
-    console.log(orders);
 
 })
+
+setFeilds();
+
+function setFeilds() {
+    $('#orderTbody>tr').click(function () {
+        tbRow = $(this);
+        let itemCode = $(this).children(':eq(0)').text();
+        txtItemName.val(`Item Name : ${$(this).children(':eq(1)').text()}`);
+        txtItemPrice.val(`Item Price : ${$(this).children(':eq(2)').text()}`);
+        txtOrderQty.val($(this).children(':eq(3)').text());
+        selectItemOp.val(itemCode);
+        selectItemOp.attr("disabled", true);
+
+        for (let i = 0; i <itemDetail.length ; i++) {
+            if(itemDetail[i].code==itemCode){
+                txtItemQty.val(`Item Quantity : ${itemDetail[i].quantity}`);
+            }
+        }
+
+        btnSave.text("Update ");
+        btnSave.attr("disabled", false);
+    })
+}
+
+$('#orderClear').click(function (){
+    clearItemSelect();
+})
+
+function clearItemSelect(){
+    selectItemOp.val("Item Code");
+    txtItemName.val(`Item Name : `);
+    txtItemPrice.val(`Item Price : `);
+    txtItemQty.val(`Item Quantity : `);
+    txtOrderQty.val("");
+    txtOrderQty.css("border", "1px solid white");
+    btnSave.text("");
+    btnSave.append(`<img src="../../CSS_Framework/POS/assets/Screenshot__543_-removebg-preview.png" alt="Logo" width="25vw" class="opacity-50 me-3">Add to Cart`);
+}
+
+function clearCusDetail(){
+    selectCusOp.val("Customer ID");
+    $('#cusName').val(`Customer Name : `);
+    $('#cusAddress').val(`Customer Address : `);
+    $('#cusSalary').val(`Customer Salary : `);
+}
+
+function clearTotal(){
+    $('#total-text').text("Total : 00.00");
+    $('#subTotal-text').text("Sub Total : 00.00");
+    $('#cash').val("");
+    $('#discount').val("");
+    $('#balance').val("");
+    $('#orderTbody').empty();
+    $('#orderTbody').append(`<tr >
+        <th scope="col">Code</th>
+        <th scope="col">Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Order Qty</th>
+        <th scope="col"></th>
+    </tr>`);
+}
