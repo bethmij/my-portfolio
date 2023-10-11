@@ -94,7 +94,7 @@ selectItemOp.change(function () {
 
 
 
-btnSave.click(function (){
+btnSave.click(function (event){
     let itemName = txtItemName.val().split("Item Name : ");
     let itemPrice = txtItemPrice.val().split("Item Price : ");
     if(btnSave.text().includes("Add to Cart")) {
@@ -127,7 +127,7 @@ btnSave.click(function (){
         tbRow.children(':eq(2)').text(itemPrice[1]);
         tbRow.children(':eq(3)').text(txtOrderQty.val());
     }
-
+    event.preventDefault();
 })
 
 deleteDetail();
@@ -180,11 +180,11 @@ discount.keyup(function (){
     }
 })
 
-btnOrder.click(function (){
+btnOrder.click(function (event){
     let oID = $('#orderID').val().split("Order ID : ");
     let orderID = oID[1];
     let currDate = $('#currDate').text().split("Date : ");
-    // let itemPrice = txtItemPrice.val().split("Item Price : ");
+    let newOrderDetailArray = Object.assign([], orderDetail);
 
     if(cash.val()!=""){
         if(!(parseInt(cash.val())<total1)){
@@ -199,15 +199,22 @@ btnOrder.click(function (){
                 newOrderDetails.unitPrice = parseInt($(tablePrice[i]).text());
                 newOrderDetails.qty = parseInt($(tableQty[i]).text());
 
-                orderDetail.push(newOrderDetails);
+
+                newOrderDetailArray.push(newOrderDetails);
             }
 
-            order.addValue(oID[1], currDate[1], selectCusOp.val(), orderDetail);
-            orders.push(order);
+            let newOrder= Object.assign({}, order);
+            newOrder.oid = oID[1];
+            newOrder.date = currDate[1];
+            newOrder.customerID = selectCusOp.val();
+            newOrder.orderDetails = newOrderDetailArray;
+
+            orders.push(newOrder);
+
             clearItemSelect();
             clearCusDetail();
             clearTotal();
-            orderDetail=[];
+            // orderDetail.splice(0,orderDetail.length);
             console.log(orders);
 
         }else {
@@ -216,7 +223,7 @@ btnOrder.click(function (){
     }else {
         alert("Please add ur payment")
     }
-
+    event.preventDefault();
 })
 
 setFeilds();
@@ -242,8 +249,9 @@ function setFeilds() {
     })
 }
 
-$('#orderClear').click(function (){
+$('#orderClear').click(function (event){
     clearItemSelect();
+    event.preventDefault();
 })
 
 function clearItemSelect(){

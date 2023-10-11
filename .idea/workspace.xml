@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified SPA">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/controller/CustomerController.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/controller/CustomerController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/controller/ItemController.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/controller/ItemController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/controller/OrderController.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/controller/OrderController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/model/OrderDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/model/OrderDetail.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,6 +109,7 @@
       <workItem from="1696648684240" duration="19176000" />
       <workItem from="1696746073819" duration="24812000" />
       <workItem from="1696825141902" duration="51220000" />
+      <workItem from="1696998037180" duration="1158000" />
     </task>
     <task id="LOCAL-00033" summary="modified portfolio assessments">
       <created>1695229646685</created>

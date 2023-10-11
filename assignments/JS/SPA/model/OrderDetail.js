@@ -3,5 +3,4 @@ export var orderDetails = {
     code:"",
     qty:0,
     unitPrice:0,
-
 }
