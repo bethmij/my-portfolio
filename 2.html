@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="swiper.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fody Slider</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Swiper Video Example</title>
+</head>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="assets/BeautyPlus_20220724145047403_save.jpg" alt="Image 1" width="60vw">
+        </div>
+        <div class="swiper-slide">
+            <img src="assets/BeautyPlus_20220724145047403_save.jpg" alt="Image 2" width="60vw">
+        </div>
+        <!-- Add more image slides as needed -->
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+
+<div id="videoContainer">
+    <video id="video1" controls>
+        <source src="assets/vid/My%20Movie(1).mp4" type="video/mp4">
+    </video>
+    <video id="video2" controls>
+        <source src="video2.mp4" type="video/mp4">
+    </video>
+    <!-- Add more video elements as needed -->
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="path-to-swipe.js"></script>
+<script src="swiper.min.js"></script>
+<script src="script.js"></script>
+<script>
+    var swiper = new Swiper(".swiper-container", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 50,
+            stretch: -100,
+            depth: 500,
+            modifier: 1,
+            slideShadows: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        on: {
+            slideChangeTransitionStart: function () {
+                // Get the current active slide index
+                var activeIndex = this.activeIndex;
+
+                // Pause all videos in the video container
+                var videoContainer = document.getElementById("videoContainer");
+                var allVideos = videoContainer.querySelectorAll("video");
+                allVideos.forEach(function (video) {
+                    video.pause();
+                });
+
+                // Play the corresponding video based on the active slide index
+                var videoToPlay = videoContainer.querySelector("#video" + (activeIndex + 1));
+                if (videoToPlay) {
+                    videoToPlay.play();
+                }
+            },
+        },
+    });
+</script>
+</body>
+</html>

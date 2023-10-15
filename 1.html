@@ -1,27 +1,323 @@
+
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="assignments/CSS_Framework/POS/css/font-awsome/css/all.css">
-    <style>
-        #loading{
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fody Slider</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
 
-            background: url("assets/Untitled ‑ Made with FlexClip.gif") center;
-            background-size: cover;
-            position: fixed;
-            width: 100vw;
-            height: 100vh;
-            z-index: 8000;
-            top: 0;
+    <style>
+
+        .sss {
+            background: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 15vw;
         }
 
+        .team-box {
+            background-color:red;
+            width: 90%;
+            height: 40%;
+        }
+
+        .team-box1 {
+            background-image: url(assets/hostel-management-software-guide.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .team-box2 {
+            background-image: url(assets/Screenshot.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .team-box3 {
+            background-image: url(assets/Screenshot278.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .team-box4 {
+            background-image: url(assets/Screenshot387.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+
+        .team-name {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .team-name::before {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transition: .5s;
+            margin: auto;
+            margin-top: 5px;
+            border-radius: 10px;
+        }
+
+        .team-name:hover::before {
+            width: 60%;
+            height: 60%;
+        }
+
+        .team-name:hover {
+            backdrop-filter: blur(10px);
+        }
+
+        .team-content {
+            width: 100%;
+            height: auto;
+            opacity: 0;
+        }
+
+        .team-content h2 {
+            color: #362c0a;
+            font-size: 1.5vw;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+
+        .team-content p {
+            font-size: 1.2vw;
+            font-family: 'Montserrat', sans-serif;
+            color: #362c0a;
+        }
+
+        #slide3 .team-content h2 {
+            color: #9b761e;
+        }
+
+        #slide3 .team-content p {
+            color: #9b761e;
+        }
+
+        .team-content ion-icon {
+            position: relative;
+            font-size: 25px;
+            padding: 10px;
+            background: #fff;
+            border-radius: 10px;
+            margin-top: 0px;
+            cursor: pointer;
+        }
+
+        .logo-linkedin {
+            color: #2962ff;
+        }
+
+        .logo-github {
+            color: #111111;
+        }
+
+
+        .logo-linkedin:hover {
+            color: #fff;
+            background: #2962ff;
+        }
+
+        .logo-github:hover {
+            color: #fff;
+            background: #111111;
+        }
+
+        .team-name:hover .team-content {
+            opacity: 1;
+        }
+
+        .swiper {
+
+            width: 80%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .swiper-slide {
+
+            background-position: center;
+            background-size: cover;
+            width: 400px;
+            height: 500px;
+            cursor: pointer;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        video{
+            position: absolute;
+            width: 35vw;
+            top: 40vw;
+            left: 5vw;;
+            padding-top: 10px;
+            border: 4px solid #2B2922;
+        }
     </style>
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="assignments/JS/Calc/css/font-awesome/css/all.min.css">
 </head>
+
 <body>
-<main>
-    <div id="loading" class=""></div>
-</main>
+<div class="sss swiper mySwiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" style="z-index: 4;" id="slide1">
+            <div class="team-box team-box1">
+                <div class="team-name">
+                    <center>
+                        <div class="team-content">
+                            <h2>D24-Hostel Management</h2>
+                            <p>HMS using Hibernate</p>
+                            <ion-icon name="logo-linkedin" class="logo-linkedin"></ion-icon>
+                            <ion-icon name="logo-github" class="logo-github"></ion-icon>
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide" style="z-index: 3;" id="slide2">
+            <div class="team-box team-box2">
+                <div class="team-name">
+                    <center>
+                        <div class="team-content">
+                            <h2>Grama-Vista</h2>
+                            <p>Civil Management using layered architecture</p>
+                            <ion-icon name="logo-linkedin" class="logo-linkedin"></ion-icon>
+                            <ion-icon name="logo-github" class="logo-github"></ion-icon>
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide" style="z-index: 2;" id="slide3">
+            <div class="team-box team-box3"  >
+                <div class="team-name">
+                    <center>
+                        <div class="team-content">
+                            <h2>Play-tech</h2>
+                            <p>Chat application using CS architecture</p>
+                            <ion-icon name="logo-linkedin" class="logo-linkedin"></ion-icon>
+                            <ion-icon name="logo-github" class="logo-github"></ion-icon>
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide" style="z-index: 1;" id="slide4">
+            <div class="team-box team-box4">
+                <div class="team-name">
+                    <center>
+                        <div class="team-content">
+                            <h2>Game application</h2>
+                            <p>Game application using basic java</p>
+                            <ion-icon name="logo-linkedin" class="logo-linkedin"></ion-icon>
+                            <ion-icon name="logo-github" class="logo-github"></ion-icon>
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="swiper-pagination"></div>
+    <div id="vidContain">
+    <video  controls>
+        <source src="assets/vid/My%20Movie(1).mp4" type="video/mp4">
+        Error Message
+    </video>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="path-to-swipe.js"></script>
+
+<script>
+
+    var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        slidesPerView: 3,
+        coverflowEffect: {
+            rotate: 50,
+            stretch: -100,
+            depth: 500,
+            modifier: 1,
+            slideShadows: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+
+    });
+    swiper.autoplay.stop();
+
+    swiper.on("touchStart", function () {
+        // Disable autoplay when user starts touching (dragging)
+        swiper.autoplay.stop();
+    });
+
+    swiper.on("transitionEnd", function () {
+        swiper.autoplay.start();
+        var activeSlide = document.querySelector(".swiper-slide-active");
+        var slideId = activeSlide.getAttribute("id");
+        let vid = document.querySelector("video");
+        switch (slideId) {
+            case "slide1" : vid.src = "assets/vid/B.I X Soulja Boy - BTBT (Feat. DeVita) PERFORMANCE FILM.mp4";
+                            vid.autoplay = true;
+                            break;
+            case "slide2" : vid.src = "assets/vid/Bananza (Belly Dancer) x Neon Park [TikTok Mashup] (Lyrics) Just wanna see you touch the ground.mp4";
+                            vid.autoplay = true;
+                            break;
+            case "slide3" : vid.src = "assets/vid/Bang Chan, Changbin, Felix, Seungmin 오늘 밤 나는 불을 켜  [Stray Kids  SKZ-PLAYER].mp4";
+                             vid.autoplay = true;
+                            break;
+            case "slide4" : vid.src = "assets/vid/Bella Poarch - Build a Btch (Official Music Video).mp4";
+                             vid.autoplay = true;
+                            break;
+        }
+    });
+
+
+
+
+
+</script>
 </body>
+
 </html>

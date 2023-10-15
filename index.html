@@ -22,7 +22,11 @@
     <link rel="canonical" href="http://bethmij.42web.io">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Borel&family=Inter:wght@200&family=Italianno&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 </head>
@@ -348,69 +352,69 @@
 
             <section id="projectView">
                 <h2>My <span>Projects</span></h2>
-                <div>
-                <figure>
-                    <img src="assets/hostel-management-software-guide.jpg" alt="">
-                    <figcaption>
-                        <strong>D24 Hostel</strong><br> Management System
-                    </figcaption>
-                    <div>
-                        <div>
-                            <label>Git-Hub</label><a href="https://github.com/bethmij/Grama-Vista" target="_blank"><button>🔗</button></a>
-                            <label>Linkedin</label><a href="https://www.linkedin.com/posts/bethmi-jayamila-4a160b22a_the-government-civil-management-system-activity-7075692328551645184-hM9q?utm_source=share&utm_medium=member_desktop" target="_blank"><button>🔗</button></a>
+                <div class="sss swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="z-index: 4;" id="slide1">
+                            <div class="team-box team-box1">
+                                <div class="team-name">
+                                    <center>
+                                        <div class="team-content">
+                                            <h2>D24-Hostel Management</h2>
+                                            <p>HMS using Hibernate</p>
+                                            <ion-icon name="logo-linkedin" class="logo-linkedin"></ion-icon>
+                                            <ion-icon name="logo-github" class="logo-github"></ion-icon>
+                                        </div>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide" style="z-index: 3;" id="slide2">
+                            <div class="team-box team-box2">
+                                <div class="team-name">
+                                    <center>
+                                        <div class="team-content">
+                                            <h2>Grama-Vista</h2>
+                                            <p>Civil Management using layered architecture</p>
+                                            <ion-icon name="logo-linkedin" class="logo-linkedin"></ion-icon>
+                                            <ion-icon name="logo-github" class="logo-github"></ion-icon>
+                                        </div>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide" style="z-index: 2;" id="slide3">
+                            <div class="team-box team-box3"  >
+                                <div class="team-name">
+                                    <center>
+                                        <div class="team-content">
+                                            <h2>Play-tech</h2>
+                                            <p>Chat application using CS architecture</p>
+                                            <ion-icon name="logo-linkedin" class="logo-linkedin"></ion-icon>
+                                            <ion-icon name="logo-github" class="logo-github"></ion-icon>
+                                        </div>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="z-index: 1;" id="slide4">
+                            <div class="team-box team-box4">
+                                <div class="team-name">
+                                    <center>
+                                        <div class="team-content">
+                                            <h2>Game application</h2>
+                                            <p>Game application using basic java</p>
+                                            <ion-icon name="logo-linkedin" class="logo-linkedin"></ion-icon>
+                                            <ion-icon name="logo-github" class="logo-github"></ion-icon>
+                                        </div>
+                                    </center>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </figure>
+<!--                    <div class="swiper-pagination"></div>-->
                 </div>
-
-                <div>
-                <figure>
-                    <img src="assets/Screenshot (278).png" alt="">
-                    <figcaption>
-                        <strong>Play-Tech-Chat</strong><br> Chat Application
-                    </figcaption>
-                    <div></div>
-
-                </figure>
-                </div>
-
-                    <div>
-                <figure>
-
-
-                    <img src="assets/Screenshot (153).png" alt="">
-                    <figcaption>
-                        <strong>Grama-Vista</strong><br> Civil Management System
-                    </figcaption>
-                    <div>
-                        <div>
-
-                        </div>
-                    </div>
-                </figure>
-                    </div>
-
-                <div>
-                <figure>
-                    <img src="assets/Screenshot (387).png" alt="">
-                    <figcaption>
-                        <strong>Connect 4 Game</strong><br>  AI Enhanced Gaming Application
-                    </figcaption>
-                    <div></div>
-                </figure>
-                </div>
-                <div>
-                    <figure>
-                        <img src="assets/Screenshot (278).png" alt="">
-                        <figcaption>
-                            <strong>Connect 4 Game</strong><br>  AI Enhanced Gaming Application
-                        </figcaption>
-                        <div></div>
-                    </figure>
-                </div>
-                <div id="assessmentView"><p>My Assignments : </p><a href="assessments.html" target="_blank"><button>Assignments</button></a></div>
-                <img src="assets/icons8-arrow-101.png" alt="" >
-                <img src="assets/icons8-arrow-100.png" alt="" >
                 <video  controls>
                     <source src="assets/vid/My%20Movie(1).mp4" type="video/mp4">
                     Error Message
@@ -422,43 +426,68 @@
 
             <section id="achievementView">
                 <h2>My <span>Achievements</span></h2>
-                <div>
-                    <figure>
-                        <img src="assets/BeautyPlus_20230920160111974_save.jpg" alt="" >
-                        <div></div>
-                    </figure>
-                </div>
+                <section id="tranding">
+                    <div class="container">
+                        <div class="swiper tranding-slider">
+                            <div class="swiper-wrapper">
 
-                <div>
-                    <figure>
-                        <img src="assets/2f03b977-93a9-48c7-adac-47eceba47043.jpg" alt="">
-                        <div></div>
-                    </figure>
-                </div>
+                                <div class="swiper-slide tranding-slide" id="slider1">
+                                    <div class="tranding-slide-img">
+                                        <img src="assets/BeautyPlus_20230920160111974_save.jpg" alt="Tranding">
+                                    </div>
+                                </div>
 
-                <div>
-                    <figure>
-                        <img src="assets/4b63a663-7a20-4341-9d4b-b5bbbd1b6b7b.jpg" alt="" >
-                        <div></div>
-                    </figure>
-                </div>
+                                <div class="swiper-slide tranding-slide" id="slider2">
+                                    <div class="tranding-slide-img">
+                                        <img src="assets/2f03b977-93a9-48c7-adac-47eceba47043.jpg" alt="Tranding">
+                                    </div>
+                                </div>
 
-                <div>
-                    <figure>
-                        <img src="assets/439e68a1-5635-406c-b5d7-f54e90775947 (1).jpg" alt="" >
-                        <div></div>
-                    </figure>
-                </div>
+                                <div class="swiper-slide tranding-slide" id="slider3">
+                                    <div class="tranding-slide-img">
+                                        <img src="assets/4b63a663-7a20-4341-9d4b-b5bbbd1b6b7b.jpg" alt="Tranding">
+                                    </div>
+                                </div>
 
-                <div>
-                    <figure>
-                        <img src="assets/3420cdda-71d2-4ae6-9f8e-127d00912822.jpg" alt="" >
-                        <div></div>
-                    </figure>
-                </div>
+                                <div class="swiper-slide tranding-slide" id="slider 4">
+                                    <div class="tranding-slide-img">
+                                        <img src="assets/439e68a1-5635-406c-b5d7-f54e90775947.jpg" alt="Tranding">
+                                    </div>
+                                </div>
 
-                <img src="assets/icons8-arrow-101.png" alt="" >
-                <img src="assets/icons8-arrow-100.png" alt="" >
+                                <div class="swiper-slide tranding-slide" id="slider5">
+                                    <div class="tranding-slide-img">
+                                        <img src="assets/3420cdda-71d2-4ae6-9f8e-127d00912822.jpg" alt="Tranding">
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide tranding-slide" id="slider6">
+                                    <div class="tranding-slide-img">
+                                        <img src="assets/download.png" alt="Tranding">
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide tranding-slide" id="slider7">
+                                    <div class="tranding-slide-img">
+                                        <img src="assets/f8971dbc-add1-4bff-ac3d-b7e774331bf3.jpg" alt="Tranding">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="tranding-slider-control">
+                                <div class="swiper-button-prev slider-arrow">
+                                    <ion-icon name="arrow-back-outline"></ion-icon>
+                                </div>
+                                <div class="swiper-button-next slider-arrow">
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
             </section>
 
             <hr>
@@ -579,29 +608,107 @@
 
         <p><small>&copy; 2023 Bethmi Jayamila | All Right Reserved</small></p>
         </div>
-       <!-- <ul class="social_icons">
-            <a href="#" target="_blank"><i class='bx bxl-facebook'></i></a>
-            <a href="#" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
-            <a href="https://linkedin.com/in/nethmi-thathsarani-230601221"><i class='bx bxl-linkedin'></i></a>
-        </ul>
-
-        <ul class="menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#works">works</a></li>
-            <li><a href="#experience">experience</a></li>
-            <li><a href="#gallery">gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <p>©2023 All Rights Reserved | Nethmi Thathsarani</p>-->
     </footer>
 
 </section>
 <script src="assignments/JS/SPA/assests/js/jquery-3.7.1.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<!--<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>-->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!--<script src="script.js"></script>-->
 <script>
     $(window).on('load',function (){
         $('#loading').css("display","none");
         $('#mainContent').css("display","block");
+    });
+
+    var TrandingSlider = new Swiper('.tranding-slider', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        loop: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2.5,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+    });
+
+    TrandingSlider.on("transitionEnd", function () {
+        // var activeSlide = document.querySelector(".swiper-slide-active");
+        // var slideId = activeSlide.getAttribute("id");
+        // slideId.style.color = white;
+    });
+
+    var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        slidesPerView: 3,
+
+        coverflowEffect: {
+            rotate: 50,
+            stretch: -100,
+            depth: 500,
+            modifier: 1,
+            slideShadows: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+
+    });
+
+    var isScrolling = false;
+
+    window.addEventListener("scroll", function () {
+        isScrolling = true;
+        swiper.autoplay.stop();
+    });
+
+    swiper.autoplay.stop();
+
+    swiper.on("touchStart", function () {
+        swiper.autoplay.stop();
+    });
+
+    swiper.on("transitionEnd", function () {
+        swiper.autoplay.start();
+        var activeSlide = document.querySelector(".swiper-slide-active");
+        var slideId = activeSlide.getAttribute("id");
+        let vid = document.querySelector("video");
+        switch (slideId) {
+            case "slide1" : vid.src = "assets/vid/B.I X Soulja Boy - BTBT (Feat. DeVita) PERFORMANCE FILM.mp4";
+                // vid.autoplay = true;
+                break;
+            case "slide2" : vid.src = "assets/vid/Bananza (Belly Dancer) x Neon Park [TikTok Mashup] (Lyrics) Just wanna see you touch the ground.mp4";
+                // vid.autoplay = true;
+                break;
+            case "slide3" : vid.src = "assets/vid/Bang Chan, Changbin, Felix, Seungmin 오늘 밤 나는 불을 켜  [Stray Kids  SKZ-PLAYER].mp4";
+                // vid.autoplay = true;
+                break;
+            case "slide4" : vid.src = "assets/vid/Bella Poarch - Build a Btch (Official Music Video).mp4";
+                // vid.autoplay = true;
+                break;
+        }
     });
 </script>
 </body>
