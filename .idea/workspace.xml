@@ -40,7 +40,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/vid" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -50,9 +50,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assets" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assets\vid" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio" />
-      <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assets" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\SPA\assests" />
       <recent name="D:\IJSE\Working Projects\My working zone IT\My Portfolio\assignments\JS\SPA\controller\validations" />
     </key>
@@ -108,7 +108,7 @@
       <workItem from="1696825141902" duration="51220000" />
       <workItem from="1696998037180" duration="24659000" />
       <workItem from="1697221784667" duration="4767000" />
-      <workItem from="1697341621313" duration="25608000" />
+      <workItem from="1697341621313" duration="33610000" />
     </task>
     <task id="LOCAL-00033" summary="modified portfolio assessments">
       <created>1695229646685</created>

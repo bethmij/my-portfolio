@@ -32,10 +32,14 @@
 </head>
 <body >
 <div id="loading" ></div>
+<div id="container">
+    <div id="hex-grid">
+        <div id="light"></div>
+        <div id="grid"></div>
+    </div>
+</div>
 
 <section id="mainContent" style="display: none">
-<img src="assets/wallpaper2you_157801.jpg" alt="">
-<div></div>
     <header>
         <img src="assets/White_Brown_Minimalist_Signature_Photography_Logo__1_-removebg-preview.png" alt="">
         <div><div><img src="assets/icons8-menu-100.png" alt=""></div></div>
@@ -114,29 +118,6 @@
                 <label>Bethmi Jayamila</label>
                 <label>Web Designer | Developer</label>
             </div>
-
-           <!-- <div class="night">
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-            </div>-->
 
             <section id="infoView">
                 <section>
@@ -710,6 +691,16 @@
                 break;
         }
     });
+    const light = document.querySelector("#light");
+    const grid = document.querySelector("#hex-grid");
+    const container = document.querySelector("body");
+
+    container.addEventListener("mousemove",function (e){
+        const scrollY = document.documentElement.scrollTop;
+        light.style.left = `${e.clientX}px`;
+        light.style.top = `${e.clientY + scrollY}px`;
+
+    })
 </script>
 </body>
 </html>
