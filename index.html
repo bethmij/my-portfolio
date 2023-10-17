@@ -38,10 +38,13 @@
         <div id="grid"></div>
     </div>
 </div>
+<div id="cursor">
+    <div></div>
+</div>
 
 <section id="mainContent" style="display: none">
     <header>
-        <img src="assets/White_Brown_Minimalist_Signature_Photography_Logo__1_-removebg-preview.png" alt="">
+<!--        <img src="assets/White_Brown_Minimalist_Signature_Photography_Logo__1_-removebg-preview.png" alt="">-->
         <div><div><img src="assets/icons8-menu-100.png" alt=""></div></div>
     </header>
 
@@ -542,15 +545,6 @@
                         </ul>
                     </address>
 
-<!--                    <div>-->
-<!--                        <a href="https://www.linkedin.com/in/bethmi-jayamila-4a160b22a/" target="_blank"> <div><img src="assets/Media/icons8-linkedin-100.png" alt="" ></div></a>-->
-<!--                        <a href="mailto:bethmij@gmail.com"> <div><img src="assets/Media/icons8-email-100.png" alt="" ></div></a>-->
-<!--                        <a href="https://github.com/bethmij" target="_blank"> <div><img src="assets/Media/icons8-github-100.png" alt="" ></div></a>-->
-<!--                        <a href="https://www.instagram.com/__bethmi.j__/" target="_blank"><div><img src="assets/Media/icons8-instagram-100.png" alt="" ></div></a>-->
-<!--                        <a href="tel:0767630412"><div><img src="assets/Media/icons8-phone-100.png" alt="" ></div></a>-->
-
-<!--                    </div>-->
-
                 </div>
                 <div>
                     <form>
@@ -596,7 +590,6 @@
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-<!--<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>-->
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <!--<script src="script.js"></script>-->
@@ -629,9 +622,6 @@
     });
 
     TrandingSlider.on("transitionEnd", function () {
-        // var activeSlide = document.querySelector(".swiper-slide-active");
-        // var slideId = activeSlide.getAttribute("id");
-        // slideId.style.color = white;
     });
 
     var swiper = new Swiper(".mySwiper", {
@@ -700,6 +690,14 @@
         light.style.left = `${e.clientX}px`;
         light.style.top = `${e.clientY + scrollY}px`;
 
+    })
+
+    const cursor = document.querySelector("#cursor");
+    document.addEventListener("mousemove", function (e){
+        window.requestAnimationFrame(() => {
+            cursor.style.top = `${e.clientY - cursor.offsetHeight/2}px`;
+            cursor.style.left = `${e.clientX - cursor.offsetWidth/2}px`;
+        });
     })
 </script>
 </body>
