@@ -4,7 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified SPA" />
+    <list default="true" id="f069488e-873c-4285-b9b3-b76330bf434e" name="Changes" comment="modified SPA">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons8-art-100.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons8-art-100.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons8-astronomy-64.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons8-astronomy-64.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons8-astronomy-96.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons8-astronomy-96.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons8-birthday-100 (1).png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons8-birthday-100 (1).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons8-drawing-100.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons8-drawing-100.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons8-email-100.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons8-email-100.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons8-graphic-100.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons8-graphic-100.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons8-knowledge-64.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons8-knowledge-64.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons8-knowledge-80.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons8-knowledge-80.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons8-national-100.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons8-national-100.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons8-person-female-100.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons8-person-female-100.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons8-phone-100 (1).png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons8-phone-100 (1).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons8-software-96.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons8-software-96.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons8-tech-100.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons8-tech-100.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons8-vegas-100.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons8-vegas-100.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons8-video-editing-100.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons8-video-editing-100.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons8-web-100.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons8-web-100.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tab.css" beforeDir="false" afterPath="$PROJECT_DIR$/tab.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,7 +63,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../index.html" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -108,7 +131,11 @@
       <workItem from="1696825141902" duration="51220000" />
       <workItem from="1696998037180" duration="24659000" />
       <workItem from="1697221784667" duration="4767000" />
-      <workItem from="1697341621313" duration="41526000" />
+      <workItem from="1697341621313" duration="47766000" />
+      <workItem from="1697642143388" duration="659000" />
+      <workItem from="1697777547210" duration="9504000" />
+      <workItem from="1697864963387" duration="1129000" />
+      <workItem from="1698047426905" duration="288000" />
     </task>
     <task id="LOCAL-00033" summary="modified portfolio assessments">
       <created>1695229646685</created>

@@ -316,6 +316,11 @@
 
     }
 
+    #skillView .circ{
+        width: 17vw;
+        height: 15vw;
+    }
+
     #skillView>section>div>div>img{
         width: 10vw;
     }
